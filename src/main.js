@@ -10,16 +10,18 @@ Vue.use(VueFire)
 Vue.use(VueRouter)
 
 // Vue Router setup
-var router = new VueRouter({ 
-  hashbang: false,
-  history: true 
+var router = new VueRouter({
+  hashbang: false
 })
+
 router.map({
   '/home': { component: Home },
   '/resume': { component: Resume },
   '/blog': { component: Blog }
 })
+
 router.redirect({
   '*': '/home'
 })
+
 router.start(App, '#app')

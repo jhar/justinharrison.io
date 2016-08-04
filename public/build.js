@@ -65,19 +65,19 @@
 
 	var _App2 = _interopRequireDefault(_App);
 
-	var _Home = __webpack_require__(7);
+	var _Home = __webpack_require__(11);
 
 	var _Home2 = _interopRequireDefault(_Home);
 
-	var _Resume = __webpack_require__(9);
+	var _Resume = __webpack_require__(13);
 
 	var _Resume2 = _interopRequireDefault(_Resume);
 
-	var _Blog = __webpack_require__(15);
+	var _Blog = __webpack_require__(17);
 
 	var _Blog2 = _interopRequireDefault(_Blog);
 
-	var _vueRouter = __webpack_require__(21);
+	var _vueRouter = __webpack_require__(23);
 
 	var _vueRouter2 = _interopRequireDefault(_vueRouter);
 
@@ -10645,7 +10645,8 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__vue_template__ = __webpack_require__(6)
+	__webpack_require__(6)
+	__vue_template__ = __webpack_require__(10)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
@@ -10663,77 +10664,22 @@
 
 /***/ },
 /* 6 */
-/***/ function(module, exports) {
-
-	module.exports = "\n  <h1>justin harrison</h1>\n  <nav class=\"navbar navbar-default\">\n    <div class=\"container\">\n      <ul class=\"nav navbar-nav\">\n        <li><a v-link=\"'home'\">Home</a></li>\n        <li><a v-link=\"'blog'\">Blog</a></li>\n        <li><a v-link=\"'resume'\">Resume</a></li>\n      </ul>\n    </div>\n  </nav>\n  <div class=\"container\">\n    <router-view></router-view>\n  </div>\n";
-
-/***/ },
-/* 7 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__vue_template__ = __webpack_require__(8)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "/Users/Justin/Development/justinharrison.io/src/components/Home.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 8 */
-/***/ function(module, exports) {
-
-	module.exports = "\n  <h2>Home placeholder</h2>\n";
-
-/***/ },
-/* 9 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__webpack_require__(10)
-	__vue_template__ = __webpack_require__(14)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "/Users/Justin/Development/justinharrison.io/src/components/Resume.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 10 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(11);
+	var content = __webpack_require__(7);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(13)(content, {});
+	var update = __webpack_require__(9)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-13403013&file=Resume.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Resume.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-13403013&file=Resume.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Resume.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-23fde32b&file=App.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./App.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-23fde32b&file=App.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./App.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -10743,22 +10689,21 @@
 	}
 
 /***/ },
-/* 11 */
+/* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(12)();
+	exports = module.exports = __webpack_require__(8)();
 	// imports
-	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);", ""]);
-	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Merriweather);", ""]);
+	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Open+Sans);", ""]);
 
 	// module
-	exports.push([module.id, ".my-resume {\n  font-family: 'Merriweather', serif;\n  margin: auto;\n  max-width: 1366px;\n  width: 100%; }\n  .my-resume .open-sans {\n    font-family: 'Open Sans', sans-serif;\n    font-weight: 700; }\n  .my-resume p {\n    color: #676767;\n    font-size: 14px; }\n  .my-resume h3 {\n    color: #4874d4;\n    font-size: 16px; }\n  .my-resume .bold {\n    font-weight: bold; }\n  .my-resume .col-1 {\n    box-sizing: border-box;\n    display: inline-block;\n    float: left;\n    padding: 0 20px;\n    width: 100%; }\n    .my-resume .col-1 .italic {\n      font-style: italic; }\n    .my-resume .col-1 .dates {\n      color: #676767;\n      font-size: 10px; }\n  .my-resume .col-2 {\n    box-sizing: border-box;\n    display: inline-block;\n    float: right;\n    padding: 0 20px;\n    width: 100%; }\n  @media only screen and (min-width: 768px) {\n    .my-resume .col-1 {\n      width: 62%; }\n    .my-resume .col-2 {\n      width: 38%; } }\n", ""]);
+	exports.push([module.id, ".top-bar {\n  background-color: #0f0f0f;\n  color: #f1f1f1;\n  font-family: 'Open Sans', sans-serif;\n  height: 48px; }\n  .top-bar .my-name {\n    font-size: 24px;\n    padding: 12px 24px;\n    text-transform: uppercase; }\n  .top-bar ul {\n    display: inline;\n    float: right;\n    list-style-type: none; }\n    .top-bar ul li {\n      float: left;\n      margin-right: 20px; }\n      .top-bar ul li a, .top-bar ul li a:hover, .top-bar ul li a:visited, .top-bar ul li a:link, .top-bar ul li a:active {\n        text-decoration: none;\n        color: #f1f1f1; }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 12 */
+/* 8 */
 /***/ function(module, exports) {
 
 	/*
@@ -10814,7 +10759,7 @@
 
 
 /***/ },
-/* 13 */
+/* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -11066,18 +11011,114 @@
 
 
 /***/ },
-/* 14 */
+/* 10 */
 /***/ function(module, exports) {
 
-	module.exports = "\n  <div class=\"my-resume\">\n    <div class=\"header\">\n      <div class=\"col-1\">\n       <h2 class=\"open-sans\">Web Application Developer</h2>\n      </div>\n      <div class=\"col-2 open-sans\">\n        <span class=\"bold\">(206) 377-9027</span><br>\n        <span class=\"bold\">Skype: justin.a.harrison</span><br>\n        <a href=\"mailto:jhar87@gmail.com\" target=\"_top\">jhar87@gmail.com</a><br>\n      </div>\n    </div>\n    <div class=\"col-1\">\n      <h3 class=\"open-sans\">Web Experience</h3>\n      <span class=\"bold\">Golden Funnel Marketing</span>, Remote - <span class=\"italic\">Web Engineer</span><br>\n      <span class=\"dates open-sans\">FEBRUARY 2016 - JULY 2016</span><br>\n      <p>Full stack developer for a wide variety of digital marketing projects. Rapid development of sites and services to the architecture and specifications of a non-technical executive. Engineering custom solutions to integration problems between WordPress, WP plugins, and external services. Third party JavaScript development. API design, development, and testing.</p>\n      <span class=\"bold\">Not That, This LLC</span>, Remote — <span class=\"italic\">Software Developer</span><br>\n      <span class=\"dates open-sans\">NOVEMBER 2015 - JANUARY 2016</span><br>\n      <p>Contract JavaScript development for Cisco project based in Dubai. Converted PSD designs to pixel perfect UI for an existing enterprise level IoT interface written with Enyo. Reported directly to C-level executives.</p>\n      <span class=\"bold\">FlexaSoft</span>, Remote — <span class=\"italic\">Web Content Evaluator</span><br>\n      <span class=\"dates open-sans\">OCTOBER 2014 - JUNE 2015</span><br>\n      <p>Human judge for tuning Microsoft Bing’s semantic search results.</p>\n      <span class=\"bold\">UC Santa Barbara</span>, Santa Barbara, CA — <span class=\"italic\">Web Developer</span><br>\n      <span class=\"dates open-sans\">JULY 2014 - SEPTEMBER 2014</span><br>\n      <p>WordPress theme development and site mergers for a UC wide arts research institute.</p>\n      <h3 class=\"open-sans\">Education</h3>\n      <span class=\"bold\">Udacity</span>, Remote — <span class=\"italic\">Front End Development Nanodegree</span>\n      <p>HTML5, Git/Github, AJAX, CSS/Bootstrap, jQuery, Object-oriented design/development, Design Patterns, Test Driven Development, Performance Optimization, Application Development/Deployment</p>\n      <span class=\"bold\">UC Santa Barbara</span>, Santa Barbara, CA — <span class=\"italic\">BA Art, High Honors</span>\n      <p>Processing, Arduino, Drawing, Painting, Printmaking</p>\n      <span class=\"bold\">University of Georgia</span>, Athens, GA — <span class=\"italic\">Cognitive Science</span>\n      <p>Logic, Java, C++, Unix</p>\n    </div>\n    <div class=\"col-2\">\n      <h3 class=\"open-sans\">Primary Skills</h3>\n      <p>JavaScript, CSS, HTML, PHP, MySQL and MongoDB.</p>\n      <p>Experience using a wide variety of libraries, frameworks, platforms, and tools related to the above core technologies (Node/NPM, React, Bootstrap, Laravel, AWS, etc). Experience with other languages such as Python, C, C++, and Java but not in a professional context.</p>\n      <p>Experience balancing client requests with architectural concerns, design patterns, and best practices - learning from apps that don’t scale or fail to be maintainable.</p>\n      <h3 class=\"open-sans\">Awards</h3>\n      <span class=\"bold\">Promising Artist Achievement Award</span><br>\n      UCSB Department of Art\n      <p>Most outstanding graduating artist</p>\n      <span class=\"bold\">William Dole Award</span><br>\n      UCSB Department of Art<br><br>\n      <span class=\"bold\">Faculty Award of Distinction</span><br>\n      UCSB Department of Art<br><br>\n      <span class=\"bold\">Dean's Honors x5</span><br>\n      UCSB\n    </div>\n  </div>\n";
+	module.exports = "\n  <div class=\"top-bar\">\n    <span class=\"my-name\">Justin Harrison</span>\n    <ul>\n      <li><a v-link=\"'home'\">Home</a></li>\n      <li><a v-link=\"'blog'\">Blog</a></li>\n      <li><a v-link=\"'resume'\">Resume</a></li>\n    </ul>\n  </div>\n  <div>\n    <router-view></router-view>\n  </div>\n";
+
+/***/ },
+/* 11 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__vue_template__ = __webpack_require__(12)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/Justin/Development/justinharrison.io/src/components/Home.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 12 */
+/***/ function(module, exports) {
+
+	module.exports = "\n  <h2>Home placeholder</h2>\n";
+
+/***/ },
+/* 13 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(14)
+	__vue_template__ = __webpack_require__(16)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/Justin/Development/justinharrison.io/src/components/Resume.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 14 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(15);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(9)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-13403013&file=Resume.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Resume.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-13403013&file=Resume.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Resume.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
 
 /***/ },
 /* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
+	exports = module.exports = __webpack_require__(8)();
+	// imports
+	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);", ""]);
+	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Merriweather);", ""]);
+
+	// module
+	exports.push([module.id, ".my-resume {\n  font-family: 'Merriweather', serif;\n  margin: auto;\n  max-width: 1366px;\n  width: 100%; }\n  .my-resume .open-sans {\n    font-family: 'Open Sans', sans-serif;\n    font-weight: 700; }\n  .my-resume p {\n    color: #676767;\n    font-size: 14px; }\n  .my-resume h3 {\n    color: #4874d4;\n    font-size: 16px; }\n  .my-resume .bold {\n    font-weight: bold; }\n  .my-resume .col-1 {\n    box-sizing: border-box;\n    display: inline-block;\n    float: left;\n    padding: 0 20px;\n    width: 100%; }\n    .my-resume .col-1 .italic {\n      font-style: italic; }\n    .my-resume .col-1 .dates {\n      color: #676767;\n      font-size: 10px; }\n  .my-resume .col-2 {\n    box-sizing: border-box;\n    display: inline-block;\n    float: right;\n    padding: 0 20px;\n    width: 100%; }\n  @media only screen and (min-width: 768px) {\n    .my-resume .col-1 {\n      width: 62%; }\n    .my-resume .col-2 {\n      width: 38%; } }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 16 */
+/***/ function(module, exports) {
+
+	module.exports = "\n  <div class=\"my-resume\">\n    <div class=\"header\">\n      <div class=\"col-1\">\n       <h2 class=\"open-sans\">Web Application Developer</h2>\n      </div>\n      <div class=\"col-2 open-sans\">\n        <span class=\"bold\">(206) 377-9027</span><br>\n        <span class=\"bold\">Skype: justin.a.harrison</span><br>\n        <a href=\"mailto:jhar87@gmail.com\" target=\"_top\">jhar87@gmail.com</a><br>\n      </div>\n    </div>\n    <div class=\"col-1\">\n      <h3 class=\"open-sans\">Web Experience</h3>\n      <span class=\"bold\">Golden Funnel Marketing</span>, Remote - <span class=\"italic\">Web Engineer</span><br>\n      <span class=\"dates open-sans\">FEBRUARY 2016 - JULY 2016</span><br>\n      <p>Full stack developer for a wide variety of digital marketing projects. Rapid development of sites and services to the architecture and specifications of a non-technical executive. Engineering custom solutions to integration problems between WordPress, WP plugins, and external services. Third party JavaScript development. API design, development, and testing.</p>\n      <span class=\"bold\">Not That, This LLC</span>, Remote — <span class=\"italic\">Software Developer</span><br>\n      <span class=\"dates open-sans\">NOVEMBER 2015 - JANUARY 2016</span><br>\n      <p>Contract JavaScript development for Cisco project based in Dubai. Converted PSD designs to pixel perfect UI for an existing enterprise level IoT interface written with Enyo. Reported directly to C-level executives.</p>\n      <span class=\"bold\">FlexaSoft</span>, Remote — <span class=\"italic\">Web Content Evaluator</span><br>\n      <span class=\"dates open-sans\">OCTOBER 2014 - JUNE 2015</span><br>\n      <p>Human judge for tuning Microsoft Bing’s semantic search results.</p>\n      <span class=\"bold\">UC Santa Barbara</span>, Santa Barbara, CA — <span class=\"italic\">Web Developer</span><br>\n      <span class=\"dates open-sans\">JULY 2014 - SEPTEMBER 2014</span><br>\n      <p>WordPress theme development and site mergers for a UC wide arts research institute.</p>\n      <h3 class=\"open-sans\">Education</h3>\n      <span class=\"bold\">Udacity</span>, Remote — <span class=\"italic\">Front End Development Nanodegree</span>\n      <p>HTML5, Git/Github, AJAX, CSS/Bootstrap, jQuery, Object-oriented design/development, Design Patterns, Test Driven Development, Performance Optimization, Application Development/Deployment</p>\n      <span class=\"bold\">UC Santa Barbara</span>, Santa Barbara, CA — <span class=\"italic\">BA Art, High Honors</span>\n      <p>Processing, Arduino, Drawing, Painting, Printmaking</p>\n      <span class=\"bold\">University of Georgia</span>, Athens, GA — <span class=\"italic\">Cognitive Science</span>\n      <p>Logic, Java, C++, Unix</p>\n    </div>\n    <div class=\"col-2\">\n      <h3 class=\"open-sans\">Primary Skills</h3>\n      <p>JavaScript, CSS, HTML, PHP, MySQL and MongoDB.</p>\n      <p>Experience using a wide variety of libraries, frameworks, platforms, and tools related to the above core technologies (Node/NPM, React, Bootstrap, Laravel, AWS, etc). Experience with other languages such as Python, C, C++, and Java but not in a professional context.</p>\n      <p>Experience balancing client requests with architectural concerns, design patterns, and best practices - learning from apps that don’t scale or fail to be maintainable.</p>\n      <h3 class=\"open-sans\">Awards</h3>\n      <span class=\"bold\">Promising Artist Achievement Award</span><br>\n      UCSB Department of Art\n      <p>Most outstanding graduating artist</p>\n      <span class=\"bold\">William Dole Award</span><br>\n      UCSB Department of Art<br><br>\n      <span class=\"bold\">Faculty Award of Distinction</span><br>\n      UCSB Department of Art<br><br>\n      <span class=\"bold\">Dean's Honors x5</span><br>\n      UCSB\n    </div>\n  </div>\n";
+
+/***/ },
+/* 17 */
+/***/ function(module, exports, __webpack_require__) {
+
 	var __vue_script__, __vue_template__
-	__vue_script__ = __webpack_require__(16)
-	__vue_template__ = __webpack_require__(20)
+	__vue_script__ = __webpack_require__(18)
+	__vue_template__ = __webpack_require__(22)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
@@ -11094,7 +11135,7 @@
 	})()}
 
 /***/ },
-/* 16 */
+/* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -11103,11 +11144,11 @@
 	  value: true
 	});
 
-	var _firebase = __webpack_require__(17);
+	var _firebase = __webpack_require__(19);
 
 	var firebase = _interopRequireWildcard(_firebase);
 
-	var _marked = __webpack_require__(19);
+	var _marked = __webpack_require__(21);
 
 	var _marked2 = _interopRequireDefault(_marked);
 
@@ -11258,7 +11299,7 @@
 	//
 
 /***/ },
-/* 17 */
+/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -11268,12 +11309,12 @@
 	 *
 	 *   firebase = require('firebase');
 	 */
-	__webpack_require__(18);
+	__webpack_require__(20);
 	module.exports = firebase;
 
 
 /***/ },
-/* 18 */
+/* 20 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/*! @license Firebase v3.2.1
@@ -11847,7 +11888,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 19 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**
@@ -13140,13 +13181,13 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 20 */
+/* 22 */
 /***/ function(module, exports) {
 
 	module.exports = "\n  <div class=\"blog\">\n    <ul>\n      <li v-for=\"post in posts | orderBy 'dateCreated' -1\" track-by=\".key\">\n        <h3>{{ post.title }}</h3>\n        <span>{{ post.category }}</span><br>\n        <span>Created: {{ post.dateCreated | dated }}</span><br>\n        <span v-if=\"post.dateUpdated\">Updated: {{ post.dateUpdated | dated }}</span><br>\n        <button v-if=\"user.email === 'jhar87@gmail.com'\" @click=\"toggleEditPost(post['.key'])\">Edit Post</button>\n        <button v-if=\"user.email === 'jhar87@gmail.com'\" @click=\"deletePost(post['.key'])\">Delete Post</button>\n        <div>{{{ post.content | marked }}}</div>\n      </li>\n    </ul>\n    <div v-if=\"user\">\n      <ul>\n        <li v-if=\"user.email\">{{user.email}}</li>\n        <li v-if=\"user.email === 'jhar87@gmail.com'\">\n          <button @click=\"toggleCreatePost\">Create Post</button>\n        </li>\n        <li>\n          <button v-on:click=\"signOut\">Sign Out</button>\n        </li>\n      </ul>\n      <form v-if=\"user.email === 'jhar87@gmail.com' && showCreatePost === true\" @submit.prevent=\"setPost\">\n        <input v-model=\"newPost.title\" placeholder=\"Post title\"><br>\n        <input v-model=\"newPost.category\" placeholder=\"Post category\"><br>\n        <textarea v-model=\"newPost.content\" placeholder=\"Post content\"></textarea><br>\n        <input v-model=\"newPost.key\" placeholder=\"Pretty url\"><br>\n        <button>Add Post</button>\n      </form>\n      <form v-if=\"user.email === 'jhar87@gmail.com' && showEditPost === true\" @submit.prevent=\"setPost\">\n        <input v-model=\"newPost.title\"><br>\n        <input v-model=\"newPost.category\"><br>\n        <textarea v-model=\"newPost.content\"></textarea><br>\n        <input v-model=\"newPost.key\"><br>\n        <button>Submit Edit</button>\n      </form>\n    </div>\n    <div v-else>\n      <button @click=\"signIn\">Sign In</button>\n    </div>\n  </div>\n";
 
 /***/ },
-/* 21 */
+/* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*!

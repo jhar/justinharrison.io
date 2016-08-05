@@ -11211,7 +11211,7 @@
 
 
 	// module
-	exports.push([module.id, ".blog {\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .blog .post-info {\n    color: #676767;\n    font-family: 'Open Sans', sans-serif;\n    font-size: 10px; }\n  .blog .italic {\n    font-style: italic; }\n  .blog h3 {\n    font-family: 'Open Sans', sans-serif;\n    text-transform: capitalize; }\n  .blog p {\n    font-family: 'Merriweather', serif;\n    color: #676767;\n    font-size: 14px; }\n  .blog ul {\n    list-style-type: none;\n    padding: 0; }\n  .blog .user-bar ul {\n    list-style-type: none;\n    padding: 0; }\n    .blog .user-bar ul li {\n      display: inline; }\n", ""]);
+	exports.push([module.id, ".blog {\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .blog .post-info {\n    color: #676767;\n    font-family: 'Open Sans', sans-serif;\n    font-size: 10px; }\n  .blog .italic {\n    font-style: italic; }\n  .blog h3 {\n    font-family: 'Open Sans', sans-serif;\n    text-transform: capitalize; }\n  .blog p {\n    font-family: 'Merriweather', serif;\n    color: #676767;\n    font-size: 14px; }\n  .blog ul {\n    list-style-type: none;\n    padding: 0; }\n  .blog .discreet {\n    border-width: 0;\n    bottom: 0;\n    height: 20px;\n    position: absolute;\n    right: 0;\n    width: 20px; }\n  .blog .user-bar ul {\n    list-style-type: none;\n    padding: 0; }\n    .blog .user-bar ul li {\n      display: inline; }\n", ""]);
 
 	// exports
 
@@ -11275,6 +11275,14 @@
 	//     list-style-type: none
 	//     padding: 0
 	//
+	//   .discreet
+	//     border-width: 0
+	//     bottom: 0
+	//     height: 20px
+	//     position: absolute
+	//     right: 0
+	//     width: 20px
+	//
 	//   .user-bar
 	//     ul
 	//       list-style-type: none
@@ -11323,7 +11331,7 @@
 	//       </form>
 	//     </div>
 	//     <div v-else>
-	//       <button @click="signIn">Sign In</button>
+	//       <input class="discreet" @keyup.esc="signIn">
 	//     </div>
 	//   </div>
 	// </template>
@@ -13538,7 +13546,7 @@
 /* 27 */
 /***/ function(module, exports) {
 
-	module.exports = "\n  <div class=\"blog\">\n    <ul>\n      <li v-for=\"post in posts | orderBy 'dateCreated' -1\" track-by=\".key\">\n        <h3>{{ post.title }}</h3>\n        <span class=\"post-info\">{{ post.dateCreated | dated  }} {{ post.category }} <span class=\"italic\" v-if=\"post.dateUpdated\">Updated {{ post.dateUpdated | dated  }}</span></span><br>\n        <div v-if=\"user\">\n          <button v-if=\"user.email === 'jhar87@gmail.com'\" @click=\"toggleEditPost(post['.key'])\">Edit Post</button>\n          <button v-if=\"user.email === 'jhar87@gmail.com'\" @click=\"deletePost(post['.key'])\">Delete Post</button>\n        </div>\n        <div>{{{ post.content | marked }}}</div>\n      </li>\n    </ul>\n    <div class=\"user-bar\" v-if=\"user\">\n      <ul>\n        <li v-if=\"user.email\">{{user.email}}</li>\n        <li v-if=\"user.email === 'jhar87@gmail.com'\">\n          <button @click=\"toggleCreatePost\">Create Post</button>\n        </li>\n        <li>\n          <button v-on:click=\"signOut\">Sign Out</button>\n        </li>\n      </ul>\n      <form v-if=\"user.email === 'jhar87@gmail.com' && showCreatePost === true\" @submit.prevent=\"setPost\">\n        <input v-model=\"newPost.title\" placeholder=\"Post title\"><br>\n        <input v-model=\"newPost.category\" placeholder=\"Post category\"><br>\n        <textarea v-model=\"newPost.content\" placeholder=\"Post content\"></textarea><br>\n        <input v-model=\"newPost.key\" placeholder=\"Pretty url\"><br>\n        <button>Add Post</button>\n      </form>\n      <form v-if=\"user.email === 'jhar87@gmail.com' && showEditPost === true\" @submit.prevent=\"setPost\">\n        <input v-model=\"newPost.title\"><br>\n        <input v-model=\"newPost.category\"><br>\n        <textarea v-model=\"newPost.content\"></textarea><br>\n        <input v-model=\"newPost.key\"><br>\n        <button>Submit Edit</button>\n      </form>\n    </div>\n    <div v-else>\n      <button @click=\"signIn\">Sign In</button>\n    </div>\n  </div>\n";
+	module.exports = "\n  <div class=\"blog\">\n    <ul>\n      <li v-for=\"post in posts | orderBy 'dateCreated' -1\" track-by=\".key\">\n        <h3>{{ post.title }}</h3>\n        <span class=\"post-info\">{{ post.dateCreated | dated  }} {{ post.category }} <span class=\"italic\" v-if=\"post.dateUpdated\">Updated {{ post.dateUpdated | dated  }}</span></span><br>\n        <div v-if=\"user\">\n          <button v-if=\"user.email === 'jhar87@gmail.com'\" @click=\"toggleEditPost(post['.key'])\">Edit Post</button>\n          <button v-if=\"user.email === 'jhar87@gmail.com'\" @click=\"deletePost(post['.key'])\">Delete Post</button>\n        </div>\n        <div>{{{ post.content | marked }}}</div>\n      </li>\n    </ul>\n    <div class=\"user-bar\" v-if=\"user\">\n      <ul>\n        <li v-if=\"user.email\">{{user.email}}</li>\n        <li v-if=\"user.email === 'jhar87@gmail.com'\">\n          <button @click=\"toggleCreatePost\">Create Post</button>\n        </li>\n        <li>\n          <button v-on:click=\"signOut\">Sign Out</button>\n        </li>\n      </ul>\n      <form v-if=\"user.email === 'jhar87@gmail.com' && showCreatePost === true\" @submit.prevent=\"setPost\">\n        <input v-model=\"newPost.title\" placeholder=\"Post title\"><br>\n        <input v-model=\"newPost.category\" placeholder=\"Post category\"><br>\n        <textarea v-model=\"newPost.content\" placeholder=\"Post content\"></textarea><br>\n        <input v-model=\"newPost.key\" placeholder=\"Pretty url\"><br>\n        <button>Add Post</button>\n      </form>\n      <form v-if=\"user.email === 'jhar87@gmail.com' && showEditPost === true\" @submit.prevent=\"setPost\">\n        <input v-model=\"newPost.title\"><br>\n        <input v-model=\"newPost.category\"><br>\n        <textarea v-model=\"newPost.content\"></textarea><br>\n        <input v-model=\"newPost.key\"><br>\n        <button>Submit Edit</button>\n      </form>\n    </div>\n    <div v-else>\n      <input class=\"discreet\" @keyup.esc=\"signIn\">\n    </div>\n  </div>\n";
 
 /***/ },
 /* 28 */

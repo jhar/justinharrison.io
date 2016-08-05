@@ -25,6 +25,14 @@
     list-style-type: none
     padding: 0
 
+  .discreet
+    border-width: 0
+    bottom: 0
+    height: 32px
+    position: absolute
+    right: 0
+    width: 32px
+
   .user-bar
     ul
       list-style-type: none
@@ -73,7 +81,7 @@
       </form>
     </div>
     <div v-else>
-      <button @click="signIn">Sign In</button>
+      <input class="discreet" @keyup.esc="signIn">
     </div>
   </div>
 </template>

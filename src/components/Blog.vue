@@ -4,6 +4,14 @@
   max-width: 960px
   width: 86%
 
+  .post-info
+    color: #676767
+    font-family: 'Open Sans', sans-serif
+    font-size: 10px
+
+  .italic
+    font-style: italic
+
   h3
     font-family: 'Open Sans', sans-serif
     text-transform: capitalize
@@ -31,11 +39,11 @@
     <ul>
       <li v-for="post in posts | orderBy 'dateCreated' -1" track-by=".key">
         <h3>{{ post.title }}</h3>
-        <span>{{ post.category }}</span><br>
-        <span>Created: {{ post.dateCreated | dated }}</span><br>
-        <span v-if="post.dateUpdated">Updated: {{ post.dateUpdated | dated }}</span><br>
-        <button v-if="user.email === 'jhar87@gmail.com'" @click="toggleEditPost(post['.key'])">Edit Post</button>
-        <button v-if="user.email === 'jhar87@gmail.com'" @click="deletePost(post['.key'])">Delete Post</button>
+        <span class="post-info">{{ post.dateCreated | dated  }} {{ post.category }} <span class="italic" v-if="post.dateUpdated">Updated {{ post.dateUpdated | dated  }}</span></span><br>
+        <div v-if="user">
+          <button v-if="user.email === 'jhar87@gmail.com'" @click="toggleEditPost(post['.key'])">Edit Post</button>
+          <button v-if="user.email === 'jhar87@gmail.com'" @click="deletePost(post['.key'])">Delete Post</button>
+        </div>
         <div>{{{ post.content | marked }}}</div>
       </li>
     </ul>
@@ -73,6 +81,7 @@
 <script>
   import * as firebase from 'firebase'
   import marked from 'marked'
+  import dateFormat from 'dateformat'
 
   // Firebase setup
   const config = {
@@ -111,7 +120,7 @@
       marked: marked,
       dated(digits) {
         var newDate = new Date(digits);
-        return newDate;
+        return dateFormat(newDate, "mmmm dS, yyyy");
       }
     },
     firebase: {

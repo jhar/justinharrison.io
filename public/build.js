@@ -77,7 +77,7 @@
 
 	var _Blog2 = _interopRequireDefault(_Blog);
 
-	var _vueRouter = __webpack_require__(27);
+	var _vueRouter = __webpack_require__(28);
 
 	var _vueRouter2 = _interopRequireDefault(_vueRouter);
 
@@ -10694,7 +10694,8 @@
 
 	exports = module.exports = __webpack_require__(8)();
 	// imports
-	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Open+Sans);", ""]);
+	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);", ""]);
+	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Merriweather);", ""]);
 
 	// module
 	exports.push([module.id, ".top-bar {\n  box-sizing: border-box;\n  background-color: #191919;\n  color: #e6e6e6;\n  font-family: 'Open Sans', sans-serif;\n  height: 48px;\n  margin-bottom: 36px;\n  padding: 12px 0; }\n  .top-bar .nav-container {\n    margin: auto;\n    max-width: 960px;\n    width: 86%; }\n    .top-bar .nav-container ul {\n      display: inline;\n      list-style-type: none; }\n      .top-bar .nav-container ul .float-left {\n        float: left; }\n      .top-bar .nav-container ul .float-right {\n        float: right; }\n      .top-bar .nav-container ul li {\n        margin-right: 20px; }\n        .top-bar .nav-container ul li a, .top-bar .nav-container ul li a:hover, .top-bar .nav-container ul li a:visited, .top-bar .nav-container ul li a:link, .top-bar .nav-container ul li a:active {\n          text-decoration: none;\n          color: #e6e6e6; }\n", ""]);
@@ -11070,8 +11071,7 @@
 
 	exports = module.exports = __webpack_require__(8)();
 	// imports
-	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Open+Sans);", ""]);
-	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Merriweather);", ""]);
+
 
 	// module
 	exports.push([module.id, ".about-me {\n  font-family: 'Merriweather', serif;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .about-me p {\n    color: #676767;\n    font-size: 14px; }\n", ""]);
@@ -11139,11 +11139,10 @@
 
 	exports = module.exports = __webpack_require__(8)();
 	// imports
-	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);", ""]);
-	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Merriweather);", ""]);
+
 
 	// module
-	exports.push([module.id, ".my-resume {\n  font-family: 'Merriweather', serif;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .my-resume .open-sans {\n    font-family: 'Open Sans', sans-serif;\n    font-weight: 700; }\n  .my-resume p {\n    color: #676767;\n    font-size: 14px; }\n  .my-resume h3 {\n    color: #4874d4;\n    font-size: 16px; }\n  .my-resume .bold {\n    font-weight: bold; }\n  .my-resume .col-1 {\n    box-sizing: border-box;\n    display: inline-block;\n    float: left;\n    padding-right: 20px;\n    width: 100%; }\n    .my-resume .col-1 .italic {\n      font-style: italic; }\n    .my-resume .col-1 .dates {\n      color: #676767;\n      font-size: 10px; }\n  .my-resume .col-2 {\n    box-sizing: border-box;\n    display: inline-block;\n    float: right;\n    padding: 0 20px;\n    width: 100%; }\n  @media only screen and (min-width: 768px) {\n    .my-resume .col-1 {\n      width: 62%; }\n    .my-resume .col-2 {\n      width: 38%; } }\n", ""]);
+	exports.push([module.id, ".my-resume {\n  font-family: 'Merriweather', serif;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .my-resume .open-sans {\n    font-family: 'Open Sans', sans-serif;\n    font-weight: 700; }\n  .my-resume p {\n    color: #676767;\n    font-size: 14px; }\n  .my-resume h4 {\n    color: #4874d4; }\n  .my-resume .bold {\n    font-weight: bold; }\n  .my-resume .col-1 {\n    box-sizing: border-box;\n    display: inline-block;\n    float: left;\n    padding-right: 20px;\n    width: 100%; }\n    .my-resume .col-1 .italic {\n      font-style: italic; }\n    .my-resume .col-1 .dates {\n      color: #676767;\n      font-size: 10px; }\n  .my-resume .col-2 {\n    box-sizing: border-box;\n    display: inline-block;\n    float: right;\n    width: 100%; }\n  @media only screen and (min-width: 768px) {\n    .my-resume .col-1 {\n      width: 62%; }\n    .my-resume .col-2 {\n      width: 38%; } }\n", ""]);
 
 	// exports
 
@@ -11152,7 +11151,7 @@
 /* 18 */
 /***/ function(module, exports) {
 
-	module.exports = "\n  <div class=\"my-resume\">\n    <div class=\"header\">\n      <div class=\"col-1\">\n       <h2 class=\"open-sans\">Web Application Developer</h2>\n      </div>\n      <div class=\"col-2 open-sans\">\n        <span class=\"bold\">(206) 377-9027</span><br>\n        <span class=\"bold\">Skype: justin.a.harrison</span><br>\n        <a href=\"mailto:jhar87@gmail.com\" target=\"_top\">jhar87@gmail.com</a><br>\n      </div>\n    </div>\n    <div class=\"col-1\">\n      <h3 class=\"open-sans\">Web Experience</h3>\n      <span class=\"bold\">Golden Funnel Marketing</span>, Remote - <span class=\"italic\">Web Engineer</span><br>\n      <span class=\"dates open-sans\">FEBRUARY 2016 - JULY 2016</span><br>\n      <p>Full stack developer for a wide variety of digital marketing projects. Rapid development of sites and services to the architecture and specifications of a non-technical executive. Engineering custom solutions to integration problems between WordPress, WP plugins, and external services. Third party JavaScript development. API design, development, and testing.</p>\n      <span class=\"bold\">Not That, This LLC</span>, Remote — <span class=\"italic\">Software Developer</span><br>\n      <span class=\"dates open-sans\">NOVEMBER 2015 - JANUARY 2016</span><br>\n      <p>Contract JavaScript development for Cisco project based in Dubai. Converted PSD designs to pixel perfect UI for an existing enterprise level IoT interface written with Enyo. Reported directly to C-level executives.</p>\n      <span class=\"bold\">FlexaSoft</span>, Remote — <span class=\"italic\">Web Content Evaluator</span><br>\n      <span class=\"dates open-sans\">OCTOBER 2014 - JUNE 2015</span><br>\n      <p>Human judge for tuning Microsoft Bing’s semantic search results.</p>\n      <span class=\"bold\">UC Santa Barbara</span>, Santa Barbara, CA — <span class=\"italic\">Web Developer</span><br>\n      <span class=\"dates open-sans\">JULY 2014 - SEPTEMBER 2014</span><br>\n      <p>WordPress theme development and site mergers for a UC wide arts research institute.</p>\n      <h3 class=\"open-sans\">Education</h3>\n      <span class=\"bold\">Udacity</span>, Remote — <span class=\"italic\">Front End Development Nanodegree</span>\n      <p>HTML5, Git/Github, AJAX, CSS/Bootstrap, jQuery, Object-oriented design/development, Design Patterns, Test Driven Development, Performance Optimization, Application Development/Deployment</p>\n      <span class=\"bold\">UC Santa Barbara</span>, Santa Barbara, CA — <span class=\"italic\">BA Art, High Honors</span>\n      <p>Processing, Arduino, Drawing, Painting, Printmaking</p>\n      <span class=\"bold\">University of Georgia</span>, Athens, GA — <span class=\"italic\">Cognitive Science</span>\n      <p>Logic, Java, C++, Unix</p>\n    </div>\n    <div class=\"col-2\">\n      <h3 class=\"open-sans\">Primary Skills</h3>\n      <p>JavaScript, CSS, HTML, PHP, MySQL and MongoDB.</p>\n      <p>Experience using a wide variety of libraries, frameworks, platforms, and tools related to the above core technologies (Node/NPM, React, Bootstrap, Laravel, AWS, etc). Experience with other languages such as Python, C, C++, and Java but not in a professional context.</p>\n      <p>Experience balancing client requests with architectural concerns, design patterns, and best practices - learning from apps that don’t scale or fail to be maintainable.</p>\n      <h3 class=\"open-sans\">Awards</h3>\n      <span class=\"bold\">Promising Artist Achievement Award</span><br>\n      UCSB Department of Art\n      <p>Most outstanding graduating artist</p>\n      <span class=\"bold\">William Dole Award</span><br>\n      UCSB Department of Art<br><br>\n      <span class=\"bold\">Faculty Award of Distinction</span><br>\n      UCSB Department of Art<br><br>\n      <span class=\"bold\">Dean's Honors x5</span><br>\n      UCSB\n    </div>\n  </div>\n";
+	module.exports = "\n  <div class=\"my-resume\">\n    <div class=\"header\">\n      <div class=\"col-1\">\n       <h3 class=\"open-sans\">Artist and Software Developer</h3>\n      </div>\n      <div class=\"col-2 open-sans\">\n        <span class=\"bold\">(206) 377-9027</span><br>\n        <span class=\"bold\">Skype: justin.a.harrison</span><br>\n        <a href=\"mailto:jhar87@gmail.com\" target=\"_top\">jhar87@gmail.com</a><br>\n      </div>\n    </div>\n    <div class=\"col-1\">\n      <h4 class=\"open-sans\">Web Experience</h4>\n      <span class=\"bold\">Golden Funnel Marketing</span>, Remote - <span class=\"italic\">Web Engineer</span><br>\n      <span class=\"dates open-sans\">FEBRUARY 2016 - JULY 2016</span><br>\n      <p>Full stack developer for a wide variety of digital marketing projects. Rapid development of sites and services to the architecture and specifications of a non-technical executive. Engineering custom solutions to integration problems between WordPress, WP plugins, and external services. Third party JavaScript development. API design, development, and testing.</p>\n      <span class=\"bold\">Not That, This LLC</span>, Remote — <span class=\"italic\">Software Developer</span><br>\n      <span class=\"dates open-sans\">NOVEMBER 2015 - JANUARY 2016</span><br>\n      <p>Contract JavaScript development for Cisco project based in Dubai. Converted PSD designs to pixel perfect UI for an existing enterprise level IoT interface written with Enyo. Reported directly to C-level executives.</p>\n      <span class=\"bold\">FlexaSoft</span>, Remote — <span class=\"italic\">Web Content Evaluator</span><br>\n      <span class=\"dates open-sans\">OCTOBER 2014 - JUNE 2015</span><br>\n      <p>Human judge for tuning Microsoft Bing’s semantic search results.</p>\n      <span class=\"bold\">UC Santa Barbara</span>, Santa Barbara, CA — <span class=\"italic\">Web Developer</span><br>\n      <span class=\"dates open-sans\">JULY 2014 - SEPTEMBER 2014</span><br>\n      <p>WordPress theme development and site mergers for a UC wide arts research institute.</p>\n      <h4 class=\"open-sans\">Education</h4>\n      <span class=\"bold\">Udacity</span>, Remote — <span class=\"italic\">Front End Development Nanodegree</span>\n      <p>HTML5, Git/Github, AJAX, CSS/Bootstrap, jQuery, Object-oriented design/development, Design Patterns, Test Driven Development, Performance Optimization, Application Development/Deployment</p>\n      <span class=\"bold\">UC Santa Barbara</span>, Santa Barbara, CA — <span class=\"italic\">BA Art, High Honors</span>\n      <p>Processing, Arduino, Drawing, Painting, Printmaking</p>\n      <span class=\"bold\">University of Georgia</span>, Athens, GA — <span class=\"italic\">Cognitive Science</span>\n      <p>Logic, Java, C++, Unix</p>\n    </div>\n    <div class=\"col-2\">\n      <h4 class=\"open-sans\">Primary Skills</h4>\n      <p>JavaScript, CSS, HTML, PHP, MySQL and MongoDB.</p>\n      <p>Experience using a wide variety of libraries, frameworks, platforms, and tools related to the above core technologies (Node/NPM, React, Bootstrap, Laravel, AWS, etc). Experience with other languages such as Python, C, C++, and Java but not in a professional context.</p>\n      <p>Experience balancing client requests with architectural concerns, design patterns, and best practices - learning from apps that don’t scale or fail to be maintainable.</p>\n      <h4 class=\"open-sans\">Awards</h4>\n      <span class=\"bold\">Promising Artist Achievement Award</span><br>\n      UCSB Department of Art\n      <p>Most outstanding graduating artist</p>\n      <span class=\"bold\">William Dole Award</span><br>\n      UCSB Department of Art<br><br>\n      <span class=\"bold\">Faculty Award of Distinction</span><br>\n      UCSB Department of Art<br><br>\n      <span class=\"bold\">Dean's Honors x5</span><br>\n      UCSB\n    </div>\n  </div>\n";
 
 /***/ },
 /* 19 */
@@ -11161,7 +11160,7 @@
 	var __vue_script__, __vue_template__
 	__webpack_require__(20)
 	__vue_script__ = __webpack_require__(22)
-	__vue_template__ = __webpack_require__(26)
+	__vue_template__ = __webpack_require__(27)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
@@ -11212,7 +11211,7 @@
 
 
 	// module
-	exports.push([module.id, ".blog {\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .blog h3 {\n    font-family: 'Open Sans', sans-serif;\n    text-transform: capitalize; }\n  .blog p {\n    font-family: 'Merriweather', serif;\n    color: #676767;\n    font-size: 14px; }\n  .blog ul {\n    list-style-type: none;\n    padding: 0; }\n  .blog .user-bar ul {\n    list-style-type: none;\n    padding: 0; }\n    .blog .user-bar ul li {\n      display: inline; }\n", ""]);
+	exports.push([module.id, ".blog {\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .blog .post-info {\n    color: #676767;\n    font-family: 'Open Sans', sans-serif;\n    font-size: 10px; }\n  .blog .italic {\n    font-style: italic; }\n  .blog h3 {\n    font-family: 'Open Sans', sans-serif;\n    text-transform: capitalize; }\n  .blog p {\n    font-family: 'Merriweather', serif;\n    color: #676767;\n    font-size: 14px; }\n  .blog ul {\n    list-style-type: none;\n    padding: 0; }\n  .blog .user-bar ul {\n    list-style-type: none;\n    padding: 0; }\n    .blog .user-bar ul li {\n      display: inline; }\n", ""]);
 
 	// exports
 
@@ -11235,16 +11234,33 @@
 
 	var _marked2 = _interopRequireDefault(_marked);
 
+	var _dateformat = __webpack_require__(26);
+
+	var _dateformat2 = _interopRequireDefault(_dateformat);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 	// Firebase setup
-	// <style lang="sass?indentedSyntax">
+	var config = {
+	  apiKey: "AIzaSyBvbih18hAFNeR_kptuLck_1iLYbKFTk90",
+	  authDomain: "justin-harrison.firebaseapp.com",
+	  databaseURL: "https://justin-harrison.firebaseio.com",
+	  storageBucket: "justin-harrison.appspot.com"
+	}; // <style lang="sass?indentedSyntax">
 	// .blog
 	//   margin: auto
 	//   max-width: 960px
 	//   width: 86%
+	//
+	//   .post-info
+	//     color: #676767
+	//     font-family: 'Open Sans', sans-serif
+	//     font-size: 10px
+	//
+	//   .italic
+	//     font-style: italic
 	//
 	//   h3
 	//     font-family: 'Open Sans', sans-serif
@@ -11273,11 +11289,11 @@
 	//     <ul>
 	//       <li v-for="post in posts | orderBy 'dateCreated' -1" track-by=".key">
 	//         <h3>{{ post.title }}</h3>
-	//         <span>{{ post.category }}</span><br>
-	//         <span>Created: {{ post.dateCreated | dated }}</span><br>
-	//         <span v-if="post.dateUpdated">Updated: {{ post.dateUpdated | dated }}</span><br>
-	//         <button v-if="user.email === 'jhar87@gmail.com'" @click="toggleEditPost(post['.key'])">Edit Post</button>
-	//         <button v-if="user.email === 'jhar87@gmail.com'" @click="deletePost(post['.key'])">Delete Post</button>
+	//         <span class="post-info">{{ post.dateCreated | dated  }} {{ post.category }} <span class="italic" v-if="post.dateUpdated">Updated {{ post.dateUpdated | dated  }}</span></span><br>
+	//         <div v-if="user">
+	//           <button v-if="user.email === 'jhar87@gmail.com'" @click="toggleEditPost(post['.key'])">Edit Post</button>
+	//           <button v-if="user.email === 'jhar87@gmail.com'" @click="deletePost(post['.key'])">Delete Post</button>
+	//         </div>
 	//         <div>{{{ post.content | marked }}}</div>
 	//       </li>
 	//     </ul>
@@ -11313,12 +11329,7 @@
 	// </template>
 	//
 	// <script>
-	var config = {
-	  apiKey: "AIzaSyBvbih18hAFNeR_kptuLck_1iLYbKFTk90",
-	  authDomain: "justin-harrison.firebaseapp.com",
-	  databaseURL: "https://justin-harrison.firebaseio.com",
-	  storageBucket: "justin-harrison.appspot.com"
-	};
+
 	var firebaseApp = firebase.initializeApp(config);
 	var db = firebaseApp.database();
 	var storage = firebaseApp.storage();
@@ -11350,7 +11361,7 @@
 	    marked: _marked2.default,
 	    dated: function dated(digits) {
 	      var newDate = new Date(digits);
-	      return newDate;
+	      return (0, _dateformat2.default)(newDate, "mmmm dS, yyyy");
 	    }
 	  },
 	  firebase: {
@@ -13293,12 +13304,244 @@
 
 /***/ },
 /* 26 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "\n  <div class=\"blog\">\n    <ul>\n      <li v-for=\"post in posts | orderBy 'dateCreated' -1\" track-by=\".key\">\n        <h3>{{ post.title }}</h3>\n        <span>{{ post.category }}</span><br>\n        <span>Created: {{ post.dateCreated | dated }}</span><br>\n        <span v-if=\"post.dateUpdated\">Updated: {{ post.dateUpdated | dated }}</span><br>\n        <button v-if=\"user.email === 'jhar87@gmail.com'\" @click=\"toggleEditPost(post['.key'])\">Edit Post</button>\n        <button v-if=\"user.email === 'jhar87@gmail.com'\" @click=\"deletePost(post['.key'])\">Delete Post</button>\n        <div>{{{ post.content | marked }}}</div>\n      </li>\n    </ul>\n    <div class=\"user-bar\" v-if=\"user\">\n      <ul>\n        <li v-if=\"user.email\">{{user.email}}</li>\n        <li v-if=\"user.email === 'jhar87@gmail.com'\">\n          <button @click=\"toggleCreatePost\">Create Post</button>\n        </li>\n        <li>\n          <button v-on:click=\"signOut\">Sign Out</button>\n        </li>\n      </ul>\n      <form v-if=\"user.email === 'jhar87@gmail.com' && showCreatePost === true\" @submit.prevent=\"setPost\">\n        <input v-model=\"newPost.title\" placeholder=\"Post title\"><br>\n        <input v-model=\"newPost.category\" placeholder=\"Post category\"><br>\n        <textarea v-model=\"newPost.content\" placeholder=\"Post content\"></textarea><br>\n        <input v-model=\"newPost.key\" placeholder=\"Pretty url\"><br>\n        <button>Add Post</button>\n      </form>\n      <form v-if=\"user.email === 'jhar87@gmail.com' && showEditPost === true\" @submit.prevent=\"setPost\">\n        <input v-model=\"newPost.title\"><br>\n        <input v-model=\"newPost.category\"><br>\n        <textarea v-model=\"newPost.content\"></textarea><br>\n        <input v-model=\"newPost.key\"><br>\n        <button>Submit Edit</button>\n      </form>\n    </div>\n    <div v-else>\n      <button @click=\"signIn\">Sign In</button>\n    </div>\n  </div>\n";
+	var __WEBPACK_AMD_DEFINE_RESULT__;/*
+	 * Date Format 1.2.3
+	 * (c) 2007-2009 Steven Levithan <stevenlevithan.com>
+	 * MIT license
+	 *
+	 * Includes enhancements by Scott Trenda <scott.trenda.net>
+	 * and Kris Kowal <cixar.com/~kris.kowal/>
+	 *
+	 * Accepts a date, a mask, or a date and a mask.
+	 * Returns a formatted version of the given date.
+	 * The date defaults to the current date/time.
+	 * The mask defaults to dateFormat.masks.default.
+	 */
+
+	(function(global) {
+	  'use strict';
+
+	  var dateFormat = (function() {
+	      var token = /d{1,4}|m{1,4}|yy(?:yy)?|([HhMsTt])\1?|[LloSZWN]|'[^']*'|'[^']*'/g;
+	      var timezone = /\b(?:[PMCEA][SDP]T|(?:Pacific|Mountain|Central|Eastern|Atlantic) (?:Standard|Daylight|Prevailing) Time|(?:GMT|UTC)(?:[-+]\d{4})?)\b/g;
+	      var timezoneClip = /[^-+\dA-Z]/g;
+	  
+	      // Regexes and supporting functions are cached through closure
+	      return function (date, mask, utc, gmt) {
+	  
+	        // You can't provide utc if you skip other args (use the 'UTC:' mask prefix)
+	        if (arguments.length === 1 && kindOf(date) === 'string' && !/\d/.test(date)) {
+	          mask = date;
+	          date = undefined;
+	        }
+	  
+	        date = date || new Date;
+	  
+	        if(!(date instanceof Date)) {
+	          date = new Date(date);
+	        }
+	  
+	        if (isNaN(date)) {
+	          throw TypeError('Invalid date');
+	        }
+	  
+	        mask = String(dateFormat.masks[mask] || mask || dateFormat.masks['default']);
+	  
+	        // Allow setting the utc/gmt argument via the mask
+	        var maskSlice = mask.slice(0, 4);
+	        if (maskSlice === 'UTC:' || maskSlice === 'GMT:') {
+	          mask = mask.slice(4);
+	          utc = true;
+	          if (maskSlice === 'GMT:') {
+	            gmt = true;
+	          }
+	        }
+	  
+	        var _ = utc ? 'getUTC' : 'get';
+	        var d = date[_ + 'Date']();
+	        var D = date[_ + 'Day']();
+	        var m = date[_ + 'Month']();
+	        var y = date[_ + 'FullYear']();
+	        var H = date[_ + 'Hours']();
+	        var M = date[_ + 'Minutes']();
+	        var s = date[_ + 'Seconds']();
+	        var L = date[_ + 'Milliseconds']();
+	        var o = utc ? 0 : date.getTimezoneOffset();
+	        var W = getWeek(date);
+	        var N = getDayOfWeek(date);
+	        var flags = {
+	          d:    d,
+	          dd:   pad(d),
+	          ddd:  dateFormat.i18n.dayNames[D],
+	          dddd: dateFormat.i18n.dayNames[D + 7],
+	          m:    m + 1,
+	          mm:   pad(m + 1),
+	          mmm:  dateFormat.i18n.monthNames[m],
+	          mmmm: dateFormat.i18n.monthNames[m + 12],
+	          yy:   String(y).slice(2),
+	          yyyy: y,
+	          h:    H % 12 || 12,
+	          hh:   pad(H % 12 || 12),
+	          H:    H,
+	          HH:   pad(H),
+	          M:    M,
+	          MM:   pad(M),
+	          s:    s,
+	          ss:   pad(s),
+	          l:    pad(L, 3),
+	          L:    pad(Math.round(L / 10)),
+	          t:    H < 12 ? 'a'  : 'p',
+	          tt:   H < 12 ? 'am' : 'pm',
+	          T:    H < 12 ? 'A'  : 'P',
+	          TT:   H < 12 ? 'AM' : 'PM',
+	          Z:    gmt ? 'GMT' : utc ? 'UTC' : (String(date).match(timezone) || ['']).pop().replace(timezoneClip, ''),
+	          o:    (o > 0 ? '-' : '+') + pad(Math.floor(Math.abs(o) / 60) * 100 + Math.abs(o) % 60, 4),
+	          S:    ['th', 'st', 'nd', 'rd'][d % 10 > 3 ? 0 : (d % 100 - d % 10 != 10) * d % 10],
+	          W:    W,
+	          N:    N
+	        };
+	  
+	        return mask.replace(token, function (match) {
+	          if (match in flags) {
+	            return flags[match];
+	          }
+	          return match.slice(1, match.length - 1);
+	        });
+	      };
+	    })();
+
+	  dateFormat.masks = {
+	    'default':               'ddd mmm dd yyyy HH:MM:ss',
+	    'shortDate':             'm/d/yy',
+	    'mediumDate':            'mmm d, yyyy',
+	    'longDate':              'mmmm d, yyyy',
+	    'fullDate':              'dddd, mmmm d, yyyy',
+	    'shortTime':             'h:MM TT',
+	    'mediumTime':            'h:MM:ss TT',
+	    'longTime':              'h:MM:ss TT Z',
+	    'isoDate':               'yyyy-mm-dd',
+	    'isoTime':               'HH:MM:ss',
+	    'isoDateTime':           'yyyy-mm-dd\'T\'HH:MM:sso',
+	    'isoUtcDateTime':        'UTC:yyyy-mm-dd\'T\'HH:MM:ss\'Z\'',
+	    'expiresHeaderFormat':   'ddd, dd mmm yyyy HH:MM:ss Z'
+	  };
+
+	  // Internationalization strings
+	  dateFormat.i18n = {
+	    dayNames: [
+	      'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat',
+	      'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'
+	    ],
+	    monthNames: [
+	      'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec',
+	      'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'
+	    ]
+	  };
+
+	function pad(val, len) {
+	  val = String(val);
+	  len = len || 2;
+	  while (val.length < len) {
+	    val = '0' + val;
+	  }
+	  return val;
+	}
+
+	/**
+	 * Get the ISO 8601 week number
+	 * Based on comments from
+	 * http://techblog.procurios.nl/k/n618/news/view/33796/14863/Calculate-ISO-8601-week-and-year-in-javascript.html
+	 *
+	 * @param  {Object} `date`
+	 * @return {Number}
+	 */
+	function getWeek(date) {
+	  // Remove time components of date
+	  var targetThursday = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+
+	  // Change date to Thursday same week
+	  targetThursday.setDate(targetThursday.getDate() - ((targetThursday.getDay() + 6) % 7) + 3);
+
+	  // Take January 4th as it is always in week 1 (see ISO 8601)
+	  var firstThursday = new Date(targetThursday.getFullYear(), 0, 4);
+
+	  // Change date to Thursday same week
+	  firstThursday.setDate(firstThursday.getDate() - ((firstThursday.getDay() + 6) % 7) + 3);
+
+	  // Check if daylight-saving-time-switch occured and correct for it
+	  var ds = targetThursday.getTimezoneOffset() - firstThursday.getTimezoneOffset();
+	  targetThursday.setHours(targetThursday.getHours() - ds);
+
+	  // Number of weeks between target Thursday and first Thursday
+	  var weekDiff = (targetThursday - firstThursday) / (86400000*7);
+	  return 1 + Math.floor(weekDiff);
+	}
+
+	/**
+	 * Get ISO-8601 numeric representation of the day of the week
+	 * 1 (for Monday) through 7 (for Sunday)
+	 * 
+	 * @param  {Object} `date`
+	 * @return {Number}
+	 */
+	function getDayOfWeek(date) {
+	  var dow = date.getDay();
+	  if(dow === 0) {
+	    dow = 7;
+	  }
+	  return dow;
+	}
+
+	/**
+	 * kind-of shortcut
+	 * @param  {*} val
+	 * @return {String}
+	 */
+	function kindOf(val) {
+	  if (val === null) {
+	    return 'null';
+	  }
+
+	  if (val === undefined) {
+	    return 'undefined';
+	  }
+
+	  if (typeof val !== 'object') {
+	    return typeof val;
+	  }
+
+	  if (Array.isArray(val)) {
+	    return 'array';
+	  }
+
+	  return {}.toString.call(val)
+	    .slice(8, -1).toLowerCase();
+	};
+
+
+
+	  if (true) {
+	    !(__WEBPACK_AMD_DEFINE_RESULT__ = function () {
+	      return dateFormat;
+	    }.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	  } else if (typeof exports === 'object') {
+	    module.exports = dateFormat;
+	  } else {
+	    global.dateFormat = dateFormat;
+	  }
+	})(this);
+
 
 /***/ },
 /* 27 */
+/***/ function(module, exports) {
+
+	module.exports = "\n  <div class=\"blog\">\n    <ul>\n      <li v-for=\"post in posts | orderBy 'dateCreated' -1\" track-by=\".key\">\n        <h3>{{ post.title }}</h3>\n        <span class=\"post-info\">{{ post.dateCreated | dated  }} {{ post.category }} <span class=\"italic\" v-if=\"post.dateUpdated\">Updated {{ post.dateUpdated | dated  }}</span></span><br>\n        <div v-if=\"user\">\n          <button v-if=\"user.email === 'jhar87@gmail.com'\" @click=\"toggleEditPost(post['.key'])\">Edit Post</button>\n          <button v-if=\"user.email === 'jhar87@gmail.com'\" @click=\"deletePost(post['.key'])\">Delete Post</button>\n        </div>\n        <div>{{{ post.content | marked }}}</div>\n      </li>\n    </ul>\n    <div class=\"user-bar\" v-if=\"user\">\n      <ul>\n        <li v-if=\"user.email\">{{user.email}}</li>\n        <li v-if=\"user.email === 'jhar87@gmail.com'\">\n          <button @click=\"toggleCreatePost\">Create Post</button>\n        </li>\n        <li>\n          <button v-on:click=\"signOut\">Sign Out</button>\n        </li>\n      </ul>\n      <form v-if=\"user.email === 'jhar87@gmail.com' && showCreatePost === true\" @submit.prevent=\"setPost\">\n        <input v-model=\"newPost.title\" placeholder=\"Post title\"><br>\n        <input v-model=\"newPost.category\" placeholder=\"Post category\"><br>\n        <textarea v-model=\"newPost.content\" placeholder=\"Post content\"></textarea><br>\n        <input v-model=\"newPost.key\" placeholder=\"Pretty url\"><br>\n        <button>Add Post</button>\n      </form>\n      <form v-if=\"user.email === 'jhar87@gmail.com' && showEditPost === true\" @submit.prevent=\"setPost\">\n        <input v-model=\"newPost.title\"><br>\n        <input v-model=\"newPost.category\"><br>\n        <textarea v-model=\"newPost.content\"></textarea><br>\n        <input v-model=\"newPost.key\"><br>\n        <button>Submit Edit</button>\n      </form>\n    </div>\n    <div v-else>\n      <button @click=\"signIn\">Sign In</button>\n    </div>\n  </div>\n";
+
+/***/ },
+/* 28 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*!

@@ -1,7 +1,4 @@
 <style lang="sass?indentedSyntax">
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700)
-@import url(https://fonts.googleapis.com/css?family=Merriweather);
-
 .my-resume
   font-family: 'Merriweather', serif
   margin: auto
@@ -16,9 +13,8 @@
     color: #676767
     font-size: 14px
 
-  h3
+  h4
     color: #4874d4
-    font-size: 16px
 
   .bold
     font-weight: bold
@@ -45,7 +41,6 @@
     box-sizing: border-box
     display: inline-block
     float: right
-    padding: 0 20px
     width: 100%
 
   @media only screen and (min-width: 768px)
@@ -59,7 +54,7 @@
   <div class="my-resume">
     <div class="header">
       <div class="col-1">
-       <h2 class="open-sans">Web Application Developer</h2>
+       <h3 class="open-sans">Artist and Software Developer</h3>
       </div>
       <div class="col-2 open-sans">
         <span class="bold">(206) 377-9027</span><br>
@@ -68,7 +63,7 @@
       </div>
     </div>
     <div class="col-1">
-      <h3 class="open-sans">Web Experience</h3>
+      <h4 class="open-sans">Web Experience</h4>
       <span class="bold">Golden Funnel Marketing</span>, Remote - <span class="italic">Web Engineer</span><br>
       <span class="dates open-sans">FEBRUARY 2016 - JULY 2016</span><br>
       <p>Full stack developer for a wide variety of digital marketing projects. Rapid development of sites and services to the architecture and specifications of a non-technical executive. Engineering custom solutions to integration problems between WordPress, WP plugins, and external services. Third party JavaScript development. API design, development, and testing.</p>
@@ -81,7 +76,7 @@
       <span class="bold">UC Santa Barbara</span>, Santa Barbara, CA — <span class="italic">Web Developer</span><br>
       <span class="dates open-sans">JULY 2014 - SEPTEMBER 2014</span><br>
       <p>WordPress theme development and site mergers for a UC wide arts research institute.</p>
-      <h3 class="open-sans">Education</h3>
+      <h4 class="open-sans">Education</h4>
       <span class="bold">Udacity</span>, Remote — <span class="italic">Front End Development Nanodegree</span>
       <p>HTML5, Git/Github, AJAX, CSS/Bootstrap, jQuery, Object-oriented design/development, Design Patterns, Test Driven Development, Performance Optimization, Application Development/Deployment</p>
       <span class="bold">UC Santa Barbara</span>, Santa Barbara, CA — <span class="italic">BA Art, High Honors</span>
@@ -90,11 +85,11 @@
       <p>Logic, Java, C++, Unix</p>
     </div>
     <div class="col-2">
-      <h3 class="open-sans">Primary Skills</h3>
+      <h4 class="open-sans">Primary Skills</h4>
       <p>JavaScript, CSS, HTML, PHP, MySQL and MongoDB.</p>
       <p>Experience using a wide variety of libraries, frameworks, platforms, and tools related to the above core technologies (Node/NPM, React, Bootstrap, Laravel, AWS, etc). Experience with other languages such as Python, C, C++, and Java but not in a professional context.</p>
       <p>Experience balancing client requests with architectural concerns, design patterns, and best practices - learning from apps that don’t scale or fail to be maintainable.</p>
-      <h3 class="open-sans">Awards</h3>
+      <h4 class="open-sans">Awards</h4>
       <span class="bold">Promising Artist Achievement Award</span><br>
       UCSB Department of Art
       <p>Most outstanding graduating artist</p>

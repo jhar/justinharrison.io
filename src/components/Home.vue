@@ -1,7 +1,4 @@
 <style lang="sass?indentedSyntax">
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Merriweather);
-
 .about-me
   font-family: 'Merriweather', serif
   margin: auto

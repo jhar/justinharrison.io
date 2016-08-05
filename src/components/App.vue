@@ -2,40 +2,53 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 .top-bar
-  background-color: rgb(15, 15, 15)
-  color: rgb(241, 241, 241)
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: rgb(25, 25, 25)
+  color: rgb(230, 230, 230)
   font-family: 'Open Sans', sans-serif
   height: 48px
-  
-  .my-name
-    font-size: 24px
-    padding: 12px 24px
-    text-transform: uppercase
+  margin-bottom: 36px
+  padding: 12px 0
 
-  ul
-    display: inline
-    float: right
-    list-style-type: none
+  .nav-container
+    margin: auto
+    max-width: 960px
+    width: 86%
 
-    li
-      float: left
-      margin-right: 20px
+    ul
+      display: inline
+      list-style-type: none
+
+      .float-left
+        float: left
+
+      .float-right
+        float: right
+
+      li
+        margin-right: 20px
       
-      a, a:hover, a:visited, a:link, a:active
-        text-decoration: none
-        color: rgb(241, 241, 241)
+        a, a:hover, a:visited, a:link, a:active
+          text-decoration: none
+          color: rgb(230, 230, 230)
+
 </style>
 
 <template>
-  <div class="top-bar">
-    <span class="my-name">Justin Harrison</span>
-    <ul>
-      <li><a v-link="'home'">Home</a></li>
-      <li><a v-link="'blog'">Blog</a></li>
-      <li><a v-link="'resume'">Resume</a></li>
-    </ul>
-  </div>
   <div>
-    <router-view></router-view>
+    <div class="top-bar">
+      <div class="nav-container">
+        <ul>
+          <li class="float-left"><a v-link="'home'">Justin Harrison</a></li>
+          <li class="float-right"><a v-link="'resume'">CV</a></li>
+          <li class="float-right"><a v-link="'blog'">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <router-view></router-view>
+    </div>
   </div>
 </template>

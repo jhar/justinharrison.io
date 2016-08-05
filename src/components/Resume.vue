@@ -5,8 +5,8 @@
 .my-resume
   font-family: 'Merriweather', serif
   margin: auto
-  max-width: 1366px
-  width: 100%
+  max-width: 960px
+  width: 86%
 
   .open-sans
     font-family: 'Open Sans', sans-serif
@@ -29,7 +29,7 @@
     box-sizing: border-box
     display: inline-block
     float: left
-    padding: 0 20px
+    padding-right: 20px
     width: 100%
 
     .italic

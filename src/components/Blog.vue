@@ -1,3 +1,31 @@
+<style lang="sass?indentedSyntax">
+.blog
+  margin: auto
+  max-width: 960px
+  width: 86%
+
+  h3
+    font-family: 'Open Sans', sans-serif
+    text-transform: capitalize
+
+  p
+    font-family: 'Merriweather', serif
+    color: #676767
+    font-size: 14px
+
+  ul
+    list-style-type: none
+    padding: 0
+
+  .user-bar
+    ul
+      list-style-type: none
+      padding: 0
+      
+      li
+        display: inline
+</style>
+
 <template>
   <div class="blog">
     <ul>
@@ -11,7 +39,7 @@
         <div>{{{ post.content | marked }}}</div>
       </li>
     </ul>
-    <div v-if="user">
+    <div class="user-bar" v-if="user">
       <ul>
         <li v-if="user.email">{{user.email}}</li>
         <li v-if="user.email === 'jhar87@gmail.com'">

@@ -2,8 +2,9 @@ import Vue from 'vue'
 import VueFire from 'vuefire'
 import App from './components/App.vue'
 import Home from './components/Home.vue'
-import Resume from './components/Resume.vue'
-import Blog from './components/Blog.vue'
+import CV from './components/CV.vue'
+import List from './components/List.vue'
+import Single from './components/Single.vue'
 import VueRouter from 'vue-router'
 
 Vue.use(VueFire)
@@ -15,9 +16,22 @@ var router = new VueRouter({
 })
 
 router.map({
-  '/home': { component: Home },
-  '/resume': { component: Resume },
-  '/blog': { component: Blog }
+  '/home': {
+    name: 'Home View', 
+    component: Home 
+  },
+  '/cv': {
+    name: 'CV View', 
+    component: CV 
+  },
+  '/blog': {
+    name: 'Blog List View', 
+    component: List 
+  },
+  '/blog/:postName': { 
+    name: 'Blog Single Post',
+    component: Single 
+  }
 })
 
 router.redirect({

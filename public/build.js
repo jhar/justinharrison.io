@@ -69,15 +69,19 @@
 
 	var _Home2 = _interopRequireDefault(_Home);
 
-	var _Resume = __webpack_require__(15);
+	var _CV = __webpack_require__(15);
 
-	var _Resume2 = _interopRequireDefault(_Resume);
+	var _CV2 = _interopRequireDefault(_CV);
 
-	var _Blog = __webpack_require__(19);
+	var _List = __webpack_require__(19);
 
-	var _Blog2 = _interopRequireDefault(_Blog);
+	var _List2 = _interopRequireDefault(_List);
 
-	var _vueRouter = __webpack_require__(28);
+	var _Single = __webpack_require__(27);
+
+	var _Single2 = _interopRequireDefault(_Single);
+
+	var _vueRouter = __webpack_require__(34);
 
 	var _vueRouter2 = _interopRequireDefault(_vueRouter);
 
@@ -92,9 +96,22 @@
 	});
 
 	router.map({
-	  '/home': { component: _Home2.default },
-	  '/resume': { component: _Resume2.default },
-	  '/blog': { component: _Blog2.default }
+	  '/home': {
+	    name: 'Home View',
+	    component: _Home2.default
+	  },
+	  '/cv': {
+	    name: 'CV View',
+	    component: _CV2.default
+	  },
+	  '/blog': {
+	    name: 'Blog List View',
+	    component: _List2.default
+	  },
+	  '/blog/:postName': {
+	    name: 'Blog Single Post',
+	    component: _Single2.default
+	  }
 	});
 
 	router.redirect({
@@ -11015,7 +11032,7 @@
 /* 10 */
 /***/ function(module, exports) {
 
-	module.exports = "\n  <div>\n    <div class=\"top-bar\">\n      <div class=\"nav-container\">\n        <ul>\n          <li class=\"float-left\"><a v-link=\"'home'\">Justin Harrison</a></li>\n          <li class=\"float-right\"><a v-link=\"'resume'\">CV</a></li>\n          <li class=\"float-right\"><a v-link=\"'blog'\">Blog</a></li>\n        </ul>\n      </div>\n    </div>\n    <div>\n      <router-view></router-view>\n    </div>\n  </div>\n";
+	module.exports = "\n  <div>\n    <div class=\"top-bar\">\n      <div class=\"nav-container\">\n        <ul>\n          <li class=\"float-left\"><a v-link=\"{ name: 'Home View' }\">Justin Harrison</a></li>\n          <li class=\"float-right\"><a v-link=\"{ name: 'CV View' }\">CV</a></li>\n          <li class=\"float-right\"><a v-link=\"{ name: 'Blog List View' }\">Blog</a></li>\n        </ul>\n      </div>\n    </div>\n    <div>\n      <router-view></router-view>\n    </div>\n  </div>\n";
 
 /***/ },
 /* 11 */
@@ -11099,7 +11116,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), true)
 	  if (!hotAPI.compatible) return
-	  var id = "/Users/Justin/Development/justinharrison.io/src/components/Resume.vue"
+	  var id = "/Users/Justin/Development/justinharrison.io/src/components/CV.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -11123,8 +11140,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-13403013&file=Resume.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Resume.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-13403013&file=Resume.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Resume.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-3cd60839&file=CV.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./CV.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-3cd60839&file=CV.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./CV.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -11160,7 +11177,7 @@
 	var __vue_script__, __vue_template__
 	__webpack_require__(20)
 	__vue_script__ = __webpack_require__(22)
-	__vue_template__ = __webpack_require__(27)
+	__vue_template__ = __webpack_require__(26)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
@@ -11168,7 +11185,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), true)
 	  if (!hotAPI.compatible) return
-	  var id = "/Users/Justin/Development/justinharrison.io/src/components/Blog.vue"
+	  var id = "/Users/Justin/Development/justinharrison.io/src/components/List.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -11192,8 +11209,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-1d571ef0&file=Blog.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Blog.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-1d571ef0&file=Blog.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Blog.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-68f81384&file=List.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./List.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-68f81384&file=List.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./List.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -11211,7 +11228,7 @@
 
 
 	// module
-	exports.push([module.id, ".blog {\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .blog .post-info {\n    color: #676767;\n    font-family: 'Open Sans', sans-serif;\n    font-size: 10px; }\n  .blog .italic {\n    font-style: italic; }\n  .blog h3 {\n    font-family: 'Open Sans', sans-serif;\n    text-transform: capitalize; }\n  .blog p {\n    font-family: 'Merriweather', serif;\n    color: #676767;\n    font-size: 14px; }\n  .blog ul {\n    list-style-type: none;\n    padding: 0; }\n  .blog .discreet {\n    border-width: 0;\n    bottom: 0;\n    height: 32px;\n    position: absolute;\n    right: 0;\n    width: 32px; }\n  .blog .user-bar ul {\n    list-style-type: none;\n    padding: 0; }\n    .blog .user-bar ul li {\n      display: inline; }\n", ""]);
+	exports.push([module.id, ".blog-list-view {\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .blog-list-view .italic {\n    font-style: italic; }\n  .blog-list-view h3 {\n    font-family: 'Open Sans', sans-serif;\n    text-transform: capitalize; }\n  .blog-list-view ul {\n    list-style-type: none;\n    padding: 0; }\n", ""]);
 
 	// exports
 
@@ -11228,17 +11245,60 @@
 
 	var _firebase = __webpack_require__(23);
 
+	var postsRef = _firebase.db.ref('blog/'); // <style lang="sass?indentedSyntax">
+	// .blog-list-view
+	//   margin: auto
+	//   max-width: 960px
+	//   width: 86%
+	//
+	//   .italic
+	//     font-style: italic
+	//
+	//   h3
+	//     font-family: 'Open Sans', sans-serif
+	//     text-transform: capitalize
+	//
+	//   ul
+	//     list-style-type: none
+	//     padding: 0
+	// </style>
+	//
+	// <template>
+	//   <div class="blog-list-view">
+	//     <ul>
+	//       <li v-for="post in posts | orderBy 'dateCreated' -1" track-by=".key">
+	//         <a v-link="{ name: 'Blog Single Post', params: { postName: post['.key'] } }">
+	//           <h3>{{ post.title }}</h3>
+	//         </a>
+	//       </li>
+	//     </ul>
+	//   </div>
+	// </template>
+	//
+	// <script>
+	exports.default = {
+	  firebase: {
+	    posts: postsRef
+	  }
+	};
+	// </script>
+	//
+	//
+
+/***/ },
+/* 23 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.storage = exports.db = undefined;
+
+	var _firebase = __webpack_require__(24);
+
 	var firebase = _interopRequireWildcard(_firebase);
-
-	var _marked = __webpack_require__(25);
-
-	var _marked2 = _interopRequireDefault(_marked);
-
-	var _dateformat = __webpack_require__(26);
-
-	var _dateformat2 = _interopRequireDefault(_dateformat);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -11248,188 +11308,13 @@
 	  authDomain: "justin-harrison.firebaseapp.com",
 	  databaseURL: "https://justin-harrison.firebaseio.com",
 	  storageBucket: "justin-harrison.appspot.com"
-	}; // <style lang="sass?indentedSyntax">
-	// .blog
-	//   margin: auto
-	//   max-width: 960px
-	//   width: 86%
-	//
-	//   .post-info
-	//     color: #676767
-	//     font-family: 'Open Sans', sans-serif
-	//     font-size: 10px
-	//
-	//   .italic
-	//     font-style: italic
-	//
-	//   h3
-	//     font-family: 'Open Sans', sans-serif
-	//     text-transform: capitalize
-	//
-	//   p
-	//     font-family: 'Merriweather', serif
-	//     color: #676767
-	//     font-size: 14px
-	//
-	//   ul
-	//     list-style-type: none
-	//     padding: 0
-	//
-	//   .discreet
-	//     border-width: 0
-	//     bottom: 0
-	//     height: 32px
-	//     position: absolute
-	//     right: 0
-	//     width: 32px
-	//
-	//   .user-bar
-	//     ul
-	//       list-style-type: none
-	//       padding: 0
-	//
-	//       li
-	//         display: inline
-	// </style>
-	//
-	// <template>
-	//   <div class="blog">
-	//     <ul>
-	//       <li v-for="post in posts | orderBy 'dateCreated' -1" track-by=".key">
-	//         <h3>{{ post.title }}</h3>
-	//         <span class="post-info">{{ post.dateCreated | dated  }} {{ post.category }} <span class="italic" v-if="post.dateUpdated">Updated {{ post.dateUpdated | dated  }}</span></span><br>
-	//         <div v-if="user">
-	//           <button v-if="user.email === 'jhar87@gmail.com'" @click="toggleEditPost(post['.key'])">Edit Post</button>
-	//           <button v-if="user.email === 'jhar87@gmail.com'" @click="deletePost(post['.key'])">Delete Post</button>
-	//         </div>
-	//         <div>{{{ post.content | marked }}}</div>
-	//       </li>
-	//     </ul>
-	//     <div class="user-bar" v-if="user">
-	//       <ul>
-	//         <li v-if="user.email">{{user.email}}</li>
-	//         <li v-if="user.email === 'jhar87@gmail.com'">
-	//           <button @click="toggleCreatePost">Create Post</button>
-	//         </li>
-	//         <li>
-	//           <button v-on:click="signOut">Sign Out</button>
-	//         </li>
-	//       </ul>
-	//       <form v-if="user.email === 'jhar87@gmail.com' && showCreatePost === true" @submit.prevent="setPost">
-	//         <input v-model="newPost.title" placeholder="Post title"><br>
-	//         <input v-model="newPost.category" placeholder="Post category"><br>
-	//         <textarea v-model="newPost.content" placeholder="Post content"></textarea><br>
-	//         <input v-model="newPost.key" placeholder="Pretty url"><br>
-	//         <button>Add Post</button>
-	//       </form>
-	//       <form v-if="user.email === 'jhar87@gmail.com' && showEditPost === true" @submit.prevent="setPost">
-	//         <input v-model="newPost.title"><br>
-	//         <input v-model="newPost.category"><br>
-	//         <textarea v-model="newPost.content"></textarea><br>
-	//         <input v-model="newPost.key"><br>
-	//         <button>Submit Edit</button>
-	//       </form>
-	//     </div>
-	//     <div v-else>
-	//       <input class="discreet" @keyup.esc="signIn">
-	//     </div>
-	//   </div>
-	// </template>
-	//
-	// <script>
-
-	var firebaseApp = firebase.initializeApp(config);
-	var db = firebaseApp.database();
-	var storage = firebaseApp.storage();
-	var postsRef = db.ref('blog/');
-
-	exports.default = {
-	  data: function data() {
-	    return {
-	      user: null,
-	      newPost: {},
-	      provider: new firebase.auth.GoogleAuthProvider(),
-	      showCreatePost: false,
-	      showEditPost: false
-	    };
-	  },
-	  created: function created() {
-	    // Get current user
-	    var that = this;
-	    firebase.auth().onAuthStateChanged(function (current) {
-	      if (current) {
-	        that.user = current;
-	      } else {
-	        that.user = null;
-	      }
-	    });
-	  },
-
-	  filters: {
-	    marked: _marked2.default,
-	    dated: function dated(digits) {
-	      var newDate = new Date(digits);
-	      return (0, _dateformat2.default)(newDate, "mmmm dS, yyyy");
-	    }
-	  },
-	  firebase: {
-	    posts: postsRef
-	  },
-	  methods: {
-	    setPost: function setPost() {
-	      var currentDate = Date.now();
-	      var setData = { title: this.newPost.title, category: this.newPost.category, content: this.newPost.content };
-	      // Check if the post has already been created
-	      if (this.newPost.dateCreated) {
-	        setData.dateCreated = this.newPost.dateCreated;
-	        setData.dateUpdated = currentDate;
-	      } else {
-	        setData.dateCreated = currentDate;
-	      }
-	      db.ref('blog/' + this.newPost.key).set(setData);
-	      // Clear our state
-	      this.newPost = {};
-	      this.showCreatePost = false;
-	      this.showEditPost = false;
-	    },
-	    deletePost: function deletePost(key) {
-	      postsRef.child(key).remove();
-	    },
-	    signIn: function signIn() {
-	      firebase.auth().signInWithRedirect(this.provider);
-	    },
-	    signOut: function signOut() {
-	      firebase.auth().signOut().then(function () {
-	        // Sign-out successful
-	        console.log("Sign out was successful");
-	      }, function (error) {
-	        // An error happened
-	        console.log("A sign out error happened");
-	      });
-	    },
-	    toggleCreatePost: function toggleCreatePost() {
-	      this.showCreatePost = !this.showCreatePost;
-	    },
-	    toggleEditPost: function toggleEditPost(key) {
-	      // Load post to edit into form
-	      var that = this;
-	      postsRef.child(key).once('value').then(function (snap) {
-	        that.newPost.title = snap.val().title;
-	        that.newPost.category = snap.val().category;
-	        that.newPost.content = snap.val().content;
-	        that.newPost.key = snap.key;
-	        that.newPost.dateCreated = snap.val().dateCreated;
-	      });
-	      // Show form
-	      this.showEditPost = !this.showEditPost;
-	    }
-	  }
 	};
-	// </script>
-	//
+	var firebaseApp = firebase.initializeApp(config);
+	var db = exports.db = firebaseApp.database();
+	var storage = exports.storage = firebaseApp.storage();
 
 /***/ },
-/* 23 */
+/* 24 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -11439,12 +11324,12 @@
 	 *
 	 *   firebase = require('firebase');
 	 */
-	__webpack_require__(24);
+	__webpack_require__(25);
 	module.exports = firebase;
 
 
 /***/ },
-/* 24 */
+/* 25 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/*! @license Firebase v3.2.1
@@ -12018,7 +11903,293 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 25 */
+/* 26 */
+/***/ function(module, exports) {
+
+	module.exports = "\n  <div class=\"blog-list-view\">\n    <ul>\n      <li v-for=\"post in posts | orderBy 'dateCreated' -1\" track-by=\".key\">\n        <a v-link=\"{ name: 'Blog Single Post', params: { postName: post['.key'] } }\">\n          <h3>{{ post.title }}</h3>\n        </a>\n      </li>\n    </ul>\n  </div>\n";
+
+/***/ },
+/* 27 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(28)
+	__vue_script__ = __webpack_require__(30)
+	__vue_template__ = __webpack_require__(33)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/Justin/Development/justinharrison.io/src/components/Single.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 28 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(29);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(9)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-6ae966ae&file=Single.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Single.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-6ae966ae&file=Single.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Single.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 29 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(8)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".blog-single-view {\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .blog-single-view .post-info {\n    color: #676767;\n    font-family: 'Open Sans', sans-serif;\n    font-size: 10px; }\n  .blog-single-view .italic {\n    font-style: italic; }\n  .blog-single-view h3 {\n    font-family: 'Open Sans', sans-serif;\n    text-transform: capitalize; }\n  .blog-single-view p {\n    font-family: 'Merriweather', serif;\n    color: #676767;\n    font-size: 14px; }\n  .blog-single-view ul {\n    list-style-type: none;\n    padding: 0; }\n  .blog-single-view .discreet {\n    border-width: 0;\n    bottom: 0;\n    height: 32px;\n    position: absolute;\n    right: 0;\n    width: 32px; }\n  .blog-single-view .user-bar ul {\n    list-style-type: none;\n    padding: 0; }\n    .blog-single-view .user-bar ul li {\n      display: inline; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 30 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _marked = __webpack_require__(31);
+
+	var _marked2 = _interopRequireDefault(_marked);
+
+	var _dateformat = __webpack_require__(32);
+
+	var _dateformat2 = _interopRequireDefault(_dateformat);
+
+	var _firebase = __webpack_require__(24);
+
+	var firebase = _interopRequireWildcard(_firebase);
+
+	var _firebase2 = __webpack_require__(23);
+
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	// <style lang="sass?indentedSyntax">
+	// .blog-single-view
+	//   margin: auto
+	//   max-width: 960px
+	//   width: 86%
+	//
+	//   .post-info
+	//     color: #676767
+	//     font-family: 'Open Sans', sans-serif
+	//     font-size: 10px
+	//
+	//   .italic
+	//     font-style: italic
+	//
+	//   h3
+	//     font-family: 'Open Sans', sans-serif
+	//     text-transform: capitalize
+	//
+	//   p
+	//     font-family: 'Merriweather', serif
+	//     color: #676767
+	//     font-size: 14px
+	//
+	//   ul
+	//     list-style-type: none
+	//     padding: 0
+	//
+	//   .discreet
+	//     border-width: 0
+	//     bottom: 0
+	//     height: 32px
+	//     position: absolute
+	//     right: 0
+	//     width: 32px
+	//
+	//   .user-bar
+	//     ul
+	//       list-style-type: none
+	//       padding: 0
+	//
+	//       li
+	//         display: inline
+	// </style>
+	//
+	// <template>
+	//   <div class="blog-single-view">
+	//     <h3>{{ post.title }}</h3>
+	//     <span class="post-info">{{ post.dateCreated | dated  }} {{ post.category }} <span class="italic" v-if="post.dateUpdated">Updated {{ post.dateUpdated | dated  }}</span></span><br>
+	//     <div v-if="user">
+	//       <button v-if="user.email === 'jhar87@gmail.com'" @click="toggleEditPost(post['.key'])">Edit Post</button>
+	//       <button v-if="user.email === 'jhar87@gmail.com'" @click="deletePost(post['.key'])">Delete Post</button>
+	//     </div>
+	//     <div>
+	//       {{{ post.content | marked }}}
+	//     </div>
+	//     <div class="user-bar" v-if="user">
+	//       <ul>
+	//         <li v-if="user.email">{{user.email}}</li>
+	//         <li v-if="user.email === 'jhar87@gmail.com'">
+	//           <button @click="toggleCreatePost">Create Post</button>
+	//         </li>
+	//         <li>
+	//           <button v-on:click="signOut">Sign Out</button>
+	//         </li>
+	//       </ul>
+	//       <form v-if="user.email === 'jhar87@gmail.com' && showCreatePost === true" @submit.prevent="setPost">
+	//         <input v-model="newPost.title" placeholder="Post title"><br>
+	//         <input v-model="newPost.category" placeholder="Post category"><br>
+	//         <textarea v-model="newPost.content" placeholder="Post content"></textarea><br>
+	//         <input v-model="newPost.key" placeholder="Pretty url"><br>
+	//         <button>Add Post</button>
+	//       </form>
+	//       <form v-if="user.email === 'jhar87@gmail.com' && showEditPost === true" @submit.prevent="setPost">
+	//         <input v-model="newPost.title"><br>
+	//         <input v-model="newPost.category"><br>
+	//         <textarea v-model="newPost.content"></textarea><br>
+	//         <input v-model="newPost.key"><br>
+	//         <button>Submit Edit</button>
+	//       </form>
+	//     </div>
+	//     <div v-else>
+	//       <input class="discreet" @keyup.esc="signIn">
+	//     </div>
+	//   </div>
+	// </template>
+	//
+	// <script>
+	exports.default = {
+	  route: {
+	    data: function data(transition) {
+	      transition.next({
+	        postName: transition.to.params.postName
+	      });
+	    }
+	  },
+	  data: function data() {
+	    return {
+	      user: null,
+	      newPost: {},
+	      post: {
+	        category: '',
+	        content: '',
+	        dateCreated: 0,
+	        dateUpdated: 0,
+	        title: ''
+	      },
+	      postName: '',
+	      provider: new firebase.auth.GoogleAuthProvider(),
+	      showCreatePost: false,
+	      showEditPost: false
+	    };
+	  },
+	  created: function created() {
+	    // Get current user
+	    var that = this;
+	    firebase.auth().onAuthStateChanged(function (current) {
+	      if (current) {
+	        that.user = current;
+	      } else {
+	        that.user = null;
+	      }
+	    });
+	  },
+
+	  filters: {
+	    marked: _marked2.default,
+	    dated: function dated(digits) {
+	      console.log(digits);
+	      var newDate = new Date(digits);
+	      return (0, _dateformat2.default)(newDate, "mmmm dS, yyyy");
+	    }
+	  },
+	  methods: {
+	    setPost: function setPost() {
+	      var currentDate = Date.now();
+	      var setData = { title: this.newPost.title, category: this.newPost.category, content: this.newPost.content };
+	      // Check if the post has already been created
+	      if (this.newPost.dateCreated) {
+	        setData.dateCreated = this.newPost.dateCreated;
+	        setData.dateUpdated = currentDate;
+	      } else {
+	        setData.dateCreated = currentDate;
+	      }
+	      _firebase2.db.ref('blog/' + this.newPost.key).set(setData);
+	      // Clear our state
+	      this.newPost = {};
+	      this.showCreatePost = false;
+	      this.showEditPost = false;
+	    },
+	    deletePost: function deletePost(key) {
+	      postsRef.child(key).remove();
+	    },
+	    signIn: function signIn() {
+	      firebase.auth().signInWithRedirect(this.provider);
+	    },
+	    signOut: function signOut() {
+	      firebase.auth().signOut().then(function () {
+	        // Sign-out successful
+	        console.log("Sign out was successful");
+	      }, function (error) {
+	        // An error happened
+	        console.log("A sign out error happened");
+	      });
+	    },
+	    toggleCreatePost: function toggleCreatePost() {
+	      this.showCreatePost = !this.showCreatePost;
+	    },
+	    toggleEditPost: function toggleEditPost(key) {
+	      // Load post to edit into form
+	      var that = this;
+	      postsRef.child(key).once('value').then(function (snap) {
+	        that.newPost.title = snap.val().title;
+	        that.newPost.category = snap.val().category;
+	        that.newPost.content = snap.val().content;
+	        that.newPost.key = snap.key;
+	        that.newPost.dateCreated = snap.val().dateCreated;
+	      });
+	      // Show form
+	      this.showEditPost = !this.showEditPost;
+	    }
+	  },
+	  ready: function ready() {
+	    this.$bindAsObject('post', _firebase2.db.ref('/blog/' + this.postName));
+	  }
+	};
+	// </script>
+	//
+	//
+
+/***/ },
+/* 31 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**
@@ -13311,7 +13482,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 26 */
+/* 32 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/*
@@ -13543,13 +13714,13 @@
 
 
 /***/ },
-/* 27 */
+/* 33 */
 /***/ function(module, exports) {
 
-	module.exports = "\n  <div class=\"blog\">\n    <ul>\n      <li v-for=\"post in posts | orderBy 'dateCreated' -1\" track-by=\".key\">\n        <h3>{{ post.title }}</h3>\n        <span class=\"post-info\">{{ post.dateCreated | dated  }} {{ post.category }} <span class=\"italic\" v-if=\"post.dateUpdated\">Updated {{ post.dateUpdated | dated  }}</span></span><br>\n        <div v-if=\"user\">\n          <button v-if=\"user.email === 'jhar87@gmail.com'\" @click=\"toggleEditPost(post['.key'])\">Edit Post</button>\n          <button v-if=\"user.email === 'jhar87@gmail.com'\" @click=\"deletePost(post['.key'])\">Delete Post</button>\n        </div>\n        <div>{{{ post.content | marked }}}</div>\n      </li>\n    </ul>\n    <div class=\"user-bar\" v-if=\"user\">\n      <ul>\n        <li v-if=\"user.email\">{{user.email}}</li>\n        <li v-if=\"user.email === 'jhar87@gmail.com'\">\n          <button @click=\"toggleCreatePost\">Create Post</button>\n        </li>\n        <li>\n          <button v-on:click=\"signOut\">Sign Out</button>\n        </li>\n      </ul>\n      <form v-if=\"user.email === 'jhar87@gmail.com' && showCreatePost === true\" @submit.prevent=\"setPost\">\n        <input v-model=\"newPost.title\" placeholder=\"Post title\"><br>\n        <input v-model=\"newPost.category\" placeholder=\"Post category\"><br>\n        <textarea v-model=\"newPost.content\" placeholder=\"Post content\"></textarea><br>\n        <input v-model=\"newPost.key\" placeholder=\"Pretty url\"><br>\n        <button>Add Post</button>\n      </form>\n      <form v-if=\"user.email === 'jhar87@gmail.com' && showEditPost === true\" @submit.prevent=\"setPost\">\n        <input v-model=\"newPost.title\"><br>\n        <input v-model=\"newPost.category\"><br>\n        <textarea v-model=\"newPost.content\"></textarea><br>\n        <input v-model=\"newPost.key\"><br>\n        <button>Submit Edit</button>\n      </form>\n    </div>\n    <div v-else>\n      <input class=\"discreet\" @keyup.esc=\"signIn\">\n    </div>\n  </div>\n";
+	module.exports = "\n  <div class=\"blog-single-view\">\n    <h3>{{ post.title }}</h3>\n    <span class=\"post-info\">{{ post.dateCreated | dated  }} {{ post.category }} <span class=\"italic\" v-if=\"post.dateUpdated\">Updated {{ post.dateUpdated | dated  }}</span></span><br>\n    <div v-if=\"user\">\n      <button v-if=\"user.email === 'jhar87@gmail.com'\" @click=\"toggleEditPost(post['.key'])\">Edit Post</button>\n      <button v-if=\"user.email === 'jhar87@gmail.com'\" @click=\"deletePost(post['.key'])\">Delete Post</button>\n    </div>\n    <div>\n      {{{ post.content | marked }}}\n    </div>\n    <div class=\"user-bar\" v-if=\"user\">\n      <ul>\n        <li v-if=\"user.email\">{{user.email}}</li>\n        <li v-if=\"user.email === 'jhar87@gmail.com'\">\n          <button @click=\"toggleCreatePost\">Create Post</button>\n        </li>\n        <li>\n          <button v-on:click=\"signOut\">Sign Out</button>\n        </li>\n      </ul>\n      <form v-if=\"user.email === 'jhar87@gmail.com' && showCreatePost === true\" @submit.prevent=\"setPost\">\n        <input v-model=\"newPost.title\" placeholder=\"Post title\"><br>\n        <input v-model=\"newPost.category\" placeholder=\"Post category\"><br>\n        <textarea v-model=\"newPost.content\" placeholder=\"Post content\"></textarea><br>\n        <input v-model=\"newPost.key\" placeholder=\"Pretty url\"><br>\n        <button>Add Post</button>\n      </form>\n      <form v-if=\"user.email === 'jhar87@gmail.com' && showEditPost === true\" @submit.prevent=\"setPost\">\n        <input v-model=\"newPost.title\"><br>\n        <input v-model=\"newPost.category\"><br>\n        <textarea v-model=\"newPost.content\"></textarea><br>\n        <input v-model=\"newPost.key\"><br>\n        <button>Submit Edit</button>\n      </form>\n    </div>\n    <div v-else>\n      <input class=\"discreet\" @keyup.esc=\"signIn\">\n    </div>\n  </div>\n";
 
 /***/ },
-/* 28 */
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*!

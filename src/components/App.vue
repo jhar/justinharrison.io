@@ -46,9 +46,9 @@
     <div class="top-bar">
       <div class="nav-container">
         <ul>
-          <li class="float-left"><a v-link="'home'">Justin Harrison</a></li>
-          <li class="float-right"><a v-link="'resume'">CV</a></li>
-          <li class="float-right"><a v-link="'blog'">Blog</a></li>
+          <li class="float-left"><a v-link="{ name: 'Home View' }">Justin Harrison</a></li>
+          <li class="float-right"><a v-link="{ name: 'CV View' }">CV</a></li>
+          <li class="float-right"><a v-link="{ name: 'Blog List View' }">Blog</a></li>
         </ul>
       </div>
     </div>

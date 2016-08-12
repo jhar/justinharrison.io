@@ -29,11 +29,15 @@
         float: right
 
       li
+        height: 100%
         margin-right: 20px
       
         a, a:hover, a:visited, a:link, a:active
           text-decoration: none
           color: rgb(230, 230, 230)
+
+        a:hover
+          font-weight: bold
 
 </style>
 

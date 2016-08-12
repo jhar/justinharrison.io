@@ -10698,7 +10698,7 @@
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Merriweather);", ""]);
 
 	// module
-	exports.push([module.id, ".top-bar {\n  box-sizing: border-box;\n  background-color: #191919;\n  color: #e6e6e6;\n  font-family: 'Open Sans', sans-serif;\n  height: 48px;\n  margin-bottom: 36px;\n  padding: 12px 0; }\n  .top-bar .nav-container {\n    margin: auto;\n    max-width: 960px;\n    width: 86%; }\n    .top-bar .nav-container ul {\n      display: inline;\n      list-style-type: none; }\n      .top-bar .nav-container ul .float-left {\n        float: left; }\n      .top-bar .nav-container ul .float-right {\n        float: right; }\n      .top-bar .nav-container ul li {\n        margin-right: 20px; }\n        .top-bar .nav-container ul li a, .top-bar .nav-container ul li a:hover, .top-bar .nav-container ul li a:visited, .top-bar .nav-container ul li a:link, .top-bar .nav-container ul li a:active {\n          text-decoration: none;\n          color: #e6e6e6; }\n", ""]);
+	exports.push([module.id, ".top-bar {\n  box-sizing: border-box;\n  background-color: #191919;\n  color: #e6e6e6;\n  font-family: 'Open Sans', sans-serif;\n  height: 48px;\n  margin-bottom: 36px;\n  padding: 12px 0; }\n  .top-bar .nav-container {\n    margin: auto;\n    max-width: 960px;\n    width: 86%; }\n    .top-bar .nav-container ul {\n      display: inline;\n      list-style-type: none; }\n      .top-bar .nav-container ul .float-left {\n        float: left; }\n      .top-bar .nav-container ul .float-right {\n        float: right; }\n      .top-bar .nav-container ul li {\n        height: 100%;\n        margin-right: 20px; }\n        .top-bar .nav-container ul li a, .top-bar .nav-container ul li a:hover, .top-bar .nav-container ul li a:visited, .top-bar .nav-container ul li a:link, .top-bar .nav-container ul li a:active {\n          text-decoration: none;\n          color: #e6e6e6; }\n        .top-bar .nav-container ul li a:hover {\n          font-weight: bold; }\n", ""]);
 
 	// exports
 
@@ -11211,7 +11211,7 @@
 
 
 	// module
-	exports.push([module.id, ".blog {\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .blog .post-info {\n    color: #676767;\n    font-family: 'Open Sans', sans-serif;\n    font-size: 10px; }\n  .blog .italic {\n    font-style: italic; }\n  .blog h3 {\n    font-family: 'Open Sans', sans-serif;\n    text-transform: capitalize; }\n  .blog p {\n    font-family: 'Merriweather', serif;\n    color: #676767;\n    font-size: 14px; }\n  .blog ul {\n    list-style-type: none;\n    padding: 0; }\n  .blog .discreet {\n    border-width: 0;\n    bottom: 0;\n    height: 20px;\n    position: absolute;\n    right: 0;\n    width: 20px; }\n  .blog .user-bar ul {\n    list-style-type: none;\n    padding: 0; }\n    .blog .user-bar ul li {\n      display: inline; }\n", ""]);
+	exports.push([module.id, ".blog {\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .blog .post-info {\n    color: #676767;\n    font-family: 'Open Sans', sans-serif;\n    font-size: 10px; }\n  .blog .italic {\n    font-style: italic; }\n  .blog h3 {\n    font-family: 'Open Sans', sans-serif;\n    text-transform: capitalize; }\n  .blog p {\n    font-family: 'Merriweather', serif;\n    color: #676767;\n    font-size: 14px; }\n  .blog ul {\n    list-style-type: none;\n    padding: 0; }\n  .blog .discreet {\n    border-width: 0;\n    bottom: 0;\n    height: 32px;\n    position: absolute;\n    right: 0;\n    width: 32px; }\n  .blog .user-bar ul {\n    list-style-type: none;\n    padding: 0; }\n    .blog .user-bar ul li {\n      display: inline; }\n", ""]);
 
 	// exports
 
@@ -11278,10 +11278,10 @@
 	//   .discreet
 	//     border-width: 0
 	//     bottom: 0
-	//     height: 20px
+	//     height: 32px
 	//     position: absolute
 	//     right: 0
-	//     width: 20px
+	//     width: 32px
 	//
 	//   .user-bar
 	//     ul

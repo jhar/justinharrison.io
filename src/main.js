@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueFire from 'vuefire'
 import App from './components/App.vue'
+import Nav from './components/Nav.vue'
 import Home from './components/Home.vue'
 import CV from './components/CV.vue'
 import List from './components/List.vue'
@@ -9,6 +10,9 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueFire)
 Vue.use(VueRouter)
+
+// Register non-router components
+Vue.component('nav-view', Nav)
 
 // Vue Router setup
 var router = new VueRouter({

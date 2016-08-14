@@ -45,7 +45,7 @@
 <template>
   <div class="blog-single-view">
     <h3>{{ post.title }}</h3>
-    <span class="post-info">{{ post.dateCreated | dated  }} {{ post.category }} <span class="italic" v-if="post.dateUpdated">Updated {{ post.dateUpdated | dated  }}</span></span><br>
+    <span class="post-info" v-if="post.dateCreated">{{ post.dateCreated | dated  }} {{ post.category }} <span class="italic" v-if="post.dateUpdated">Updated {{ post.dateUpdated | dated  }}</span></span><br>
     <div v-if="user">
       <button v-if="user.email === 'jhar87@gmail.com'" @click="toggleEditPost(post['.key'])">Edit Post</button>
       <button v-if="user.email === 'jhar87@gmail.com'" @click="deletePost(post['.key'])">Delete Post</button>
@@ -101,12 +101,13 @@
     data() {
       return {
         user: null,
+        loaded: false,
         newPost: {},
         post: {
           category: '',
           content: '',
-          dateCreated: 0,
-          dateUpdated: 0,
+          dateCreated: null,
+          dateUpdated: null,
           title: ''
         },
         postName: '',
@@ -184,6 +185,7 @@
     },
     ready: function() {
       this.$bindAsObject('post', db.ref('/blog/' + this.postName))
+      this.loaded = true
     }
   }
 </script>

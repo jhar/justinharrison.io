@@ -7,5 +7,6 @@
   <div>
     <nav-view></nav-view>
     <router-view></router-view>
+    <footer-view></footer-view>
   </div>
 </template>

@@ -14,13 +14,17 @@
   ul
     list-style-type: none
     padding: 0
+
+    .blog-list-link
+      color: #4874d4
+      text-decoration: none
 </style>
 
 <template>
   <div class="blog-list-view">
     <ul>
       <li v-for="post in posts | orderBy 'dateCreated' -1" track-by=".key">
-        <a v-link="{ name: 'Blog Single Post', params: { postName: post['.key'] } }">
+        <a class="blog-list-link" v-link="{ name: 'Blog Single Post', params: { postName: post['.key'] } }">
           <h3>{{ post.title }}</h3>
         </a>
       </li>

@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueFire from 'vuefire'
 import App from './components/App.vue'
 import Nav from './components/Nav.vue'
+import Footer from './components/Footer.vue'
 import Home from './components/Home.vue'
 import CV from './components/CV.vue'
 import List from './components/List.vue'
@@ -13,6 +14,7 @@ Vue.use(VueRouter)
 
 // Register non-router components
 Vue.component('nav-view', Nav)
+Vue.component('footer-view', Footer)
 
 // Vue Router setup
 var router = new VueRouter({

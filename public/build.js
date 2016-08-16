@@ -12118,7 +12118,7 @@
 
 
 	// module
-	exports.push([module.id, ".blog-single-view {\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .blog-single-view .post-info {\n    color: #676767;\n    font-family: 'Open Sans', sans-serif;\n    font-size: 10px; }\n  .blog-single-view .italic {\n    font-style: italic; }\n  .blog-single-view h3 {\n    font-family: 'Open Sans', sans-serif;\n    text-transform: capitalize; }\n  .blog-single-view p {\n    font-family: 'Merriweather', serif;\n    color: #676767;\n    font-size: 14px; }\n  .blog-single-view ul {\n    list-style-type: none;\n    padding: 0; }\n  .blog-single-view .discreet {\n    border-width: 0;\n    bottom: 0;\n    height: 32px;\n    position: absolute;\n    right: 0;\n    width: 32px; }\n  .blog-single-view .user-bar ul {\n    list-style-type: none;\n    padding: 0; }\n    .blog-single-view .user-bar ul li {\n      display: inline; }\n", ""]);
+	exports.push([module.id, ".blog-single-view {\n  margin: 0 auto 100px auto;\n  max-width: 960px;\n  width: 86%; }\n  .blog-single-view .post-info {\n    color: #676767;\n    font-family: 'Open Sans', sans-serif;\n    font-size: 10px; }\n  .blog-single-view .italic {\n    font-style: italic; }\n  .blog-single-view h3 {\n    font-family: 'Open Sans', sans-serif;\n    text-transform: capitalize; }\n  .blog-single-view p {\n    font-family: 'Merriweather', serif;\n    color: #676767;\n    font-size: 14px; }\n  .blog-single-view ul {\n    list-style-type: none;\n    padding: 0; }\n  .blog-single-view .discreet {\n    border-width: 0;\n    bottom: 50;\n    height: 32px;\n    position: absolute;\n    right: 0;\n    width: 32px; }\n  .blog-single-view .user-bar ul {\n    list-style-type: none;\n    padding: 0; }\n    .blog-single-view .user-bar ul li {\n      display: inline; }\n", ""]);
 
 	// exports
 
@@ -12153,7 +12153,7 @@
 
 	// <style lang="sass?indentedSyntax">
 	// .blog-single-view
-	//   margin: auto
+	//   margin: 0 auto 100px auto
 	//   max-width: 960px
 	//   width: 86%
 	//
@@ -12180,7 +12180,7 @@
 	//
 	//   .discreet
 	//     border-width: 0
-	//     bottom: 0
+	//     bottom: 50
 	//     height: 32px
 	//     position: absolute
 	//     right: 0
@@ -12301,7 +12301,7 @@
 	      this.showEditPost = false;
 	    },
 	    deletePost: function deletePost(key) {
-	      postsRef.child(key).remove();
+	      _firebase2.db.ref('/blog').child(key).remove();
 	    },
 	    signIn: function signIn() {
 	      firebase.auth().signInWithRedirect(this.provider);
@@ -12321,7 +12321,7 @@
 	    toggleEditPost: function toggleEditPost(key) {
 	      // Load post to edit into form
 	      var that = this;
-	      postsRef.child(key).once('value').then(function (snap) {
+	      _firebase2.db.ref('/blog').child(key).once('value').then(function (snap) {
 	        that.newPost.title = snap.val().title;
 	        that.newPost.category = snap.val().category;
 	        that.newPost.content = snap.val().content;

@@ -1,6 +1,6 @@
 <style lang="sass?indentedSyntax">
 .blog-single-view
-  margin: auto
+  margin: 0 auto 100px auto
   max-width: 960px
   width: 86%
 
@@ -27,7 +27,7 @@
 
   .discreet
     border-width: 0
-    bottom: 0
+    bottom: 50
     height: 32px
     position: absolute
     right: 0
@@ -152,7 +152,7 @@
         this.showEditPost = false;
       },
       deletePost(key) {
-        postsRef.child(key).remove();
+        db.ref('/blog').child(key).remove();
       },
       signIn() {
         firebase.auth().signInWithRedirect(this.provider);
@@ -172,7 +172,7 @@
       toggleEditPost(key) {
         // Load post to edit into form
         var that = this;
-        postsRef.child(key).once('value').then(function(snap) {
+        db.ref('/blog').child(key).once('value').then(function(snap) {
           that.newPost.title = snap.val().title;
           that.newPost.category = snap.val().category;
           that.newPost.content = snap.val().content;

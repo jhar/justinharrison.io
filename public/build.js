@@ -11171,7 +11171,7 @@
 
 
 	// module
-	exports.push([module.id, ".footer {\n  background-color: white;\n  border-top: 1px solid #e6e6e6;\n  position: fixed;\n  bottom: 0px;\n  color: #777777;\n  font-size: 12px;\n  width: 100%; }\n  .footer .footer-container {\n    margin: 12px auto;\n    max-width: 960px;\n    width: 86%; }\n  .footer a {\n    color: #4874d4;\n    text-decoration: none; }\n", ""]);
+	exports.push([module.id, ".footer {\n  background-color: white;\n  border-top: 1px solid #e6e6e6;\n  position: fixed;\n  bottom: 0px;\n  color: #777777;\n  font-size: 16px;\n  width: 100%; }\n  .footer .footer-container {\n    margin: 12px auto;\n    max-width: 960px;\n    width: 86%; }\n  .footer a {\n    color: #4874d4;\n    text-decoration: none; }\n  .footer .footer-links {\n    float: right; }\n", ""]);
 
 	// exports
 
@@ -11180,7 +11180,7 @@
 /* 18 */
 /***/ function(module, exports) {
 
-	module.exports = "\n  <div class=\"footer\">\n    <div class=\"footer-container\">\n      &copy; 2016 Justin Harrison <a href=\"https://github.com/jhar\">github</a> / <a href=\"https://www.linkedin.com/in/justinadenharrison\">linkedin</a> / <a href=\"https://twitter.com/j_aden_harrison\">twitter</a>\n    </div>\n  </div>\n";
+	module.exports = "\n  <div class=\"footer\">\n    <div class=\"footer-container\">\n      &copy; 2016 Justin Harrison <span class=\"footer-links\"><a href=\"https://github.com/jhar\">github</a> / <a href=\"https://www.linkedin.com/in/justinadenharrison\">linkedin</a> / <a href=\"https://twitter.com/j_aden_harrison\">twitter</a></span>\n    </div>\n  </div>\n";
 
 /***/ },
 /* 19 */

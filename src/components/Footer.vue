@@ -1,11 +1,11 @@
 <style lang="sass?indentedSyntax">
 .footer
   background-color: rgb(255, 255, 255)
-  border-top: 1px solid rgb(230, 230, 230)
+  border-top-style: double
   position: fixed
   bottom: 0px
   color: rgb(119, 119, 119)
-  font-size: 16px
+  font: 13px 'Ubuntu', sans-serif
   width: 100% 
 
   .footer-container

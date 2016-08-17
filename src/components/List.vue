@@ -7,8 +7,8 @@
   .italic
     font-style: italic
 
-  h3
-    font-family: 'Open Sans', sans-serif
+  h2
+    font-family: 'Ubuntu Mono', monospace
     text-transform: capitalize
 
   ul
@@ -25,7 +25,7 @@
     <ul>
       <li v-for="post in posts | orderBy 'dateCreated' -1" track-by=".key">
         <a class="blog-list-link" v-link="{ name: 'Blog Single Post', params: { postName: post['.key'] } }">
-          <h3>{{ post.title }}</h3>
+          <h2>{{ post.title }}</h2>
         </a>
       </li>
     </ul>

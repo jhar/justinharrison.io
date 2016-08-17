@@ -6,20 +6,18 @@
 
   .post-info
     color: #676767
-    font-family: 'Open Sans', sans-serif
-    font-size: 10px
+    font: 12px 'Ubuntu', sans-serif
 
   .italic
     font-style: italic
 
-  h3
-    font-family: 'Open Sans', sans-serif
+  h2
+    font-family: 'Ubuntu Mono', monospace
     text-transform: capitalize
 
   p
-    font-family: 'Merriweather', serif
+    font: 16px 'Ubuntu', sans-serif
     color: #676767
-    font-size: 14px
 
   ul
     list-style-type: none
@@ -44,7 +42,7 @@
 
 <template>
   <div class="blog-single-view">
-    <h3>{{ post.title }}</h3>
+    <h2>{{ post.title }}</h2>
     <span class="post-info" v-if="post.dateCreated">{{ post.dateCreated | dated  }} {{ post.category }} <span class="italic" v-if="post.dateUpdated">Updated {{ post.dateUpdated | dated  }}</span></span><br>
     <div v-if="user">
       <button v-if="user.email === 'jhar87@gmail.com'" @click="toggleEditPost(post['.key'])">Edit Post</button>

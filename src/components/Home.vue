@@ -1,13 +1,13 @@
 <style lang="sass?indentedSyntax">
 .about-me
-  font-family: 'Merriweather', serif
+  font-family: 'Ubuntu', sans-serif
   margin: auto
   max-width: 960px
   width: 86% 
   
   p
     color: #676767
-    font-size: 14px
+    font-size: 16px
 </style>
 
 <template>

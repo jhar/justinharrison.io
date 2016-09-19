@@ -77,19 +77,19 @@
 
 	var _Home2 = _interopRequireDefault(_Home);
 
-	var _CV = __webpack_require__(24);
+	var _CV = __webpack_require__(25);
 
 	var _CV2 = _interopRequireDefault(_CV);
 
-	var _List = __webpack_require__(28);
+	var _List = __webpack_require__(29);
 
 	var _List2 = _interopRequireDefault(_List);
 
-	var _Single = __webpack_require__(36);
+	var _Single = __webpack_require__(37);
 
 	var _Single2 = _interopRequireDefault(_Single);
 
-	var _vueRouter = __webpack_require__(43);
+	var _vueRouter = __webpack_require__(44);
 
 	var _vueRouter2 = _interopRequireDefault(_vueRouter);
 
@@ -10723,7 +10723,7 @@
 
 	exports = module.exports = __webpack_require__(8)();
 	// imports
-	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono);", ""]);
+	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Raleway);", ""]);
 
 	// module
 	exports.push([module.id, "\n", ""]);
@@ -11103,7 +11103,7 @@
 
 
 	// module
-	exports.push([module.id, ".nav-bar {\n  box-sizing: border-box;\n  background-color: #191919;\n  font: 22px 'Ubuntu Mono', monospace;\n  height: 48px;\n  margin-bottom: 36px; }\n  .nav-bar .nav-inner-container {\n    height: 48px;\n    margin: auto;\n    max-width: 960px;\n    width: 86%; }\n    .nav-bar .nav-inner-container ul {\n      height: 48px;\n      list-style-type: none;\n      margin: 0;\n      padding: 0;\n      width: 100%; }\n      .nav-bar .nav-inner-container ul .float-left {\n        float: left; }\n      .nav-bar .nav-inner-container ul .float-right {\n        float: right; }\n      .nav-bar .nav-inner-container ul li {\n        height: 48px; }\n        .nav-bar .nav-inner-container ul li .nav-bar-link {\n          color: #e6e6e6;\n          display: block;\n          height: 24px;\n          padding: 12px 8px;\n          text-decoration: none; }\n        .nav-bar .nav-inner-container ul li .v-link-active {\n          background-color: white;\n          color: #191919; }\n        .nav-bar .nav-inner-container ul li .fa-bars {\n          margin-top: 2px; }\n\n.nav-panel {\n  box-sizing: border-box;\n  background-color: #e6e6e6;\n  border: 24px solid black;\n  font: 28px 'Ubuntu Mono', monospace;\n  width: 68%;\n  position: absolute;\n  left: 16%;\n  top: 24%;\n  right: 16%;\n  height: 250px; }\n  .nav-panel ul {\n    list-style-type: none;\n    margin: 7% 0;\n    padding: 0;\n    width: 100%; }\n    .nav-panel ul li {\n      float: none;\n      height: 48px;\n      padding: 0 7%;\n      width: 100%;\n      text-align: center;\n      box-sizing: border-box; }\n      .nav-panel ul li .nav-panel-link {\n        color: #191919;\n        display: block;\n        text-decoration: none; }\n      .nav-panel ul li .v-link-active {\n        background-color: #191919;\n        color: #e6e6e6; }\n\n.hamburger {\n  display: block; }\n\n.togglable {\n  display: none; }\n\n@media only screen and (min-width: 768px) {\n  .hamburger {\n    display: none; }\n  .togglable {\n    display: block; } }\n", ""]);
+	exports.push([module.id, ".nav-bar {\n  box-sizing: border-box;\n  font: 22px 'Raleway', sans-serif;\n  height: 48px;\n  margin-top: 35px;\n  margin-bottom: 36px; }\n  .nav-bar .nav-inner-container {\n    height: 48px;\n    margin: auto;\n    max-width: 960px;\n    width: 86%; }\n    .nav-bar .nav-inner-container ul {\n      height: 48px;\n      list-style-type: none;\n      margin: 0;\n      padding: 0;\n      width: 100%; }\n      .nav-bar .nav-inner-container ul .float-left {\n        float: left; }\n      .nav-bar .nav-inner-container ul .float-right {\n        float: right; }\n      .nav-bar .nav-inner-container ul li {\n        height: 48px; }\n        .nav-bar .nav-inner-container ul li .nav-bar-title {\n          color: black;\n          display: block;\n          font-size: 28px;\n          margin-top: 7px;\n          text-decoration: none; }\n        .nav-bar .nav-inner-container ul li .nav-bar-link {\n          color: #646464;\n          display: block;\n          font-size: 16px;\n          padding: 12px 8px;\n          text-decoration: none; }\n        .nav-bar .nav-inner-container ul li .v-link-active {\n          color: black; }\n        .nav-bar .nav-inner-container ul li .fa-bars {\n          margin-top: 13px; }\n\n.nav-panel {\n  box-sizing: border-box;\n  background-color: white;\n  font: 28px 'Raleway', monospace;\n  width: 100%;\n  position: absolute;\n  left: 0;\n  top: 119px;\n  right: 0;\n  bottom: 42px; }\n  .nav-panel ul {\n    list-style-type: none;\n    margin: 7% 0;\n    padding: 0;\n    width: 100%; }\n    .nav-panel ul li {\n      float: none;\n      height: 48px;\n      padding: 0 7%;\n      width: 100%;\n      text-align: center;\n      box-sizing: border-box; }\n      .nav-panel ul li .nav-panel-link {\n        color: #191919;\n        display: block;\n        text-decoration: none; }\n\n.hamburger {\n  display: block; }\n\n.togglable {\n  display: none; }\n\n@media only screen and (min-width: 768px) {\n  .hamburger {\n    display: none; }\n  .togglable {\n    display: block; } }\n", ""]);
 
 	// exports
 
@@ -11112,7 +11112,7 @@
 /* 14 */
 /***/ function(module, exports) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -11122,9 +11122,9 @@
 	//   -webkit-box-sizing: border-box
 	//   -moz-box-sizing: border-box
 	//   box-sizing: border-box
-	//   background-color: rgb(25, 25, 25)
-	//   font: 22px 'Ubuntu Mono', monospace
+	//   font: 22px 'Raleway', sans-serif
 	//   height: 48px
+	//   margin-top: 35px
 	//   margin-bottom: 36px
 	//
 	//   .nav-inner-container
@@ -11149,33 +11149,38 @@
 	//       li
 	//         height: 48px
 	//
-	//         .nav-bar-link
-	//           color: rgb(230, 230, 230)
+	//         .nav-bar-title
+	//           color: black
 	//           display: block
-	//           height: 24px
+	//           font-size: 28px
+	//           margin-top: 7px
+	//           text-decoration: none
+	//
+	//         .nav-bar-link
+	//           color: rgb(100, 100, 100)
+	//           display: block
+	//           font-size: 16px
 	//           padding: 12px 8px
 	//           text-decoration: none
 	//
 	//         .v-link-active
-	//           background-color: rgb(255, 255, 255)
-	//           color: rgb(25, 25, 25)
+	//           color: black
 	//
 	//         .fa-bars
-	//           margin-top: 2px
+	//           margin-top: 13px
 	//
 	// .nav-panel
 	//   -webkit-box-sizing: border-box
 	//   -moz-box-sizing: border-box
 	//   box-sizing: border-box
-	//   background-color: rgb(230, 230, 230)
-	//   border: 24px solid black
-	//   font: 28px 'Ubuntu Mono', monospace
-	//   width: 68%
+	//   background-color: rgb(255, 255, 255)
+	//   font: 28px 'Raleway', monospace
+	//   width: 100%
 	//   position: absolute
-	//   left: 16%
-	//   top: 24%
-	//   right: 16%
-	//   height: 250px
+	//   left: 0
+	//   top: 119px
+	//   right: 0
+	//   bottom: 42px
 	//
 	//   ul
 	//     list-style-type: none
@@ -11196,9 +11201,6 @@
 	//         display: block
 	//         text-decoration: none
 	//
-	//       .v-link-active
-	//         background-color: rgb(25, 25, 25)
-	//         color: rgb(230, 230, 230)
 	//
 	// .hamburger
 	//   display: block
@@ -11212,17 +11214,18 @@
 	//
 	//   .togglable
 	//     display: block
+	//
 	// </style>
 	//
 	// <template>
 	//   <div class="nav-bar">
 	//     <div class="nav-inner-container">
 	//       <ul>
-	//         <li class="float-left"><a class="nav-bar-link" href="/">Justin Harrison</a></li>
+	//         <li class="float-left"><a class="nav-bar-title" href="/">JUSTIN HARRISON</a></li>
 	//         <li class="float-right togglable"><a class="nav-bar-link" v-link="{ name: 'CV View' }">cv</a></li>
 	//         <li class="float-right togglable"><a class="nav-bar-link" v-link="{ name: 'Blog List View' }">blog</a></li>
 	//         <li class="float-right togglable"><a class="nav-bar-link" v-link="{ name: 'Home View' }">about</a></li>
-	//         <li class="float-right hamburger"><i v-on:click="togglePanel" class="fa fa-bars fa-inverse fa-2x"></i></li>
+	//         <li class="float-right hamburger"><i v-on:click="togglePanel" class="fa fa-bars fa-lg"></i></li>
 	//       </ul>
 	//     </div>
 	//     <div v-show="showPanel" transition="nav-panel" class="nav-panel">
@@ -11244,9 +11247,17 @@
 	  },
 
 	  methods: {
+	    handleResize: function handleResize() {
+	      if (window.innerWidth > 768) {
+	        this.showPanel = false;
+	      }
+	    },
 	    togglePanel: function togglePanel() {
 	      this.showPanel = !this.showPanel;
 	    }
+	  },
+	  ready: function ready() {
+	    window.addEventListener('resize', this.handleResize);
 	  }
 	};
 	// </script>
@@ -11256,7 +11267,7 @@
 /* 15 */
 /***/ function(module, exports) {
 
-	module.exports = "\n  <div class=\"nav-bar\">\n    <div class=\"nav-inner-container\">\n      <ul>\n        <li class=\"float-left\"><a class=\"nav-bar-link\" href=\"/\">Justin Harrison</a></li>\n        <li class=\"float-right togglable\"><a class=\"nav-bar-link\" v-link=\"{ name: 'CV View' }\">cv</a></li>\n        <li class=\"float-right togglable\"><a class=\"nav-bar-link\" v-link=\"{ name: 'Blog List View' }\">blog</a></li>\n        <li class=\"float-right togglable\"><a class=\"nav-bar-link\" v-link=\"{ name: 'Home View' }\">about</a></li>\n        <li class=\"float-right hamburger\"><i v-on:click=\"togglePanel\" class=\"fa fa-bars fa-inverse fa-2x\"></i></li>\n      </ul>\n    </div>\n    <div v-show=\"showPanel\" transition=\"nav-panel\" class=\"nav-panel\">\n     <ul>\n       <li><a class=\"nav-panel-link\" v-on:click=\"togglePanel\" v-link=\"{ name: 'Home View' }\">About</a></li>\n       <li><a class=\"nav-panel-link\" v-on:click=\"togglePanel\" v-link=\"{ name: 'Blog List View' }\">Blog</a></li>\n       <li><a class=\"nav-panel-link\" v-on:click=\"togglePanel\" v-link=\"{ name: 'CV View' }\">CV</a></li>\n     </ul>\n    </div>\n  </div>\n";
+	module.exports = "\n  <div class=\"nav-bar\">\n    <div class=\"nav-inner-container\">\n      <ul>\n        <li class=\"float-left\"><a class=\"nav-bar-title\" href=\"/\">JUSTIN HARRISON</a></li>\n        <li class=\"float-right togglable\"><a class=\"nav-bar-link\" v-link=\"{ name: 'CV View' }\">cv</a></li>\n        <li class=\"float-right togglable\"><a class=\"nav-bar-link\" v-link=\"{ name: 'Blog List View' }\">blog</a></li>\n        <li class=\"float-right togglable\"><a class=\"nav-bar-link\" v-link=\"{ name: 'Home View' }\">about</a></li>\n        <li class=\"float-right hamburger\"><i v-on:click=\"togglePanel\" class=\"fa fa-bars fa-lg\"></i></li>\n      </ul>\n    </div>\n    <div v-show=\"showPanel\" transition=\"nav-panel\" class=\"nav-panel\">\n     <ul>\n       <li><a class=\"nav-panel-link\" v-on:click=\"togglePanel\" v-link=\"{ name: 'Home View' }\">About</a></li>\n       <li><a class=\"nav-panel-link\" v-on:click=\"togglePanel\" v-link=\"{ name: 'Blog List View' }\">Blog</a></li>\n       <li><a class=\"nav-panel-link\" v-on:click=\"togglePanel\" v-link=\"{ name: 'CV View' }\">CV</a></li>\n     </ul>\n    </div>\n  </div>\n";
 
 /***/ },
 /* 16 */
@@ -11332,7 +11343,8 @@
 
 	var __vue_script__, __vue_template__
 	__webpack_require__(21)
-	__vue_template__ = __webpack_require__(23)
+	__vue_script__ = __webpack_require__(23)
+	__vue_template__ = __webpack_require__(24)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
@@ -11383,7 +11395,7 @@
 
 
 	// module
-	exports.push([module.id, ".about-me {\n  font-family: 'Ubuntu', sans-serif;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .about-me p {\n    color: #676767;\n    font-size: 16px; }\n", ""]);
+	exports.push([module.id, "canvas {\n  position: fixed;\n  top: 0;\n  z-index: -1; }\n\n.about-me {\n  font-family: 'Raleway', sans-serif;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .about-me .emph-p {\n    color: #646464;\n    font-size: 25px;\n    letter-spacing: 1.7px; }\n  .about-me .small-p {\n    color: #969696;\n    font-size: 14px; }\n", ""]);
 
 	// exports
 
@@ -11392,15 +11404,70 @@
 /* 23 */
 /***/ function(module, exports) {
 
-	module.exports = "\n  <div class=\"about-me\">\n    <p>Hi, I'm Justin Harrison. I graduated from the University of California, Santa Barbara in 2014 with a high honors degree in Art. Before that, I studied Cognitive Science at the University of Georgia. My interests primarily revolve around computation, cognition, art, and the big questions that humanity must answer in light of the Anthropocene.</p>\n    <p>I live in Pasadena, California, but am currently in Mexico City brushing up on my Spanish. When I'm not working, you can find me exercising, watching boxing, playing Bloodborne, obsessing about the zombie apocalype, or reading Don Quijote en español.</p\n  </div>\n</template>";
+	// <style lang="sass?indentedSyntax">
+	// canvas
+	//   position: fixed
+	//   top: 0
+	//   z-index: -1
+	//
+	// .about-me
+	//   font-family: 'Raleway', sans-serif
+	//   margin: auto
+	//   max-width: 960px
+	//   width: 86% 
+	//
+	//   .emph-p
+	//     color: rgb(100, 100, 100)
+	//     font-size: 25px
+	//     letter-spacing: 1.7px
+	//
+	//   .small-p
+	//     color: rgb(150, 150, 150)
+	//     font-size: 14px
+	//
+	// </style>
+	//
+	// <template>
+	//   <div class="about-me">
+	//     <p class="emph-p">
+	//       Hi, I'm Justin Harrison. I'm a software developer living in Pasadena. I specialize in web application development and particularly enjoy the world of JavaScript.
+	//     </p>
+	//     <p class="small-p">
+	//       I'm currently experimenting with the p5.js library for creative coding while auditing Daniel Shiffman's <i>Nature of Code</i> course on Kadenze. I'm also actively developing this website with Vue.js and Firebase. When I'm not coding, I'm likely thinking and writing about professional boxing.
+	//     </p>
+	//     <p class="small-p">
+	//       You can <a href="mailto:justinadenharrison@gmail.com" target="blank">email</a> me if you want to say hello.
+	//     </p>
+	//   </div>
+	// </template>
+	//
+	// <script>
+	//  import p5 from 'p5'
+	//  import { sketch } from '../sketches/example.js'
+	//
+	//  export default {
+	//    created() {
+	//      var myp5 = new p5(sketch)
+	//      console.log("Got here")
+	//    }
+	//  }
+	// </script>
+	//
+	"use strict";
 
 /***/ },
 /* 24 */
+/***/ function(module, exports) {
+
+	module.exports = "\n  <div class=\"about-me\">\n    <p class=\"emph-p\">\n      Hi, I'm Justin Harrison. I'm a software developer living in Pasadena. I specialize in web application development and particularly enjoy the world of JavaScript.\n    </p>\n    <p class=\"small-p\">\n      I'm currently experimenting with the p5.js library for creative coding while auditing Daniel Shiffman's <i>Nature of Code</i> course on Kadenze. I'm also actively developing this website with Vue.js and Firebase. When I'm not coding, I'm likely thinking and writing about professional boxing.\n    </p>\n    <p class=\"small-p\">\n      You can <a href=\"mailto:justinadenharrison@gmail.com\" target=\"blank\">email</a> me if you want to say hello.\n    </p>\n  </div>\n";
+
+/***/ },
+/* 25 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__webpack_require__(25)
-	__vue_template__ = __webpack_require__(27)
+	__webpack_require__(26)
+	__vue_template__ = __webpack_require__(28)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
@@ -11417,13 +11484,13 @@
 	})()}
 
 /***/ },
-/* 25 */
+/* 26 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(26);
+	var content = __webpack_require__(27);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(9)(content, {});
@@ -11443,7 +11510,7 @@
 	}
 
 /***/ },
-/* 26 */
+/* 27 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(8)();
@@ -11451,25 +11518,25 @@
 
 
 	// module
-	exports.push([module.id, ".my-resume {\n  font-family: 'Ubuntu', sans-serif;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .my-resume .mono {\n    font-family: 'Ubuntu Mono', monospace; }\n  .my-resume p {\n    color: #676767;\n    font-size: 16px; }\n  .my-resume h3 {\n    color: #4874d4; }\n  .my-resume .bold {\n    font-weight: bold; }\n  .my-resume .col-1 {\n    box-sizing: border-box;\n    display: inline-block;\n    float: left;\n    padding-right: 20px;\n    width: 100%; }\n    .my-resume .col-1 .italic {\n      font-style: italic; }\n    .my-resume .col-1 .dates {\n      color: #676767;\n      font-size: 12px; }\n  .my-resume .col-2 {\n    box-sizing: border-box;\n    display: inline-block;\n    float: right;\n    width: 100%; }\n  @media only screen and (min-width: 768px) {\n    .my-resume .col-1 {\n      width: 62%; }\n    .my-resume .col-2 {\n      width: 38%; } }\n", ""]);
+	exports.push([module.id, ".my-resume {\n  font-family: 'Raleway', sans-serif;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .my-resume .main-title {\n    font-size: 28px; }\n  .my-resume p {\n    color: #676767;\n    font-size: 16px; }\n  .my-resume h3 {\n    color: #4874d4; }\n  .my-resume .title {\n    font-weight: bold; }\n  .my-resume .loc,\n  .my-resume .dates {\n    color: #676767;\n    font-size: 12px; }\n  .my-resume .blk-1,\n  .my-resume .blk-3 {\n    box-sizing: border-box;\n    display: inline-block;\n    float: left;\n    min-height: 57px;\n    padding-right: 40px;\n    width: 100%; }\n  .my-resume .blk-2,\n  .my-resume .blk-4 {\n    box-sizing: border-box;\n    display: inline-block;\n    float: right;\n    width: 100%; }\n  @media only screen and (min-width: 768px) {\n    .my-resume .blk-1,\n    .my-resume .blk-3 {\n      width: 62%; }\n    .my-resume .blk-2,\n    .my-resume .blk-4 {\n      width: 38%; }\n    .my-resume .blk-3,\n    .my-resume .blk-4 {\n      margin-bottom: 75px; } }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 27 */
+/* 28 */
 /***/ function(module, exports) {
 
-	module.exports = "\n  <div class=\"my-resume\">\n    <div class=\"header\">\n      <div class=\"col-1\">\n       <h2 class=\"mono\">Artist and Software Developer</h2>\n      </div>\n      <div class=\"col-2 mono\">\n        <span class=\"bold\">(206) 377-9027</span><br>\n        <span class=\"bold\">Skype: justin.a.harrison</span><br>\n        <a href=\"mailto:jhar87@gmail.com\" target=\"_top\">jhar87@gmail.com</a><br>\n      </div>\n    </div>\n    <div class=\"col-1\">\n      <h3 class=\"mono\">Web Experience</h3>\n      <span class=\"bold\">Golden Funnel Marketing</span>, Remote - <span class=\"italic\">Web Engineer</span><br>\n      <span class=\"dates mono\">FEBRUARY 2016 - JULY 2016</span><br>\n      <p>Full stack developer for a wide variety of digital marketing projects. Rapid development of sites and services to the architecture and specifications of a non-technical executive. Engineering custom solutions to integration problems between WordPress, WP plugins, and external services. Third party JavaScript development. API design, development, and testing.</p>\n      <span class=\"bold\">Not That, This LLC</span>, Remote — <span class=\"italic\">Software Developer</span><br>\n      <span class=\"dates mono\">NOVEMBER 2015 - JANUARY 2016</span><br>\n      <p>Contract JavaScript development for Cisco project based in Dubai. Converted PSD designs to pixel perfect UI for an existing enterprise level IoT interface written with Enyo. Reported directly to C-level executives.</p>\n      <span class=\"bold\">FlexaSoft</span>, Remote — <span class=\"italic\">Web Content Evaluator</span><br>\n      <span class=\"dates mono\">OCTOBER 2014 - JUNE 2015</span><br>\n      <p>Human judge for tuning Microsoft Bing’s semantic search results.</p>\n      <span class=\"bold\">UC Santa Barbara</span>, Santa Barbara, CA — <span class=\"italic\">Web Developer</span><br>\n      <span class=\"dates mono\">JULY 2014 - SEPTEMBER 2014</span><br>\n      <p>WordPress theme development and site mergers for a UC wide arts research institute.</p>\n      <h3 class=\"mono\">Education</h3>\n      <span class=\"bold\">Udacity</span>, Remote — <span class=\"italic\">Front End Development Nanodegree</span>\n      <p>HTML5, Git/Github, AJAX, CSS/Bootstrap, jQuery, Object-oriented design/development, Design Patterns, Test Driven Development, Performance Optimization, Application Development/Deployment</p>\n      <span class=\"bold\">UC Santa Barbara</span>, Santa Barbara, CA — <span class=\"italic\">BA Art, High Honors</span>\n      <p>Processing, Arduino, Drawing, Painting, Printmaking</p>\n      <span class=\"bold\">University of Georgia</span>, Athens, GA — <span class=\"italic\">Cognitive Science</span>\n      <p>Logic, Java, C++, Unix</p>\n    </div>\n    <div class=\"col-2\">\n      <h3 class=\"mono\">Primary Skills</h3>\n      <p>JavaScript, CSS, HTML, PHP, MySQL and MongoDB.</p>\n      <p>Experience using a wide variety of libraries, frameworks, platforms, and tools related to the above core technologies (Node/NPM, React, Bootstrap, Laravel, AWS, etc). Experience with other languages such as Python, C, C++, and Java but not in a professional context.</p>\n      <p>Experience balancing client requests with architectural concerns, design patterns, and best practices - learning from apps that don’t scale or fail to be maintainable.</p>\n      <h3 class=\"mono\">Awards</h3>\n      <span class=\"bold\">Promising Artist Achievement Award</span><br>\n      UCSB Department of Art\n      <p>Most outstanding graduating artist</p>\n      <span class=\"bold\">William Dole Award</span><br>\n      UCSB Department of Art<br><br>\n      <span class=\"bold\">Faculty Award of Distinction</span><br>\n      UCSB Department of Art<br><br>\n      <span class=\"bold\">Dean's Honors x5</span><br>\n      UCSB\n    </div>\n  </div>\n";
+	module.exports = "\n  <div class=\"my-resume\">\n    <div class=\"header\">\n      <div class=\"blk-1\">\n       <span class=\"main-title\">Web Application Developer</span>\n      </div>\n      <div class=\"blk-2\">\n        <span class=\"bold\">(206) 377-9027</span><br>\n        <span class=\"bold\">Skype: justin.a.harrison</span><br>\n        <a href=\"mailto:justinadenharrison@gmail.com\" target=\"_top\">justinadenharrison@gmail.com</a><br>\n      </div>\n    </div>\n    <div class=\"blk-3\">\n\n      <h3>Work Experience</h3>\n\n      <span class=\"title\">Web Engineer</span><br>\n      <span class=\"org\">Advercalls, Inc</span><br>\n      <span class=\"loc\">Los Angeles, CA</span><br>\n      <span class=\"dates\">Feb 2016 - Jul 2016</span>\n      <p>Developed a third-party JavaScript lead generation app that was fully customizable to client specifications. Wrote custom back-end integrations for marketing services like ActiveCampaign. Cleaned a large database of redundant or junk data then built a web directory service to navigate it. Incorporated user profiles, a membership service, and InfusionSoft for payment processing. Provided assistance and support to clients for tasks related to front-end development, database management, SEO/Analytics, and digital marketing tools. Conducted research and feasibility studies. Recruited, managed and wrote specs for off-shore developers. API design and development.</p>\n      \n      <span class=\"title\">Contract Software Developer</span><br>\n      <span class=\"org\">Not That This, LLC</span><br>\n      <span class=\"loc\">Burbank, CA</span><br>\n      <span class=\"dates\">Nov 2015 - Jan 2016</span>\n      <p>Converted PSD designs to pixel perfect UI with Enyo.js for an enterprise Cisco IoT project.</p>\n      \n      <span class=\"title\">Web Content Evaluator</span><br>\n      <span class=\"org\">FlexaSoft</span><br>\n      <span class=\"loc\">Redmond, WA</span><br>\n      <span class=\"dates\">Oct 2014 - Jun 2015</span><br>\n      <p>Evaluated the accuracy and relevancy of Microsoft Bing search results.</p>\n      \n      <span class=\"title\">Web Developer</span><br>\n      <span class=\"org\">University of California Institute for Research in the Arts</span><br>\n      <span class=\"loc\">Santa Barbara, CA</span><br>\n      <span class=\"dates\">Jul 2014 - Sep 2014</span><br>\n      <p>Worked on a new website for the UCIRA. Merged their main site and State of the Arts blog. Worked to create a platform for California art researchers to network and display their work. The project was cancelled after funding cuts.</p>\n\n      <span class=\"title\">IT Helpdesk Assistant</span><br>\n      <span class=\"org\">Davidson Library</span><br>\n      <span class=\"loc\">Santa Barbara, CA</span><br>\n      <span class=\"dates\">Mar 2013 - Jul 2014</span><br>\n      <p>Provided technical assistance and support related to computer networks, hardware, and software. Responded to calls and emails and tracked issues with JIRA to help diagnose, solve, and document problems. Managed hardware inventory.</p>\n\n\n    </div>\n\n    <div class=\"blk-4\">\n\n\n      <h3>Education and Awards</h3>\n\n      <span class=\"title\">BA in Art with High Honors</span><br>\n      <span class=\"org\">University of California</span><br>\n      <span class=\"loc\">Santa Barbara, CA</span><br>\n      <span class=\"dates\">Graduated 2014</span><br>\n      <p>Promising Artist Achievement Award, William Dole Award, Faculty Award of Distinction x2, Dean's Honors x5</p>\n\n      <h3 class=\"mono\">Professional Development</h3>\n\n      <span class=\"title\">MongoDB for Node.js Developers</span><br>\n      <span class=\"org\">MongoDB University</span><br>\n      <span class=\"dates\">Completed 2015</span><br><br>\n\n      <span class=\"title\">Front-End Web Developer Nanodegree</span><br>\n      <span class=\"org\">Udacity</span><br>\n      <span class=\"dates\">Completed 2015</span><br>\n\n      <h3>Skills</h3>\n\n      <p>HTML, CSS, JavaScript, PHP, MySQL, MongoDB, Unix, Bootstrap, jQuery, React, Knockout, Vue, Node, NPM, Express, SASS, LESS, Firebase, AWS, Webpack, Browserify, Gulp, WordPress, p5.js, Processing, Chrome Developer Tools, AJAX, and Google.</p>\n\n      <h3>Volunteering</h3>\n\n      <span class=\"title\">Shopify Administrator</span><br>\n      <span class=\"org\">Arroyo Food Co-op</span><br>\n      <span class=\"loc\">Pasadena, CA</span><br>\n      <span class=\"dates\">Feb 2016 - May 2016</span><br><br>\n\n      <span class=\"title\">Cook and Server</span><br>\n      <span class=\"org\">Food Not Bombs</span><br>\n      <span class=\"loc\">Goleta, CA</span><br>\n      <span class=\"dates\">Jan 2013 - Sep 2014</span>\n\n\n\n\n\n\n    </div>\n\n  </div>\n";
 
 /***/ },
-/* 28 */
+/* 29 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__webpack_require__(29)
-	__vue_script__ = __webpack_require__(31)
-	__vue_template__ = __webpack_require__(35)
+	__webpack_require__(30)
+	__vue_script__ = __webpack_require__(32)
+	__vue_template__ = __webpack_require__(36)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
@@ -11486,13 +11553,13 @@
 	})()}
 
 /***/ },
-/* 29 */
+/* 30 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(30);
+	var content = __webpack_require__(31);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(9)(content, {});
@@ -11512,7 +11579,7 @@
 	}
 
 /***/ },
-/* 30 */
+/* 31 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(8)();
@@ -11526,7 +11593,7 @@
 
 
 /***/ },
-/* 31 */
+/* 32 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -11535,7 +11602,7 @@
 	  value: true
 	});
 
-	var _firebase = __webpack_require__(32);
+	var _firebase = __webpack_require__(33);
 
 	var postsRef = _firebase.db.ref('blog/'); // <style lang="sass?indentedSyntax">
 	// .blog-list-view
@@ -11582,7 +11649,7 @@
 	//
 
 /***/ },
-/* 32 */
+/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11592,7 +11659,7 @@
 	});
 	exports.storage = exports.db = undefined;
 
-	var _firebase = __webpack_require__(33);
+	var _firebase = __webpack_require__(34);
 
 	var firebase = _interopRequireWildcard(_firebase);
 
@@ -11610,7 +11677,7 @@
 	var storage = exports.storage = firebaseApp.storage();
 
 /***/ },
-/* 33 */
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -11620,12 +11687,12 @@
 	 *
 	 *   firebase = require('firebase');
 	 */
-	__webpack_require__(34);
+	__webpack_require__(35);
 	module.exports = firebase;
 
 
 /***/ },
-/* 34 */
+/* 35 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/*! @license Firebase v3.2.1
@@ -12199,19 +12266,19 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 35 */
+/* 36 */
 /***/ function(module, exports) {
 
 	module.exports = "\n  <div class=\"blog-list-view\">\n    <ul>\n      <li v-for=\"post in posts | orderBy 'dateCreated' -1\" track-by=\".key\">\n        <a class=\"blog-list-link\" v-link=\"{ name: 'Blog Single Post', params: { postName: post['.key'] } }\">\n          <h2>{{ post.title }}</h2>\n        </a>\n      </li>\n    </ul>\n  </div>\n";
 
 /***/ },
-/* 36 */
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__webpack_require__(37)
-	__vue_script__ = __webpack_require__(39)
-	__vue_template__ = __webpack_require__(42)
+	__webpack_require__(38)
+	__vue_script__ = __webpack_require__(40)
+	__vue_template__ = __webpack_require__(43)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
@@ -12228,13 +12295,13 @@
 	})()}
 
 /***/ },
-/* 37 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(38);
+	var content = __webpack_require__(39);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(9)(content, {});
@@ -12254,7 +12321,7 @@
 	}
 
 /***/ },
-/* 38 */
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(8)();
@@ -12268,7 +12335,7 @@
 
 
 /***/ },
-/* 39 */
+/* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -12277,19 +12344,19 @@
 	  value: true
 	});
 
-	var _marked = __webpack_require__(40);
+	var _marked = __webpack_require__(41);
 
 	var _marked2 = _interopRequireDefault(_marked);
 
-	var _dateformat = __webpack_require__(41);
+	var _dateformat = __webpack_require__(42);
 
 	var _dateformat2 = _interopRequireDefault(_dateformat);
 
-	var _firebase = __webpack_require__(33);
+	var _firebase = __webpack_require__(34);
 
 	var firebase = _interopRequireWildcard(_firebase);
 
-	var _firebase2 = __webpack_require__(32);
+	var _firebase2 = __webpack_require__(33);
 
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -12484,7 +12551,7 @@
 	//
 
 /***/ },
-/* 40 */
+/* 41 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**
@@ -13777,7 +13844,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 41 */
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/*
@@ -14009,13 +14076,13 @@
 
 
 /***/ },
-/* 42 */
+/* 43 */
 /***/ function(module, exports) {
 
 	module.exports = "\n  <div class=\"blog-single-view\">\n    <h2>{{ post.title }}</h2>\n    <span class=\"post-info\" v-if=\"post.dateCreated\">{{ post.dateCreated | dated  }} {{ post.category }} <span class=\"italic\" v-if=\"post.dateUpdated\">Updated {{ post.dateUpdated | dated  }}</span></span><br>\n    <div v-if=\"user\">\n      <button v-if=\"user.email === 'jhar87@gmail.com'\" @click=\"toggleEditPost(post['.key'])\">Edit Post</button>\n      <button v-if=\"user.email === 'jhar87@gmail.com'\" @click=\"deletePost(post['.key'])\">Delete Post</button>\n    </div>\n    <div>\n      {{{ post.content | marked }}}\n    </div>\n    <div class=\"user-bar\" v-if=\"user\">\n      <ul>\n        <li v-if=\"user.email\">{{user.email}}</li>\n        <li v-if=\"user.email === 'jhar87@gmail.com'\">\n          <button @click=\"toggleCreatePost\">Create Post</button>\n        </li>\n        <li>\n          <button v-on:click=\"signOut\">Sign Out</button>\n        </li>\n      </ul>\n      <form v-if=\"user.email === 'jhar87@gmail.com' && showCreatePost === true\" @submit.prevent=\"setPost\">\n        <input v-model=\"newPost.title\" placeholder=\"Post title\"><br>\n        <input v-model=\"newPost.category\" placeholder=\"Post category\"><br>\n        <textarea v-model=\"newPost.content\" placeholder=\"Post content\"></textarea><br>\n        <input v-model=\"newPost.key\" placeholder=\"Pretty url\"><br>\n        <button>Add Post</button>\n      </form>\n      <form v-if=\"user.email === 'jhar87@gmail.com' && showEditPost === true\" @submit.prevent=\"setPost\">\n        <input v-model=\"newPost.title\"><br>\n        <input v-model=\"newPost.category\"><br>\n        <textarea v-model=\"newPost.content\"></textarea><br>\n        <input v-model=\"newPost.key\"><br>\n        <button>Submit Edit</button>\n      </form>\n    </div>\n    <div v-else>\n      <input class=\"discreet\" @keyup.esc=\"signIn\">\n    </div>\n  </div>\n";
 
 /***/ },
-/* 43 */
+/* 44 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*!

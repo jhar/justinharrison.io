@@ -1,18 +1,48 @@
 <style lang="sass?indentedSyntax">
+canvas
+  position: fixed
+  top: 0
+  z-index: -1
+
 .about-me
-  font-family: 'Ubuntu', sans-serif
+  font-family: 'Raleway', sans-serif
   margin: auto
   max-width: 960px
   width: 86% 
-  
-  p
-    color: #676767
-    font-size: 16px
+ 
+  .emph-p
+    color: rgb(100, 100, 100)
+    font-size: 25px
+    letter-spacing: 1.7px
+
+  .small-p
+    color: rgb(150, 150, 150)
+    font-size: 14px
+
 </style>
 
 <template>
   <div class="about-me">
-    <p>Hi, I'm Justin Harrison. I graduated from the University of California, Santa Barbara in 2014 with a high honors degree in Art. Before that, I studied Cognitive Science at the University of Georgia. My interests primarily revolve around computation, cognition, art, and the big questions that humanity must answer in light of the Anthropocene.</p>
-    <p>I live in Pasadena, California, but am currently in Mexico City brushing up on my Spanish. When I'm not working, you can find me exercising, watching boxing, playing Bloodborne, obsessing about the zombie apocalype, or reading Don Quijote en español.</p
+    <p class="emph-p">
+      Hi, I'm Justin Harrison. I'm a software developer living in Pasadena. I specialize in web application development and particularly enjoy the world of JavaScript.
+    </p>
+    <p class="small-p">
+      I'm currently experimenting with the p5.js library for creative coding while auditing Daniel Shiffman's <i>Nature of Code</i> course on Kadenze. I'm also actively developing this website with Vue.js and Firebase. When I'm not coding, I'm likely thinking and writing about professional boxing.
+    </p>
+    <p class="small-p">
+      You can <a href="mailto:justinadenharrison@gmail.com" target="blank">email</a> me if you want to say hello.
+    </p>
   </div>
 </template>
+
+<script>
+//  import p5 from 'p5'
+//  import { sketch } from '../sketches/example.js'
+//
+//  export default {
+//    created() {
+//      var myp5 = new p5(sketch)
+//      console.log("Got here")
+//    }
+//  }
+</script>

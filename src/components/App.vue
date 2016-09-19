@@ -1,5 +1,5 @@
 <style lang="sass?indentedSyntax">
-@import url(https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono)
+@import url(https://fonts.googleapis.com/css?family=Raleway)
 </style>
 
 <template>

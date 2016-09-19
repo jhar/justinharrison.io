@@ -3,9 +3,9 @@
   -webkit-box-sizing: border-box
   -moz-box-sizing: border-box
   box-sizing: border-box
-  background-color: rgb(25, 25, 25)
-  font: 22px 'Ubuntu Mono', monospace
+  font: 22px 'Raleway', sans-serif
   height: 48px
+  margin-top: 35px
   margin-bottom: 36px
 
   .nav-inner-container
@@ -30,33 +30,38 @@
       li
         height: 48px
 
-        .nav-bar-link
-          color: rgb(230, 230, 230)
+        .nav-bar-title
+          color: black
           display: block
-          height: 24px
+          font-size: 28px
+          margin-top: 7px
+          text-decoration: none
+
+        .nav-bar-link
+          color: rgb(100, 100, 100)
+          display: block
+          font-size: 16px
           padding: 12px 8px
           text-decoration: none
 
         .v-link-active
-          background-color: rgb(255, 255, 255)
-          color: rgb(25, 25, 25)
+          color: black
 
         .fa-bars
-          margin-top: 2px
+          margin-top: 13px
 
 .nav-panel
   -webkit-box-sizing: border-box
   -moz-box-sizing: border-box
   box-sizing: border-box
-  background-color: rgb(230, 230, 230)
-  border: 24px solid black
-  font: 28px 'Ubuntu Mono', monospace
-  width: 68%
+  background-color: rgb(255, 255, 255)
+  font: 28px 'Raleway', monospace
+  width: 100%
   position: absolute
-  left: 16%
-  top: 24%
-  right: 16%
-  height: 250px
+  left: 0
+  top: 119px
+  right: 0
+  bottom: 42px
 
   ul
     list-style-type: none
@@ -77,9 +82,6 @@
         display: block
         text-decoration: none
 
-      .v-link-active
-        background-color: rgb(25, 25, 25)
-        color: rgb(230, 230, 230)
 
 .hamburger
   display: block
@@ -93,17 +95,18 @@
 
   .togglable
     display: block
+
 </style>
 
 <template>
   <div class="nav-bar">
     <div class="nav-inner-container">
       <ul>
-        <li class="float-left"><a class="nav-bar-link" href="/">Justin Harrison</a></li>
+        <li class="float-left"><a class="nav-bar-title" href="/">JUSTIN HARRISON</a></li>
         <li class="float-right togglable"><a class="nav-bar-link" v-link="{ name: 'CV View' }">cv</a></li>
         <li class="float-right togglable"><a class="nav-bar-link" v-link="{ name: 'Blog List View' }">blog</a></li>
         <li class="float-right togglable"><a class="nav-bar-link" v-link="{ name: 'Home View' }">about</a></li>
-        <li class="float-right hamburger"><i v-on:click="togglePanel" class="fa fa-bars fa-inverse fa-2x"></i></li>
+        <li class="float-right hamburger"><i v-on:click="togglePanel" class="fa fa-bars fa-lg"></i></li>
       </ul>
     </div>
     <div v-show="showPanel" transition="nav-panel" class="nav-panel">
@@ -124,9 +127,17 @@
       }
     },
     methods: {
+      handleResize() {
+        if (window.innerWidth > 768) {
+          this.showPanel = false
+        }
+      },
       togglePanel() {
         this.showPanel = !this.showPanel
       }
+    },
+    ready() {
+      window.addEventListener('resize', this.handleResize)
     }
   }
 </script>

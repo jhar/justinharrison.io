@@ -4,7 +4,7 @@ import App from './components/App.vue'
 import Nav from './components/Nav.vue'
 import Footer from './components/Footer.vue'
 import Home from './components/Home.vue'
-import CV from './components/CV.vue'
+import Resume from './components/Resume.vue'
 import List from './components/List.vue'
 import Single from './components/Single.vue'
 import VueRouter from 'vue-router'
@@ -18,7 +18,9 @@ Vue.component('footer-view', Footer)
 
 // Vue Router setup
 var router = new VueRouter({
-  hashbang: false
+  hashbang: false,
+  history: true,
+  linkActiveClass: 'active'
 })
 
 router.map({
@@ -26,9 +28,9 @@ router.map({
     name: 'Home View', 
     component: Home 
   },
-  '/cv': {
-    name: 'CV View', 
-    component: CV 
+  '/resume': {
+    name: 'Resume View', 
+    component: Resume 
   },
   '/blog': {
     name: 'Blog List View', 
@@ -39,6 +41,8 @@ router.map({
     component: Single 
   }
 })
+
+router.mode = 'html5'
 
 router.redirect({
   '*': '/home'

@@ -77,7 +77,7 @@
       <span class="org">Advercalls, Inc</span><br>
       <span class="loc">Los Angeles, CA</span><br>
       <span class="dates">Feb 2016 - Jul 2016</span>
-      <p>Developed a third-party JavaScript lead generation app that was fully customizable to client specifications. Wrote custom back-end integrations for marketing services like ActiveCampaign. Cleaned a large database of redundant or junk data then built a web directory service to navigate it. Incorporated user profiles, a membership service, and InfusionSoft for payment processing. Provided assistance and support to clients for tasks related to front-end development, database management, SEO/Analytics, and digital marketing tools. Conducted research and feasibility studies. Recruited, managed and wrote specs for off-shore developers. API design and development.</p>
+      <p>Developed a third-party JavaScript lead gen app. Wrote back-end integrations for marketing services like ActiveCampaign. Wrote scripts to clean redundancies and errors from a large database, built a web directory service to navigate the data, then incorporated user profiles, a membership service, and InfusionSoft for payment processing. Conducted research and feasibility studies. Recruited, managed and wrote specs for off-shore developers. Designed and developed APIs for our own services. Maintained dozens of websites.</p>
       
       <span class="title">Contract Software Developer</span><br>
       <span class="org">Not That This, LLC</span><br>

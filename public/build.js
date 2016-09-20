@@ -77,9 +77,9 @@
 
 	var _Home2 = _interopRequireDefault(_Home);
 
-	var _CV = __webpack_require__(25);
+	var _Resume = __webpack_require__(25);
 
-	var _CV2 = _interopRequireDefault(_CV);
+	var _Resume2 = _interopRequireDefault(_Resume);
 
 	var _List = __webpack_require__(29);
 
@@ -104,7 +104,9 @@
 
 	// Vue Router setup
 	var router = new _vueRouter2.default({
-	  hashbang: false
+	  hashbang: false,
+	  history: true,
+	  linkActiveClass: 'active'
 	});
 
 	router.map({
@@ -112,9 +114,9 @@
 	    name: 'Home View',
 	    component: _Home2.default
 	  },
-	  '/cv': {
-	    name: 'CV View',
-	    component: _CV2.default
+	  '/resume': {
+	    name: 'Resume View',
+	    component: _Resume2.default
 	  },
 	  '/blog': {
 	    name: 'Blog List View',
@@ -125,6 +127,8 @@
 	    component: _Single2.default
 	  }
 	});
+
+	router.mode = 'html5';
 
 	router.redirect({
 	  '*': '/home'
@@ -11222,7 +11226,7 @@
 	//     <div class="nav-inner-container">
 	//       <ul>
 	//         <li class="float-left"><a class="nav-bar-title" href="/">JUSTIN HARRISON</a></li>
-	//         <li class="float-right togglable"><a class="nav-bar-link" v-link="{ name: 'CV View' }">cv</a></li>
+	//         <li class="float-right togglable"><a class="nav-bar-link" v-link="{ name: 'Resume View' }">resume</a></li>
 	//         <li class="float-right togglable"><a class="nav-bar-link" v-link="{ name: 'Blog List View' }">blog</a></li>
 	//         <li class="float-right togglable"><a class="nav-bar-link" v-link="{ name: 'Home View' }">about</a></li>
 	//         <li class="float-right hamburger"><i v-on:click="togglePanel" class="fa fa-bars fa-lg"></i></li>
@@ -11232,7 +11236,7 @@
 	//      <ul>
 	//        <li><a class="nav-panel-link" v-on:click="togglePanel" v-link="{ name: 'Home View' }">About</a></li>
 	//        <li><a class="nav-panel-link" v-on:click="togglePanel" v-link="{ name: 'Blog List View' }">Blog</a></li>
-	//        <li><a class="nav-panel-link" v-on:click="togglePanel" v-link="{ name: 'CV View' }">CV</a></li>
+	//        <li><a class="nav-panel-link" v-on:click="togglePanel" v-link="{ name: 'Resume View' }">Resume</a></li>
 	//      </ul>
 	//     </div>
 	//   </div>
@@ -11267,7 +11271,7 @@
 /* 15 */
 /***/ function(module, exports) {
 
-	module.exports = "\n  <div class=\"nav-bar\">\n    <div class=\"nav-inner-container\">\n      <ul>\n        <li class=\"float-left\"><a class=\"nav-bar-title\" href=\"/\">JUSTIN HARRISON</a></li>\n        <li class=\"float-right togglable\"><a class=\"nav-bar-link\" v-link=\"{ name: 'CV View' }\">cv</a></li>\n        <li class=\"float-right togglable\"><a class=\"nav-bar-link\" v-link=\"{ name: 'Blog List View' }\">blog</a></li>\n        <li class=\"float-right togglable\"><a class=\"nav-bar-link\" v-link=\"{ name: 'Home View' }\">about</a></li>\n        <li class=\"float-right hamburger\"><i v-on:click=\"togglePanel\" class=\"fa fa-bars fa-lg\"></i></li>\n      </ul>\n    </div>\n    <div v-show=\"showPanel\" transition=\"nav-panel\" class=\"nav-panel\">\n     <ul>\n       <li><a class=\"nav-panel-link\" v-on:click=\"togglePanel\" v-link=\"{ name: 'Home View' }\">About</a></li>\n       <li><a class=\"nav-panel-link\" v-on:click=\"togglePanel\" v-link=\"{ name: 'Blog List View' }\">Blog</a></li>\n       <li><a class=\"nav-panel-link\" v-on:click=\"togglePanel\" v-link=\"{ name: 'CV View' }\">CV</a></li>\n     </ul>\n    </div>\n  </div>\n";
+	module.exports = "\n  <div class=\"nav-bar\">\n    <div class=\"nav-inner-container\">\n      <ul>\n        <li class=\"float-left\"><a class=\"nav-bar-title\" href=\"/\">JUSTIN HARRISON</a></li>\n        <li class=\"float-right togglable\"><a class=\"nav-bar-link\" v-link=\"{ name: 'Resume View' }\">resume</a></li>\n        <li class=\"float-right togglable\"><a class=\"nav-bar-link\" v-link=\"{ name: 'Blog List View' }\">blog</a></li>\n        <li class=\"float-right togglable\"><a class=\"nav-bar-link\" v-link=\"{ name: 'Home View' }\">about</a></li>\n        <li class=\"float-right hamburger\"><i v-on:click=\"togglePanel\" class=\"fa fa-bars fa-lg\"></i></li>\n      </ul>\n    </div>\n    <div v-show=\"showPanel\" transition=\"nav-panel\" class=\"nav-panel\">\n     <ul>\n       <li><a class=\"nav-panel-link\" v-on:click=\"togglePanel\" v-link=\"{ name: 'Home View' }\">About</a></li>\n       <li><a class=\"nav-panel-link\" v-on:click=\"togglePanel\" v-link=\"{ name: 'Blog List View' }\">Blog</a></li>\n       <li><a class=\"nav-panel-link\" v-on:click=\"togglePanel\" v-link=\"{ name: 'Resume View' }\">Resume</a></li>\n     </ul>\n    </div>\n  </div>\n";
 
 /***/ },
 /* 16 */
@@ -11475,7 +11479,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), true)
 	  if (!hotAPI.compatible) return
-	  var id = "/Users/Justin/Development/justinharrison.io/src/components/CV.vue"
+	  var id = "/Users/Justin/Development/justinharrison.io/src/components/Resume.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -11499,8 +11503,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-3cd60839&file=CV.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./CV.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-3cd60839&file=CV.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./CV.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-13403013&file=Resume.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Resume.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-13403013&file=Resume.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Resume.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -11527,7 +11531,7 @@
 /* 28 */
 /***/ function(module, exports) {
 
-	module.exports = "\n  <div class=\"my-resume\">\n    <div class=\"header\">\n      <div class=\"blk-1\">\n       <span class=\"main-title\">Web Application Developer</span>\n      </div>\n      <div class=\"blk-2\">\n        <span class=\"bold\">(206) 377-9027</span><br>\n        <span class=\"bold\">Skype: justin.a.harrison</span><br>\n        <a href=\"mailto:justinadenharrison@gmail.com\" target=\"_top\">justinadenharrison@gmail.com</a><br>\n      </div>\n    </div>\n    <div class=\"blk-3\">\n\n      <h3>Work Experience</h3>\n\n      <span class=\"title\">Web Engineer</span><br>\n      <span class=\"org\">Advercalls, Inc</span><br>\n      <span class=\"loc\">Los Angeles, CA</span><br>\n      <span class=\"dates\">Feb 2016 - Jul 2016</span>\n      <p>Developed a third-party JavaScript lead generation app that was fully customizable to client specifications. Wrote custom back-end integrations for marketing services like ActiveCampaign. Cleaned a large database of redundant or junk data then built a web directory service to navigate it. Incorporated user profiles, a membership service, and InfusionSoft for payment processing. Provided assistance and support to clients for tasks related to front-end development, database management, SEO/Analytics, and digital marketing tools. Conducted research and feasibility studies. Recruited, managed and wrote specs for off-shore developers. API design and development.</p>\n      \n      <span class=\"title\">Contract Software Developer</span><br>\n      <span class=\"org\">Not That This, LLC</span><br>\n      <span class=\"loc\">Burbank, CA</span><br>\n      <span class=\"dates\">Nov 2015 - Jan 2016</span>\n      <p>Converted PSD designs to pixel perfect UI with Enyo.js for an enterprise Cisco IoT project.</p>\n      \n      <span class=\"title\">Web Content Evaluator</span><br>\n      <span class=\"org\">FlexaSoft</span><br>\n      <span class=\"loc\">Redmond, WA</span><br>\n      <span class=\"dates\">Oct 2014 - Jun 2015</span><br>\n      <p>Evaluated the accuracy and relevancy of Microsoft Bing search results.</p>\n      \n      <span class=\"title\">Web Developer</span><br>\n      <span class=\"org\">University of California Institute for Research in the Arts</span><br>\n      <span class=\"loc\">Santa Barbara, CA</span><br>\n      <span class=\"dates\">Jul 2014 - Sep 2014</span><br>\n      <p>Worked on a new website for the UCIRA. Merged their main site and State of the Arts blog. Worked to create a platform for California art researchers to network and display their work. The project was cancelled after funding cuts.</p>\n\n      <span class=\"title\">IT Helpdesk Assistant</span><br>\n      <span class=\"org\">Davidson Library</span><br>\n      <span class=\"loc\">Santa Barbara, CA</span><br>\n      <span class=\"dates\">Mar 2013 - Jul 2014</span><br>\n      <p>Provided technical assistance and support related to computer networks, hardware, and software. Responded to calls and emails and tracked issues with JIRA to help diagnose, solve, and document problems. Managed hardware inventory.</p>\n\n\n    </div>\n\n    <div class=\"blk-4\">\n\n\n      <h3>Education and Awards</h3>\n\n      <span class=\"title\">BA in Art with High Honors</span><br>\n      <span class=\"org\">University of California</span><br>\n      <span class=\"loc\">Santa Barbara, CA</span><br>\n      <span class=\"dates\">Graduated 2014</span><br>\n      <p>Promising Artist Achievement Award, William Dole Award, Faculty Award of Distinction x2, Dean's Honors x5</p>\n\n      <h3 class=\"mono\">Professional Development</h3>\n\n      <span class=\"title\">MongoDB for Node.js Developers</span><br>\n      <span class=\"org\">MongoDB University</span><br>\n      <span class=\"dates\">Completed 2015</span><br><br>\n\n      <span class=\"title\">Front-End Web Developer Nanodegree</span><br>\n      <span class=\"org\">Udacity</span><br>\n      <span class=\"dates\">Completed 2015</span><br>\n\n      <h3>Skills</h3>\n\n      <p>HTML, CSS, JavaScript, PHP, MySQL, MongoDB, Unix, Bootstrap, jQuery, React, Knockout, Vue, Node, NPM, Express, SASS, LESS, Firebase, AWS, Webpack, Browserify, Gulp, WordPress, p5.js, Processing, Chrome Developer Tools, AJAX, and Google.</p>\n\n      <h3>Volunteering</h3>\n\n      <span class=\"title\">Shopify Administrator</span><br>\n      <span class=\"org\">Arroyo Food Co-op</span><br>\n      <span class=\"loc\">Pasadena, CA</span><br>\n      <span class=\"dates\">Feb 2016 - May 2016</span><br><br>\n\n      <span class=\"title\">Cook and Server</span><br>\n      <span class=\"org\">Food Not Bombs</span><br>\n      <span class=\"loc\">Goleta, CA</span><br>\n      <span class=\"dates\">Jan 2013 - Sep 2014</span>\n\n\n\n\n\n\n    </div>\n\n  </div>\n";
+	module.exports = "\n  <div class=\"my-resume\">\n    <div class=\"header\">\n      <div class=\"blk-1\">\n       <span class=\"main-title\">Web Application Developer</span>\n      </div>\n      <div class=\"blk-2\">\n        <span class=\"bold\">(206) 377-9027</span><br>\n        <span class=\"bold\">Skype: justin.a.harrison</span><br>\n        <a href=\"mailto:justinadenharrison@gmail.com\" target=\"_top\">justinadenharrison@gmail.com</a><br>\n      </div>\n    </div>\n    <div class=\"blk-3\">\n\n      <h3>Work Experience</h3>\n\n      <span class=\"title\">Web Engineer</span><br>\n      <span class=\"org\">Advercalls, Inc</span><br>\n      <span class=\"loc\">Los Angeles, CA</span><br>\n      <span class=\"dates\">Feb 2016 - Jul 2016</span>\n      <p>Developed a third-party JavaScript lead gen app. Wrote back-end integrations for marketing services like ActiveCampaign. Wrote scripts to clean redundancies and errors from a large database, built a web directory service to navigate the data, then incorporated user profiles, a membership service, and InfusionSoft for payment processing. Conducted research and feasibility studies. Recruited, managed and wrote specs for off-shore developers. Designed and developed APIs for our own services. Maintained dozens of websites.</p>\n      \n      <span class=\"title\">Contract Software Developer</span><br>\n      <span class=\"org\">Not That This, LLC</span><br>\n      <span class=\"loc\">Burbank, CA</span><br>\n      <span class=\"dates\">Nov 2015 - Jan 2016</span>\n      <p>Converted PSD designs to pixel perfect UI with Enyo.js for an enterprise Cisco IoT project.</p>\n      \n      <span class=\"title\">Web Content Evaluator</span><br>\n      <span class=\"org\">FlexaSoft</span><br>\n      <span class=\"loc\">Redmond, WA</span><br>\n      <span class=\"dates\">Oct 2014 - Jun 2015</span><br>\n      <p>Evaluated the accuracy and relevancy of Microsoft Bing search results.</p>\n      \n      <span class=\"title\">Web Developer</span><br>\n      <span class=\"org\">University of California Institute for Research in the Arts</span><br>\n      <span class=\"loc\">Santa Barbara, CA</span><br>\n      <span class=\"dates\">Jul 2014 - Sep 2014</span><br>\n      <p>Worked on a new website for the UCIRA. Merged their main site and State of the Arts blog. Worked to create a platform for California art researchers to network and display their work. The project was cancelled after funding cuts.</p>\n\n      <span class=\"title\">IT Helpdesk Assistant</span><br>\n      <span class=\"org\">Davidson Library</span><br>\n      <span class=\"loc\">Santa Barbara, CA</span><br>\n      <span class=\"dates\">Mar 2013 - Jul 2014</span><br>\n      <p>Provided technical assistance and support related to computer networks, hardware, and software. Responded to calls and emails and tracked issues with JIRA to help diagnose, solve, and document problems. Managed hardware inventory.</p>\n\n\n    </div>\n\n    <div class=\"blk-4\">\n\n\n      <h3>Education and Awards</h3>\n\n      <span class=\"title\">BA in Art with High Honors</span><br>\n      <span class=\"org\">University of California</span><br>\n      <span class=\"loc\">Santa Barbara, CA</span><br>\n      <span class=\"dates\">Graduated 2014</span><br>\n      <p>Promising Artist Achievement Award, William Dole Award, Faculty Award of Distinction x2, Dean's Honors x5</p>\n\n      <h3 class=\"mono\">Professional Development</h3>\n\n      <span class=\"title\">MongoDB for Node.js Developers</span><br>\n      <span class=\"org\">MongoDB University</span><br>\n      <span class=\"dates\">Completed 2015</span><br><br>\n\n      <span class=\"title\">Front-End Web Developer Nanodegree</span><br>\n      <span class=\"org\">Udacity</span><br>\n      <span class=\"dates\">Completed 2015</span><br>\n\n      <h3>Skills</h3>\n\n      <p>HTML, CSS, JavaScript, PHP, MySQL, MongoDB, Unix, Bootstrap, jQuery, React, Knockout, Vue, Node, NPM, Express, SASS, LESS, Firebase, AWS, Webpack, Browserify, Gulp, WordPress, p5.js, Processing, Chrome Developer Tools, AJAX, and Google.</p>\n\n      <h3>Volunteering</h3>\n\n      <span class=\"title\">Shopify Administrator</span><br>\n      <span class=\"org\">Arroyo Food Co-op</span><br>\n      <span class=\"loc\">Pasadena, CA</span><br>\n      <span class=\"dates\">Feb 2016 - May 2016</span><br><br>\n\n      <span class=\"title\">Cook and Server</span><br>\n      <span class=\"org\">Food Not Bombs</span><br>\n      <span class=\"loc\">Goleta, CA</span><br>\n      <span class=\"dates\">Jan 2013 - Sep 2014</span>\n\n\n\n\n\n\n    </div>\n\n  </div>\n";
 
 /***/ },
 /* 29 */

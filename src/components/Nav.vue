@@ -103,7 +103,7 @@
     <div class="nav-inner-container">
       <ul>
         <li class="float-left"><a class="nav-bar-title" href="/">JUSTIN HARRISON</a></li>
-        <li class="float-right togglable"><a class="nav-bar-link" v-link="{ name: 'CV View' }">cv</a></li>
+        <li class="float-right togglable"><a class="nav-bar-link" v-link="{ name: 'Resume View' }">resume</a></li>
         <li class="float-right togglable"><a class="nav-bar-link" v-link="{ name: 'Blog List View' }">blog</a></li>
         <li class="float-right togglable"><a class="nav-bar-link" v-link="{ name: 'Home View' }">about</a></li>
         <li class="float-right hamburger"><i v-on:click="togglePanel" class="fa fa-bars fa-lg"></i></li>
@@ -113,7 +113,7 @@
      <ul>
        <li><a class="nav-panel-link" v-on:click="togglePanel" v-link="{ name: 'Home View' }">About</a></li>
        <li><a class="nav-panel-link" v-on:click="togglePanel" v-link="{ name: 'Blog List View' }">Blog</a></li>
-       <li><a class="nav-panel-link" v-on:click="togglePanel" v-link="{ name: 'CV View' }">CV</a></li>
+       <li><a class="nav-panel-link" v-on:click="togglePanel" v-link="{ name: 'Resume View' }">Resume</a></li>
      </ul>
     </div>
   </div>

@@ -8,6 +8,7 @@ import Resume from './components/Resume.vue'
 import List from './components/List.vue'
 import Single from './components/Single.vue'
 import VueRouter from 'vue-router'
+import 'autotrack/lib/plugins/url-change-tracker'
 
 Vue.use(VueFire)
 Vue.use(VueRouter)

@@ -69,7 +69,7 @@
 
 	var _App2 = _interopRequireDefault(_App);
 
-	var _Admin = __webpack_require__(80);
+	var _Admin = __webpack_require__(12);
 
 	var _Admin2 = _interopRequireDefault(_Admin);
 
@@ -14043,11 +14043,391 @@
 	module.exports = "\n  <div>\n    <nav-view></nav-view>\n    <router-view></router-view>\n    <footer-view></footer-view>\n  </div>\n";
 
 /***/ },
-/* 12 */,
-/* 13 */,
-/* 14 */,
-/* 15 */,
-/* 16 */,
+/* 12 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(13)
+	__vue_script__ = __webpack_require__(15)
+	__vue_template__ = __webpack_require__(16)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/Justin/Development/justinharrison.io/src/components/Admin.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 13 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(14);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(10)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-02ee30d9&file=Admin.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Admin.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-02ee30d9&file=Admin.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Admin.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 14 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(9)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".admin-page,\ninput,\ntextarea,\nkeygen,\nselect,\nbutton {\n  font-family: 'Raleway', sans-serif; }\n\nbutton:focus {\n  outline: 0; }\n\n.admin-page {\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .admin-page .not-authorized {\n    margin-top: 38%;\n    text-align: center;\n    width: 100%; }\n    .admin-page .not-authorized button {\n      background-color: #4874d4;\n      border: none;\n      color: white;\n      font-size: 16px;\n      margin: 0 auto;\n      padding: 15px 32px;\n      text-align: center;\n      text-decoration: none; }\n  .admin-page .top-bar {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    height: 48px;\n    -ms-flex-flow: row wrap;\n        flex-flow: row wrap;\n    -webkit-box-pack: end;\n        -ms-flex-pack: end;\n            justify-content: flex-end;\n    margin-bottom: 12px; }\n    .admin-page .top-bar .top-button {\n      background-color: #4874d4;\n      border: 5px solid white;\n      border-radius: 40px;\n      color: white;\n      -webkit-box-flex: 1;\n          -ms-flex: 1 33%;\n              flex: 1 33%;\n      font-size: 14px; }\n  .admin-page .admin-tree {\n    box-sizing: border-box;\n    display: inline-block;\n    float: left;\n    width: 32%; }\n    .admin-page .admin-tree ul {\n      list-style-type: none;\n      padding: 0; }\n      .admin-page .admin-tree ul span {\n        border-bottom: 1px solid black;\n        font-size: 12px;\n        width: 100%; }\n  .admin-page .admin-editor {\n    box-sizing: border-box;\n    display: inline-block;\n    float: right;\n    width: 68%; }\n    .admin-page .admin-editor form {\n      margin-bottom: 48px;\n      width: 100%; }\n      .admin-page .admin-editor form input,\n      .admin-page .admin-editor form textarea {\n        display: block;\n        font-size: 14px;\n        margin: 0 auto 18px auto;\n        width: 100%; }\n      .admin-page .admin-editor form input {\n        height: 24px; }\n      .admin-page .admin-editor form textarea {\n        height: 500px; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 15 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _firebase = __webpack_require__(50);
+
+	var firebase = _interopRequireWildcard(_firebase);
+
+	var _firebase2 = __webpack_require__(49);
+
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+	// <style lang="sass?indentedSyntax">
+	// .admin-page,
+	// input,
+	// textarea,
+	// keygen,
+	// select,
+	// button
+	//   font-family: 'Raleway', sans-serif
+	//
+	// button:focus
+	//   outline: 0
+	//
+	// .admin-page
+	//   margin: auto
+	//   max-width: 960px
+	//   width: 86%
+	//
+	//   .not-authorized
+	//     margin-top: 38%
+	//     text-align: center
+	//     width: 100%
+	//
+	//     button
+	//       background-color: #4874d4
+	//       border: none
+	//       color: white
+	//       font-size: 16px
+	//       margin: 0 auto
+	//       padding: 15px 32px
+	//       text-align: center
+	//       text-decoration: none
+	//
+	//   .top-bar
+	//     display: flex
+	//     height: 48px
+	//     flex-flow: row wrap;
+	//     justify-content: flex-end;
+	//     margin-bottom: 12px
+	//
+	//     .top-button
+	//       background-color: #4874d4
+	//       border: 5px solid white
+	//       border-radius: 40px
+	//       color: white
+	//       flex: 1 33%
+	//       font-size: 14px
+	//
+	//   .admin-tree
+	//     -webkit-box-sizing: border-box
+	//     -moz-box-sizing: border-box
+	//     box-sizing: border-box
+	//     display: inline-block
+	//     float: left
+	//     width: 32%
+	//
+	//     ul
+	//       list-style-type: none
+	//       padding: 0
+	//
+	//       span
+	//         border-bottom: 1px solid black
+	//         font-size: 12px
+	//         width: 100%
+	//
+	//   .admin-editor
+	//     -webkit-box-sizing: border-box
+	//     -moz-box-sizing: border-box
+	//     box-sizing: border-box
+	//     display: inline-block
+	//     float: right
+	//     width: 68%
+	//
+	//     form
+	//       margin-bottom: 48px
+	//       width: 100%
+	//
+	//       input,
+	//       textarea
+	//         display: block
+	//         font-size: 14px
+	//         margin: 0 auto 18px auto
+	//         width: 100%
+	//
+	//       input
+	//         height: 24px
+	//
+	//       textarea
+	//         height: 500px
+	// </style>
+	//
+	// <template>
+	//   <div class="admin-page">
+	//     <div v-if="user && user.email === 'justinadenharrison@gmail.com'">
+	//
+	//
+	//       <div class="top-bar">
+	//         <button class="top-button" v-on:click="toggleCreatePost">New Blog Post</button>
+	//         <button class="top-button" v-on:click="toggleCreateProject">New Portfolio Project</button>
+	//         <button class="top-button" v-on:click="signOut">Sign Out</button>
+	//       </div>
+	//
+	//       <div class="admin-tree">
+	//
+	//         <h5>Blog Posts</h5>
+	//         <ul>
+	//           <li v-for="post in posts | orderBy 'dateCreated' -1" track-by=".key">
+	//             <span @click="toggleEditPost(post['.key'])">{{ post['.key'] }}</span>
+	//           </li>
+	//         </ul>
+	//
+	//         <h5>Portfolio Projects</h5>
+	//         <ul>
+	//           <li v-for="project in projects | orderBy 'dateCreated' -1" track-by=".key">
+	//             <span @click="toggleEditProject(project['.key'])">{{ project['.key'] }}</span>
+	//           </li>
+	//         </ul>
+	//
+	//       </div>
+	//
+	//       <div class="admin-editor">
+	//
+	//         <!-- Form for creating new blog posts -->
+	//         <form v-if="showCreatePost === true" @submit.prevent="setPost">
+	//           <input v-model="newPost.title" placeholder="Post title">
+	//           <input v-model="newPost.category" placeholder="Post category">
+	//           <textarea v-model="newPost.content" placeholder="Post content"></textarea
+	//           <input v-model="newPost.key" placeholder="Pretty url">
+	//           <button>Add Post</button>
+	//           <button type="button" @click="resetState">Cancel</button>
+	//         </form>
+	//
+	//         <!-- Form for editing blog posts -->
+	//         <form v-if="showEditPost === true" @submit.prevent="setPost">
+	//           <input v-model="newPost.title">
+	//           <input v-model="newPost.category">
+	//           <textarea v-model="newPost.content"></textarea>
+	//           <input v-model="newPost.key">
+	//           <button>Submit Edit</button>
+	//           <button @click="deletePost(post['.key'])">Delete Post</button>
+	//         </form>
+	//
+	//         <!-- Form for creating new portfolio projects -->
+	//         <form v-if="showCreateProject === true" @submit.prevent="setProject">
+	//           <input v-model="newProject.title" placeholder="Project title">
+	//           <input v-model="newProject.category" placeholder="Project category">
+	//           <textarea v-model="newProject.content" placeholder="Project content"></textarea
+	//           <input v-model="newProject.key" placeholder="Pretty url">
+	//           <button>Add Project</button>
+	//           <button type="button" @click="resetState">Cancel</button>
+	//         </form>
+	//
+	//         <!-- Form for editing portfolio projects -->
+	//         <form v-if="showEditProject === true" @submit.prevent="setProject">
+	//           <input v-model="newProject.title">
+	//           <input v-model="newProject.category">
+	//           <textarea v-model="newProject.content"></textarea>
+	//           <input v-model="newProject.key">
+	//           <button>Submit Edit</button>
+	//           <button @click="deleteProject(project['.key'])">Delete Project</button>
+	//         </form>
+	//       </div>
+	//
+	//     </div>
+	//     <div v-else class="not-authorized">
+	//       <button v-on:click="signIn">Sign In</button>
+	//     </div>
+	//   </div>
+	// </template>
+	//
+	// <script>
+	var postsRef = _firebase2.db.ref('blog/');
+	var projsRef = _firebase2.db.ref('portfolio/');
+
+	exports.default = {
+	  created: function created() {
+	    // Get current user
+	    var that = this;
+	    firebase.auth().onAuthStateChanged(function (current) {
+	      if (current) {
+	        that.user = current;
+	      } else {
+	        that.user = null;
+	      }
+	    });
+	  },
+	  data: function data() {
+	    return {
+	      newPost: {},
+	      newProject: {},
+	      provider: new firebase.auth.GoogleAuthProvider(),
+	      showCreatePost: false,
+	      showEditPost: false,
+	      showCreateProject: false,
+	      showEditProject: false,
+	      user: null
+	    };
+	  },
+
+	  firebase: {
+	    posts: postsRef,
+	    projects: projsRef
+	  },
+	  methods: {
+	    deletePost: function deletePost(key) {
+	      _firebase2.db.ref('/blog').child(key).remove();
+	    },
+	    deleteProject: function deleteProject(key) {
+	      _firebase2.db.ref('/portfolio').child(key).remove();
+	    },
+	    resetState: function resetState() {
+	      this.newPost = {};
+	      this.newProject = {};
+	      this.showCreatePost = false;
+	      this.showEditPost = false;
+	      this.showCreateProject = false;
+	      this.showEditProject = false;
+	    },
+	    setPost: function setPost() {
+	      var currentDate = Date.now();
+	      var setData = { title: this.newPost.title, category: this.newPost.category, content: this.newPost.content };
+	      // Check if the post has already been created
+	      if (this.newPost.dateCreated) {
+	        setData.dateCreated = this.newPost.dateCreated;
+	        setData.dateUpdated = currentDate;
+	      } else {
+	        setData.dateCreated = currentDate;
+	      }
+	      _firebase2.db.ref('blog/' + this.newPost.key).set(setData);
+	      // Clear our state
+	      this.resetState();
+	    },
+	    setProject: function setProject() {
+	      var currentDate = Date.now();
+	      var setData = { title: this.newProject.title, category: this.newProject.category, content: this.newProject.content };
+	      // Check if the project has already been created
+	      if (this.newProject.dateCreated) {
+	        setData.dateCreated = this.newProject.dateCreated;
+	        setData.dateUpdated = currentDate;
+	      } else {
+	        setData.dateCreated = currentDate;
+	      }
+	      _firebase2.db.ref('portfolio/' + this.newProject.key).set(setData);
+	      // Clear our state
+	      this.resetState();
+	    },
+	    signIn: function signIn() {
+	      firebase.auth().signInWithRedirect(this.provider);
+	    },
+	    signOut: function signOut() {
+	      firebase.auth().signOut().then(function () {
+	        // Sign-out successful
+	        console.log("Sign out was successful");
+	      }, function (error) {
+	        // An error happened
+	        console.log("A sign out error happened");
+	      });
+	    },
+	    toggleCreatePost: function toggleCreatePost() {
+	      this.resetState();
+	      this.showCreatePost = true;
+	    },
+	    toggleEditPost: function toggleEditPost(key) {
+	      this.resetState();
+	      // Load post to edit into form
+	      var that = this;
+	      _firebase2.db.ref('/blog').child(key).once('value').then(function (snap) {
+	        that.newPost.title = snap.val().title;
+	        that.newPost.category = snap.val().category;
+	        that.newPost.content = snap.val().content;
+	        that.newPost.key = snap.key;
+	        that.newPost.dateCreated = snap.val().dateCreated;
+	      });
+	      // Show form
+	      this.showEditPost = true;
+	    },
+	    toggleCreateProject: function toggleCreateProject() {
+	      this.resetState();
+	      this.showCreateProject = true;
+	    },
+	    toggleEditProject: function toggleEditProject() {
+	      this.resetState();
+	      // Load project to edit into form
+	      var that = this;
+	      _firebase2.db.ref('/portfolio').child(key).once('value').then(function (snap) {
+	        that.newProject.title = snap.val().title;
+	        that.newProject.category = snap.val().category;
+	        that.newProject.content = snap.val().content;
+	        that.newProject.key = snap.key;
+	        that.newProject.dateCreated = snap.val().dateCreated;
+	      });
+	      // Show form
+	      this.showEditProject = true;
+	    }
+	  }
+	};
+	// </script>
+	//
+
+/***/ },
+/* 16 */
+/***/ function(module, exports) {
+
+	module.exports = "\n  <div class=\"admin-page\">\n    <div v-if=\"user && user.email === 'justinadenharrison@gmail.com'\">\n      \n\n      <div class=\"top-bar\">\n        <button class=\"top-button\" v-on:click=\"toggleCreatePost\">New Blog Post</button>\n        <button class=\"top-button\" v-on:click=\"toggleCreateProject\">New Portfolio Project</button>\n        <button class=\"top-button\" v-on:click=\"signOut\">Sign Out</button>\n      </div>\n\n      <div class=\"admin-tree\">\n\n        <h5>Blog Posts</h5>\n        <ul>\n          <li v-for=\"post in posts | orderBy 'dateCreated' -1\" track-by=\".key\">\n            <span @click=\"toggleEditPost(post['.key'])\">{{ post['.key'] }}</span>\n          </li>\n        </ul>\n\n        <h5>Portfolio Projects</h5>\n        <ul>\n          <li v-for=\"project in projects | orderBy 'dateCreated' -1\" track-by=\".key\">\n            <span @click=\"toggleEditProject(project['.key'])\">{{ project['.key'] }}</span>\n          </li>\n        </ul>\n\n      </div>\n\n      <div class=\"admin-editor\">\n\n        <!-- Form for creating new blog posts -->\n        <form v-if=\"showCreatePost === true\" @submit.prevent=\"setPost\">\n          <input v-model=\"newPost.title\" placeholder=\"Post title\">\n          <input v-model=\"newPost.category\" placeholder=\"Post category\">\n          <textarea v-model=\"newPost.content\" placeholder=\"Post content\"></textarea\n          <input v-model=\"newPost.key\" placeholder=\"Pretty url\">\n          <button>Add Post</button>\n          <button type=\"button\" @click=\"resetState\">Cancel</button>\n        </form>\n\n        <!-- Form for editing blog posts -->\n        <form v-if=\"showEditPost === true\" @submit.prevent=\"setPost\">\n          <input v-model=\"newPost.title\">\n          <input v-model=\"newPost.category\">\n          <textarea v-model=\"newPost.content\"></textarea>\n          <input v-model=\"newPost.key\">\n          <button>Submit Edit</button>\n          <button @click=\"deletePost(post['.key'])\">Delete Post</button>\n        </form>\n\n        <!-- Form for creating new portfolio projects -->\n        <form v-if=\"showCreateProject === true\" @submit.prevent=\"setProject\">\n          <input v-model=\"newProject.title\" placeholder=\"Project title\">\n          <input v-model=\"newProject.category\" placeholder=\"Project category\">\n          <textarea v-model=\"newProject.content\" placeholder=\"Project content\"></textarea\n          <input v-model=\"newProject.key\" placeholder=\"Pretty url\">\n          <button>Add Project</button>\n          <button type=\"button\" @click=\"resetState\">Cancel</button>\n        </form>\n\n        <!-- Form for editing portfolio projects -->\n        <form v-if=\"showEditProject === true\" @submit.prevent=\"setProject\">\n          <input v-model=\"newProject.title\">\n          <input v-model=\"newProject.category\">\n          <textarea v-model=\"newProject.content\"></textarea>\n          <input v-model=\"newProject.key\">\n          <button>Submit Edit</button>\n          <button @click=\"deleteProject(project['.key'])\">Delete Project</button>\n        </form>\n      </div>\n      \n    </div>\n    <div v-else class=\"not-authorized\">\n      <button v-on:click=\"signIn\">Sign In</button>\n    </div>\n  </div>\n";
+
+/***/ },
 /* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -17861,295 +18241,6 @@
 	  }
 	})(this);
 
-
-/***/ },
-/* 70 */,
-/* 71 */,
-/* 72 */,
-/* 73 */,
-/* 74 */,
-/* 75 */,
-/* 76 */,
-/* 77 */,
-/* 78 */,
-/* 79 */,
-/* 80 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__webpack_require__(81)
-	__vue_script__ = __webpack_require__(83)
-	__vue_template__ = __webpack_require__(84)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "/Users/Justin/Development/justinharrison.io/src/components/Admin.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 81 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(82);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(10)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-02ee30d9&file=Admin.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Admin.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-02ee30d9&file=Admin.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Admin.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 82 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(9)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".admin-page {\n  font-family: 'Raleway', sans-serif;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .admin-page .not-authorized {\n    margin-top: 38%;\n    text-align: center;\n    width: 100%; }\n    .admin-page .not-authorized button {\n      background-color: #4874d4;\n      border: none;\n      color: white;\n      font-size: 16px;\n      margin: 0 auto;\n      padding: 15px 32px;\n      text-align: center;\n      text-decoration: none; }\n  .admin-page .admin-tree {\n    box-sizing: border-box;\n    display: inline-block;\n    float: left;\n    width: 32%; }\n    .admin-page .admin-tree ul {\n      list-style-type: none;\n      padding: 0; }\n      .admin-page .admin-tree ul span {\n        border-bottom: 1px solid black;\n        font-size: 12px;\n        width: 100%; }\n  .admin-page .admin-editor {\n    box-sizing: border-box;\n    display: inline-block;\n    float: right;\n    width: 68%; }\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 83 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _firebase = __webpack_require__(50);
-
-	var firebase = _interopRequireWildcard(_firebase);
-
-	var _firebase2 = __webpack_require__(49);
-
-	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-	// <style lang="sass?indentedSyntax">
-	// .admin-page
-	//   font-family: 'Raleway', sans-serif
-	//   margin: auto
-	//   max-width: 960px
-	//   width: 86%
-	//
-	//   .not-authorized
-	//     margin-top: 38%
-	//     text-align: center
-	//     width: 100%
-	//
-	//     button
-	//       background-color: #4874d4
-	//       border: none
-	//       color: white
-	//       font-size: 16px
-	//       margin: 0 auto
-	//       padding: 15px 32px
-	//       text-align: center
-	//       text-decoration: none
-	//
-	//   .admin-tree
-	//     -webkit-box-sizing: border-box
-	//     -moz-box-sizing: border-box
-	//     box-sizing: border-box
-	//     display: inline-block
-	//     float: left
-	//     width: 32%
-	//
-	//     ul
-	//       list-style-type: none
-	//       padding: 0
-	//
-	//       span
-	//         border-bottom: 1px solid black
-	//         font-size: 12px
-	//         width: 100%
-	//
-	//   .admin-editor
-	//     -webkit-box-sizing: border-box
-	//     -moz-box-sizing: border-box
-	//     box-sizing: border-box
-	//     display: inline-block
-	//     float: right
-	//     width: 68%
-	// </style>
-	//
-	// <template>
-	//   <div class="admin-page">
-	//     <div v-if="user && user.email === 'justinadenharrison@gmail.com'">
-	//
-	//
-	//       <div class="top-bar">
-	//         <button v-on:click="toggleCreatePost">Create New Post</button>
-	//         <button v-on:click="signOut">Sign Out</button>
-	//       </div>
-	//
-	//       <div class="admin-tree">
-	//         <h5>Blog Posts</h5>
-	//         <ul>
-	//           <li v-for="post in posts | orderBy 'dateCreated' -1" track-by=".key">
-	//             <span @click="toggleEditPost(post['.key'])">{{ post['.key'] }}</span>
-	//           </li>
-	//         </ul>
-	//         <h5>Portfolio Projects</h5>
-	//         <ul>
-	//           <li>
-	//           </li>
-	//         </ul>
-	//       </div>
-	//
-	//       <div class="admin-editor">
-	//
-	//         <form v-if="showCreatePost === true" @submit.prevent="setPost">
-	//           <input v-model="newPost.title" placeholder="Post title"><br>
-	//           <input v-model="newPost.category" placeholder="Post category"><br>
-	//           <textarea v-model="newPost.content" placeholder="Post content"></textarea><br>
-	//           <input v-model="newPost.key" placeholder="Pretty url"><br>
-	//           <button>Add Post</button>
-	//           <button type="button" @click="cancelNewPost">Cancel</button>
-	//         </form>
-	//
-	//         <form v-if="showEditPost === true" @submit.prevent="setPost">
-	//           <input v-model="newPost.title"><br>
-	//           <input v-model="newPost.category"><br>
-	//           <textarea v-model="newPost.content"></textarea><br>
-	//           <input v-model="newPost.key"><br>
-	//           <button>Submit Edit</button>
-	//           <button @click="deletePost(post['.key'])">Delete Post</button>
-	//         </form>
-	//       </div>
-	//
-	//     </div>
-	//     <div v-else class="not-authorized">
-	//       <button v-on:click="signIn">Sign In</button>
-	//     </div>
-	//   </div>
-	// </template>
-	//
-	// <script>
-	var postsRef = _firebase2.db.ref('blog/');
-	// const projsRef = db.ref('portfolio/')
-
-	exports.default = {
-	  created: function created() {
-	    // Get current user
-	    var that = this;
-	    firebase.auth().onAuthStateChanged(function (current) {
-	      if (current) {
-	        that.user = current;
-	      } else {
-	        that.user = null;
-	      }
-	    });
-	  },
-	  data: function data() {
-	    return {
-	      newPost: {},
-	      provider: new firebase.auth.GoogleAuthProvider(),
-	      showCreatePost: false,
-	      showDelete: false,
-	      showEditPost: false,
-	      user: null
-	    };
-	  },
-
-	  firebase: {
-	    posts: postsRef
-	  },
-	  methods: {
-	    cancelNewPost: function cancelNewPost() {
-	      this.newPost = {};
-	      this.showCreatePost = false;
-	    },
-	    deletePost: function deletePost(key) {
-	      _firebase2.db.ref('/blog').child(key).remove();
-	    },
-	    setPost: function setPost() {
-	      var currentDate = Date.now();
-	      var setData = { title: this.newPost.title, category: this.newPost.category, content: this.newPost.content };
-	      // Check if the post has already been created
-	      if (this.newPost.dateCreated) {
-	        setData.dateCreated = this.newPost.dateCreated;
-	        setData.dateUpdated = currentDate;
-	      } else {
-	        setData.dateCreated = currentDate;
-	      }
-	      _firebase2.db.ref('blog/' + this.newPost.key).set(setData);
-	      // Clear our state
-	      this.newPost = {};
-	      this.showCreatePost = false;
-	      this.showEditPost = false;
-	      this.showDelete = false;
-	    },
-	    signIn: function signIn() {
-	      firebase.auth().signInWithRedirect(this.provider);
-	    },
-	    signOut: function signOut() {
-	      firebase.auth().signOut().then(function () {
-	        // Sign-out successful
-	        console.log("Sign out was successful");
-	      }, function (error) {
-	        // An error happened
-	        console.log("A sign out error happened");
-	      });
-	    },
-	    toggleCreatePost: function toggleCreatePost() {
-	      this.newPost = {};
-	      this.showEditPost = false;
-	      this.showCreatePost = true;
-	    },
-	    toggleEditPost: function toggleEditPost(key) {
-	      this.newPost = {};
-	      this.showCreatePost = false;
-	      // Load post to edit into form
-	      var that = this;
-	      _firebase2.db.ref('/blog').child(key).once('value').then(function (snap) {
-	        that.newPost.title = snap.val().title;
-	        that.newPost.category = snap.val().category;
-	        that.newPost.content = snap.val().content;
-	        that.newPost.key = snap.key;
-	        that.newPost.dateCreated = snap.val().dateCreated;
-	      });
-	      // Show form
-	      this.showEditPost = true;
-	    }
-	  }
-	};
-	// </script>
-	//
-
-/***/ },
-/* 84 */
-/***/ function(module, exports) {
-
-	module.exports = "\n  <div class=\"admin-page\">\n    <div v-if=\"user && user.email === 'justinadenharrison@gmail.com'\">\n      \n\n      <div class=\"top-bar\">\n        <button v-on:click=\"toggleCreatePost\">Create New Post</button>\n        <button v-on:click=\"signOut\">Sign Out</button>\n      </div>\n\n      <div class=\"admin-tree\">\n        <h5>Blog Posts</h5>\n        <ul>\n          <li v-for=\"post in posts | orderBy 'dateCreated' -1\" track-by=\".key\">\n            <span @click=\"toggleEditPost(post['.key'])\">{{ post['.key'] }}</span>\n          </li>\n        </ul>\n        <h5>Portfolio Projects</h5>\n        <ul>\n          <li>\n          </li>\n        </ul>\n      </div>\n\n      <div class=\"admin-editor\">\n\n        <form v-if=\"showCreatePost === true\" @submit.prevent=\"setPost\">\n          <input v-model=\"newPost.title\" placeholder=\"Post title\"><br>\n          <input v-model=\"newPost.category\" placeholder=\"Post category\"><br>\n          <textarea v-model=\"newPost.content\" placeholder=\"Post content\"></textarea><br>\n          <input v-model=\"newPost.key\" placeholder=\"Pretty url\"><br>\n          <button>Add Post</button>\n          <button type=\"button\" @click=\"cancelNewPost\">Cancel</button>\n        </form>\n\n        <form v-if=\"showEditPost === true\" @submit.prevent=\"setPost\">\n          <input v-model=\"newPost.title\"><br>\n          <input v-model=\"newPost.category\"><br>\n          <textarea v-model=\"newPost.content\"></textarea><br>\n          <input v-model=\"newPost.key\"><br>\n          <button>Submit Edit</button>\n          <button @click=\"deletePost(post['.key'])\">Delete Post</button>\n        </form>\n      </div>\n      \n    </div>\n    <div v-else class=\"not-authorized\">\n      <button v-on:click=\"signIn\">Sign In</button>\n    </div>\n  </div>\n";
 
 /***/ }
 /******/ ]);

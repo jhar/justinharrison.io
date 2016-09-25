@@ -9,6 +9,8 @@ import List from './components/List.vue'
 import Single from './components/Single.vue'
 import VueRouter from 'vue-router'
 import 'autotrack/lib/plugins/url-change-tracker'
+import marked from 'marked'
+import dateFormat from 'dateformat'
 
 Vue.use(VueFire)
 Vue.use(VueRouter)
@@ -50,3 +52,12 @@ router.redirect({
 })
 
 router.start(App, '#app')
+
+Vue.filter('marked', function(string) {
+  if (string) return marked(string)
+})
+
+Vue.filter('dated', function(digits) {
+  var newDate = new Date(digits)
+  return dateFormat(newDate, "mmmm dS, yyyy")
+})

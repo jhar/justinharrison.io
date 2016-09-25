@@ -16,7 +16,6 @@
   },
   "dependencies": {
     "babel-runtime": "^6.11.6",
-    "bootstrap": "^3.3.5",
     "dateformat": "^1.0.12",
     "firebase": "^3.2.1",
     "markdown": "^0.5.0",
@@ -28,7 +27,6 @@
     "vue-loader": "^7.5.3",
     "vue-resource": "^0.1.17",
     "vue-router": "^0.7.5",
-    "vuefire": "^1.2.0",
-    "vuex": "^1.0.0-rc.2"
+    "vuefire": "^1.2.0"
   }
 }

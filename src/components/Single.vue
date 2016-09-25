@@ -6,17 +6,17 @@
 
   .post-info
     color: #676767
-    font: 12px 'Ubuntu', sans-serif
+    font: 12px 'Raleway', sans-serif
 
   .italic
     font-style: italic
 
   h2
-    font-family: 'Ubuntu Mono', monospace
+    font-family: 'Raleway', monospace
     text-transform: capitalize
 
   p
-    font: 16px 'Ubuntu', sans-serif
+    font: 16px 'Raleway', sans-serif
     color: #676767
 
   ul
@@ -83,8 +83,6 @@
 </template>
 
 <script>
-  import marked from 'marked'
-  import dateFormat from 'dateformat'
   import * as firebase from 'firebase'
   import { db } from '../services/firebase'
 
@@ -125,13 +123,6 @@
           that.user = null;
         }
       });
-    },
-    filters: {
-      marked: marked,
-      dated(digits) {
-        var newDate = new Date(digits);
-        return dateFormat(newDate, "mmmm dS, yyyy");
-      }
     },
     methods: {
       setPost() {

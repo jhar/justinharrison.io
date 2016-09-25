@@ -12415,8 +12415,8 @@
 	//     <h2>{{ post.title }}</h2>
 	//     <span class="post-info" v-if="post.dateCreated">{{ post.dateCreated | dated  }} {{ post.category }} <span class="italic" v-if="post.dateUpdated">Updated {{ post.dateUpdated | dated  }}</span></span><br>
 	//     <div v-if="user">
-	//       <button v-if="user.email === 'jhar87@gmail.com'" @click="toggleEditPost(post['.key'])">Edit Post</button>
-	//       <button v-if="user.email === 'jhar87@gmail.com'" @click="deletePost(post['.key'])">Delete Post</button>
+	//       <button v-if="user.email === admin" @click="toggleEditPost(post['.key'])">Edit Post</button>
+	//       <button v-if="user.email === admin" @click="deletePost(post['.key'])">Delete Post</button>
 	//     </div>
 	//     <div>
 	//       {{{ post.content | marked }}}
@@ -12424,21 +12424,21 @@
 	//     <div class="user-bar" v-if="user">
 	//       <ul>
 	//         <li v-if="user.email">{{user.email}}</li>
-	//         <li v-if="user.email === 'jhar87@gmail.com'">
+	//         <li v-if="user.email === admin">
 	//           <button @click="toggleCreatePost">Create Post</button>
 	//         </li>
 	//         <li>
 	//           <button v-on:click="signOut">Sign Out</button>
 	//         </li>
 	//       </ul>
-	//       <form v-if="user.email === 'jhar87@gmail.com' && showCreatePost === true" @submit.prevent="setPost">
+	//       <form v-if="user.email === admin && showCreatePost === true" @submit.prevent="setPost">
 	//         <input v-model="newPost.title" placeholder="Post title"><br>
 	//         <input v-model="newPost.category" placeholder="Post category"><br>
 	//         <textarea v-model="newPost.content" placeholder="Post content"></textarea><br>
 	//         <input v-model="newPost.key" placeholder="Pretty url"><br>
 	//         <button>Add Post</button>
 	//       </form>
-	//       <form v-if="user.email === 'jhar87@gmail.com' && showEditPost === true" @submit.prevent="setPost">
+	//       <form v-if="user.email === admin && showEditPost === true" @submit.prevent="setPost">
 	//         <input v-model="newPost.title"><br>
 	//         <input v-model="newPost.category"><br>
 	//         <textarea v-model="newPost.content"></textarea><br>
@@ -12463,6 +12463,7 @@
 	  },
 	  data: function data() {
 	    return {
+	      admin: 'justinadenharrison@gmail.com',
 	      user: null,
 	      loaded: false,
 	      newPost: {},
@@ -14085,7 +14086,7 @@
 /* 43 */
 /***/ function(module, exports) {
 
-	module.exports = "\n  <div class=\"blog-single-view\">\n    <h2>{{ post.title }}</h2>\n    <span class=\"post-info\" v-if=\"post.dateCreated\">{{ post.dateCreated | dated  }} {{ post.category }} <span class=\"italic\" v-if=\"post.dateUpdated\">Updated {{ post.dateUpdated | dated  }}</span></span><br>\n    <div v-if=\"user\">\n      <button v-if=\"user.email === 'jhar87@gmail.com'\" @click=\"toggleEditPost(post['.key'])\">Edit Post</button>\n      <button v-if=\"user.email === 'jhar87@gmail.com'\" @click=\"deletePost(post['.key'])\">Delete Post</button>\n    </div>\n    <div>\n      {{{ post.content | marked }}}\n    </div>\n    <div class=\"user-bar\" v-if=\"user\">\n      <ul>\n        <li v-if=\"user.email\">{{user.email}}</li>\n        <li v-if=\"user.email === 'jhar87@gmail.com'\">\n          <button @click=\"toggleCreatePost\">Create Post</button>\n        </li>\n        <li>\n          <button v-on:click=\"signOut\">Sign Out</button>\n        </li>\n      </ul>\n      <form v-if=\"user.email === 'jhar87@gmail.com' && showCreatePost === true\" @submit.prevent=\"setPost\">\n        <input v-model=\"newPost.title\" placeholder=\"Post title\"><br>\n        <input v-model=\"newPost.category\" placeholder=\"Post category\"><br>\n        <textarea v-model=\"newPost.content\" placeholder=\"Post content\"></textarea><br>\n        <input v-model=\"newPost.key\" placeholder=\"Pretty url\"><br>\n        <button>Add Post</button>\n      </form>\n      <form v-if=\"user.email === 'jhar87@gmail.com' && showEditPost === true\" @submit.prevent=\"setPost\">\n        <input v-model=\"newPost.title\"><br>\n        <input v-model=\"newPost.category\"><br>\n        <textarea v-model=\"newPost.content\"></textarea><br>\n        <input v-model=\"newPost.key\"><br>\n        <button>Submit Edit</button>\n      </form>\n    </div>\n    <div v-else>\n      <input class=\"discreet\" @keyup.esc=\"signIn\">\n    </div>\n  </div>\n";
+	module.exports = "\n  <div class=\"blog-single-view\">\n    <h2>{{ post.title }}</h2>\n    <span class=\"post-info\" v-if=\"post.dateCreated\">{{ post.dateCreated | dated  }} {{ post.category }} <span class=\"italic\" v-if=\"post.dateUpdated\">Updated {{ post.dateUpdated | dated  }}</span></span><br>\n    <div v-if=\"user\">\n      <button v-if=\"user.email === admin\" @click=\"toggleEditPost(post['.key'])\">Edit Post</button>\n      <button v-if=\"user.email === admin\" @click=\"deletePost(post['.key'])\">Delete Post</button>\n    </div>\n    <div>\n      {{{ post.content | marked }}}\n    </div>\n    <div class=\"user-bar\" v-if=\"user\">\n      <ul>\n        <li v-if=\"user.email\">{{user.email}}</li>\n        <li v-if=\"user.email === admin\">\n          <button @click=\"toggleCreatePost\">Create Post</button>\n        </li>\n        <li>\n          <button v-on:click=\"signOut\">Sign Out</button>\n        </li>\n      </ul>\n      <form v-if=\"user.email === admin && showCreatePost === true\" @submit.prevent=\"setPost\">\n        <input v-model=\"newPost.title\" placeholder=\"Post title\"><br>\n        <input v-model=\"newPost.category\" placeholder=\"Post category\"><br>\n        <textarea v-model=\"newPost.content\" placeholder=\"Post content\"></textarea><br>\n        <input v-model=\"newPost.key\" placeholder=\"Pretty url\"><br>\n        <button>Add Post</button>\n      </form>\n      <form v-if=\"user.email === admin && showEditPost === true\" @submit.prevent=\"setPost\">\n        <input v-model=\"newPost.title\"><br>\n        <input v-model=\"newPost.category\"><br>\n        <textarea v-model=\"newPost.content\"></textarea><br>\n        <input v-model=\"newPost.key\"><br>\n        <button>Submit Edit</button>\n      </form>\n    </div>\n    <div v-else>\n      <input class=\"discreet\" @keyup.esc=\"signIn\">\n    </div>\n  </div>\n";
 
 /***/ },
 /* 44 */

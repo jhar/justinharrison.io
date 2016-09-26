@@ -73,31 +73,31 @@
 
 	var _Admin2 = _interopRequireDefault(_Admin);
 
-	var _Nav = __webpack_require__(17);
+	var _Nav = __webpack_require__(23);
 
 	var _Nav2 = _interopRequireDefault(_Nav);
 
-	var _Footer = __webpack_require__(22);
+	var _Footer = __webpack_require__(28);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
-	var _Home = __webpack_require__(26);
+	var _Home = __webpack_require__(32);
 
 	var _Home2 = _interopRequireDefault(_Home);
 
-	var _Resume = __webpack_require__(31);
+	var _Resume = __webpack_require__(37);
 
 	var _Resume2 = _interopRequireDefault(_Resume);
 
-	var _Portfolio = __webpack_require__(35);
+	var _Portfolio = __webpack_require__(41);
 
 	var _Portfolio2 = _interopRequireDefault(_Portfolio);
 
-	var _Project = __webpack_require__(40);
+	var _Project = __webpack_require__(46);
 
 	var _Project2 = _interopRequireDefault(_Project);
 
-	var _List = __webpack_require__(45);
+	var _List = __webpack_require__(51);
 
 	var _List2 = _interopRequireDefault(_List);
 
@@ -14049,7 +14049,7 @@
 	var __vue_script__, __vue_template__
 	__webpack_require__(13)
 	__vue_script__ = __webpack_require__(15)
-	__vue_template__ = __webpack_require__(16)
+	__vue_template__ = __webpack_require__(22)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
@@ -14100,7 +14100,7 @@
 
 
 	// module
-	exports.push([module.id, ".admin-page,\ninput,\ntextarea,\nkeygen,\nselect,\nbutton {\n  font-family: 'Raleway', sans-serif; }\n\nbutton:focus {\n  outline: 0; }\n\n.admin-page {\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .admin-page .not-authorized {\n    margin-top: 38%;\n    text-align: center;\n    width: 100%; }\n    .admin-page .not-authorized button {\n      background-color: #4874d4;\n      border: none;\n      color: white;\n      font-size: 16px;\n      margin: 0 auto;\n      padding: 15px 32px;\n      text-align: center;\n      text-decoration: none; }\n  .admin-page .top-bar {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    height: 48px;\n    -ms-flex-flow: row wrap;\n        flex-flow: row wrap;\n    -webkit-box-pack: end;\n        -ms-flex-pack: end;\n            justify-content: flex-end;\n    margin-bottom: 12px; }\n    .admin-page .top-bar .top-button {\n      background-color: #4874d4;\n      border: 5px solid white;\n      border-radius: 40px;\n      color: white;\n      -webkit-box-flex: 1;\n          -ms-flex: 1 33%;\n              flex: 1 33%;\n      font-size: 14px; }\n  .admin-page .admin-tree {\n    box-sizing: border-box;\n    display: inline-block;\n    float: left;\n    width: 32%; }\n    .admin-page .admin-tree ul {\n      list-style-type: none;\n      padding: 0; }\n      .admin-page .admin-tree ul span {\n        border-bottom: 1px solid black;\n        font-size: 12px;\n        width: 100%; }\n  .admin-page .admin-editor {\n    box-sizing: border-box;\n    display: inline-block;\n    float: right;\n    width: 68%; }\n    .admin-page .admin-editor form {\n      margin-bottom: 48px;\n      width: 100%; }\n      .admin-page .admin-editor form input,\n      .admin-page .admin-editor form textarea {\n        display: block;\n        font-size: 14px;\n        margin: 0 auto 18px auto;\n        width: 100%; }\n      .admin-page .admin-editor form input {\n        height: 24px; }\n      .admin-page .admin-editor form textarea {\n        height: 500px; }\n", ""]);
+	exports.push([module.id, ".admin-page,\ninput,\ntextarea,\nkeygen,\nselect,\nbutton {\n  font-family: 'Raleway', sans-serif; }\n\nbutton:focus {\n  outline: 0; }\n\n.admin-page {\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .admin-page .not-authorized {\n    margin-top: 38%;\n    text-align: center;\n    width: 100%; }\n    .admin-page .not-authorized button {\n      background-color: #4874d4;\n      border: none;\n      color: white;\n      font-size: 16px;\n      margin: 0 auto;\n      padding: 15px 32px;\n      text-align: center;\n      text-decoration: none; }\n  .admin-page .top-bar {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    height: 48px;\n    -ms-flex-flow: row wrap;\n        flex-flow: row wrap;\n    -webkit-box-pack: end;\n        -ms-flex-pack: end;\n            justify-content: flex-end;\n    margin-bottom: 12px; }\n    .admin-page .top-bar .top-button {\n      background-color: #4874d4;\n      border: 5px solid white;\n      border-radius: 40px;\n      color: white;\n      -webkit-box-flex: 1;\n          -ms-flex: 1 25%;\n              flex: 1 25%;\n      font-size: 13px; }\n  .admin-page .admin-tree {\n    box-sizing: border-box;\n    display: inline-block;\n    float: left;\n    width: 32%; }\n    .admin-page .admin-tree ul {\n      list-style-type: none;\n      padding: 0; }\n      .admin-page .admin-tree ul span {\n        border-bottom: 1px solid black;\n        font-size: 12px;\n        width: 100%; }\n  .admin-page .admin-editor {\n    box-sizing: border-box;\n    display: inline-block;\n    float: right;\n    width: 68%; }\n    .admin-page .admin-editor form {\n      margin-bottom: 48px;\n      width: 100%; }\n      .admin-page .admin-editor form input,\n      .admin-page .admin-editor form textarea {\n        display: block;\n        font-size: 14px;\n        margin: 0 auto 18px auto;\n        width: 100%; }\n      .admin-page .admin-editor form input {\n        height: 24px; }\n      .admin-page .admin-editor form textarea {\n        height: 500px; }\n  .admin-page .image-uploader progress {\n    background-color: #4874d4;\n    border: 1px;\n    height: 24px;\n    margin-bottom: 12px;\n    border-radius: 9px;\n    width: 100%; }\n  .admin-page .image-uploader img {\n    max-width: 100%; }\n  .admin-page .image-uploader span {\n    font-size: 12px;\n    margin-bottom: 12px; }\n", ""]);
 
 	// exports
 
@@ -14115,11 +14115,11 @@
 	  value: true
 	});
 
-	var _firebase = __webpack_require__(50);
+	var _firebase = __webpack_require__(16);
 
 	var firebase = _interopRequireWildcard(_firebase);
 
-	var _firebase2 = __webpack_require__(49);
+	var _firebase2 = __webpack_require__(21);
 
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -14167,8 +14167,8 @@
 	//       border: 5px solid white
 	//       border-radius: 40px
 	//       color: white
-	//       flex: 1 33%
-	//       font-size: 14px
+	//       flex: 1 25%
+	//       font-size: 13px
 	//
 	//   .admin-tree
 	//     -webkit-box-sizing: border-box
@@ -14211,6 +14211,20 @@
 	//
 	//       textarea
 	//         height: 500px
+	//
+	//   .image-uploader
+	//     progress
+	//       background-color: #4874d4
+	//       border: 1px
+	//       height: 24px
+	//       margin-bottom: 12px
+	//       border-radius: 9px
+	//       width: 100%
+	//     img
+	//       max-width: 100%
+	//     span
+	//       font-size: 12px
+	//       margin-bottom: 12px
 	// </style>
 	//
 	// <template>
@@ -14219,9 +14233,10 @@
 	//
 	//
 	//       <div class="top-bar">
-	//         <button class="top-button" v-on:click="toggleCreatePost">New Blog Post</button>
-	//         <button class="top-button" v-on:click="toggleCreateProject">New Portfolio Project</button>
-	//         <button class="top-button" v-on:click="signOut">Sign Out</button>
+	//         <button class="top-button" v-on:click="toggleCreatePost">New Post</button>
+	//         <button class="top-button" v-on:click="toggleCreateProject">New Project</button>
+	//         <button class="top-button" v-on:click="toggleImageUpload">New Image</button>
+	//         <button class="top-button" v-on:click="signOut">Log Out</button>
 	//       </div>
 	//
 	//       <div class="admin-tree">
@@ -14245,44 +14260,58 @@
 	//       <div class="admin-editor">
 	//
 	//         <!-- Form for creating new blog posts -->
-	//         <form v-if="showCreatePost === true" @submit.prevent="setPost">
+	//         <form v-if="showCreatePost === true" @submit.prevent>
 	//           <input v-model="newPost.title" placeholder="Post title">
 	//           <input v-model="newPost.category" placeholder="Post category">
-	//           <textarea v-model="newPost.content" placeholder="Post content"></textarea
+	//           <textarea v-model="newPost.content" placeholder="Post content"></textarea>
 	//           <input v-model="newPost.key" placeholder="Pretty url">
-	//           <button>Add Post</button>
-	//           <button type="button" @click="resetState">Cancel</button>
+	//           <button @click="setPost">Add Post</button>
+	//           <button @click="resetState">Cancel</button>
 	//         </form>
 	//
 	//         <!-- Form for editing blog posts -->
-	//         <form v-if="showEditPost === true" @submit.prevent="setPost">
+	//         <form v-if="showEditPost === true" @submit.prevent>
 	//           <input v-model="newPost.title">
 	//           <input v-model="newPost.category">
 	//           <textarea v-model="newPost.content"></textarea>
 	//           <input v-model="newPost.key">
-	//           <button>Submit Edit</button>
-	//           <button @click="deletePost(post['.key'])">Delete Post</button>
+	//           <button @click="setPost">Submit Edit</button>
+	//           <button @click="deletePost">Delete Post</button>
 	//         </form>
 	//
 	//         <!-- Form for creating new portfolio projects -->
-	//         <form v-if="showCreateProject === true" @submit.prevent="setProject">
+	//         <form v-if="showCreateProject === true" @submit.prevent>
 	//           <input v-model="newProject.title" placeholder="Project title">
 	//           <input v-model="newProject.category" placeholder="Project category">
-	//           <textarea v-model="newProject.content" placeholder="Project content"></textarea
+	//           <textarea v-model="newProject.content" placeholder="Project content"></textarea>
 	//           <input v-model="newProject.key" placeholder="Pretty url">
-	//           <button>Add Project</button>
-	//           <button type="button" @click="resetState">Cancel</button>
+	//           <button @click="setProject">Add Project</button>
+	//           <button @click="resetState">Cancel</button>
 	//         </form>
 	//
 	//         <!-- Form for editing portfolio projects -->
-	//         <form v-if="showEditProject === true" @submit.prevent="setProject">
+	//         <form v-if="showEditProject" @submit.prevent>
 	//           <input v-model="newProject.title">
 	//           <input v-model="newProject.category">
 	//           <textarea v-model="newProject.content"></textarea>
 	//           <input v-model="newProject.key">
-	//           <button>Submit Edit</button>
-	//           <button @click="deleteProject(project['.key'])">Delete Project</button>
+	//           <button @click="setProject">Submit Edit</button>
+	//           <button @click="deleteProject">Delete Project</button>
 	//         </form>
+	//
+	//         <!-- Image uploader -->
+	//         <form class="image-uploader" v-if="showImageUploader" @submit.prevent>
+	//           <progress value="0" max="100" id="uploadProgress">0%</progress>
+	//           <label>Destination Folder</label>
+	//           <input v-model="newImage.folder">
+	//           <label>Image Title</label>
+	//           <input v-model="newImage.title">
+	//           <input type="file" value="upload" id="fileButton" v-on:change="uploadImage">
+	//           <label v-if="newImage.success">Direct URL (make sure to copy)</label><br><br>
+	//           <span>{{ newImage.url }}</span><br><br>
+	//           <img :src="newImage.url">
+	//         </form>
+	//
 	//       </div>
 	//
 	//     </div>
@@ -14312,11 +14341,16 @@
 	    return {
 	      newPost: {},
 	      newProject: {},
+	      newImage: {
+	        url: '',
+	        success: false
+	      },
 	      provider: new firebase.auth.GoogleAuthProvider(),
 	      showCreatePost: false,
 	      showEditPost: false,
 	      showCreateProject: false,
 	      showEditProject: false,
+	      showImageUploader: false,
 	      user: null
 	    };
 	  },
@@ -14326,19 +14360,26 @@
 	    projects: projsRef
 	  },
 	  methods: {
-	    deletePost: function deletePost(key) {
-	      _firebase2.db.ref('/blog').child(key).remove();
+	    deletePost: function deletePost() {
+	      _firebase2.db.ref('blog/' + this.newPost.key).set(null);
+	      this.resetState();
 	    },
-	    deleteProject: function deleteProject(key) {
-	      _firebase2.db.ref('/portfolio').child(key).remove();
+	    deleteProject: function deleteProject() {
+	      _firebase2.db.ref('project/' + this.newProject.key).set(null);
+	      this.resetState();
 	    },
 	    resetState: function resetState() {
 	      this.newPost = {};
 	      this.newProject = {};
+	      this.newImage = {
+	        url: '',
+	        success: false
+	      };
 	      this.showCreatePost = false;
 	      this.showEditPost = false;
 	      this.showCreateProject = false;
 	      this.showEditProject = false;
+	      this.showImageUploader = false;
 	    },
 	    setPost: function setPost() {
 	      var currentDate = Date.now();
@@ -14415,6 +14456,36 @@
 	      });
 	      // Show form
 	      this.showEditProject = true;
+	    },
+	    toggleImageUpload: function toggleImageUpload() {
+	      this.resetState();
+	      this.showImageUploader = true;
+	    },
+	    uploadImage: function uploadImage(e) {
+	      var that = this;
+	      // Get file & progress bar
+	      var file = e.target.files[0];
+	      var bar = document.getElementById('uploadProgress');
+	      // Create storage ref 
+	      var ref = _firebase2.storage.ref('/images/' + this.newImage.folder + '/' + this.newImage.title);
+	      // Upload file
+	      var task = ref.put(file);
+	      // Update progress bar
+	      task.on('state_changed', function progress(snapshot) {
+	        var percent = snapshot.bytesTransferred / snapshot.totalBytes * 100;
+	        bar.value = percent;
+	      }, function error(error) {
+	        console.log(error);
+	      }, function complete() {
+	        that.newImage.success = true;
+	        ref.getDownloadURL().then(function (url) {
+	          that.newImage.url = url;
+	        }).catch(function (error) {
+	          console.log(error);
+	        });
+	      });
+
+	      console.log(this.newImage);
 	    }
 	  }
 	};
@@ -14423,838 +14494,6 @@
 
 /***/ },
 /* 16 */
-/***/ function(module, exports) {
-
-	module.exports = "\n  <div class=\"admin-page\">\n    <div v-if=\"user && user.email === 'justinadenharrison@gmail.com'\">\n      \n\n      <div class=\"top-bar\">\n        <button class=\"top-button\" v-on:click=\"toggleCreatePost\">New Blog Post</button>\n        <button class=\"top-button\" v-on:click=\"toggleCreateProject\">New Portfolio Project</button>\n        <button class=\"top-button\" v-on:click=\"signOut\">Sign Out</button>\n      </div>\n\n      <div class=\"admin-tree\">\n\n        <h5>Blog Posts</h5>\n        <ul>\n          <li v-for=\"post in posts | orderBy 'dateCreated' -1\" track-by=\".key\">\n            <span @click=\"toggleEditPost(post['.key'])\">{{ post['.key'] }}</span>\n          </li>\n        </ul>\n\n        <h5>Portfolio Projects</h5>\n        <ul>\n          <li v-for=\"project in projects | orderBy 'dateCreated' -1\" track-by=\".key\">\n            <span @click=\"toggleEditProject(project['.key'])\">{{ project['.key'] }}</span>\n          </li>\n        </ul>\n\n      </div>\n\n      <div class=\"admin-editor\">\n\n        <!-- Form for creating new blog posts -->\n        <form v-if=\"showCreatePost === true\" @submit.prevent=\"setPost\">\n          <input v-model=\"newPost.title\" placeholder=\"Post title\">\n          <input v-model=\"newPost.category\" placeholder=\"Post category\">\n          <textarea v-model=\"newPost.content\" placeholder=\"Post content\"></textarea\n          <input v-model=\"newPost.key\" placeholder=\"Pretty url\">\n          <button>Add Post</button>\n          <button type=\"button\" @click=\"resetState\">Cancel</button>\n        </form>\n\n        <!-- Form for editing blog posts -->\n        <form v-if=\"showEditPost === true\" @submit.prevent=\"setPost\">\n          <input v-model=\"newPost.title\">\n          <input v-model=\"newPost.category\">\n          <textarea v-model=\"newPost.content\"></textarea>\n          <input v-model=\"newPost.key\">\n          <button>Submit Edit</button>\n          <button @click=\"deletePost(post['.key'])\">Delete Post</button>\n        </form>\n\n        <!-- Form for creating new portfolio projects -->\n        <form v-if=\"showCreateProject === true\" @submit.prevent=\"setProject\">\n          <input v-model=\"newProject.title\" placeholder=\"Project title\">\n          <input v-model=\"newProject.category\" placeholder=\"Project category\">\n          <textarea v-model=\"newProject.content\" placeholder=\"Project content\"></textarea\n          <input v-model=\"newProject.key\" placeholder=\"Pretty url\">\n          <button>Add Project</button>\n          <button type=\"button\" @click=\"resetState\">Cancel</button>\n        </form>\n\n        <!-- Form for editing portfolio projects -->\n        <form v-if=\"showEditProject === true\" @submit.prevent=\"setProject\">\n          <input v-model=\"newProject.title\">\n          <input v-model=\"newProject.category\">\n          <textarea v-model=\"newProject.content\"></textarea>\n          <input v-model=\"newProject.key\">\n          <button>Submit Edit</button>\n          <button @click=\"deleteProject(project['.key'])\">Delete Project</button>\n        </form>\n      </div>\n      \n    </div>\n    <div v-else class=\"not-authorized\">\n      <button v-on:click=\"signIn\">Sign In</button>\n    </div>\n  </div>\n";
-
-/***/ },
-/* 17 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__webpack_require__(18)
-	__vue_script__ = __webpack_require__(20)
-	__vue_template__ = __webpack_require__(21)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "/Users/Justin/Development/justinharrison.io/src/components/Nav.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 18 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(19);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(10)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-8b2a7da6&file=Nav.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Nav.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-8b2a7da6&file=Nav.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Nav.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 19 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(9)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".nav-bar {\n  box-sizing: border-box;\n  font: 22px 'Raleway', sans-serif;\n  height: 48px;\n  margin-top: 35px;\n  margin-bottom: 36px; }\n  .nav-bar .nav-inner-container {\n    height: 48px;\n    margin: auto;\n    max-width: 960px;\n    width: 86%; }\n    .nav-bar .nav-inner-container ul {\n      height: 48px;\n      list-style-type: none;\n      margin: 0;\n      padding: 0;\n      width: 100%; }\n      .nav-bar .nav-inner-container ul .float-left {\n        float: left; }\n      .nav-bar .nav-inner-container ul .float-right {\n        float: right; }\n      .nav-bar .nav-inner-container ul li {\n        height: 48px; }\n        .nav-bar .nav-inner-container ul li .nav-bar-title {\n          color: black;\n          display: block;\n          font-size: 28px;\n          margin-top: 7px;\n          text-decoration: none; }\n        .nav-bar .nav-inner-container ul li .nav-bar-link {\n          color: #646464;\n          display: block;\n          font-size: 16px;\n          padding: 12px 8px;\n          text-decoration: none; }\n        .nav-bar .nav-inner-container ul li .v-link-active {\n          color: black; }\n        .nav-bar .nav-inner-container ul li .fa-bars {\n          margin-top: 13px; }\n\n.nav-panel {\n  box-sizing: border-box;\n  background-color: white;\n  font: 28px 'Raleway', monospace;\n  width: 100%;\n  position: absolute;\n  left: 0;\n  top: 119px;\n  right: 0;\n  bottom: 42px; }\n  .nav-panel ul {\n    list-style-type: none;\n    margin: 7% 0;\n    padding: 0;\n    width: 100%; }\n    .nav-panel ul li {\n      float: none;\n      height: 48px;\n      padding: 0 7%;\n      width: 100%;\n      text-align: center;\n      box-sizing: border-box; }\n      .nav-panel ul li .nav-panel-link {\n        color: #191919;\n        display: block;\n        text-decoration: none; }\n\n.hamburger {\n  display: block; }\n\n.togglable {\n  display: none; }\n\n@media only screen and (min-width: 768px) {\n  .hamburger {\n    display: none; }\n  .togglable {\n    display: block; } }\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 20 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	// <style lang="sass?indentedSyntax">
-	// .nav-bar
-	//   -webkit-box-sizing: border-box
-	//   -moz-box-sizing: border-box
-	//   box-sizing: border-box
-	//   font: 22px 'Raleway', sans-serif
-	//   height: 48px
-	//   margin-top: 35px
-	//   margin-bottom: 36px
-	//
-	//   .nav-inner-container
-	//     height: 48px
-	//     margin: auto
-	//     max-width: 960px
-	//     width: 86%
-	//
-	//     ul
-	//       height: 48px
-	//       list-style-type: none
-	//       margin: 0
-	//       padding: 0
-	//       width: 100%
-	//
-	//       .float-left
-	//         float: left
-	//
-	//       .float-right
-	//         float: right
-	//
-	//       li
-	//         height: 48px
-	//
-	//         .nav-bar-title
-	//           color: black
-	//           display: block
-	//           font-size: 28px
-	//           margin-top: 7px
-	//           text-decoration: none
-	//
-	//         .nav-bar-link
-	//           color: rgb(100, 100, 100)
-	//           display: block
-	//           font-size: 16px
-	//           padding: 12px 8px
-	//           text-decoration: none
-	//
-	//         .v-link-active
-	//           color: black
-	//
-	//         .fa-bars
-	//           margin-top: 13px
-	//
-	// .nav-panel
-	//   -webkit-box-sizing: border-box
-	//   -moz-box-sizing: border-box
-	//   box-sizing: border-box
-	//   background-color: rgb(255, 255, 255)
-	//   font: 28px 'Raleway', monospace
-	//   width: 100%
-	//   position: absolute
-	//   left: 0
-	//   top: 119px
-	//   right: 0
-	//   bottom: 42px
-	//
-	//   ul
-	//     list-style-type: none
-	//     margin: 7% 0
-	//     padding: 0
-	//     width: 100%
-	//
-	//     li
-	//       float: none
-	//       height: 48px
-	//       padding: 0 7%
-	//       width: 100%
-	//       text-align: center
-	//       box-sizing: border-box
-	//
-	//       .nav-panel-link
-	//         color: rgb(25, 25, 25)
-	//         display: block
-	//         text-decoration: none
-	//
-	//
-	// .hamburger
-	//   display: block
-	//
-	// .togglable
-	//   display: none
-	//
-	// @media only screen and (min-width: 768px)
-	//   .hamburger
-	//     display: none
-	//
-	//   .togglable
-	//     display: block
-	//
-	// </style>
-	//
-	// <template>
-	//   <div class="nav-bar">
-	//     <div class="nav-inner-container">
-	//       <ul>
-	//         <li class="float-left"><a class="nav-bar-title" href="/">JUSTIN HARRISON</a></li>
-	//         <li class="float-right togglable"><a class="nav-bar-link" v-link="{ name: 'Resume View' }">resume</a></li>
-	//         <li class="float-right togglable"><a class="nav-bar-link" v-link="{ name: 'Blog List View' }">blog</a></li>
-	//         <li class="float-right togglable"><a class="nav-bar-link" v-link="{ name: 'Portfolio View' }">portfolio</a></li>
-	//         <li class="float-right togglable"><a class="nav-bar-link" v-link="{ name: 'Home View' }">about</a></li>
-	//         <li class="float-right hamburger"><i v-on:click="togglePanel" class="fa fa-bars fa-lg"></i></li>
-	//       </ul>
-	//     </div>
-	//     <div v-show="showPanel" transition="nav-panel" class="nav-panel">
-	//      <ul>
-	//        <li><a class="nav-panel-link" v-on:click="togglePanel" v-link="{ name: 'Home View' }">About</a></li>
-	//        <li><a class="nav-panel-link" v-on:click="togglePanel" v-link="{ name: 'Portfolio View' }">Portfolio</a></li>
-	//        <li><a class="nav-panel-link" v-on:click="togglePanel" v-link="{ name: 'Blog List View' }">Blog</a></li>
-	//        <li><a class="nav-panel-link" v-on:click="togglePanel" v-link="{ name: 'Resume View' }">Resume</a></li>
-	//      </ul>
-	//     </div>
-	//   </div>
-	// </template>
-	//
-	// <script>
-	exports.default = {
-	  data: function data() {
-	    return {
-	      showPanel: false
-	    };
-	  },
-
-	  methods: {
-	    handleResize: function handleResize() {
-	      if (window.innerWidth > 768) {
-	        this.showPanel = false;
-	      }
-	    },
-	    togglePanel: function togglePanel() {
-	      this.showPanel = !this.showPanel;
-	    }
-	  },
-	  ready: function ready() {
-	    window.addEventListener('resize', this.handleResize);
-	  }
-	};
-	// </script>
-	//
-
-/***/ },
-/* 21 */
-/***/ function(module, exports) {
-
-	module.exports = "\n  <div class=\"nav-bar\">\n    <div class=\"nav-inner-container\">\n      <ul>\n        <li class=\"float-left\"><a class=\"nav-bar-title\" href=\"/\">JUSTIN HARRISON</a></li>\n        <li class=\"float-right togglable\"><a class=\"nav-bar-link\" v-link=\"{ name: 'Resume View' }\">resume</a></li>\n        <li class=\"float-right togglable\"><a class=\"nav-bar-link\" v-link=\"{ name: 'Blog List View' }\">blog</a></li>\n        <li class=\"float-right togglable\"><a class=\"nav-bar-link\" v-link=\"{ name: 'Portfolio View' }\">portfolio</a></li>\n        <li class=\"float-right togglable\"><a class=\"nav-bar-link\" v-link=\"{ name: 'Home View' }\">about</a></li>\n        <li class=\"float-right hamburger\"><i v-on:click=\"togglePanel\" class=\"fa fa-bars fa-lg\"></i></li>\n      </ul>\n    </div>\n    <div v-show=\"showPanel\" transition=\"nav-panel\" class=\"nav-panel\">\n     <ul>\n       <li><a class=\"nav-panel-link\" v-on:click=\"togglePanel\" v-link=\"{ name: 'Home View' }\">About</a></li>\n       <li><a class=\"nav-panel-link\" v-on:click=\"togglePanel\" v-link=\"{ name: 'Portfolio View' }\">Portfolio</a></li>\n       <li><a class=\"nav-panel-link\" v-on:click=\"togglePanel\" v-link=\"{ name: 'Blog List View' }\">Blog</a></li>\n       <li><a class=\"nav-panel-link\" v-on:click=\"togglePanel\" v-link=\"{ name: 'Resume View' }\">Resume</a></li>\n     </ul>\n    </div>\n  </div>\n";
-
-/***/ },
-/* 22 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__webpack_require__(23)
-	__vue_template__ = __webpack_require__(25)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "/Users/Justin/Development/justinharrison.io/src/components/Footer.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 23 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(24);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(10)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-edbe92fe&file=Footer.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Footer.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-edbe92fe&file=Footer.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Footer.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 24 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(9)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".footer {\n  background-color: white;\n  border-top-style: double;\n  position: fixed;\n  bottom: 0px;\n  color: #777777;\n  font: 13px 'Ubuntu', sans-serif;\n  width: 100%; }\n  .footer .footer-container {\n    margin: 12px auto;\n    max-width: 960px;\n    width: 86%; }\n  .footer a {\n    color: #4874d4;\n    text-decoration: none; }\n  .footer .footer-links {\n    float: right; }\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 25 */
-/***/ function(module, exports) {
-
-	module.exports = "\n  <div class=\"footer\">\n    <div class=\"footer-container\">\n      &copy; 2016 Justin Harrison <span class=\"footer-links\"><a href=\"https://github.com/jhar\">github</a> / <a href=\"https://www.linkedin.com/in/justinadenharrison\">linkedin</a> / <a href=\"https://twitter.com/j_aden_harrison\">twitter</a></span>\n    </div>\n  </div>\n";
-
-/***/ },
-/* 26 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__webpack_require__(27)
-	__vue_script__ = __webpack_require__(29)
-	__vue_template__ = __webpack_require__(30)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "/Users/Justin/Development/justinharrison.io/src/components/Home.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 27 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(28);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(10)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-086f6176&file=Home.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Home.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-086f6176&file=Home.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Home.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 28 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(9)();
-	// imports
-
-
-	// module
-	exports.push([module.id, "canvas {\n  position: fixed;\n  top: 0;\n  z-index: -1; }\n\n.about-me {\n  font-family: 'Raleway', sans-serif;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .about-me .emph-p {\n    color: #646464;\n    font-size: 25px;\n    letter-spacing: 1.7px; }\n  .about-me .small-p {\n    color: #969696;\n    font-size: 14px; }\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 29 */
-/***/ function(module, exports) {
-
-	// <style lang="sass?indentedSyntax">
-	// canvas
-	//   position: fixed
-	//   top: 0
-	//   z-index: -1
-	//
-	// .about-me
-	//   font-family: 'Raleway', sans-serif
-	//   margin: auto
-	//   max-width: 960px
-	//   width: 86% 
-	//
-	//   .emph-p
-	//     color: rgb(100, 100, 100)
-	//     font-size: 25px
-	//     letter-spacing: 1.7px
-	//
-	//   .small-p
-	//     color: rgb(150, 150, 150)
-	//     font-size: 14px
-	//
-	// </style>
-	//
-	// <template>
-	//   <div class="about-me">
-	//     <p class="emph-p">
-	//       Hi, I'm Justin Harrison. I'm a software developer living in Pasadena. I specialize in web application development and particularly enjoy the world of JavaScript.
-	//     </p>
-	//     <p class="small-p">
-	//       I'm currently experimenting with the p5.js library for creative coding while auditing Daniel Shiffman's <i>Nature of Code</i> course on Kadenze. I'm also actively developing this website with Vue.js and Firebase. When I'm not coding, I'm likely thinking and writing about professional boxing.
-	//     </p>
-	//     <p class="small-p">
-	//       You can <a href="mailto:justinadenharrison@gmail.com" target="blank">email</a> me if you want to say hello.
-	//     </p>
-	//   </div>
-	// </template>
-	//
-	// <script>
-	//  import p5 from 'p5'
-	//  import { sketch } from '../sketches/example.js'
-	//
-	//  export default {
-	//    created() {
-	//      var myp5 = new p5(sketch)
-	//      console.log("Got here")
-	//    }
-	//  }
-	// </script>
-	//
-	"use strict";
-
-/***/ },
-/* 30 */
-/***/ function(module, exports) {
-
-	module.exports = "\n  <div class=\"about-me\">\n    <p class=\"emph-p\">\n      Hi, I'm Justin Harrison. I'm a software developer living in Pasadena. I specialize in web application development and particularly enjoy the world of JavaScript.\n    </p>\n    <p class=\"small-p\">\n      I'm currently experimenting with the p5.js library for creative coding while auditing Daniel Shiffman's <i>Nature of Code</i> course on Kadenze. I'm also actively developing this website with Vue.js and Firebase. When I'm not coding, I'm likely thinking and writing about professional boxing.\n    </p>\n    <p class=\"small-p\">\n      You can <a href=\"mailto:justinadenharrison@gmail.com\" target=\"blank\">email</a> me if you want to say hello.\n    </p>\n  </div>\n";
-
-/***/ },
-/* 31 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__webpack_require__(32)
-	__vue_template__ = __webpack_require__(34)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "/Users/Justin/Development/justinharrison.io/src/components/Resume.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 32 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(33);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(10)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-13403013&file=Resume.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Resume.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-13403013&file=Resume.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Resume.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 33 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(9)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".my-resume {\n  font-family: 'Raleway', sans-serif;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .my-resume .main-title {\n    font-size: 28px; }\n  .my-resume p {\n    color: #676767;\n    font-size: 16px; }\n  .my-resume h3 {\n    color: #4874d4; }\n  .my-resume .title {\n    font-weight: bold; }\n  .my-resume .loc,\n  .my-resume .dates {\n    color: #676767;\n    font-size: 12px; }\n  .my-resume .blk-1,\n  .my-resume .blk-3 {\n    box-sizing: border-box;\n    display: inline-block;\n    float: left;\n    min-height: 57px;\n    padding-right: 40px;\n    width: 100%; }\n  .my-resume .blk-2,\n  .my-resume .blk-4 {\n    box-sizing: border-box;\n    display: inline-block;\n    float: right;\n    width: 100%; }\n  @media only screen and (min-width: 768px) {\n    .my-resume .blk-1,\n    .my-resume .blk-3 {\n      width: 62%; }\n    .my-resume .blk-2,\n    .my-resume .blk-4 {\n      width: 38%; }\n    .my-resume .blk-3,\n    .my-resume .blk-4 {\n      margin-bottom: 75px; } }\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 34 */
-/***/ function(module, exports) {
-
-	module.exports = "\n  <div class=\"my-resume\">\n    <div class=\"header\">\n      <div class=\"blk-1\">\n       <span class=\"main-title\">Web Application Developer</span>\n      </div>\n      <div class=\"blk-2\">\n        <span class=\"bold\">(206) 377-9027</span><br>\n        <span class=\"bold\">Skype: justin.a.harrison</span><br>\n        <a href=\"mailto:justinadenharrison@gmail.com\" target=\"_top\">justinadenharrison@gmail.com</a><br>\n      </div>\n    </div>\n    <div class=\"blk-3\">\n\n      <h3>Work Experience</h3>\n\n      <span class=\"title\">Web Engineer</span><br>\n      <span class=\"org\">Advercalls, Inc</span><br>\n      <span class=\"loc\">Los Angeles, CA</span><br>\n      <span class=\"dates\">Feb 2016 - Jul 2016</span>\n      <p>Developed a third-party JavaScript lead gen app. Wrote back-end integrations for marketing services like ActiveCampaign. Wrote scripts to clean redundancies and errors from a large database, built a web directory service to navigate the data, then incorporated user profiles, a membership service, and InfusionSoft for payment processing. Conducted research and feasibility studies. Recruited, managed and wrote specs for off-shore developers. Designed and developed APIs for our own services. Maintained dozens of websites.</p>\n      \n      <span class=\"title\">Contract Software Developer</span><br>\n      <span class=\"org\">Not That This, LLC</span><br>\n      <span class=\"loc\">Burbank, CA</span><br>\n      <span class=\"dates\">Nov 2015 - Jan 2016</span>\n      <p>Converted PSD designs to pixel perfect UI with Enyo.js for an enterprise Cisco IoT project.</p>\n      \n      <span class=\"title\">Web Content Evaluator</span><br>\n      <span class=\"org\">FlexaSoft</span><br>\n      <span class=\"loc\">Redmond, WA</span><br>\n      <span class=\"dates\">Oct 2014 - Jun 2015</span><br>\n      <p>Evaluated the accuracy and relevancy of Microsoft Bing search results.</p>\n      \n      <span class=\"title\">Web Developer</span><br>\n      <span class=\"org\">University of California Institute for Research in the Arts</span><br>\n      <span class=\"loc\">Santa Barbara, CA</span><br>\n      <span class=\"dates\">Jul 2014 - Sep 2014</span><br>\n      <p>Worked on a new website for the UCIRA. Merged their main site and State of the Arts blog. Worked to create a platform for California art researchers to network and display their work. The project was cancelled after funding cuts.</p>\n\n      <span class=\"title\">IT Helpdesk Assistant</span><br>\n      <span class=\"org\">Davidson Library</span><br>\n      <span class=\"loc\">Santa Barbara, CA</span><br>\n      <span class=\"dates\">Mar 2013 - Jul 2014</span><br>\n      <p>Provided technical assistance and support related to computer networks, hardware, and software. Responded to calls and emails and tracked issues with JIRA to help diagnose, solve, and document problems. Managed hardware inventory.</p>\n\n\n    </div>\n\n    <div class=\"blk-4\">\n\n\n      <h3>Education and Awards</h3>\n\n      <span class=\"title\">BA in Art with High Honors</span><br>\n      <span class=\"org\">University of California</span><br>\n      <span class=\"loc\">Santa Barbara, CA</span><br>\n      <span class=\"dates\">Graduated 2014</span><br>\n      <p>Promising Artist Achievement Award, William Dole Award, Faculty Award of Distinction x2, Dean's Honors x5</p>\n\n      <h3 class=\"mono\">Professional Development</h3>\n\n      <span class=\"title\">MongoDB for Node.js Developers</span><br>\n      <span class=\"org\">MongoDB University</span><br>\n      <span class=\"dates\">Completed 2015</span><br><br>\n\n      <span class=\"title\">Front-End Web Developer Nanodegree</span><br>\n      <span class=\"org\">Udacity</span><br>\n      <span class=\"dates\">Completed 2015</span><br>\n\n      <h3>Skills</h3>\n\n      <p>HTML, CSS, JavaScript, PHP, MySQL, MongoDB, Unix, Bootstrap, jQuery, React, Knockout, Vue, Node, NPM, Express, SASS, LESS, Firebase, AWS, Webpack, Browserify, Gulp, WordPress, p5.js, Processing, Chrome Developer Tools, AJAX, and Google.</p>\n\n      <h3>Volunteering</h3>\n\n      <span class=\"title\">Shopify Administrator</span><br>\n      <span class=\"org\">Arroyo Food Co-op</span><br>\n      <span class=\"loc\">Pasadena, CA</span><br>\n      <span class=\"dates\">Feb 2016 - May 2016</span><br><br>\n\n      <span class=\"title\">Cook and Server</span><br>\n      <span class=\"org\">Food Not Bombs</span><br>\n      <span class=\"loc\">Goleta, CA</span><br>\n      <span class=\"dates\">Jan 2013 - Sep 2014</span>\n\n\n\n\n\n\n    </div>\n\n  </div>\n";
-
-/***/ },
-/* 35 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__webpack_require__(36)
-	__vue_script__ = __webpack_require__(38)
-	__vue_template__ = __webpack_require__(39)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "/Users/Justin/Development/justinharrison.io/src/components/Portfolio.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 36 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(37);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(10)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-4929f55c&file=Portfolio.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Portfolio.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-4929f55c&file=Portfolio.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Portfolio.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 37 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(9)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".my-portfolio {\n  font-family: 'Raleway', sans-serif;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 38 */
-/***/ function(module, exports) {
-
-	// <style lang="sass?indentedSyntax">
-	// .my-portfolio
-	//   font-family: 'Raleway', sans-serif
-	//   margin: auto
-	//   max-width: 960px
-	//   width: 86%
-	//
-	// </style>
-	//
-	// <template>
-	//   <h2>Placeholder text</h2>
-	// </template>
-	//
-	// <script>
-
-	// </script>
-	//
-	"use strict";
-
-/***/ },
-/* 39 */
-/***/ function(module, exports) {
-
-	module.exports = "\n  <h2>Placeholder text</h2>\n";
-
-/***/ },
-/* 40 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__webpack_require__(41)
-	__vue_script__ = __webpack_require__(43)
-	__vue_template__ = __webpack_require__(44)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "/Users/Justin/Development/justinharrison.io/src/components/Project.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 41 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(42);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(10)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-2416af23&file=Project.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Project.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-2416af23&file=Project.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Project.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 42 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(9)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".my-portfolio {\n  font-family: 'Raleway', sans-serif;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 43 */
-/***/ function(module, exports) {
-
-	// <style lang="sass?indentedSyntax">
-	// .my-portfolio
-	//   font-family: 'Raleway', sans-serif
-	//   margin: auto
-	//   max-width: 960px
-	//   width: 86%
-	//
-	// </style>
-	//
-	// <template>
-	//   <h2>Placeholder text</h2>
-	// </template>
-	//
-	// <script>
-
-	// </script>
-	//
-	"use strict";
-
-/***/ },
-/* 44 */
-/***/ function(module, exports) {
-
-	module.exports = "\n  <h2>Placeholder text</h2>\n";
-
-/***/ },
-/* 45 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__webpack_require__(46)
-	__vue_script__ = __webpack_require__(48)
-	__vue_template__ = __webpack_require__(55)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "/Users/Justin/Development/justinharrison.io/src/components/List.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 46 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(47);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(10)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-68f81384&file=List.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./List.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-68f81384&file=List.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./List.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 47 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(9)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".blog-list-view {\n  font-family: 'Raleway', monospace;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .blog-list-view .italic {\n    font-style: italic; }\n  .blog-list-view .date {\n    color: #676767;\n    display: block;\n    font-size: 12px;\n    width: 100%; }\n  .blog-list-view h2 {\n    color: #4874d4;\n    font-size: 18px;\n    text-transform: capitalize; }\n  .blog-list-view ul {\n    list-style-type: none;\n    padding: 0; }\n    .blog-list-view ul .blog-list-link {\n      text-decoration: none;\n      width: 100%; }\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 48 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _firebase = __webpack_require__(49);
-
-	var postsRef = _firebase.db.ref('blog/'); // <style lang="sass?indentedSyntax">
-	// .blog-list-view
-	//   font-family: 'Raleway', monospace
-	//   margin: auto
-	//   max-width: 960px
-	//   width: 86%
-	//
-	//   .italic
-	//     font-style: italic
-	//
-	//   .date
-	//     color: rgb(103, 103, 103)
-	//     display: block
-	//     font-size: 12px
-	//     width: 100%
-	//
-	//   h2
-	//     color: #4874d4
-	//     font-size: 18px
-	//     text-transform: capitalize
-	//
-	//   ul
-	//     list-style-type: none
-	//     padding: 0
-	//
-	//     .blog-list-link
-	//       text-decoration: none
-	//       width: 100%
-	// </style>
-	//
-	// <template>
-	//   <div class="blog-list-view">
-	//     <ul>
-	//       <li v-for="post in posts | orderBy 'dateCreated' -1" track-by=".key">
-	//         <a class="blog-list-link" v-link="{ name: 'Blog Single Post', params: { postName: post['.key'] } }">
-	//           <span class="date">{{ post.dateCreated | dated }}</span>
-	//           <h2>{{ post.title }}</h2>
-	//         </a>
-	//       </li>
-	//     </ul>
-	//   </div>
-	// </template>
-	//
-	// <script>
-	exports.default = {
-	  firebase: {
-	    posts: postsRef
-	  }
-	};
-	// </script>
-	//
-	//
-
-/***/ },
-/* 49 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.storage = exports.db = undefined;
-
-	var _firebase = __webpack_require__(50);
-
-	var firebase = _interopRequireWildcard(_firebase);
-
-	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-	// Firebase setup
-	var config = {
-	  apiKey: "AIzaSyBvbih18hAFNeR_kptuLck_1iLYbKFTk90",
-	  authDomain: "justin-harrison.firebaseapp.com",
-	  databaseURL: "https://justin-harrison.firebaseio.com",
-	  storageBucket: "justin-harrison.appspot.com"
-	};
-	var firebaseApp = firebase.initializeApp(config);
-	var db = exports.db = firebaseApp.database();
-	var storage = exports.storage = firebaseApp.storage();
-
-/***/ },
-/* 50 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -15264,15 +14503,15 @@
 	 *
 	 *   firebase = require('firebase');
 	 */
-	var firebase = __webpack_require__(51);
-	__webpack_require__(52);
-	__webpack_require__(53);
-	__webpack_require__(54);
+	var firebase = __webpack_require__(17);
+	__webpack_require__(18);
+	__webpack_require__(19);
+	__webpack_require__(20);
 	module.exports = firebase;
 
 
 /***/ },
-/* 51 */
+/* 17 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/*! @license Firebase v3.4.0
@@ -15309,10 +14548,10 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 52 */
+/* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var firebase = __webpack_require__(51);
+	var firebase = __webpack_require__(17);
 	/*! @license Firebase v3.4.0
 	    Build: 3.4.0-rc.3
 	    Terms: https://developers.google.com/terms */
@@ -15534,10 +14773,10 @@
 
 
 /***/ },
-/* 53 */
+/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var firebase = __webpack_require__(51);
+	var firebase = __webpack_require__(17);
 	/*! @license Firebase v3.4.0
 	    Build: 3.4.0-rc.3
 	    Terms: https://developers.google.com/terms */
@@ -15785,10 +15024,10 @@
 
 
 /***/ },
-/* 54 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var firebase = __webpack_require__(51);
+	var firebase = __webpack_require__(17);
 	/*! @license Firebase v3.4.0
 	    Build: 3.4.0-rc.3
 	    Terms: https://developers.google.com/terms */
@@ -15893,6 +15132,838 @@
 
 
 /***/ },
+/* 21 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.storage = exports.db = undefined;
+
+	var _firebase = __webpack_require__(16);
+
+	var firebase = _interopRequireWildcard(_firebase);
+
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+	// Firebase setup
+	var config = {
+	  apiKey: "AIzaSyBvbih18hAFNeR_kptuLck_1iLYbKFTk90",
+	  authDomain: "justin-harrison.firebaseapp.com",
+	  databaseURL: "https://justin-harrison.firebaseio.com",
+	  storageBucket: "justin-harrison.appspot.com"
+	};
+	var firebaseApp = firebase.initializeApp(config);
+	var db = exports.db = firebaseApp.database();
+	var storage = exports.storage = firebaseApp.storage();
+
+/***/ },
+/* 22 */
+/***/ function(module, exports) {
+
+	module.exports = "\n  <div class=\"admin-page\">\n    <div v-if=\"user && user.email === 'justinadenharrison@gmail.com'\">\n      \n\n      <div class=\"top-bar\">\n        <button class=\"top-button\" v-on:click=\"toggleCreatePost\">New Post</button>\n        <button class=\"top-button\" v-on:click=\"toggleCreateProject\">New Project</button>\n        <button class=\"top-button\" v-on:click=\"toggleImageUpload\">New Image</button>\n        <button class=\"top-button\" v-on:click=\"signOut\">Log Out</button>\n      </div>\n\n      <div class=\"admin-tree\">\n\n        <h5>Blog Posts</h5>\n        <ul>\n          <li v-for=\"post in posts | orderBy 'dateCreated' -1\" track-by=\".key\">\n            <span @click=\"toggleEditPost(post['.key'])\">{{ post['.key'] }}</span>\n          </li>\n        </ul>\n\n        <h5>Portfolio Projects</h5>\n        <ul>\n          <li v-for=\"project in projects | orderBy 'dateCreated' -1\" track-by=\".key\">\n            <span @click=\"toggleEditProject(project['.key'])\">{{ project['.key'] }}</span>\n          </li>\n        </ul>\n\n      </div>\n\n      <div class=\"admin-editor\">\n\n        <!-- Form for creating new blog posts -->\n        <form v-if=\"showCreatePost === true\" @submit.prevent>\n          <input v-model=\"newPost.title\" placeholder=\"Post title\">\n          <input v-model=\"newPost.category\" placeholder=\"Post category\">\n          <textarea v-model=\"newPost.content\" placeholder=\"Post content\"></textarea>\n          <input v-model=\"newPost.key\" placeholder=\"Pretty url\">\n          <button @click=\"setPost\">Add Post</button>\n          <button @click=\"resetState\">Cancel</button>\n        </form>\n\n        <!-- Form for editing blog posts -->\n        <form v-if=\"showEditPost === true\" @submit.prevent>\n          <input v-model=\"newPost.title\">\n          <input v-model=\"newPost.category\">\n          <textarea v-model=\"newPost.content\"></textarea>\n          <input v-model=\"newPost.key\">\n          <button @click=\"setPost\">Submit Edit</button>\n          <button @click=\"deletePost\">Delete Post</button>\n        </form>\n\n        <!-- Form for creating new portfolio projects -->\n        <form v-if=\"showCreateProject === true\" @submit.prevent>\n          <input v-model=\"newProject.title\" placeholder=\"Project title\">\n          <input v-model=\"newProject.category\" placeholder=\"Project category\">\n          <textarea v-model=\"newProject.content\" placeholder=\"Project content\"></textarea>\n          <input v-model=\"newProject.key\" placeholder=\"Pretty url\">\n          <button @click=\"setProject\">Add Project</button>\n          <button @click=\"resetState\">Cancel</button>\n        </form>\n\n        <!-- Form for editing portfolio projects -->\n        <form v-if=\"showEditProject\" @submit.prevent>\n          <input v-model=\"newProject.title\">\n          <input v-model=\"newProject.category\">\n          <textarea v-model=\"newProject.content\"></textarea>\n          <input v-model=\"newProject.key\">\n          <button @click=\"setProject\">Submit Edit</button>\n          <button @click=\"deleteProject\">Delete Project</button>\n        </form>\n\n        <!-- Image uploader -->\n        <form class=\"image-uploader\" v-if=\"showImageUploader\" @submit.prevent>\n          <progress value=\"0\" max=\"100\" id=\"uploadProgress\">0%</progress>\n          <label>Destination Folder</label>\n          <input v-model=\"newImage.folder\">\n          <label>Image Title</label>\n          <input v-model=\"newImage.title\">\n          <input type=\"file\" value=\"upload\" id=\"fileButton\" v-on:change=\"uploadImage\">\n          <label v-if=\"newImage.success\">Direct URL (make sure to copy)</label><br><br>\n          <span>{{ newImage.url }}</span><br><br>\n          <img :src=\"newImage.url\">\n        </form>\n\n      </div>\n      \n    </div>\n    <div v-else class=\"not-authorized\">\n      <button v-on:click=\"signIn\">Sign In</button>\n    </div>\n  </div>\n";
+
+/***/ },
+/* 23 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(24)
+	__vue_script__ = __webpack_require__(26)
+	__vue_template__ = __webpack_require__(27)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/Justin/Development/justinharrison.io/src/components/Nav.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 24 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(25);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(10)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-8b2a7da6&file=Nav.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Nav.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-8b2a7da6&file=Nav.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Nav.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 25 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(9)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".nav-bar {\n  box-sizing: border-box;\n  font: 22px 'Raleway', sans-serif;\n  height: 48px;\n  margin-top: 35px;\n  margin-bottom: 36px; }\n  .nav-bar .nav-inner-container {\n    height: 48px;\n    margin: auto;\n    max-width: 960px;\n    width: 86%; }\n    .nav-bar .nav-inner-container ul {\n      height: 48px;\n      list-style-type: none;\n      margin: 0;\n      padding: 0;\n      width: 100%; }\n      .nav-bar .nav-inner-container ul .float-left {\n        float: left; }\n      .nav-bar .nav-inner-container ul .float-right {\n        float: right; }\n      .nav-bar .nav-inner-container ul li {\n        height: 48px; }\n        .nav-bar .nav-inner-container ul li .nav-bar-title {\n          color: black;\n          display: block;\n          font-size: 28px;\n          margin-top: 7px;\n          text-decoration: none; }\n        .nav-bar .nav-inner-container ul li .nav-bar-link {\n          color: #646464;\n          display: block;\n          font-size: 16px;\n          padding: 12px 8px;\n          text-decoration: none; }\n        .nav-bar .nav-inner-container ul li .v-link-active {\n          color: black; }\n        .nav-bar .nav-inner-container ul li .fa-bars {\n          margin-top: 13px; }\n\n.nav-panel {\n  box-sizing: border-box;\n  background-color: white;\n  font: 28px 'Raleway', monospace;\n  width: 100%;\n  position: absolute;\n  left: 0;\n  top: 119px;\n  right: 0;\n  bottom: 42px; }\n  .nav-panel ul {\n    list-style-type: none;\n    margin: 7% 0;\n    padding: 0;\n    width: 100%; }\n    .nav-panel ul li {\n      float: none;\n      height: 48px;\n      padding: 0 7%;\n      width: 100%;\n      text-align: center;\n      box-sizing: border-box; }\n      .nav-panel ul li .nav-panel-link {\n        color: #191919;\n        display: block;\n        text-decoration: none; }\n\n.hamburger {\n  display: block; }\n\n.togglable {\n  display: none; }\n\n@media only screen and (min-width: 768px) {\n  .hamburger {\n    display: none; }\n  .togglable {\n    display: block; } }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 26 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	// <style lang="sass?indentedSyntax">
+	// .nav-bar
+	//   -webkit-box-sizing: border-box
+	//   -moz-box-sizing: border-box
+	//   box-sizing: border-box
+	//   font: 22px 'Raleway', sans-serif
+	//   height: 48px
+	//   margin-top: 35px
+	//   margin-bottom: 36px
+	//
+	//   .nav-inner-container
+	//     height: 48px
+	//     margin: auto
+	//     max-width: 960px
+	//     width: 86%
+	//
+	//     ul
+	//       height: 48px
+	//       list-style-type: none
+	//       margin: 0
+	//       padding: 0
+	//       width: 100%
+	//
+	//       .float-left
+	//         float: left
+	//
+	//       .float-right
+	//         float: right
+	//
+	//       li
+	//         height: 48px
+	//
+	//         .nav-bar-title
+	//           color: black
+	//           display: block
+	//           font-size: 28px
+	//           margin-top: 7px
+	//           text-decoration: none
+	//
+	//         .nav-bar-link
+	//           color: rgb(100, 100, 100)
+	//           display: block
+	//           font-size: 16px
+	//           padding: 12px 8px
+	//           text-decoration: none
+	//
+	//         .v-link-active
+	//           color: black
+	//
+	//         .fa-bars
+	//           margin-top: 13px
+	//
+	// .nav-panel
+	//   -webkit-box-sizing: border-box
+	//   -moz-box-sizing: border-box
+	//   box-sizing: border-box
+	//   background-color: rgb(255, 255, 255)
+	//   font: 28px 'Raleway', monospace
+	//   width: 100%
+	//   position: absolute
+	//   left: 0
+	//   top: 119px
+	//   right: 0
+	//   bottom: 42px
+	//
+	//   ul
+	//     list-style-type: none
+	//     margin: 7% 0
+	//     padding: 0
+	//     width: 100%
+	//
+	//     li
+	//       float: none
+	//       height: 48px
+	//       padding: 0 7%
+	//       width: 100%
+	//       text-align: center
+	//       box-sizing: border-box
+	//
+	//       .nav-panel-link
+	//         color: rgb(25, 25, 25)
+	//         display: block
+	//         text-decoration: none
+	//
+	//
+	// .hamburger
+	//   display: block
+	//
+	// .togglable
+	//   display: none
+	//
+	// @media only screen and (min-width: 768px)
+	//   .hamburger
+	//     display: none
+	//
+	//   .togglable
+	//     display: block
+	//
+	// </style>
+	//
+	// <template>
+	//   <div class="nav-bar">
+	//     <div class="nav-inner-container">
+	//       <ul>
+	//         <li class="float-left"><a class="nav-bar-title" href="/">JUSTIN HARRISON</a></li>
+	//         <li class="float-right togglable"><a class="nav-bar-link" v-link="{ name: 'Resume View' }">resume</a></li>
+	//         <li class="float-right togglable"><a class="nav-bar-link" v-link="{ name: 'Blog List View' }">blog</a></li>
+	//         <li class="float-right togglable"><a class="nav-bar-link" v-link="{ name: 'Portfolio View' }">portfolio</a></li>
+	//         <li class="float-right togglable"><a class="nav-bar-link" v-link="{ name: 'Home View' }">about</a></li>
+	//         <li class="float-right hamburger"><i v-on:click="togglePanel" class="fa fa-bars fa-lg"></i></li>
+	//       </ul>
+	//     </div>
+	//     <div v-show="showPanel" transition="nav-panel" class="nav-panel">
+	//      <ul>
+	//        <li><a class="nav-panel-link" v-on:click="togglePanel" v-link="{ name: 'Home View' }">About</a></li>
+	//        <li><a class="nav-panel-link" v-on:click="togglePanel" v-link="{ name: 'Portfolio View' }">Portfolio</a></li>
+	//        <li><a class="nav-panel-link" v-on:click="togglePanel" v-link="{ name: 'Blog List View' }">Blog</a></li>
+	//        <li><a class="nav-panel-link" v-on:click="togglePanel" v-link="{ name: 'Resume View' }">Resume</a></li>
+	//      </ul>
+	//     </div>
+	//   </div>
+	// </template>
+	//
+	// <script>
+	exports.default = {
+	  data: function data() {
+	    return {
+	      showPanel: false
+	    };
+	  },
+
+	  methods: {
+	    handleResize: function handleResize() {
+	      if (window.innerWidth > 768) {
+	        this.showPanel = false;
+	      }
+	    },
+	    togglePanel: function togglePanel() {
+	      this.showPanel = !this.showPanel;
+	    }
+	  },
+	  ready: function ready() {
+	    window.addEventListener('resize', this.handleResize);
+	  }
+	};
+	// </script>
+	//
+
+/***/ },
+/* 27 */
+/***/ function(module, exports) {
+
+	module.exports = "\n  <div class=\"nav-bar\">\n    <div class=\"nav-inner-container\">\n      <ul>\n        <li class=\"float-left\"><a class=\"nav-bar-title\" href=\"/\">JUSTIN HARRISON</a></li>\n        <li class=\"float-right togglable\"><a class=\"nav-bar-link\" v-link=\"{ name: 'Resume View' }\">resume</a></li>\n        <li class=\"float-right togglable\"><a class=\"nav-bar-link\" v-link=\"{ name: 'Blog List View' }\">blog</a></li>\n        <li class=\"float-right togglable\"><a class=\"nav-bar-link\" v-link=\"{ name: 'Portfolio View' }\">portfolio</a></li>\n        <li class=\"float-right togglable\"><a class=\"nav-bar-link\" v-link=\"{ name: 'Home View' }\">about</a></li>\n        <li class=\"float-right hamburger\"><i v-on:click=\"togglePanel\" class=\"fa fa-bars fa-lg\"></i></li>\n      </ul>\n    </div>\n    <div v-show=\"showPanel\" transition=\"nav-panel\" class=\"nav-panel\">\n     <ul>\n       <li><a class=\"nav-panel-link\" v-on:click=\"togglePanel\" v-link=\"{ name: 'Home View' }\">About</a></li>\n       <li><a class=\"nav-panel-link\" v-on:click=\"togglePanel\" v-link=\"{ name: 'Portfolio View' }\">Portfolio</a></li>\n       <li><a class=\"nav-panel-link\" v-on:click=\"togglePanel\" v-link=\"{ name: 'Blog List View' }\">Blog</a></li>\n       <li><a class=\"nav-panel-link\" v-on:click=\"togglePanel\" v-link=\"{ name: 'Resume View' }\">Resume</a></li>\n     </ul>\n    </div>\n  </div>\n";
+
+/***/ },
+/* 28 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(29)
+	__vue_template__ = __webpack_require__(31)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/Justin/Development/justinharrison.io/src/components/Footer.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 29 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(30);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(10)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-edbe92fe&file=Footer.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Footer.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-edbe92fe&file=Footer.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Footer.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 30 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(9)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".footer {\n  background-color: white;\n  border-top-style: double;\n  position: fixed;\n  bottom: 0px;\n  color: #777777;\n  font: 13px 'Ubuntu', sans-serif;\n  width: 100%; }\n  .footer .footer-container {\n    margin: 12px auto;\n    max-width: 960px;\n    width: 86%; }\n  .footer a {\n    color: #4874d4;\n    text-decoration: none; }\n  .footer .footer-links {\n    float: right; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 31 */
+/***/ function(module, exports) {
+
+	module.exports = "\n  <div class=\"footer\">\n    <div class=\"footer-container\">\n      &copy; 2016 Justin Harrison <span class=\"footer-links\"><a href=\"https://github.com/jhar\">github</a> / <a href=\"https://www.linkedin.com/in/justinadenharrison\">linkedin</a> / <a href=\"https://twitter.com/j_aden_harrison\">twitter</a></span>\n    </div>\n  </div>\n";
+
+/***/ },
+/* 32 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(33)
+	__vue_script__ = __webpack_require__(35)
+	__vue_template__ = __webpack_require__(36)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/Justin/Development/justinharrison.io/src/components/Home.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 33 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(34);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(10)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-086f6176&file=Home.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Home.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-086f6176&file=Home.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Home.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 34 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(9)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "canvas {\n  position: fixed;\n  top: 0;\n  z-index: -1; }\n\n.about-me {\n  font-family: 'Raleway', sans-serif;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .about-me .emph-p {\n    color: #646464;\n    font-size: 25px;\n    letter-spacing: 1.7px; }\n  .about-me .small-p {\n    color: #969696;\n    font-size: 14px; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 35 */
+/***/ function(module, exports) {
+
+	// <style lang="sass?indentedSyntax">
+	// canvas
+	//   position: fixed
+	//   top: 0
+	//   z-index: -1
+	//
+	// .about-me
+	//   font-family: 'Raleway', sans-serif
+	//   margin: auto
+	//   max-width: 960px
+	//   width: 86% 
+	//
+	//   .emph-p
+	//     color: rgb(100, 100, 100)
+	//     font-size: 25px
+	//     letter-spacing: 1.7px
+	//
+	//   .small-p
+	//     color: rgb(150, 150, 150)
+	//     font-size: 14px
+	//
+	// </style>
+	//
+	// <template>
+	//   <div class="about-me">
+	//     <p class="emph-p">
+	//       Hi, I'm Justin Harrison. I'm a software developer living in Pasadena. I specialize in web application development and particularly enjoy the world of JavaScript.
+	//     </p>
+	//     <p class="small-p">
+	//       I'm currently experimenting with the p5.js library for creative coding while auditing Daniel Shiffman's <i>Nature of Code</i> course on Kadenze. I'm also actively developing this website with Vue.js and Firebase. When I'm not coding, I'm likely thinking and writing about professional boxing.
+	//     </p>
+	//     <p class="small-p">
+	//       You can <a href="mailto:justinadenharrison@gmail.com" target="blank">email</a> me if you want to say hello.
+	//     </p>
+	//   </div>
+	// </template>
+	//
+	// <script>
+	//  import p5 from 'p5'
+	//  import { sketch } from '../sketches/example.js'
+	//
+	//  export default {
+	//    created() {
+	//      var myp5 = new p5(sketch)
+	//      console.log("Got here")
+	//    }
+	//  }
+	// </script>
+	//
+	"use strict";
+
+/***/ },
+/* 36 */
+/***/ function(module, exports) {
+
+	module.exports = "\n  <div class=\"about-me\">\n    <p class=\"emph-p\">\n      Hi, I'm Justin Harrison. I'm a software developer living in Pasadena. I specialize in web application development and particularly enjoy the world of JavaScript.\n    </p>\n    <p class=\"small-p\">\n      I'm currently experimenting with the p5.js library for creative coding while auditing Daniel Shiffman's <i>Nature of Code</i> course on Kadenze. I'm also actively developing this website with Vue.js and Firebase. When I'm not coding, I'm likely thinking and writing about professional boxing.\n    </p>\n    <p class=\"small-p\">\n      You can <a href=\"mailto:justinadenharrison@gmail.com\" target=\"blank\">email</a> me if you want to say hello.\n    </p>\n  </div>\n";
+
+/***/ },
+/* 37 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(38)
+	__vue_template__ = __webpack_require__(40)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/Justin/Development/justinharrison.io/src/components/Resume.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 38 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(39);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(10)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-13403013&file=Resume.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Resume.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-13403013&file=Resume.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Resume.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 39 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(9)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".my-resume {\n  font-family: 'Raleway', sans-serif;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .my-resume .main-title {\n    font-size: 28px; }\n  .my-resume p {\n    color: #676767;\n    font-size: 16px; }\n  .my-resume h3 {\n    color: #4874d4; }\n  .my-resume .title {\n    font-weight: bold; }\n  .my-resume .loc,\n  .my-resume .dates {\n    color: #676767;\n    font-size: 12px; }\n  .my-resume .blk-1,\n  .my-resume .blk-3 {\n    box-sizing: border-box;\n    display: inline-block;\n    float: left;\n    min-height: 57px;\n    padding-right: 40px;\n    width: 100%; }\n  .my-resume .blk-2,\n  .my-resume .blk-4 {\n    box-sizing: border-box;\n    display: inline-block;\n    float: right;\n    width: 100%; }\n  @media only screen and (min-width: 768px) {\n    .my-resume .blk-1,\n    .my-resume .blk-3 {\n      width: 62%; }\n    .my-resume .blk-2,\n    .my-resume .blk-4 {\n      width: 38%; }\n    .my-resume .blk-3,\n    .my-resume .blk-4 {\n      margin-bottom: 75px; } }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 40 */
+/***/ function(module, exports) {
+
+	module.exports = "\n  <div class=\"my-resume\">\n    <div class=\"header\">\n      <div class=\"blk-1\">\n       <span class=\"main-title\">Web Application Developer</span>\n      </div>\n      <div class=\"blk-2\">\n        <span class=\"bold\">(206) 377-9027</span><br>\n        <span class=\"bold\">Skype: justin.a.harrison</span><br>\n        <a href=\"mailto:justinadenharrison@gmail.com\" target=\"_top\">justinadenharrison@gmail.com</a><br>\n      </div>\n    </div>\n    <div class=\"blk-3\">\n\n      <h3>Work Experience</h3>\n\n      <span class=\"title\">Web Engineer</span><br>\n      <span class=\"org\">Advercalls, Inc</span><br>\n      <span class=\"loc\">Los Angeles, CA</span><br>\n      <span class=\"dates\">Feb 2016 - Jul 2016</span>\n      <p>Developed a third-party JavaScript lead gen app. Wrote back-end integrations for marketing services like ActiveCampaign. Wrote scripts to clean redundancies and errors from a large database, built a web directory service to navigate the data, then incorporated user profiles, a membership service, and InfusionSoft for payment processing. Conducted research and feasibility studies. Recruited, managed and wrote specs for off-shore developers. Designed and developed APIs for our own services. Maintained dozens of websites.</p>\n      \n      <span class=\"title\">Contract Software Developer</span><br>\n      <span class=\"org\">Not That This, LLC</span><br>\n      <span class=\"loc\">Burbank, CA</span><br>\n      <span class=\"dates\">Nov 2015 - Jan 2016</span>\n      <p>Converted PSD designs to pixel perfect UI with Enyo.js for an enterprise Cisco IoT project.</p>\n      \n      <span class=\"title\">Web Content Evaluator</span><br>\n      <span class=\"org\">FlexaSoft</span><br>\n      <span class=\"loc\">Redmond, WA</span><br>\n      <span class=\"dates\">Oct 2014 - Jun 2015</span><br>\n      <p>Evaluated the accuracy and relevancy of Microsoft Bing search results.</p>\n      \n      <span class=\"title\">Web Developer</span><br>\n      <span class=\"org\">University of California Institute for Research in the Arts</span><br>\n      <span class=\"loc\">Santa Barbara, CA</span><br>\n      <span class=\"dates\">Jul 2014 - Sep 2014</span><br>\n      <p>Worked on a new website for the UCIRA. Merged their main site and State of the Arts blog. Worked to create a platform for California art researchers to network and display their work. The project was cancelled after funding cuts.</p>\n\n      <span class=\"title\">IT Helpdesk Assistant</span><br>\n      <span class=\"org\">Davidson Library</span><br>\n      <span class=\"loc\">Santa Barbara, CA</span><br>\n      <span class=\"dates\">Mar 2013 - Jul 2014</span><br>\n      <p>Provided technical assistance and support related to computer networks, hardware, and software. Responded to calls and emails and tracked issues with JIRA to help diagnose, solve, and document problems. Managed hardware inventory.</p>\n\n\n    </div>\n\n    <div class=\"blk-4\">\n\n\n      <h3>Education and Awards</h3>\n\n      <span class=\"title\">BA in Art with High Honors</span><br>\n      <span class=\"org\">University of California</span><br>\n      <span class=\"loc\">Santa Barbara, CA</span><br>\n      <span class=\"dates\">Graduated 2014</span><br>\n      <p>Promising Artist Achievement Award, William Dole Award, Faculty Award of Distinction x2, Dean's Honors x5</p>\n\n      <h3 class=\"mono\">Professional Development</h3>\n\n      <span class=\"title\">MongoDB for Node.js Developers</span><br>\n      <span class=\"org\">MongoDB University</span><br>\n      <span class=\"dates\">Completed 2015</span><br><br>\n\n      <span class=\"title\">Front-End Web Developer Nanodegree</span><br>\n      <span class=\"org\">Udacity</span><br>\n      <span class=\"dates\">Completed 2015</span><br>\n\n      <h3>Skills</h3>\n\n      <p>HTML, CSS, JavaScript, PHP, MySQL, MongoDB, Unix, Bootstrap, jQuery, React, Knockout, Vue, Node, NPM, Express, SASS, LESS, Firebase, AWS, Webpack, Browserify, Gulp, WordPress, p5.js, Processing, Chrome Developer Tools, AJAX, and Google.</p>\n\n      <h3>Volunteering</h3>\n\n      <span class=\"title\">Shopify Administrator</span><br>\n      <span class=\"org\">Arroyo Food Co-op</span><br>\n      <span class=\"loc\">Pasadena, CA</span><br>\n      <span class=\"dates\">Feb 2016 - May 2016</span><br><br>\n\n      <span class=\"title\">Cook and Server</span><br>\n      <span class=\"org\">Food Not Bombs</span><br>\n      <span class=\"loc\">Goleta, CA</span><br>\n      <span class=\"dates\">Jan 2013 - Sep 2014</span>\n\n\n\n\n\n\n    </div>\n\n  </div>\n";
+
+/***/ },
+/* 41 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(42)
+	__vue_script__ = __webpack_require__(44)
+	__vue_template__ = __webpack_require__(45)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/Justin/Development/justinharrison.io/src/components/Portfolio.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 42 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(43);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(10)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-4929f55c&file=Portfolio.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Portfolio.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-4929f55c&file=Portfolio.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Portfolio.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 43 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(9)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".my-portfolio {\n  font-family: 'Raleway', sans-serif;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 44 */
+/***/ function(module, exports) {
+
+	// <style lang="sass?indentedSyntax">
+	// .my-portfolio
+	//   font-family: 'Raleway', sans-serif
+	//   margin: auto
+	//   max-width: 960px
+	//   width: 86%
+	//
+	// </style>
+	//
+	// <template>
+	//   <h2>Placeholder text</h2>
+	// </template>
+	//
+	// <script>
+
+	// </script>
+	//
+	"use strict";
+
+/***/ },
+/* 45 */
+/***/ function(module, exports) {
+
+	module.exports = "\n  <h2>Placeholder text</h2>\n";
+
+/***/ },
+/* 46 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(47)
+	__vue_script__ = __webpack_require__(49)
+	__vue_template__ = __webpack_require__(50)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/Justin/Development/justinharrison.io/src/components/Project.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 47 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(48);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(10)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-2416af23&file=Project.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Project.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-2416af23&file=Project.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Project.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 48 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(9)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".my-portfolio {\n  font-family: 'Raleway', sans-serif;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 49 */
+/***/ function(module, exports) {
+
+	// <style lang="sass?indentedSyntax">
+	// .my-portfolio
+	//   font-family: 'Raleway', sans-serif
+	//   margin: auto
+	//   max-width: 960px
+	//   width: 86%
+	//
+	// </style>
+	//
+	// <template>
+	//   <h2>Placeholder text</h2>
+	// </template>
+	//
+	// <script>
+
+	// </script>
+	//
+	"use strict";
+
+/***/ },
+/* 50 */
+/***/ function(module, exports) {
+
+	module.exports = "\n  <h2>Placeholder text</h2>\n";
+
+/***/ },
+/* 51 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(52)
+	__vue_script__ = __webpack_require__(54)
+	__vue_template__ = __webpack_require__(55)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/Justin/Development/justinharrison.io/src/components/List.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 52 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(53);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(10)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-68f81384&file=List.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./List.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-68f81384&file=List.vue!./../../node_modules/sass-loader/index.js?indentedSyntax!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./List.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 53 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(9)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".blog-list-view {\n  font-family: 'Raleway', monospace;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .blog-list-view .italic {\n    font-style: italic; }\n  .blog-list-view .date {\n    color: #676767;\n    display: block;\n    font-size: 12px;\n    width: 100%; }\n  .blog-list-view h2 {\n    color: #4874d4;\n    font-size: 18px;\n    text-transform: capitalize; }\n  .blog-list-view ul {\n    list-style-type: none;\n    padding: 0; }\n    .blog-list-view ul .blog-list-link {\n      text-decoration: none;\n      width: 100%; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 54 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _firebase = __webpack_require__(21);
+
+	var postsRef = _firebase.db.ref('blog/'); // <style lang="sass?indentedSyntax">
+	// .blog-list-view
+	//   font-family: 'Raleway', monospace
+	//   margin: auto
+	//   max-width: 960px
+	//   width: 86%
+	//
+	//   .italic
+	//     font-style: italic
+	//
+	//   .date
+	//     color: rgb(103, 103, 103)
+	//     display: block
+	//     font-size: 12px
+	//     width: 100%
+	//
+	//   h2
+	//     color: #4874d4
+	//     font-size: 18px
+	//     text-transform: capitalize
+	//
+	//   ul
+	//     list-style-type: none
+	//     padding: 0
+	//
+	//     .blog-list-link
+	//       text-decoration: none
+	//       width: 100%
+	// </style>
+	//
+	// <template>
+	//   <div class="blog-list-view">
+	//     <ul>
+	//       <li v-for="post in posts | orderBy 'dateCreated' -1" track-by=".key">
+	//         <a class="blog-list-link" v-link="{ name: 'Blog Single Post', params: { postName: post['.key'] } }">
+	//           <span class="date">{{ post.dateCreated | dated }}</span>
+	//           <h2>{{ post.title }}</h2>
+	//         </a>
+	//       </li>
+	//     </ul>
+	//   </div>
+	// </template>
+	//
+	// <script>
+	exports.default = {
+	  firebase: {
+	    posts: postsRef
+	  }
+	};
+	// </script>
+	//
+	//
+
+/***/ },
 /* 55 */
 /***/ function(module, exports) {
 
@@ -15971,7 +16042,7 @@
 	  value: true
 	});
 
-	var _firebase = __webpack_require__(49);
+	var _firebase = __webpack_require__(21);
 
 	exports.default = {
 	  route: {

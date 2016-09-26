@@ -42,8 +42,8 @@ button:focus
       border: 5px solid white
       border-radius: 40px
       color: white
-      flex: 1 33%
-      font-size: 14px
+      flex: 1 25%
+      font-size: 13px
 
   .admin-tree
     -webkit-box-sizing: border-box
@@ -86,6 +86,20 @@ button:focus
 
       textarea
         height: 500px
+
+  .image-uploader
+    progress
+      background-color: #4874d4
+      border: 1px
+      height: 24px
+      margin-bottom: 12px
+      border-radius: 9px
+      width: 100%
+    img
+      max-width: 100%
+    span
+      font-size: 12px
+      margin-bottom: 12px
 </style>
 
 <template>
@@ -94,9 +108,10 @@ button:focus
       
 
       <div class="top-bar">
-        <button class="top-button" v-on:click="toggleCreatePost">New Blog Post</button>
-        <button class="top-button" v-on:click="toggleCreateProject">New Portfolio Project</button>
-        <button class="top-button" v-on:click="signOut">Sign Out</button>
+        <button class="top-button" v-on:click="toggleCreatePost">New Post</button>
+        <button class="top-button" v-on:click="toggleCreateProject">New Project</button>
+        <button class="top-button" v-on:click="toggleImageUpload">New Image</button>
+        <button class="top-button" v-on:click="signOut">Log Out</button>
       </div>
 
       <div class="admin-tree">
@@ -120,44 +135,58 @@ button:focus
       <div class="admin-editor">
 
         <!-- Form for creating new blog posts -->
-        <form v-if="showCreatePost === true" @submit.prevent="setPost">
+        <form v-if="showCreatePost === true" @submit.prevent>
           <input v-model="newPost.title" placeholder="Post title">
           <input v-model="newPost.category" placeholder="Post category">
-          <textarea v-model="newPost.content" placeholder="Post content"></textarea
+          <textarea v-model="newPost.content" placeholder="Post content"></textarea>
           <input v-model="newPost.key" placeholder="Pretty url">
-          <button>Add Post</button>
-          <button type="button" @click="resetState">Cancel</button>
+          <button @click="setPost">Add Post</button>
+          <button @click="resetState">Cancel</button>
         </form>
 
         <!-- Form for editing blog posts -->
-        <form v-if="showEditPost === true" @submit.prevent="setPost">
+        <form v-if="showEditPost === true" @submit.prevent>
           <input v-model="newPost.title">
           <input v-model="newPost.category">
           <textarea v-model="newPost.content"></textarea>
           <input v-model="newPost.key">
-          <button>Submit Edit</button>
-          <button @click="deletePost(post['.key'])">Delete Post</button>
+          <button @click="setPost">Submit Edit</button>
+          <button @click="deletePost">Delete Post</button>
         </form>
 
         <!-- Form for creating new portfolio projects -->
-        <form v-if="showCreateProject === true" @submit.prevent="setProject">
+        <form v-if="showCreateProject === true" @submit.prevent>
           <input v-model="newProject.title" placeholder="Project title">
           <input v-model="newProject.category" placeholder="Project category">
-          <textarea v-model="newProject.content" placeholder="Project content"></textarea
+          <textarea v-model="newProject.content" placeholder="Project content"></textarea>
           <input v-model="newProject.key" placeholder="Pretty url">
-          <button>Add Project</button>
-          <button type="button" @click="resetState">Cancel</button>
+          <button @click="setProject">Add Project</button>
+          <button @click="resetState">Cancel</button>
         </form>
 
         <!-- Form for editing portfolio projects -->
-        <form v-if="showEditProject === true" @submit.prevent="setProject">
+        <form v-if="showEditProject" @submit.prevent>
           <input v-model="newProject.title">
           <input v-model="newProject.category">
           <textarea v-model="newProject.content"></textarea>
           <input v-model="newProject.key">
-          <button>Submit Edit</button>
-          <button @click="deleteProject(project['.key'])">Delete Project</button>
+          <button @click="setProject">Submit Edit</button>
+          <button @click="deleteProject">Delete Project</button>
         </form>
+
+        <!-- Image uploader -->
+        <form class="image-uploader" v-if="showImageUploader" @submit.prevent>
+          <progress value="0" max="100" id="uploadProgress">0%</progress>
+          <label>Destination Folder</label>
+          <input v-model="newImage.folder">
+          <label>Image Title</label>
+          <input v-model="newImage.title">
+          <input type="file" value="upload" id="fileButton" v-on:change="uploadImage">
+          <label v-if="newImage.success">Direct URL (make sure to copy)</label><br><br>
+          <span>{{ newImage.url }}</span><br><br>
+          <img :src="newImage.url">
+        </form>
+
       </div>
       
     </div>
@@ -169,7 +198,7 @@ button:focus
 
 <script>
   import * as firebase from 'firebase'
-  import { db } from '../services/firebase'
+  import { db, storage } from '../services/firebase'
 
   const postsRef = db.ref('blog/')
   const projsRef = db.ref('portfolio/')
@@ -190,11 +219,16 @@ button:focus
       return {
         newPost: {},
         newProject: {},
+        newImage: {
+          url: '',
+          success: false
+        },
         provider: new firebase.auth.GoogleAuthProvider(),
         showCreatePost: false,
         showEditPost: false,
         showCreateProject: false,
         showEditProject: false,
+        showImageUploader: false,
         user: null
       }
     },
@@ -203,19 +237,26 @@ button:focus
       projects: projsRef
     },
     methods: {
-      deletePost(key) {
-        db.ref('/blog').child(key).remove()
+      deletePost() {
+        db.ref('blog/' + this.newPost.key).set(null)
+        this.resetState()
       },
-      deleteProject(key) {
-        db.ref('/portfolio').child(key).remove()
+      deleteProject() {
+        db.ref('project/' + this.newProject.key).set(null)
+        this.resetState()
       },
       resetState() {
         this.newPost = {}
         this.newProject = {}
+        this.newImage = {
+          url: '',
+          success: false
+        }
         this.showCreatePost = false
         this.showEditPost = false
         this.showCreateProject = false
         this.showEditProject = false
+        this.showImageUploader = false
       },
       setPost() {
         var currentDate = Date.now()
@@ -292,6 +333,44 @@ button:focus
         });
         // Show form
         this.showEditProject = true
+     },
+     toggleImageUpload() {
+       this.resetState()
+       this.showImageUploader = true
+     },
+     uploadImage(e) {
+       var that = this
+       // Get file & progress bar
+       var file = e.target.files[0]
+       var bar = document.getElementById('uploadProgress')
+       // Create storage ref 
+       var ref = storage.ref('/images/' + this.newImage.folder + '/' + this.newImage.title)
+       // Upload file
+       var task = ref.put(file)
+       // Update progress bar
+       task.on('state_changed', 
+
+         function progress(snapshot) {
+           var percent = (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+           bar.value = percent
+         },
+
+         function error(error) {
+           console.log(error)
+         },
+
+         function complete() {
+           that.newImage.success = true
+           ref.getDownloadURL().then(function(url) {
+             that.newImage.url = url
+           }).catch(function(error) {
+             console.log(error) 
+           })
+         }
+       )
+
+       console.log(this.newImage)
+
      }
     }
   }

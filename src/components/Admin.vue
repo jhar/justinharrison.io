@@ -106,7 +106,6 @@ button:focus
   <div class="admin-page">
     <div v-if="user && user.email === 'justinadenharrison@gmail.com'">
       
-
       <div class="top-bar">
         <button class="top-button" v-on:click="toggleCreatePost">New Post</button>
         <button class="top-button" v-on:click="toggleCreateProject">New Project</button>
@@ -158,6 +157,7 @@ button:focus
         <form v-if="showCreateProject === true" @submit.prevent>
           <input v-model="newProject.title" placeholder="Project title">
           <input v-model="newProject.category" placeholder="Project category">
+          <input v-model="newProject.featured" placeholder="Featured image">
           <textarea v-model="newProject.content" placeholder="Project content"></textarea>
           <input v-model="newProject.key" placeholder="Pretty url">
           <button @click="setProject">Add Project</button>
@@ -168,6 +168,7 @@ button:focus
         <form v-if="showEditProject" @submit.prevent>
           <input v-model="newProject.title">
           <input v-model="newProject.category">
+          <input v-model="newProject.featured" placeholder="Featured image">
           <textarea v-model="newProject.content"></textarea>
           <input v-model="newProject.key">
           <button @click="setProject">Submit Edit</button>
@@ -274,7 +275,7 @@ button:focus
       },
       setProject() {
         var currentDate = Date.now()
-        var setData = { title: this.newProject.title, category: this.newProject.category, content: this.newProject.content }
+        var setData = { title: this.newProject.title, category: this.newProject.category, featured: this.newProject.featured, content: this.newProject.content }
         // Check if the project has already been created
         if (this.newProject.dateCreated) {
           setData.dateCreated = this.newProject.dateCreated
@@ -307,11 +308,11 @@ button:focus
         // Load post to edit into form
         var that = this;
         db.ref('/blog').child(key).once('value').then(function(snap) {
-          that.newPost.title = snap.val().title;
-          that.newPost.category = snap.val().category;
-          that.newPost.content = snap.val().content;
-          that.newPost.key = snap.key;
-          that.newPost.dateCreated = snap.val().dateCreated;
+          that.newPost.title = snap.val().title
+          that.newPost.category = snap.val().category
+          that.newPost.content = snap.val().content
+          that.newPost.key = snap.key
+          that.newPost.dateCreated = snap.val().dateCreated
         });
         // Show form
         this.showEditPost = true
@@ -320,16 +321,17 @@ button:focus
        this.resetState()
        this.showCreateProject = true
      },
-     toggleEditProject() {
+     toggleEditProject(key) {
         this.resetState()
         // Load project to edit into form
         var that = this;
         db.ref('/portfolio').child(key).once('value').then(function(snap) {
-          that.newProject.title = snap.val().title;
-          that.newProject.category = snap.val().category;
-          that.newProject.content = snap.val().content;
-          that.newProject.key = snap.key;
-          that.newProject.dateCreated = snap.val().dateCreated;
+          that.newProject.title = snap.val().title
+          that.newProject.category = snap.val().category
+          that.newProject.featured = snap.val().featured
+          that.newProject.content = snap.val().content
+          that.newProject.key = snap.key
+          that.newProject.dateCreated = snap.val().dateCreated
         });
         // Show form
         this.showEditProject = true
@@ -368,8 +370,6 @@ button:focus
            })
          }
        )
-
-       console.log(this.newImage)
 
      }
     }

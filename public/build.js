@@ -14231,7 +14231,6 @@
 	//   <div class="admin-page">
 	//     <div v-if="user && user.email === 'justinadenharrison@gmail.com'">
 	//
-	//
 	//       <div class="top-bar">
 	//         <button class="top-button" v-on:click="toggleCreatePost">New Post</button>
 	//         <button class="top-button" v-on:click="toggleCreateProject">New Project</button>
@@ -14283,6 +14282,7 @@
 	//         <form v-if="showCreateProject === true" @submit.prevent>
 	//           <input v-model="newProject.title" placeholder="Project title">
 	//           <input v-model="newProject.category" placeholder="Project category">
+	//           <input v-model="newProject.featured" placeholder="Featured image">
 	//           <textarea v-model="newProject.content" placeholder="Project content"></textarea>
 	//           <input v-model="newProject.key" placeholder="Pretty url">
 	//           <button @click="setProject">Add Project</button>
@@ -14293,6 +14293,7 @@
 	//         <form v-if="showEditProject" @submit.prevent>
 	//           <input v-model="newProject.title">
 	//           <input v-model="newProject.category">
+	//           <input v-model="newProject.featured" placeholder="Featured image">
 	//           <textarea v-model="newProject.content"></textarea>
 	//           <input v-model="newProject.key">
 	//           <button @click="setProject">Submit Edit</button>
@@ -14397,7 +14398,7 @@
 	    },
 	    setProject: function setProject() {
 	      var currentDate = Date.now();
-	      var setData = { title: this.newProject.title, category: this.newProject.category, content: this.newProject.content };
+	      var setData = { title: this.newProject.title, category: this.newProject.category, featured: this.newProject.featured, content: this.newProject.content };
 	      // Check if the project has already been created
 	      if (this.newProject.dateCreated) {
 	        setData.dateCreated = this.newProject.dateCreated;
@@ -14443,13 +14444,14 @@
 	      this.resetState();
 	      this.showCreateProject = true;
 	    },
-	    toggleEditProject: function toggleEditProject() {
+	    toggleEditProject: function toggleEditProject(key) {
 	      this.resetState();
 	      // Load project to edit into form
 	      var that = this;
 	      _firebase2.db.ref('/portfolio').child(key).once('value').then(function (snap) {
 	        that.newProject.title = snap.val().title;
 	        that.newProject.category = snap.val().category;
+	        that.newProject.featured = snap.val().featured;
 	        that.newProject.content = snap.val().content;
 	        that.newProject.key = snap.key;
 	        that.newProject.dateCreated = snap.val().dateCreated;
@@ -14484,8 +14486,6 @@
 	          console.log(error);
 	        });
 	      });
-
-	      console.log(this.newImage);
 	    }
 	  }
 	};
@@ -15163,7 +15163,7 @@
 /* 22 */
 /***/ function(module, exports) {
 
-	module.exports = "\n  <div class=\"admin-page\">\n    <div v-if=\"user && user.email === 'justinadenharrison@gmail.com'\">\n      \n\n      <div class=\"top-bar\">\n        <button class=\"top-button\" v-on:click=\"toggleCreatePost\">New Post</button>\n        <button class=\"top-button\" v-on:click=\"toggleCreateProject\">New Project</button>\n        <button class=\"top-button\" v-on:click=\"toggleImageUpload\">New Image</button>\n        <button class=\"top-button\" v-on:click=\"signOut\">Log Out</button>\n      </div>\n\n      <div class=\"admin-tree\">\n\n        <h5>Blog Posts</h5>\n        <ul>\n          <li v-for=\"post in posts | orderBy 'dateCreated' -1\" track-by=\".key\">\n            <span @click=\"toggleEditPost(post['.key'])\">{{ post['.key'] }}</span>\n          </li>\n        </ul>\n\n        <h5>Portfolio Projects</h5>\n        <ul>\n          <li v-for=\"project in projects | orderBy 'dateCreated' -1\" track-by=\".key\">\n            <span @click=\"toggleEditProject(project['.key'])\">{{ project['.key'] }}</span>\n          </li>\n        </ul>\n\n      </div>\n\n      <div class=\"admin-editor\">\n\n        <!-- Form for creating new blog posts -->\n        <form v-if=\"showCreatePost === true\" @submit.prevent>\n          <input v-model=\"newPost.title\" placeholder=\"Post title\">\n          <input v-model=\"newPost.category\" placeholder=\"Post category\">\n          <textarea v-model=\"newPost.content\" placeholder=\"Post content\"></textarea>\n          <input v-model=\"newPost.key\" placeholder=\"Pretty url\">\n          <button @click=\"setPost\">Add Post</button>\n          <button @click=\"resetState\">Cancel</button>\n        </form>\n\n        <!-- Form for editing blog posts -->\n        <form v-if=\"showEditPost === true\" @submit.prevent>\n          <input v-model=\"newPost.title\">\n          <input v-model=\"newPost.category\">\n          <textarea v-model=\"newPost.content\"></textarea>\n          <input v-model=\"newPost.key\">\n          <button @click=\"setPost\">Submit Edit</button>\n          <button @click=\"deletePost\">Delete Post</button>\n        </form>\n\n        <!-- Form for creating new portfolio projects -->\n        <form v-if=\"showCreateProject === true\" @submit.prevent>\n          <input v-model=\"newProject.title\" placeholder=\"Project title\">\n          <input v-model=\"newProject.category\" placeholder=\"Project category\">\n          <textarea v-model=\"newProject.content\" placeholder=\"Project content\"></textarea>\n          <input v-model=\"newProject.key\" placeholder=\"Pretty url\">\n          <button @click=\"setProject\">Add Project</button>\n          <button @click=\"resetState\">Cancel</button>\n        </form>\n\n        <!-- Form for editing portfolio projects -->\n        <form v-if=\"showEditProject\" @submit.prevent>\n          <input v-model=\"newProject.title\">\n          <input v-model=\"newProject.category\">\n          <textarea v-model=\"newProject.content\"></textarea>\n          <input v-model=\"newProject.key\">\n          <button @click=\"setProject\">Submit Edit</button>\n          <button @click=\"deleteProject\">Delete Project</button>\n        </form>\n\n        <!-- Image uploader -->\n        <form class=\"image-uploader\" v-if=\"showImageUploader\" @submit.prevent>\n          <progress value=\"0\" max=\"100\" id=\"uploadProgress\">0%</progress>\n          <label>Destination Folder</label>\n          <input v-model=\"newImage.folder\">\n          <label>Image Title</label>\n          <input v-model=\"newImage.title\">\n          <input type=\"file\" value=\"upload\" id=\"fileButton\" v-on:change=\"uploadImage\">\n          <label v-if=\"newImage.success\">Direct URL (make sure to copy)</label><br><br>\n          <span>{{ newImage.url }}</span><br><br>\n          <img :src=\"newImage.url\">\n        </form>\n\n      </div>\n      \n    </div>\n    <div v-else class=\"not-authorized\">\n      <button v-on:click=\"signIn\">Sign In</button>\n    </div>\n  </div>\n";
+	module.exports = "\n  <div class=\"admin-page\">\n    <div v-if=\"user && user.email === 'justinadenharrison@gmail.com'\">\n      \n      <div class=\"top-bar\">\n        <button class=\"top-button\" v-on:click=\"toggleCreatePost\">New Post</button>\n        <button class=\"top-button\" v-on:click=\"toggleCreateProject\">New Project</button>\n        <button class=\"top-button\" v-on:click=\"toggleImageUpload\">New Image</button>\n        <button class=\"top-button\" v-on:click=\"signOut\">Log Out</button>\n      </div>\n\n      <div class=\"admin-tree\">\n\n        <h5>Blog Posts</h5>\n        <ul>\n          <li v-for=\"post in posts | orderBy 'dateCreated' -1\" track-by=\".key\">\n            <span @click=\"toggleEditPost(post['.key'])\">{{ post['.key'] }}</span>\n          </li>\n        </ul>\n\n        <h5>Portfolio Projects</h5>\n        <ul>\n          <li v-for=\"project in projects | orderBy 'dateCreated' -1\" track-by=\".key\">\n            <span @click=\"toggleEditProject(project['.key'])\">{{ project['.key'] }}</span>\n          </li>\n        </ul>\n\n      </div>\n\n      <div class=\"admin-editor\">\n\n        <!-- Form for creating new blog posts -->\n        <form v-if=\"showCreatePost === true\" @submit.prevent>\n          <input v-model=\"newPost.title\" placeholder=\"Post title\">\n          <input v-model=\"newPost.category\" placeholder=\"Post category\">\n          <textarea v-model=\"newPost.content\" placeholder=\"Post content\"></textarea>\n          <input v-model=\"newPost.key\" placeholder=\"Pretty url\">\n          <button @click=\"setPost\">Add Post</button>\n          <button @click=\"resetState\">Cancel</button>\n        </form>\n\n        <!-- Form for editing blog posts -->\n        <form v-if=\"showEditPost === true\" @submit.prevent>\n          <input v-model=\"newPost.title\">\n          <input v-model=\"newPost.category\">\n          <textarea v-model=\"newPost.content\"></textarea>\n          <input v-model=\"newPost.key\">\n          <button @click=\"setPost\">Submit Edit</button>\n          <button @click=\"deletePost\">Delete Post</button>\n        </form>\n\n        <!-- Form for creating new portfolio projects -->\n        <form v-if=\"showCreateProject === true\" @submit.prevent>\n          <input v-model=\"newProject.title\" placeholder=\"Project title\">\n          <input v-model=\"newProject.category\" placeholder=\"Project category\">\n          <input v-model=\"newProject.featured\" placeholder=\"Featured image\">\n          <textarea v-model=\"newProject.content\" placeholder=\"Project content\"></textarea>\n          <input v-model=\"newProject.key\" placeholder=\"Pretty url\">\n          <button @click=\"setProject\">Add Project</button>\n          <button @click=\"resetState\">Cancel</button>\n        </form>\n\n        <!-- Form for editing portfolio projects -->\n        <form v-if=\"showEditProject\" @submit.prevent>\n          <input v-model=\"newProject.title\">\n          <input v-model=\"newProject.category\">\n          <input v-model=\"newProject.featured\" placeholder=\"Featured image\">\n          <textarea v-model=\"newProject.content\"></textarea>\n          <input v-model=\"newProject.key\">\n          <button @click=\"setProject\">Submit Edit</button>\n          <button @click=\"deleteProject\">Delete Project</button>\n        </form>\n\n        <!-- Image uploader -->\n        <form class=\"image-uploader\" v-if=\"showImageUploader\" @submit.prevent>\n          <progress value=\"0\" max=\"100\" id=\"uploadProgress\">0%</progress>\n          <label>Destination Folder</label>\n          <input v-model=\"newImage.folder\">\n          <label>Image Title</label>\n          <input v-model=\"newImage.title\">\n          <input type=\"file\" value=\"upload\" id=\"fileButton\" v-on:change=\"uploadImage\">\n          <label v-if=\"newImage.success\">Direct URL (make sure to copy)</label><br><br>\n          <span>{{ newImage.url }}</span><br><br>\n          <img :src=\"newImage.url\">\n        </form>\n\n      </div>\n      \n    </div>\n    <div v-else class=\"not-authorized\">\n      <button v-on:click=\"signIn\">Sign In</button>\n    </div>\n  </div>\n";
 
 /***/ },
 /* 23 */
@@ -15709,39 +15709,96 @@
 
 
 	// module
-	exports.push([module.id, ".my-portfolio {\n  font-family: 'Raleway', sans-serif;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n", ""]);
+	exports.push([module.id, ".my-portfolio {\n  font-family: 'Raleway', sans-serif;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .my-portfolio .project-container {\n    margin: 0 auto;\n    width: 566px;\n    height: 436px;\n    padding: 10px; }\n    .my-portfolio .project-container .project-link {\n      display: block;\n      position: relative;\n      height: 100%;\n      width: 100%;\n      text-decoration: none; }\n      .my-portfolio .project-container .project-link .project-image {\n        margin: 0 auto;\n        position: absolute;\n        z-index: -1;\n        opacity: 1; }\n      .my-portfolio .project-container .project-link .text-container {\n        color: white;\n        height: 100%;\n        width: 100%;\n        text-align: center;\n        opacity: 0;\n        overflow: hidden; }\n      .my-portfolio .project-container .project-link .text-container:hover {\n        background-color: rgba(0, 0, 0, 0.5);\n        opacity: 1; }\n        .my-portfolio .project-container .project-link .text-container:hover .project-title {\n          font-size: 16px;\n          text-transform: uppercase;\n          padding-top: 33%;\n          font-weight: bold;\n          letter-spacing: 3px; }\n", ""]);
 
 	// exports
 
 
 /***/ },
 /* 44 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	// <style lang="sass?indentedSyntax">
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _firebase = __webpack_require__(21);
+
+	var projsRef = _firebase.db.ref('portfolio/'); // <style lang="sass?indentedSyntax">
 	// .my-portfolio
 	//   font-family: 'Raleway', sans-serif
 	//   margin: auto
 	//   max-width: 960px
 	//   width: 86%
 	//
+	//   .project-container
+	//     margin: 0 auto
+	//     width: 566px
+	//     height: 436px
+	//     padding: 10px
+	//
+	//     .project-link
+	//       display: block
+	//       position: relative
+	//       height: 100%
+	//       width: 100%
+	//       text-decoration: none
+	//
+	//       .project-image
+	//         margin: 0 auto
+	//         position: absolute
+	//         z-index: -1
+	//         opacity: 1
+	//
+	//       .text-container
+	//         color: white
+	//         height: 100%
+	//         width: 100%
+	//         text-align: center
+	//         opacity: 0
+	//         overflow: hidden
+	//
+	//       .text-container:hover
+	//         background-color: rgba(0, 0, 0, 0.5)
+	//         opacity: 1
+	//
+	//         .project-title
+	//           font-size: 16px
+	//           text-transform: uppercase
+	//           padding-top: 33%
+	//           font-weight: bold
+	//           letter-spacing: 3px
 	// </style>
 	//
 	// <template>
-	//   <h2>Placeholder text</h2>
+	//   <div class="my-portfolio">
+	// 	<div class="project-container" v-for="project in projects | orderBy 'dateCreated' -1" track-by=".key">
+	// 	  <a class="project-link" v-link="{ name: 'Portfolio Single Project', params: { projectName: project['.key'] } }">
+	// 	    <img class="project-image" :src="project.featured">
+	// 	    <div class="text-container">
+	// 	     <p class="project-title">{{ project.title }}</p>
+	// 	    </div>
+	// 	  </a>
+	// 	</div>
+	//   </div>
 	// </template>
 	//
 	// <script>
-
+	exports.default = {
+	  firebase: {
+	    projects: projsRef
+	  }
+	};
 	// </script>
 	//
-	"use strict";
 
 /***/ },
 /* 45 */
 /***/ function(module, exports) {
 
-	module.exports = "\n  <h2>Placeholder text</h2>\n";
+	module.exports = "\n  <div class=\"my-portfolio\">\n\t<div class=\"project-container\" v-for=\"project in projects | orderBy 'dateCreated' -1\" track-by=\".key\">\n\t  <a class=\"project-link\" v-link=\"{ name: 'Portfolio Single Project', params: { projectName: project['.key'] } }\">\n\t    <img class=\"project-image\" :src=\"project.featured\">\n\t    <div class=\"text-container\">\n\t     <p class=\"project-title\">{{ project.title }}</p>\n\t    </div>\n\t  </a>\n\t</div>\n  </div>\n";
 
 /***/ },
 /* 46 */
@@ -15801,39 +15858,97 @@
 
 
 	// module
-	exports.push([module.id, ".my-portfolio {\n  font-family: 'Raleway', sans-serif;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n", ""]);
+	exports.push([module.id, ".project-view {\n  margin: 0 auto 100px auto;\n  max-width: 960px;\n  width: 86%; }\n  .project-view .project-info {\n    color: #676767;\n    font: 12px 'Raleway', sans-serif; }\n  .project-view .italic {\n    font-style: italic; }\n  .project-view h2 {\n    font-family: 'Raleway', monospace;\n    text-transform: capitalize; }\n  .project-view p {\n    font: 16px 'Raleway', sans-serif;\n    color: #676767; }\n  .project-view ul {\n    list-style-type: none;\n    padding: 0; }\n  .project-view img {\n    max-width: 100%; }\n", ""]);
 
 	// exports
 
 
 /***/ },
 /* 49 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _firebase = __webpack_require__(21);
+
+	exports.default = {
+	  route: {
+	    data: function data(transition) {
+	      transition.next({
+	        projectName: transition.to.params.projectName
+	      });
+	    }
+	  },
+	  data: function data() {
+	    return {
+	      project: {
+	        category: '',
+	        content: '',
+	        dateCreated: null,
+	        dateUpdated: null,
+	        title: ''
+	      },
+	      projectName: ''
+	    };
+	  },
+
+	  ready: function ready() {
+	    this.$bindAsObject('project', _firebase.db.ref('/portfolio/' + this.projectName));
+	  }
+	};
+	// </script>
+	//
 	// <style lang="sass?indentedSyntax">
-	// .my-portfolio
-	//   font-family: 'Raleway', sans-serif
-	//   margin: auto
+	// .project-view
+	//   margin: 0 auto 100px auto
 	//   max-width: 960px
 	//   width: 86%
+	//
+	//   .project-info
+	//     color: #676767
+	//     font: 12px 'Raleway', sans-serif
+	//
+	//   .italic
+	//     font-style: italic
+	//
+	//   h2
+	//     font-family: 'Raleway', monospace
+	//     text-transform: capitalize
+	//
+	//   p
+	//     font: 16px 'Raleway', sans-serif
+	//     color: #676767
+	//
+	//   ul
+	//     list-style-type: none
+	//     padding: 0
+	//
+	//   img
+	//     max-width: 100%
 	//
 	// </style>
 	//
 	// <template>
-	//   <h2>Placeholder text</h2>
+	//   <div class="project-view">
+	//     <h2>{{ project.title }}</h2>
+	//     <span class="project-info" v-if="project.dateCreated">{{ project.dateCreated | dated  }} {{ project.category }} <span class="italic" v-if="project.dateUpdated">Updated {{ project.dateUpdated | dated  }}</span></span><br>
+	//     <div>
+	//       {{{ project.content | marked }}}
+	//     </div>
+	//   </div>
 	// </template>
 	//
 	// <script>
-
-	// </script>
-	//
-	"use strict";
 
 /***/ },
 /* 50 */
 /***/ function(module, exports) {
 
-	module.exports = "\n  <h2>Placeholder text</h2>\n";
+	module.exports = "\n  <div class=\"project-view\">\n    <h2>{{ project.title }}</h2>\n    <span class=\"project-info\" v-if=\"project.dateCreated\">{{ project.dateCreated | dated  }} {{ project.category }} <span class=\"italic\" v-if=\"project.dateUpdated\">Updated {{ project.dateUpdated | dated  }}</span></span><br>\n    <div>\n      {{{ project.content | marked }}}\n    </div>\n  </div>\n";
 
 /***/ },
 /* 51 */

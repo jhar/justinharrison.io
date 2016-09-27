@@ -15709,7 +15709,7 @@
 
 
 	// module
-	exports.push([module.id, ".my-portfolio {\n  font-family: 'Raleway', sans-serif;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .my-portfolio .project-container {\n    margin: 0 auto;\n    width: 566px;\n    height: 436px;\n    padding: 10px; }\n    .my-portfolio .project-container .project-link {\n      display: block;\n      position: relative;\n      height: 100%;\n      width: 100%;\n      text-decoration: none; }\n      .my-portfolio .project-container .project-link .project-image {\n        margin: 0 auto;\n        position: absolute;\n        z-index: -1;\n        opacity: 1; }\n      .my-portfolio .project-container .project-link .text-container {\n        color: white;\n        height: 100%;\n        width: 100%;\n        text-align: center;\n        opacity: 0;\n        overflow: hidden; }\n      .my-portfolio .project-container .project-link .text-container:hover {\n        background-color: rgba(0, 0, 0, 0.5);\n        opacity: 1; }\n        .my-portfolio .project-container .project-link .text-container:hover .project-title {\n          font-size: 16px;\n          text-transform: uppercase;\n          padding-top: 33%;\n          font-weight: bold;\n          letter-spacing: 3px; }\n", ""]);
+	exports.push([module.id, ".my-portfolio {\n  font-family: 'Raleway', sans-serif;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .my-portfolio .project-container {\n    margin: 10px auto;\n    width: 100%;\n    position: relative;\n    padding-bottom: 77%; }\n    .my-portfolio .project-container .project-link {\n      display: block;\n      position: absolute;\n      top: 0;\n      bottom: 0;\n      left: 0;\n      right: 0;\n      text-decoration: none; }\n      .my-portfolio .project-container .project-link .project-image {\n        width: 100%;\n        height: 100%;\n        position: absolute;\n        z-index: -1;\n        opacity: 1; }\n      .my-portfolio .project-container .project-link .text-container {\n        width: 100%;\n        height: 100%;\n        position: absolute;\n        text-align: center;\n        opacity: 0; }\n      .my-portfolio .project-container .project-link .text-container:hover {\n        background-color: rgba(0, 0, 0, 0.5);\n        opacity: 1; }\n        .my-portfolio .project-container .project-link .text-container:hover .project-title {\n          color: white;\n          font-size: 16px;\n          text-transform: uppercase;\n          padding-top: 33%;\n          font-weight: bold;\n          letter-spacing: 3px; }\n  @media only screen and (min-width: 768px) {\n    .my-portfolio .project-container {\n      width: 45%;\n      margin: 2%;\n      float: left;\n      padding-bottom: 37%; } }\n  @media only screen and (min-width: 1024px) {\n    .my-portfolio .project-container {\n      width: 31%;\n      margin: 1%;\n      float: left;\n      padding-bottom: 24%; } }\n", ""]);
 
 	// exports
 
@@ -15734,42 +15734,59 @@
 	//   width: 86%
 	//
 	//   .project-container
-	//     margin: 0 auto
-	//     width: 566px
-	//     height: 436px
-	//     padding: 10px
+	//     margin: 10px auto
+	//     width: 100%
+	//     position: relative
+	//     padding-bottom: 77%
 	//
 	//     .project-link
 	//       display: block
-	//       position: relative
-	//       height: 100%
-	//       width: 100%
+	//       position: absolute
+	//       top: 0
+	//       bottom: 0
+	//       left: 0
+	//       right: 0
 	//       text-decoration: none
 	//
 	//       .project-image
-	//         margin: 0 auto
+	//         width: 100%
+	//         height: 100%
 	//         position: absolute
 	//         z-index: -1
 	//         opacity: 1
 	//
 	//       .text-container
-	//         color: white
-	//         height: 100%
 	//         width: 100%
+	//         height: 100%
+	//         position: absolute
 	//         text-align: center
 	//         opacity: 0
-	//         overflow: hidden
 	//
 	//       .text-container:hover
 	//         background-color: rgba(0, 0, 0, 0.5)
 	//         opacity: 1
 	//
 	//         .project-title
+	//           color: white
 	//           font-size: 16px
 	//           text-transform: uppercase
 	//           padding-top: 33%
 	//           font-weight: bold
 	//           letter-spacing: 3px
+	//
+	//   @media only screen and (min-width: 768px)
+	//     .project-container
+	//       width: 45%
+	//       margin: 2%
+	//       float: left
+	//       padding-bottom: 37%
+	//
+	//   @media only screen and (min-width: 1024px)
+	//     .project-container
+	//       width: 31%
+	//       margin: 1%
+	//       float: left
+	//       padding-bottom: 24%
 	// </style>
 	//
 	// <template>

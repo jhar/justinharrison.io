@@ -6,42 +6,59 @@
   width: 86%
 
   .project-container
-    margin: 0 auto
-    width: 566px
-    height: 436px
-    padding: 10px
+    margin: 10px auto
+    width: 100%
+    position: relative
+    padding-bottom: 77%
 
     .project-link
       display: block
-      position: relative
-      height: 100%
-      width: 100%
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
       text-decoration: none
 
       .project-image
-        margin: 0 auto
+        width: 100%
+        height: 100%
         position: absolute
         z-index: -1
         opacity: 1
 
       .text-container
-        color: white
-        height: 100%
         width: 100%
+        height: 100%
+        position: absolute
         text-align: center
         opacity: 0
-        overflow: hidden
 
       .text-container:hover
         background-color: rgba(0, 0, 0, 0.5)
         opacity: 1
 
         .project-title
+          color: white
           font-size: 16px
           text-transform: uppercase
           padding-top: 33%
           font-weight: bold
           letter-spacing: 3px
+
+  @media only screen and (min-width: 768px)
+    .project-container
+      width: 45%
+      margin: 2%
+      float: left
+      padding-bottom: 37%
+
+  @media only screen and (min-width: 1024px)
+    .project-container
+      width: 31%
+      margin: 1%
+      float: left
+      padding-bottom: 24%
 </style>
 
 <template>

@@ -13721,9 +13721,10 @@
 	exports = module.exports = __webpack_require__(9)();
 	// imports
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Raleway);", ""]);
+	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Open+Sans);", ""]);
 
 	// module
-	exports.push([module.id, "\n", ""]);
+	exports.push([module.id, "p {\n  font: 16px 'Open Sans', sans-serif;\n  color: #676767; }\n", ""]);
 
 	// exports
 
@@ -15518,7 +15519,7 @@
 
 
 	// module
-	exports.push([module.id, "canvas {\n  position: fixed;\n  top: 0;\n  z-index: -1; }\n\n.about-me {\n  font-family: 'Raleway', sans-serif;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .about-me .emph-p {\n    color: #646464;\n    font-size: 25px;\n    letter-spacing: 1.7px; }\n  .about-me .small-p {\n    color: #969696;\n    font-size: 14px; }\n", ""]);
+	exports.push([module.id, ".about-me {\n  font-family: 'Raleway', sans-serif;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .about-me .emph-p {\n    color: #646464;\n    font-size: 25px;\n    letter-spacing: 1.7px; }\n  .about-me .small-p {\n    color: #969696;\n    font-size: 16px; }\n", ""]);
 
 	// exports
 
@@ -15528,11 +15529,6 @@
 /***/ function(module, exports) {
 
 	// <style lang="sass?indentedSyntax">
-	// canvas
-	//   position: fixed
-	//   top: 0
-	//   z-index: -1
-	//
 	// .about-me
 	//   font-family: 'Raleway', sans-serif
 	//   margin: auto
@@ -15546,7 +15542,7 @@
 	//
 	//   .small-p
 	//     color: rgb(150, 150, 150)
-	//     font-size: 14px
+	//     font-size: 16px
 	//
 	// </style>
 	//
@@ -15641,7 +15637,7 @@
 
 
 	// module
-	exports.push([module.id, ".my-resume {\n  font-family: 'Raleway', sans-serif;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .my-resume .main-title {\n    font-size: 28px; }\n  .my-resume p {\n    color: #676767;\n    font-size: 16px; }\n  .my-resume h3 {\n    color: #4874d4; }\n  .my-resume .title {\n    font-weight: bold; }\n  .my-resume .loc,\n  .my-resume .dates {\n    color: #676767;\n    font-size: 12px; }\n  .my-resume .blk-1,\n  .my-resume .blk-3 {\n    box-sizing: border-box;\n    display: inline-block;\n    float: left;\n    min-height: 57px;\n    padding-right: 40px;\n    width: 100%; }\n  .my-resume .blk-2,\n  .my-resume .blk-4 {\n    box-sizing: border-box;\n    display: inline-block;\n    float: right;\n    width: 100%; }\n  @media only screen and (min-width: 768px) {\n    .my-resume .blk-1,\n    .my-resume .blk-3 {\n      width: 62%; }\n    .my-resume .blk-2,\n    .my-resume .blk-4 {\n      width: 38%; }\n    .my-resume .blk-3,\n    .my-resume .blk-4 {\n      margin-bottom: 75px; } }\n", ""]);
+	exports.push([module.id, ".my-resume {\n  font-family: 'Raleway', sans-serif;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .my-resume .main-title {\n    font-size: 28px; }\n  .my-resume h3 {\n    color: #4874d4; }\n  .my-resume .title {\n    font-weight: bold; }\n  .my-resume .loc,\n  .my-resume .dates {\n    color: #676767;\n    font-size: 12px; }\n  .my-resume .blk-1,\n  .my-resume .blk-3 {\n    box-sizing: border-box;\n    display: inline-block;\n    float: left;\n    min-height: 57px;\n    padding-right: 40px;\n    width: 100%; }\n  .my-resume .blk-2,\n  .my-resume .blk-4 {\n    box-sizing: border-box;\n    display: inline-block;\n    float: right;\n    width: 100%; }\n  @media only screen and (min-width: 768px) {\n    .my-resume .blk-1,\n    .my-resume .blk-3 {\n      width: 62%; }\n    .my-resume .blk-2,\n    .my-resume .blk-4 {\n      width: 38%; }\n    .my-resume .blk-3,\n    .my-resume .blk-4 {\n      margin-bottom: 75px; } }\n", ""]);
 
 	// exports
 
@@ -15710,7 +15706,7 @@
 
 
 	// module
-	exports.push([module.id, ".my-portfolio {\n  font-family: 'Raleway', sans-serif;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .my-portfolio .project-container {\n    margin: 10px auto;\n    width: 100%;\n    position: relative;\n    padding-bottom: 77%; }\n    .my-portfolio .project-container .project-link {\n      display: block;\n      position: absolute;\n      top: 0;\n      bottom: 0;\n      left: 0;\n      right: 0;\n      text-decoration: none; }\n      .my-portfolio .project-container .project-link .project-image {\n        width: 100%;\n        height: 100%;\n        position: absolute;\n        z-index: -1;\n        opacity: 1; }\n      .my-portfolio .project-container .project-link .text-container {\n        width: 100%;\n        height: 100%;\n        position: absolute;\n        text-align: center;\n        opacity: 0; }\n      .my-portfolio .project-container .project-link .text-container:hover {\n        background-color: rgba(0, 0, 0, 0.5);\n        opacity: 1; }\n        .my-portfolio .project-container .project-link .text-container:hover .project-title {\n          color: white;\n          font-size: 16px;\n          text-transform: uppercase;\n          padding-top: 33%;\n          font-weight: bold;\n          letter-spacing: 3px; }\n  @media only screen and (min-width: 768px) {\n    .my-portfolio .project-container {\n      width: 45%;\n      margin: 2%;\n      float: left;\n      padding-bottom: 37%; } }\n  @media only screen and (min-width: 1024px) {\n    .my-portfolio .project-container {\n      width: 31%;\n      margin: 1%;\n      float: left;\n      padding-bottom: 24%; } }\n", ""]);
+	exports.push([module.id, ".my-portfolio {\n  font-family: 'Raleway', sans-serif;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .my-portfolio .project-container {\n    margin: 10px auto 48px auto;\n    width: 100%;\n    position: relative;\n    padding-bottom: 77%; }\n    .my-portfolio .project-container .project-link {\n      display: block;\n      position: absolute;\n      top: 0;\n      bottom: 0;\n      left: 0;\n      right: 0;\n      text-decoration: none; }\n      .my-portfolio .project-container .project-link .project-image {\n        width: 100%;\n        height: 100%;\n        z-index: -1;\n        opacity: 1; }\n      .my-portfolio .project-container .project-link .text-container {\n        text-align: center; }\n        .my-portfolio .project-container .project-link .text-container .project-title {\n          color: black;\n          font-size: 17px;\n          font-weight: bold;\n          letter-spacing: 2px;\n          margin: 9px;\n          text-transform: uppercase; }\n  @media only screen and (min-width: 768px) {\n    .my-portfolio .project-container {\n      width: 45%;\n      margin: 2%;\n      margin-bottom: 48px;\n      float: left;\n      padding-bottom: 37%; } }\n  @media only screen and (min-width: 1024px) {\n    .my-portfolio .project-container {\n      width: 31%;\n      margin: 1%;\n      margin-bottom: 48px;\n      float: left;\n      padding-bottom: 24%; } }\n\n.my-portfolio::after {\n  content: \"\";\n  display: block;\n  height: 96px;\n  clear: both; }\n", ""]);
 
 	// exports
 
@@ -15735,7 +15731,7 @@
 	//   width: 86%
 	//
 	//   .project-container
-	//     margin: 10px auto
+	//     margin: 10px auto 48px auto
 	//     width: 100%
 	//     position: relative
 	//     padding-bottom: 77%
@@ -15752,33 +15748,25 @@
 	//       .project-image
 	//         width: 100%
 	//         height: 100%
-	//         position: absolute
 	//         z-index: -1
 	//         opacity: 1
 	//
 	//       .text-container
-	//         width: 100%
-	//         height: 100%
-	//         position: absolute
 	//         text-align: center
-	//         opacity: 0
-	//
-	//       .text-container:hover
-	//         background-color: rgba(0, 0, 0, 0.5)
-	//         opacity: 1
 	//
 	//         .project-title
-	//           color: white
-	//           font-size: 16px
-	//           text-transform: uppercase
-	//           padding-top: 33%
+	//           color: black
+	//           font-size: 17px
 	//           font-weight: bold
-	//           letter-spacing: 3px
+	//           letter-spacing: 2px
+	//           margin: 9px
+	//           text-transform: uppercase
 	//
 	//   @media only screen and (min-width: 768px)
 	//     .project-container
 	//       width: 45%
 	//       margin: 2%
+	//       margin-bottom: 48px
 	//       float: left
 	//       padding-bottom: 37%
 	//
@@ -15786,23 +15774,27 @@
 	//     .project-container
 	//       width: 31%
 	//       margin: 1%
+	//       margin-bottom: 48px
 	//       float: left
 	//       padding-bottom: 24%
+	//
+	// .my-portfolio::after
+	//   content: ""
+	//   display: block
+	//   height: 96px
+	//   clear: both
 	// </style>
 	//
 	// <template>
-	//   <div class="category-nav">
-	//
-	//   </div>
 	//   <div class="my-portfolio">
-	// 	<div class="project-container" v-for="project in projects | orderBy 'dateUpdated' -1" track-by=".key">
-	// 	  <a class="project-link" v-link="{ name: 'Portfolio Single Project', params: { projectName: project['.key'] } }">
-	// 	    <img class="project-image" :src="project.featured">
-	// 	    <div class="text-container">
-	// 	     <p class="project-title">{{ project.title }}</p>
-	// 	    </div>
-	// 	  </a>
-	// 	</div>
+	//   	<div class="project-container" v-for="project in projects | orderBy 'dateUpdated' -1" track-by=".key">
+	//   	  <a class="project-link" v-link="{ name: 'Portfolio Single Project', params: { projectName: project['.key'] } }">
+	//   	    <img class="project-image" :src="project.featured">
+	//   	    <div class="text-container">
+	//   	     <p class="project-title">{{ project.title }}</p>
+	//   	    </div>
+	//   	  </a>
+	//   	</div>
 	//   </div>
 	// </template>
 	//
@@ -15819,7 +15811,7 @@
 /* 45 */
 /***/ function(module, exports) {
 
-	module.exports = "\n  <div class=\"category-nav\">\n    \n  </div>\n  <div class=\"my-portfolio\">\n\t<div class=\"project-container\" v-for=\"project in projects | orderBy 'dateUpdated' -1\" track-by=\".key\">\n\t  <a class=\"project-link\" v-link=\"{ name: 'Portfolio Single Project', params: { projectName: project['.key'] } }\">\n\t    <img class=\"project-image\" :src=\"project.featured\">\n\t    <div class=\"text-container\">\n\t     <p class=\"project-title\">{{ project.title }}</p>\n\t    </div>\n\t  </a>\n\t</div>\n  </div>\n";
+	module.exports = "\n  <div class=\"my-portfolio\">\n  \t<div class=\"project-container\" v-for=\"project in projects | orderBy 'dateUpdated' -1\" track-by=\".key\">\n  \t  <a class=\"project-link\" v-link=\"{ name: 'Portfolio Single Project', params: { projectName: project['.key'] } }\">\n  \t    <img class=\"project-image\" :src=\"project.featured\">\n  \t    <div class=\"text-container\">\n  \t     <p class=\"project-title\">{{ project.title }}</p>\n  \t    </div>\n  \t  </a>\n  \t</div>\n  </div>\n";
 
 /***/ },
 /* 46 */
@@ -15879,7 +15871,7 @@
 
 
 	// module
-	exports.push([module.id, ".project-view {\n  margin: 0 auto 100px auto;\n  max-width: 960px;\n  width: 86%; }\n  .project-view .project-info {\n    color: #676767;\n    font: 12px 'Raleway', sans-serif; }\n  .project-view .italic {\n    font-style: italic; }\n  .project-view h2 {\n    font-family: 'Raleway', monospace;\n    text-transform: capitalize; }\n  .project-view p {\n    font: 16px 'Raleway', sans-serif;\n    color: #676767; }\n  .project-view ul {\n    list-style-type: none;\n    padding: 0; }\n  .project-view img {\n    max-width: 100%; }\n", ""]);
+	exports.push([module.id, ".project-view {\n  margin: 0 auto 100px auto;\n  max-width: 960px;\n  width: 86%; }\n  .project-view .project-info {\n    color: #676767;\n    font: 12px 'Raleway', sans-serif; }\n  .project-view .italic {\n    font-style: italic; }\n  .project-view h2 {\n    font-family: 'Raleway', monospace;\n    text-transform: capitalize; }\n  .project-view ul {\n    list-style-type: none;\n    padding: 0; }\n  .project-view img {\n    max-width: 100%; }\n", ""]);
 
 	// exports
 
@@ -15939,10 +15931,6 @@
 	//   h2
 	//     font-family: 'Raleway', monospace
 	//     text-transform: capitalize
-	//
-	//   p
-	//     font: 16px 'Raleway', sans-serif
-	//     color: #676767
 	//
 	//   ul
 	//     list-style-type: none
@@ -16163,7 +16151,7 @@
 
 
 	// module
-	exports.push([module.id, ".blog-single-view {\n  margin: 0 auto 100px auto;\n  max-width: 960px;\n  width: 86%; }\n  .blog-single-view .post-info {\n    color: #676767;\n    font: 12px 'Raleway', sans-serif; }\n  .blog-single-view .italic {\n    font-style: italic; }\n  .blog-single-view h2 {\n    font-family: 'Raleway', monospace;\n    text-transform: capitalize; }\n  .blog-single-view p {\n    font: 16px 'Raleway', sans-serif;\n    color: #676767; }\n  .blog-single-view ul {\n    list-style-type: none;\n    padding: 0; }\n", ""]);
+	exports.push([module.id, ".blog-single-view {\n  margin: 0 auto 100px auto;\n  max-width: 960px;\n  width: 86%; }\n  .blog-single-view .post-info {\n    color: #676767;\n    font: 12px 'Raleway', sans-serif; }\n  .blog-single-view .italic {\n    font-style: italic; }\n  .blog-single-view h2 {\n    font-family: 'Raleway', monospace;\n    text-transform: capitalize; }\n  .blog-single-view ul {\n    list-style-type: none;\n    padding: 0; }\n", ""]);
 
 	// exports
 
@@ -16225,10 +16213,6 @@
 	//     font-family: 'Raleway', monospace
 	//     text-transform: capitalize
 	//
-	//   p
-	//     font: 16px 'Raleway', sans-serif
-	//     color: #676767
-	//
 	//   ul
 	//     list-style-type: none
 	//     padding: 0
@@ -16237,7 +16221,7 @@
 	// <template>
 	//   <div class="blog-single-view">
 	//     <h2>{{ post.title }}</h2>
-	//     <span class="post-info" v-if="post.dateCreated">{{ post.dateCreated | dated  }} {{ post.category }} <span class="italic" v-if="post.dateUpdated">Updated {{ post.dateUpdated | dated  }}</span></span><br>
+	//     <span class="post-info" v-if="post.dateCreated">{{ post.dateCreated | dated  }} | {{ post.category }}</span><br>
 	//     <div>
 	//       {{{ post.content | marked }}}
 	//     </div>
@@ -16250,7 +16234,7 @@
 /* 60 */
 /***/ function(module, exports) {
 
-	module.exports = "\n  <div class=\"blog-single-view\">\n    <h2>{{ post.title }}</h2>\n    <span class=\"post-info\" v-if=\"post.dateCreated\">{{ post.dateCreated | dated  }} {{ post.category }} <span class=\"italic\" v-if=\"post.dateUpdated\">Updated {{ post.dateUpdated | dated  }}</span></span><br>\n    <div>\n      {{{ post.content | marked }}}\n    </div>\n  </div>\n";
+	module.exports = "\n  <div class=\"blog-single-view\">\n    <h2>{{ post.title }}</h2>\n    <span class=\"post-info\" v-if=\"post.dateCreated\">{{ post.dateCreated | dated  }} | {{ post.category }}</span><br>\n    <div>\n      {{{ post.content | marked }}}\n    </div>\n  </div>\n";
 
 /***/ },
 /* 61 */

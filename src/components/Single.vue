@@ -15,10 +15,6 @@
     font-family: 'Raleway', monospace
     text-transform: capitalize
 
-  p
-    font: 16px 'Raleway', sans-serif
-    color: #676767
-
   ul
     list-style-type: none
     padding: 0
@@ -27,7 +23,7 @@
 <template>
   <div class="blog-single-view">
     <h2>{{ post.title }}</h2>
-    <span class="post-info" v-if="post.dateCreated">{{ post.dateCreated | dated  }} {{ post.category }} <span class="italic" v-if="post.dateUpdated">Updated {{ post.dateUpdated | dated  }}</span></span><br>
+    <span class="post-info" v-if="post.dateCreated">{{ post.dateCreated | dated  }} | {{ post.category }}</span><br>
     <div>
       {{{ post.content | marked }}}
     </div>

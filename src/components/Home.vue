@@ -1,9 +1,4 @@
 <style lang="sass?indentedSyntax">
-canvas
-  position: fixed
-  top: 0
-  z-index: -1
-
 .about-me
   font-family: 'Raleway', sans-serif
   margin: auto
@@ -17,7 +12,7 @@ canvas
 
   .small-p
     color: rgb(150, 150, 150)
-    font-size: 14px
+    font-size: 16px
 
 </style>
 

@@ -8,10 +8,6 @@
   .main-title
     font-size: 28px
 
-  p
-    color: #676767
-    font-size: 16px
-
   h3
     color: #4874d4
 

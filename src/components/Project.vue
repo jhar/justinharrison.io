@@ -15,10 +15,6 @@
     font-family: 'Raleway', monospace
     text-transform: capitalize
 
-  p
-    font: 16px 'Raleway', sans-serif
-    color: #676767
-
   ul
     list-style-type: none
     padding: 0

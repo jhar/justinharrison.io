@@ -24,7 +24,7 @@ canvas
 <template>
   <div class="about-me">
     <p class="emph-p">
-      Hi, I'm Justin Harrison. I'm a software developer living in Pasadena. I specialize in web application development and particularly enjoy the world of JavaScript.
+      I'm a front-end developer and award winning artist living in Pasadena, California.
     </p>
     <p class="small-p">
       I'm currently experimenting with the p5.js library for creative coding while auditing Daniel Shiffman's <i>Nature of Code</i> course on Kadenze. I'm also actively developing this website with Vue.js and Firebase. When I'm not coding, I'm likely thinking and writing about professional boxing.

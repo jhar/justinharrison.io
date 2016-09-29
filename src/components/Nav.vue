@@ -62,6 +62,7 @@
   top: 119px
   right: 0
   bottom: 42px
+  z-index: 1000
 
   ul
     list-style-type: none

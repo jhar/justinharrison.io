@@ -1,17 +1,18 @@
 <style lang="sass?indentedSyntax">
 @import definitions
 
-.project-view
+.project
   margin: 0 auto 100px auto
   max-width: $max_w
   width: 86%
 
-  .project-info
+  &-info
     color: $lightgrey
-    font: 12px $raleway
+    font: 1em $raleway
 
-  .italic
-    font-style: italic
+  .year
+    color: black
+    font-weight: bold
 
   h2
     font-family: $raleway
@@ -27,9 +28,9 @@
 </style>
 
 <template>
-  <div class="project-view">
+  <div class="project">
     <h2>{{ project.title }}</h2>
-    <span class="project-info" v-if="project.dateCreated">{{ project.dateCreated | dated  }} {{ project.category }} <span class="italic" v-if="project.dateUpdated">Updated {{ project.dateUpdated | dated  }}</span></span><br>
+    <span class="project-info">{{ project.category }} <span class="year">{{ project.year }}</span></span><br>
     <div>
       {{{ project.content | marked }}}
     </div>

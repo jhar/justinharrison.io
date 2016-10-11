@@ -83,6 +83,7 @@
       <span class="org">FlexaSoft</span><br>
       <span class="loc">Redmond, WA</span><br>
       <span class="dates">Oct 2014 - Jun 2015</span><br>
+      <p>Evaluated the relevancy of Microsoft Bing search results.</p>
       
       <span class="title">Web Developer</span><br>
       <span class="org">University of California Institute for Research in the Arts</span><br>

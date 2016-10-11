@@ -64,7 +64,7 @@
 
 <template>
   <div class="my-portfolio">
-  	<div class="project-container" v-for="project in projects | orderBy 'dateUpdated' -1" track-by=".key">
+  	<div class="project-container" v-for="project in projects | orderBy 'year' -1" track-by=".key">
   	  <a class="project-link" v-link="{ name: 'Portfolio Single Project', params: { projectName: project['.key'] } }">
   	    <img class="project-image" :src="project.featured">
   	    <div class="text-container">

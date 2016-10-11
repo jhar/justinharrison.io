@@ -14280,6 +14280,7 @@
 	//         <!-- Form for creating new portfolio projects -->
 	//         <form v-if="showCreateProject === true" @submit.prevent>
 	//           <input v-model="newProject.title" placeholder="Project title">
+	//           <input v-model="newProject.year" placeholder="Project year">
 	//           <input v-model="newProject.category" placeholder="Project category">
 	//           <input v-model="newProject.featured" placeholder="Featured image">
 	//           <textarea v-model="newProject.content" placeholder="Project content"></textarea>
@@ -14291,6 +14292,7 @@
 	//         <!-- Form for editing portfolio projects -->
 	//         <form v-if="showEditProject" @submit.prevent>
 	//           <input v-model="newProject.title">
+	//           <input v-model="newProject.year">
 	//           <input v-model="newProject.category">
 	//           <input v-model="newProject.featured" placeholder="Featured image">
 	//           <textarea v-model="newProject.content"></textarea>
@@ -14397,7 +14399,7 @@
 	    },
 	    setProject: function setProject() {
 	      var currentDate = Date.now();
-	      var setData = { title: this.newProject.title, category: this.newProject.category, featured: this.newProject.featured, content: this.newProject.content };
+	      var setData = { title: this.newProject.title, year: this.newProject.year, category: this.newProject.category, featured: this.newProject.featured, content: this.newProject.content };
 	      // Check if the project has already been created
 	      if (this.newProject.dateCreated) {
 	        setData.dateCreated = this.newProject.dateCreated;
@@ -14449,6 +14451,7 @@
 	      var that = this;
 	      _firebase2.db.ref('/portfolio').child(key).once('value').then(function (snap) {
 	        that.newProject.title = snap.val().title;
+	        that.newProject.year = snap.val().year;
 	        that.newProject.category = snap.val().category;
 	        that.newProject.featured = snap.val().featured;
 	        that.newProject.content = snap.val().content;
@@ -15162,7 +15165,7 @@
 /* 22 */
 /***/ function(module, exports) {
 
-	module.exports = "\n  <div class=\"admin-page\">\n    <div v-if=\"user && user.email === 'justinadenharrison@gmail.com'\">\n      \n      <div class=\"top-bar\">\n        <button class=\"top-button\" v-on:click=\"toggleCreatePost\">New Post</button>\n        <button class=\"top-button\" v-on:click=\"toggleCreateProject\">New Project</button>\n        <button class=\"top-button\" v-on:click=\"toggleImageUpload\">New Image</button>\n        <button class=\"top-button\" v-on:click=\"signOut\">Log Out</button>\n      </div>\n\n      <div class=\"admin-tree\">\n\n        <h5>Blog Posts</h5>\n        <ul>\n          <li v-for=\"post in posts | orderBy 'dateCreated' -1\" track-by=\".key\">\n            <span @click=\"toggleEditPost(post['.key'])\">{{ post['.key'] }}</span>\n          </li>\n        </ul>\n\n        <h5>Portfolio Projects</h5>\n        <ul>\n          <li v-for=\"project in projects | orderBy 'dateCreated' -1\" track-by=\".key\">\n            <span @click=\"toggleEditProject(project['.key'])\">{{ project['.key'] }}</span>\n          </li>\n        </ul>\n\n      </div>\n\n      <div class=\"admin-editor\">\n\n        <!-- Form for creating new blog posts -->\n        <form v-if=\"showCreatePost === true\" @submit.prevent>\n          <input v-model=\"newPost.title\" placeholder=\"Post title\">\n          <input v-model=\"newPost.category\" placeholder=\"Post category\">\n          <textarea v-model=\"newPost.content\" placeholder=\"Post content\"></textarea>\n          <input v-model=\"newPost.key\" placeholder=\"Pretty url\">\n          <button @click=\"setPost\">Add Post</button>\n          <button @click=\"resetState\">Cancel</button>\n        </form>\n\n        <!-- Form for editing blog posts -->\n        <form v-if=\"showEditPost === true\" @submit.prevent>\n          <input v-model=\"newPost.title\">\n          <input v-model=\"newPost.category\">\n          <textarea v-model=\"newPost.content\"></textarea>\n          <input v-model=\"newPost.key\">\n          <button @click=\"setPost\">Submit Edit</button>\n          <button @click=\"deletePost\">Delete Post</button>\n        </form>\n\n        <!-- Form for creating new portfolio projects -->\n        <form v-if=\"showCreateProject === true\" @submit.prevent>\n          <input v-model=\"newProject.title\" placeholder=\"Project title\">\n          <input v-model=\"newProject.category\" placeholder=\"Project category\">\n          <input v-model=\"newProject.featured\" placeholder=\"Featured image\">\n          <textarea v-model=\"newProject.content\" placeholder=\"Project content\"></textarea>\n          <input v-model=\"newProject.key\" placeholder=\"Pretty url\">\n          <button @click=\"setProject\">Add Project</button>\n          <button @click=\"resetState\">Cancel</button>\n        </form>\n\n        <!-- Form for editing portfolio projects -->\n        <form v-if=\"showEditProject\" @submit.prevent>\n          <input v-model=\"newProject.title\">\n          <input v-model=\"newProject.category\">\n          <input v-model=\"newProject.featured\" placeholder=\"Featured image\">\n          <textarea v-model=\"newProject.content\"></textarea>\n          <input v-model=\"newProject.key\">\n          <button @click=\"setProject\">Submit Edit</button>\n          <button @click=\"deleteProject\">Delete Project</button>\n        </form>\n\n        <!-- Image uploader -->\n        <form class=\"image-uploader\" v-if=\"showImageUploader\" @submit.prevent>\n          <progress value=\"0\" max=\"100\" id=\"uploadProgress\">0%</progress>\n          <label>Destination Folder</label>\n          <input v-model=\"newImage.folder\">\n          <label>Image Title</label>\n          <input v-model=\"newImage.title\">\n          <input type=\"file\" value=\"upload\" id=\"fileButton\" v-on:change=\"uploadImage\">\n          <label v-if=\"newImage.success\">Direct URL (make sure to copy)</label><br><br>\n          <span>{{ newImage.url }}</span><br><br>\n          <img :src=\"newImage.url\">\n        </form>\n\n      </div>\n      \n    </div>\n    <div v-else class=\"not-authorized\">\n      <button v-on:click=\"signIn\">Sign In</button>\n    </div>\n  </div>\n";
+	module.exports = "\n  <div class=\"admin-page\">\n    <div v-if=\"user && user.email === 'justinadenharrison@gmail.com'\">\n      \n      <div class=\"top-bar\">\n        <button class=\"top-button\" v-on:click=\"toggleCreatePost\">New Post</button>\n        <button class=\"top-button\" v-on:click=\"toggleCreateProject\">New Project</button>\n        <button class=\"top-button\" v-on:click=\"toggleImageUpload\">New Image</button>\n        <button class=\"top-button\" v-on:click=\"signOut\">Log Out</button>\n      </div>\n\n      <div class=\"admin-tree\">\n\n        <h5>Blog Posts</h5>\n        <ul>\n          <li v-for=\"post in posts | orderBy 'dateCreated' -1\" track-by=\".key\">\n            <span @click=\"toggleEditPost(post['.key'])\">{{ post['.key'] }}</span>\n          </li>\n        </ul>\n\n        <h5>Portfolio Projects</h5>\n        <ul>\n          <li v-for=\"project in projects | orderBy 'dateCreated' -1\" track-by=\".key\">\n            <span @click=\"toggleEditProject(project['.key'])\">{{ project['.key'] }}</span>\n          </li>\n        </ul>\n\n      </div>\n\n      <div class=\"admin-editor\">\n\n        <!-- Form for creating new blog posts -->\n        <form v-if=\"showCreatePost === true\" @submit.prevent>\n          <input v-model=\"newPost.title\" placeholder=\"Post title\">\n          <input v-model=\"newPost.category\" placeholder=\"Post category\">\n          <textarea v-model=\"newPost.content\" placeholder=\"Post content\"></textarea>\n          <input v-model=\"newPost.key\" placeholder=\"Pretty url\">\n          <button @click=\"setPost\">Add Post</button>\n          <button @click=\"resetState\">Cancel</button>\n        </form>\n\n        <!-- Form for editing blog posts -->\n        <form v-if=\"showEditPost === true\" @submit.prevent>\n          <input v-model=\"newPost.title\">\n          <input v-model=\"newPost.category\">\n          <textarea v-model=\"newPost.content\"></textarea>\n          <input v-model=\"newPost.key\">\n          <button @click=\"setPost\">Submit Edit</button>\n          <button @click=\"deletePost\">Delete Post</button>\n        </form>\n\n        <!-- Form for creating new portfolio projects -->\n        <form v-if=\"showCreateProject === true\" @submit.prevent>\n          <input v-model=\"newProject.title\" placeholder=\"Project title\">\n          <input v-model=\"newProject.year\" placeholder=\"Project year\">\n          <input v-model=\"newProject.category\" placeholder=\"Project category\">\n          <input v-model=\"newProject.featured\" placeholder=\"Featured image\">\n          <textarea v-model=\"newProject.content\" placeholder=\"Project content\"></textarea>\n          <input v-model=\"newProject.key\" placeholder=\"Pretty url\">\n          <button @click=\"setProject\">Add Project</button>\n          <button @click=\"resetState\">Cancel</button>\n        </form>\n\n        <!-- Form for editing portfolio projects -->\n        <form v-if=\"showEditProject\" @submit.prevent>\n          <input v-model=\"newProject.title\">\n          <input v-model=\"newProject.year\">\n          <input v-model=\"newProject.category\">\n          <input v-model=\"newProject.featured\" placeholder=\"Featured image\">\n          <textarea v-model=\"newProject.content\"></textarea>\n          <input v-model=\"newProject.key\">\n          <button @click=\"setProject\">Submit Edit</button>\n          <button @click=\"deleteProject\">Delete Project</button>\n        </form>\n\n        <!-- Image uploader -->\n        <form class=\"image-uploader\" v-if=\"showImageUploader\" @submit.prevent>\n          <progress value=\"0\" max=\"100\" id=\"uploadProgress\">0%</progress>\n          <label>Destination Folder</label>\n          <input v-model=\"newImage.folder\">\n          <label>Image Title</label>\n          <input v-model=\"newImage.title\">\n          <input type=\"file\" value=\"upload\" id=\"fileButton\" v-on:change=\"uploadImage\">\n          <label v-if=\"newImage.success\">Direct URL (make sure to copy)</label><br><br>\n          <span>{{ newImage.url }}</span><br><br>\n          <img :src=\"newImage.url\">\n        </form>\n\n      </div>\n      \n    </div>\n    <div v-else class=\"not-authorized\">\n      <button v-on:click=\"signIn\">Sign In</button>\n    </div>\n  </div>\n";
 
 /***/ },
 /* 23 */
@@ -15642,7 +15645,7 @@
 /* 40 */
 /***/ function(module, exports) {
 
-	module.exports = "\n  <div class=\"my-resume\">\n    <div class=\"header\">\n      <div class=\"blk-1\">\n       <span class=\"main-title\">Front-End Developer</span>\n      </div>\n      <div class=\"blk-2\">\n        <span class=\"bold\">(206) 377-9027</span><br>\n        <span class=\"bold\">Skype: justin.a.harrison</span><br>\n        <a href=\"mailto:justinadenharrison@gmail.com\" target=\"_top\">justinadenharrison@gmail.com</a><br>\n      </div>\n    </div>\n    <div class=\"blk-3\">\n\n      <h3>Work Experience</h3>\n\n      <span class=\"title\">Principal Web Engineer</span><br>\n      <span class=\"org\">Advercalls, Inc</span><br>\n      <span class=\"loc\">Los Angeles, CA</span><br>\n      <span class=\"dates\">Feb 2016 - Jul 2016</span>\n      <p>Developed a third-party JavaScript lead gen app. Wrote back-end integrations for marketing services like ActiveCampaign. Wrote scripts to clean redundancies and errors from a large database, built a web directory service to navigate the data, then incorporated user profiles, a membership service, and InfusionSoft for payment processing.</p>\n      \n      <span class=\"title\">Contract Software Developer</span><br>\n      <span class=\"org\">Not That This, LLC</span><br>\n      <span class=\"loc\">Burbank, CA</span><br>\n      <span class=\"dates\">Nov 2015 - Jan 2016</span>\n      <p>Converted PSD designs to pixel perfect UI with Enyo.js for an enterprise Cisco IoT project.</p>\n      \n      <span class=\"title\">Web Content Evaluator</span><br>\n      <span class=\"org\">FlexaSoft</span><br>\n      <span class=\"loc\">Redmond, WA</span><br>\n      <span class=\"dates\">Oct 2014 - Jun 2015</span><br>\n      \n      <span class=\"title\">Web Developer</span><br>\n      <span class=\"org\">University of California Institute for Research in the Arts</span><br>\n      <span class=\"loc\">Santa Barbara, CA</span><br>\n      <span class=\"dates\">Jul 2014 - Sep 2014</span><br>\n      <p>Worked on a new website for the UCIRA. Merged their main site and State of the Arts blog. Worked to create a platform for California art researchers to network and display their work. The project was cancelled after funding cuts.</p>\n\n      <span class=\"title\">IT Helpdesk Assistant</span><br>\n      <span class=\"org\">Davidson Library</span><br>\n      <span class=\"loc\">Santa Barbara, CA</span><br>\n      <span class=\"dates\">Mar 2013 - Jul 2014</span><br>\n      <p>Provided technical assistance and support related to computer networks, hardware, and software. Responded to calls and emails and tracked issues with JIRA to help diagnose, solve, and document problems. Managed hardware inventory.</p>\n\n\n    </div>\n\n    <div class=\"blk-4\">\n\n\n      <h3>Education and Awards</h3>\n\n      <span class=\"title\">BA in Art with High Honors</span><br>\n      <span class=\"org\">University of California</span><br>\n      <span class=\"loc\">Santa Barbara, CA</span><br>\n      <span class=\"dates\">Graduated 2014</span><br>\n      <p>Promising Artist Achievement Award, William Dole Award, Faculty Award of Distinction x2, Dean's Honors x5</p>\n\n      <h3 class=\"mono\">Professional Development</h3>\n\n      <span class=\"title\">MongoDB for Node.js Developers</span><br>\n      <span class=\"org\">MongoDB University</span><br>\n      <span class=\"dates\">Completed 2015</span><br><br>\n\n      <span class=\"title\">Front-End Web Developer Nanodegree</span><br>\n      <span class=\"org\">Udacity</span><br>\n      <span class=\"dates\">Completed 2015</span><br>\n\n      <h3>Skills</h3>\n\n      <p>HTML, CSS, JavaScript, PHP, MySQL, MongoDB, Unix, Bootstrap, jQuery, React, Knockout, Vue, Node, NPM, Express, SASS, LESS, Firebase, AWS, Webpack, Browserify, Gulp, WordPress, p5.js, Processing, Chrome Developer Tools, AJAX, and Google.</p>\n\n      <h3>Volunteering</h3>\n\n      <span class=\"title\">Shopify Administrator</span><br>\n      <span class=\"org\">Arroyo Food Co-op</span><br>\n      <span class=\"loc\">Pasadena, CA</span><br>\n      <span class=\"dates\">Feb 2016 - May 2016</span><br><br>\n\n      <span class=\"title\">Cook and Server</span><br>\n      <span class=\"org\">Food Not Bombs</span><br>\n      <span class=\"loc\">Goleta, CA</span><br>\n      <span class=\"dates\">Jan 2013 - Sep 2014</span>\n\n\n\n\n\n\n    </div>\n\n  </div>\n";
+	module.exports = "\n  <div class=\"my-resume\">\n    <div class=\"header\">\n      <div class=\"blk-1\">\n       <span class=\"main-title\">Front-End Developer</span>\n      </div>\n      <div class=\"blk-2\">\n        <span class=\"bold\">(206) 377-9027</span><br>\n        <span class=\"bold\">Skype: justin.a.harrison</span><br>\n        <a href=\"mailto:justinadenharrison@gmail.com\" target=\"_top\">justinadenharrison@gmail.com</a><br>\n      </div>\n    </div>\n    <div class=\"blk-3\">\n\n      <h3>Work Experience</h3>\n\n      <span class=\"title\">Principal Web Engineer</span><br>\n      <span class=\"org\">Advercalls, Inc</span><br>\n      <span class=\"loc\">Los Angeles, CA</span><br>\n      <span class=\"dates\">Feb 2016 - Jul 2016</span>\n      <p>Developed a third-party JavaScript lead gen app. Wrote back-end integrations for marketing services like ActiveCampaign. Wrote scripts to clean redundancies and errors from a large database, built a web directory service to navigate the data, then incorporated user profiles, a membership service, and InfusionSoft for payment processing.</p>\n      \n      <span class=\"title\">Contract Software Developer</span><br>\n      <span class=\"org\">Not That This, LLC</span><br>\n      <span class=\"loc\">Burbank, CA</span><br>\n      <span class=\"dates\">Nov 2015 - Jan 2016</span>\n      <p>Converted PSD designs to pixel perfect UI with Enyo.js for an enterprise Cisco IoT project.</p>\n      \n      <span class=\"title\">Web Content Evaluator</span><br>\n      <span class=\"org\">FlexaSoft</span><br>\n      <span class=\"loc\">Redmond, WA</span><br>\n      <span class=\"dates\">Oct 2014 - Jun 2015</span><br>\n      <p>Evaluated the relevancy of Microsoft Bing search results.</p>\n      \n      <span class=\"title\">Web Developer</span><br>\n      <span class=\"org\">University of California Institute for Research in the Arts</span><br>\n      <span class=\"loc\">Santa Barbara, CA</span><br>\n      <span class=\"dates\">Jul 2014 - Sep 2014</span><br>\n      <p>Worked on a new website for the UCIRA. Merged their main site and State of the Arts blog. Worked to create a platform for California art researchers to network and display their work. The project was cancelled after funding cuts.</p>\n\n      <span class=\"title\">IT Helpdesk Assistant</span><br>\n      <span class=\"org\">Davidson Library</span><br>\n      <span class=\"loc\">Santa Barbara, CA</span><br>\n      <span class=\"dates\">Mar 2013 - Jul 2014</span><br>\n      <p>Provided technical assistance and support related to computer networks, hardware, and software. Responded to calls and emails and tracked issues with JIRA to help diagnose, solve, and document problems. Managed hardware inventory.</p>\n\n\n    </div>\n\n    <div class=\"blk-4\">\n\n\n      <h3>Education and Awards</h3>\n\n      <span class=\"title\">BA in Art with High Honors</span><br>\n      <span class=\"org\">University of California</span><br>\n      <span class=\"loc\">Santa Barbara, CA</span><br>\n      <span class=\"dates\">Graduated 2014</span><br>\n      <p>Promising Artist Achievement Award, William Dole Award, Faculty Award of Distinction x2, Dean's Honors x5</p>\n\n      <h3 class=\"mono\">Professional Development</h3>\n\n      <span class=\"title\">MongoDB for Node.js Developers</span><br>\n      <span class=\"org\">MongoDB University</span><br>\n      <span class=\"dates\">Completed 2015</span><br><br>\n\n      <span class=\"title\">Front-End Web Developer Nanodegree</span><br>\n      <span class=\"org\">Udacity</span><br>\n      <span class=\"dates\">Completed 2015</span><br>\n\n      <h3>Skills</h3>\n\n      <p>HTML, CSS, JavaScript, PHP, MySQL, MongoDB, Unix, Bootstrap, jQuery, React, Knockout, Vue, Node, NPM, Express, SASS, LESS, Firebase, AWS, Webpack, Browserify, Gulp, WordPress, p5.js, Processing, Chrome Developer Tools, AJAX, and Google.</p>\n\n      <h3>Volunteering</h3>\n\n      <span class=\"title\">Shopify Administrator</span><br>\n      <span class=\"org\">Arroyo Food Co-op</span><br>\n      <span class=\"loc\">Pasadena, CA</span><br>\n      <span class=\"dates\">Feb 2016 - May 2016</span><br><br>\n\n      <span class=\"title\">Cook and Server</span><br>\n      <span class=\"org\">Food Not Bombs</span><br>\n      <span class=\"loc\">Goleta, CA</span><br>\n      <span class=\"dates\">Jan 2013 - Sep 2014</span>\n\n\n\n\n\n\n    </div>\n\n  </div>\n";
 
 /***/ },
 /* 41 */
@@ -15785,7 +15788,7 @@
 	//
 	// <template>
 	//   <div class="my-portfolio">
-	//   	<div class="project-container" v-for="project in projects | orderBy 'dateUpdated' -1" track-by=".key">
+	//   	<div class="project-container" v-for="project in projects | orderBy 'year' -1" track-by=".key">
 	//   	  <a class="project-link" v-link="{ name: 'Portfolio Single Project', params: { projectName: project['.key'] } }">
 	//   	    <img class="project-image" :src="project.featured">
 	//   	    <div class="text-container">
@@ -15809,7 +15812,7 @@
 /* 45 */
 /***/ function(module, exports) {
 
-	module.exports = "\n  <div class=\"my-portfolio\">\n  \t<div class=\"project-container\" v-for=\"project in projects | orderBy 'dateUpdated' -1\" track-by=\".key\">\n  \t  <a class=\"project-link\" v-link=\"{ name: 'Portfolio Single Project', params: { projectName: project['.key'] } }\">\n  \t    <img class=\"project-image\" :src=\"project.featured\">\n  \t    <div class=\"text-container\">\n  \t     <p class=\"project-title\">{{ project.title }}</p>\n  \t    </div>\n  \t  </a>\n  \t</div>\n  </div>\n";
+	module.exports = "\n  <div class=\"my-portfolio\">\n  \t<div class=\"project-container\" v-for=\"project in projects | orderBy 'year' -1\" track-by=\".key\">\n  \t  <a class=\"project-link\" v-link=\"{ name: 'Portfolio Single Project', params: { projectName: project['.key'] } }\">\n  \t    <img class=\"project-image\" :src=\"project.featured\">\n  \t    <div class=\"text-container\">\n  \t     <p class=\"project-title\">{{ project.title }}</p>\n  \t    </div>\n  \t  </a>\n  \t</div>\n  </div>\n";
 
 /***/ },
 /* 46 */
@@ -15869,7 +15872,7 @@
 
 
 	// module
-	exports.push([module.id, ".project-view {\n  margin: 0 auto 100px auto;\n  max-width: 960px;\n  width: 86%; }\n  .project-view .project-info {\n    color: #676767;\n    font: 12px \"Raleway\", monospace; }\n  .project-view .italic {\n    font-style: italic; }\n  .project-view h2 {\n    font-family: \"Raleway\", monospace;\n    text-transform: capitalize; }\n  .project-view ul {\n    list-style-type: none;\n    padding: 0; }\n  .project-view img {\n    max-width: 100%; }\n", ""]);
+	exports.push([module.id, ".project {\n  margin: 0 auto 100px auto;\n  max-width: 960px;\n  width: 86%; }\n  .project-info {\n    color: #676767;\n    font: 1em \"Raleway\", monospace; }\n  .project .year {\n    color: black;\n    font-weight: bold; }\n  .project h2 {\n    font-family: \"Raleway\", monospace;\n    text-transform: capitalize; }\n  .project ul {\n    list-style-type: none;\n    padding: 0; }\n  .project img {\n    max-width: 100%; }\n", ""]);
 
 	// exports
 
@@ -15916,17 +15919,18 @@
 	// <style lang="sass?indentedSyntax">
 	// @import definitions
 	//
-	// .project-view
+	// .project
 	//   margin: 0 auto 100px auto
 	//   max-width: $max_w
 	//   width: 86%
 	//
-	//   .project-info
+	//   &-info
 	//     color: $lightgrey
-	//     font: 12px $raleway
+	//     font: 1em $raleway
 	//
-	//   .italic
-	//     font-style: italic
+	//   .year
+	//     color: black
+	//     font-weight: bold
 	//
 	//   h2
 	//     font-family: $raleway
@@ -15942,9 +15946,9 @@
 	// </style>
 	//
 	// <template>
-	//   <div class="project-view">
+	//   <div class="project">
 	//     <h2>{{ project.title }}</h2>
-	//     <span class="project-info" v-if="project.dateCreated">{{ project.dateCreated | dated  }} {{ project.category }} <span class="italic" v-if="project.dateUpdated">Updated {{ project.dateUpdated | dated  }}</span></span><br>
+	//     <span class="project-info">{{ project.category }} <span class="year">{{ project.year }}</span></span><br>
 	//     <div>
 	//       {{{ project.content | marked }}}
 	//     </div>
@@ -15957,7 +15961,7 @@
 /* 50 */
 /***/ function(module, exports) {
 
-	module.exports = "\n  <div class=\"project-view\">\n    <h2>{{ project.title }}</h2>\n    <span class=\"project-info\" v-if=\"project.dateCreated\">{{ project.dateCreated | dated  }} {{ project.category }} <span class=\"italic\" v-if=\"project.dateUpdated\">Updated {{ project.dateUpdated | dated  }}</span></span><br>\n    <div>\n      {{{ project.content | marked }}}\n    </div>\n  </div>\n";
+	module.exports = "\n  <div class=\"project\">\n    <h2>{{ project.title }}</h2>\n    <span class=\"project-info\">{{ project.category }} <span class=\"year\">{{ project.year }}</span></span><br>\n    <div>\n      {{{ project.content | marked }}}\n    </div>\n  </div>\n";
 
 /***/ },
 /* 51 */
@@ -16017,7 +16021,7 @@
 
 
 	// module
-	exports.push([module.id, ".blog-list-view {\n  font-family: \"Raleway\", monospace;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .blog-list-view-link {\n    text-decoration: none;\n    width: 100%; }\n  .blog-list-view .italic {\n    font-style: italic; }\n  .blog-list-view .date {\n    color: #676767;\n    display: block;\n    font-size: 12px;\n    width: 100%; }\n  .blog-list-view h2 {\n    color: #4874d4;\n    font-size: 18px;\n    text-transform: capitalize; }\n  .blog-list-view ul {\n    list-style-type: none;\n    padding: 0; }\n", ""]);
+	exports.push([module.id, ".blog-list {\n  font-family: \"Raleway\", monospace;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .blog-list-link {\n    text-decoration: none;\n    width: 100%; }\n  .blog-list .italic {\n    font-style: italic; }\n  .blog-list .date {\n    color: #676767;\n    display: block;\n    font-size: 12px;\n    width: 100%; }\n  .blog-list h2 {\n    color: #4874d4;\n    font-size: 18px;\n    text-transform: capitalize; }\n  .blog-list ul {\n    list-style-type: none;\n    padding: 0; }\n", ""]);
 
 	// exports
 
@@ -16037,7 +16041,7 @@
 	var postsRef = _firebase.db.ref('blog/'); // <style lang="sass?indentedSyntax">
 	// @import definitions
 	//
-	// .blog-list-view
+	// .blog-list
 	//   font-family: $raleway
 	//   margin: auto
 	//   max-width: $max_w
@@ -16067,7 +16071,7 @@
 	// </style>
 	//
 	// <template>
-	//   <div class="blog-list-view">
+	//   <div class="blog-list">
 	//     <ul>
 	//       <li v-for="post in posts | orderBy 'dateCreated' -1" track-by=".key">
 	//         <a class="blog-list-link" v-link="{ name: 'Blog Single Post', params: { postName: post['.key'] } }">
@@ -16093,7 +16097,7 @@
 /* 55 */
 /***/ function(module, exports) {
 
-	module.exports = "\n  <div class=\"blog-list-view\">\n    <ul>\n      <li v-for=\"post in posts | orderBy 'dateCreated' -1\" track-by=\".key\">\n        <a class=\"blog-list-link\" v-link=\"{ name: 'Blog Single Post', params: { postName: post['.key'] } }\">\n          <span class=\"date\">{{ post.dateCreated | dated }}</span>\n          <h2>{{ post.title }}</h2>\n        </a>\n      </li>\n    </ul>\n  </div>\n";
+	module.exports = "\n  <div class=\"blog-list\">\n    <ul>\n      <li v-for=\"post in posts | orderBy 'dateCreated' -1\" track-by=\".key\">\n        <a class=\"blog-list-link\" v-link=\"{ name: 'Blog Single Post', params: { postName: post['.key'] } }\">\n          <span class=\"date\">{{ post.dateCreated | dated }}</span>\n          <h2>{{ post.title }}</h2>\n        </a>\n      </li>\n    </ul>\n  </div>\n";
 
 /***/ },
 /* 56 */
@@ -16153,7 +16157,7 @@
 
 
 	// module
-	exports.push([module.id, ".blog-single-view {\n  margin: 0 auto 100px auto;\n  max-width: 960px;\n  width: 86%; }\n  .blog-single-view .post-info {\n    color: #676767;\n    font: 12px \"Raleway\", monospace; }\n  .blog-single-view .italic {\n    font-style: italic; }\n  .blog-single-view h2 {\n    font-family: \"Raleway\", monospace;\n    text-transform: capitalize; }\n  .blog-single-view ul {\n    list-style-type: none;\n    padding: 0; }\n", ""]);
+	exports.push([module.id, ".blog-single {\n  margin: 0 auto 100px auto;\n  max-width: 960px;\n  width: 86%; }\n  .blog-single .post-info {\n    color: #676767;\n    font: 12px \"Raleway\", monospace; }\n  .blog-single .italic {\n    font-style: italic; }\n  .blog-single h2 {\n    font-family: \"Raleway\", monospace;\n    text-transform: capitalize; }\n  .blog-single ul {\n    list-style-type: none;\n    padding: 0; }\n  .blog-single img {\n    max-width: 960px; }\n", ""]);
 
 	// exports
 
@@ -16201,7 +16205,7 @@
 	// <style lang="sass?indentedSyntax">
 	// @import definitions
 	//
-	// .blog-single-view
+	// .blog-single
 	//   margin: 0 auto 100px auto
 	//   max-width: $max_w
 	//   width: 86%
@@ -16220,10 +16224,13 @@
 	//   ul
 	//     list-style-type: none
 	//     padding: 0
+	//
+	//   img
+	//     max-width: $max_w
 	// </style>
 	//
 	// <template>
-	//   <div class="blog-single-view">
+	//   <div class="blog-single">
 	//     <h2>{{ post.title }}</h2>
 	//     <span class="post-info" v-if="post.dateCreated">{{ post.dateCreated | dated  }} | {{ post.category }}</span><br>
 	//     <div>
@@ -16238,7 +16245,7 @@
 /* 60 */
 /***/ function(module, exports) {
 
-	module.exports = "\n  <div class=\"blog-single-view\">\n    <h2>{{ post.title }}</h2>\n    <span class=\"post-info\" v-if=\"post.dateCreated\">{{ post.dateCreated | dated  }} | {{ post.category }}</span><br>\n    <div>\n      {{{ post.content | marked }}}\n    </div>\n  </div>\n";
+	module.exports = "\n  <div class=\"blog-single\">\n    <h2>{{ post.title }}</h2>\n    <span class=\"post-info\" v-if=\"post.dateCreated\">{{ post.dateCreated | dated  }} | {{ post.category }}</span><br>\n    <div>\n      {{{ post.content | marked }}}\n    </div>\n  </div>\n";
 
 /***/ },
 /* 61 */

@@ -1,7 +1,7 @@
 <style lang="sass?indentedSyntax">
 @import definitions
 
-.blog-single-view
+.blog-single
   margin: 0 auto 100px auto
   max-width: $max_w
   width: 86%
@@ -20,10 +20,13 @@
   ul
     list-style-type: none
     padding: 0
+
+  img
+    max-width: $max_w
 </style>
 
 <template>
-  <div class="blog-single-view">
+  <div class="blog-single">
     <h2>{{ post.title }}</h2>
     <span class="post-info" v-if="post.dateCreated">{{ post.dateCreated | dated  }} | {{ post.category }}</span><br>
     <div>

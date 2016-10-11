@@ -1,7 +1,7 @@
 <style lang="sass?indentedSyntax">
 @import definitions
 
-.blog-list-view
+.blog-list
   font-family: $raleway
   margin: auto
   max-width: $max_w
@@ -31,7 +31,7 @@
 </style>
 
 <template>
-  <div class="blog-list-view">
+  <div class="blog-list">
     <ul>
       <li v-for="post in posts | orderBy 'dateCreated' -1" track-by=".key">
         <a class="blog-list-link" v-link="{ name: 'Blog Single Post', params: { postName: post['.key'] } }">

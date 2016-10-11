@@ -154,6 +154,7 @@ button:focus
         <!-- Form for creating new portfolio projects -->
         <form v-if="showCreateProject === true" @submit.prevent>
           <input v-model="newProject.title" placeholder="Project title">
+          <input v-model="newProject.year" placeholder="Project year">
           <input v-model="newProject.category" placeholder="Project category">
           <input v-model="newProject.featured" placeholder="Featured image">
           <textarea v-model="newProject.content" placeholder="Project content"></textarea>
@@ -165,6 +166,7 @@ button:focus
         <!-- Form for editing portfolio projects -->
         <form v-if="showEditProject" @submit.prevent>
           <input v-model="newProject.title">
+          <input v-model="newProject.year">
           <input v-model="newProject.category">
           <input v-model="newProject.featured" placeholder="Featured image">
           <textarea v-model="newProject.content"></textarea>
@@ -273,7 +275,7 @@ button:focus
       },
       setProject() {
         var currentDate = Date.now()
-        var setData = { title: this.newProject.title, category: this.newProject.category, featured: this.newProject.featured, content: this.newProject.content }
+        var setData = { title: this.newProject.title, year: this.newProject.year, category: this.newProject.category, featured: this.newProject.featured, content: this.newProject.content }
         // Check if the project has already been created
         if (this.newProject.dateCreated) {
           setData.dateCreated = this.newProject.dateCreated
@@ -325,6 +327,7 @@ button:focus
         var that = this;
         db.ref('/portfolio').child(key).once('value').then(function(snap) {
           that.newProject.title = snap.val().title
+          that.newProject.year = snap.val().year
           that.newProject.category = snap.val().category
           that.newProject.featured = snap.val().featured
           that.newProject.content = snap.val().content

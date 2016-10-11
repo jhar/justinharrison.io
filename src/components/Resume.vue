@@ -1,29 +1,29 @@
 <style lang="sass?indentedSyntax">
+@import definitions
+
 .my-resume
-  font-family: 'Raleway', sans-serif
+  font-family: $raleway
   margin: auto
-  max-width: 960px
+  max-width: $max_w
   width: 86%
 
   .main-title
     font-size: 28px
 
   h3
-    color: #4874d4
+    color: $blue
 
   .title
     font-weight: bold
 
   .loc,
   .dates
-    color: #676767
+    color: $lightgrey
     font-size: 12px
     
   .blk-1,
   .blk-3
-    -webkit-box-sizing: border-box
-    -moz-box-sizing: border-box
-    box-sizing: border-box
+    +box-sizing(border-box)
     display: inline-block
     float: left
     min-height: 57px
@@ -32,9 +32,7 @@
 
   .blk-2,
   .blk-4
-    -webkit-box-sizing: border-box
-    -moz-box-sizing: border-box
-    box-sizing: border-box
+    +box-sizing(border-box)
     display: inline-block
     float: right
     width: 100%
@@ -69,11 +67,11 @@
 
       <h3>Work Experience</h3>
 
-      <span class="title">Web Engineer</span><br>
+      <span class="title">Principal Web Engineer</span><br>
       <span class="org">Advercalls, Inc</span><br>
       <span class="loc">Los Angeles, CA</span><br>
       <span class="dates">Feb 2016 - Jul 2016</span>
-      <p>Developed a third-party JavaScript lead gen app. Wrote back-end integrations for marketing services like ActiveCampaign. Wrote scripts to clean redundancies and errors from a large database, built a web directory service to navigate the data, then incorporated user profiles, a membership service, and InfusionSoft for payment processing. Designed and developed APIs for our own services.</p>
+      <p>Developed a third-party JavaScript lead gen app. Wrote back-end integrations for marketing services like ActiveCampaign. Wrote scripts to clean redundancies and errors from a large database, built a web directory service to navigate the data, then incorporated user profiles, a membership service, and InfusionSoft for payment processing.</p>
       
       <span class="title">Contract Software Developer</span><br>
       <span class="org">Not That This, LLC</span><br>
@@ -85,7 +83,6 @@
       <span class="org">FlexaSoft</span><br>
       <span class="loc">Redmond, WA</span><br>
       <span class="dates">Oct 2014 - Jun 2015</span><br>
-      <p>Evaluated the accuracy and relevancy of Microsoft Bing search results.</p>
       
       <span class="title">Web Developer</span><br>
       <span class="org">University of California Institute for Research in the Arts</span><br>

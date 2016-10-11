@@ -13724,7 +13724,7 @@
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Open+Sans);", ""]);
 
 	// module
-	exports.push([module.id, "p {\n  font: 16px 'Open Sans', sans-serif;\n  color: #676767; }\n", ""]);
+	exports.push([module.id, "p {\n  font: 16px \"Open Sans\", sans-serif;\n  color: #676767; }\n", ""]);
 
 	// exports
 
@@ -14101,7 +14101,7 @@
 
 
 	// module
-	exports.push([module.id, ".admin-page,\ninput,\ntextarea,\nkeygen,\nselect,\nbutton {\n  font-family: 'Raleway', sans-serif; }\n\nbutton:focus {\n  outline: 0; }\n\n.admin-page {\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .admin-page .not-authorized {\n    margin-top: 38%;\n    text-align: center;\n    width: 100%; }\n    .admin-page .not-authorized button {\n      background-color: #4874d4;\n      border: none;\n      color: white;\n      font-size: 16px;\n      margin: 0 auto;\n      padding: 15px 32px;\n      text-align: center;\n      text-decoration: none; }\n  .admin-page .top-bar {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    height: 48px;\n    -ms-flex-flow: row wrap;\n        flex-flow: row wrap;\n    -webkit-box-pack: end;\n        -ms-flex-pack: end;\n            justify-content: flex-end;\n    margin-bottom: 12px; }\n    .admin-page .top-bar .top-button {\n      background-color: #4874d4;\n      border: 5px solid white;\n      border-radius: 40px;\n      color: white;\n      -webkit-box-flex: 1;\n          -ms-flex: 1 25%;\n              flex: 1 25%;\n      font-size: 13px; }\n  .admin-page .admin-tree {\n    box-sizing: border-box;\n    display: inline-block;\n    float: left;\n    width: 32%; }\n    .admin-page .admin-tree ul {\n      list-style-type: none;\n      padding: 0; }\n      .admin-page .admin-tree ul span {\n        border-bottom: 1px solid black;\n        font-size: 12px;\n        width: 100%; }\n  .admin-page .admin-editor {\n    box-sizing: border-box;\n    display: inline-block;\n    float: right;\n    width: 68%; }\n    .admin-page .admin-editor form {\n      margin-bottom: 48px;\n      width: 100%; }\n      .admin-page .admin-editor form input,\n      .admin-page .admin-editor form textarea {\n        display: block;\n        font-size: 14px;\n        margin: 0 auto 18px auto;\n        width: 100%; }\n      .admin-page .admin-editor form input {\n        height: 24px; }\n      .admin-page .admin-editor form textarea {\n        height: 500px; }\n  .admin-page .image-uploader progress {\n    background-color: #4874d4;\n    border: 1px;\n    height: 24px;\n    margin-bottom: 12px;\n    border-radius: 9px;\n    width: 100%; }\n  .admin-page .image-uploader img {\n    max-width: 100%; }\n  .admin-page .image-uploader span {\n    font-size: 12px;\n    margin-bottom: 12px; }\n", ""]);
+	exports.push([module.id, ".admin-page,\ninput,\ntextarea,\nkeygen,\nselect,\nbutton {\n  font-family: \"Raleway\", monospace; }\n\nbutton:focus {\n  outline: 0; }\n\n.admin-page {\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .admin-page .not-authorized {\n    margin-top: 38%;\n    text-align: center;\n    width: 100%; }\n    .admin-page .not-authorized button {\n      background-color: #4874d4;\n      border: none;\n      color: white;\n      font-size: 16px;\n      margin: 0 auto;\n      padding: 15px 32px;\n      text-align: center;\n      text-decoration: none; }\n  .admin-page .top-bar {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    height: 48px;\n    -ms-flex-flow: row wrap;\n        flex-flow: row wrap;\n    -webkit-box-pack: end;\n        -ms-flex-pack: end;\n            justify-content: flex-end;\n    margin-bottom: 12px; }\n    .admin-page .top-bar .top-button {\n      background-color: #4874d4;\n      border: 5px solid white;\n      border-radius: 40px;\n      color: white;\n      -webkit-box-flex: 1;\n          -ms-flex: 1 25%;\n              flex: 1 25%;\n      font-size: 13px; }\n  .admin-page .admin-tree {\n    -webkit-box-sizing: border-box;\n      -webkit-box-sizing--moz-box-sizing: border-box;\n        -webkit-box-sizing--moz-box-sizing-box-sizing: border-box;\n    display: inline-block;\n    float: left;\n    width: 32%; }\n    .admin-page .admin-tree ul {\n      list-style-type: none;\n      padding: 0; }\n      .admin-page .admin-tree ul span {\n        border-bottom: 1px solid black;\n        font-size: 12px;\n        width: 100%; }\n  .admin-page .admin-editor {\n    -webkit-box-sizing: border-box;\n      -webkit-box-sizing--moz-box-sizing: border-box;\n        -webkit-box-sizing--moz-box-sizing-box-sizing: border-box;\n    display: inline-block;\n    float: right;\n    width: 68%; }\n    .admin-page .admin-editor form {\n      margin-bottom: 48px;\n      width: 100%; }\n      .admin-page .admin-editor form input,\n      .admin-page .admin-editor form textarea {\n        display: block;\n        font-size: 14px;\n        margin: 0 auto 18px auto;\n        width: 100%; }\n      .admin-page .admin-editor form input {\n        height: 24px; }\n      .admin-page .admin-editor form textarea {\n        height: 500px; }\n  .admin-page .image-uploader progress {\n    background-color: #4874d4;\n    border: 1px;\n    height: 24px;\n    margin-bottom: 12px;\n    border-radius: 9px;\n    width: 100%; }\n  .admin-page .image-uploader img {\n    max-width: 100%; }\n  .admin-page .image-uploader span {\n    font-size: 12px;\n    margin-bottom: 12px; }\n", ""]);
 
 	// exports
 
@@ -14125,20 +14125,22 @@
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 	// <style lang="sass?indentedSyntax">
+	// @import definitions
+	//
 	// .admin-page,
 	// input,
 	// textarea,
 	// keygen,
 	// select,
 	// button
-	//   font-family: 'Raleway', sans-serif
+	//   font-family: $raleway
 	//
 	// button:focus
 	//   outline: 0
 	//
 	// .admin-page
 	//   margin: auto
-	//   max-width: 960px
+	//   max-width: $max_w
 	//   width: 86%
 	//
 	//   .not-authorized
@@ -14147,7 +14149,7 @@
 	//     width: 100%
 	//
 	//     button
-	//       background-color: #4874d4
+	//       background-color: $blue
 	//       border: none
 	//       color: white
 	//       font-size: 16px
@@ -14164,7 +14166,7 @@
 	//     margin-bottom: 12px
 	//
 	//     .top-button
-	//       background-color: #4874d4
+	//       background-color: $blue
 	//       border: 5px solid white
 	//       border-radius: 40px
 	//       color: white
@@ -14172,9 +14174,7 @@
 	//       font-size: 13px
 	//
 	//   .admin-tree
-	//     -webkit-box-sizing: border-box
-	//     -moz-box-sizing: border-box
-	//     box-sizing: border-box
+	//     +box-sizing(border-box)
 	//     display: inline-block
 	//     float: left
 	//     width: 32%
@@ -14189,9 +14189,7 @@
 	//         width: 100%
 	//
 	//   .admin-editor
-	//     -webkit-box-sizing: border-box
-	//     -moz-box-sizing: border-box
-	//     box-sizing: border-box
+	//     +box-sizing(border-box)
 	//     display: inline-block
 	//     float: right
 	//     width: 68%
@@ -14215,7 +14213,7 @@
 	//
 	//   .image-uploader
 	//     progress
-	//       background-color: #4874d4
+	//       background-color: $blue
 	//       border: 1px
 	//       height: 24px
 	//       margin-bottom: 12px
@@ -15224,7 +15222,7 @@
 
 
 	// module
-	exports.push([module.id, ".nav-bar {\n  box-sizing: border-box;\n  font: 22px 'Raleway', sans-serif;\n  height: 48px;\n  margin-top: 35px;\n  margin-bottom: 36px; }\n  .nav-bar .nav-inner-container {\n    height: 48px;\n    margin: auto;\n    max-width: 960px;\n    width: 86%; }\n    .nav-bar .nav-inner-container ul {\n      height: 48px;\n      list-style-type: none;\n      margin: 0;\n      padding: 0;\n      width: 100%; }\n      .nav-bar .nav-inner-container ul .float-left {\n        float: left; }\n      .nav-bar .nav-inner-container ul .float-right {\n        float: right; }\n      .nav-bar .nav-inner-container ul li {\n        height: 48px; }\n        .nav-bar .nav-inner-container ul li .nav-bar-title {\n          color: black;\n          display: block;\n          font-size: 28px;\n          margin-top: 7px;\n          text-decoration: none; }\n        .nav-bar .nav-inner-container ul li .nav-bar-link {\n          color: #646464;\n          display: block;\n          font-size: 16px;\n          padding: 12px 8px;\n          text-decoration: none; }\n        .nav-bar .nav-inner-container ul li .v-link-active {\n          color: black; }\n        .nav-bar .nav-inner-container ul li .fa-bars {\n          margin-top: 13px; }\n\n.nav-panel {\n  box-sizing: border-box;\n  background-color: white;\n  font: 28px 'Raleway', monospace;\n  width: 100%;\n  position: absolute;\n  left: 0;\n  top: 119px;\n  right: 0;\n  bottom: 42px;\n  z-index: 1000; }\n  .nav-panel ul {\n    list-style-type: none;\n    margin: 7% 0;\n    padding: 0;\n    width: 100%; }\n    .nav-panel ul li {\n      float: none;\n      height: 48px;\n      padding: 0 7%;\n      width: 100%;\n      text-align: center;\n      box-sizing: border-box; }\n      .nav-panel ul li .nav-panel-link {\n        color: #191919;\n        display: block;\n        text-decoration: none; }\n\n.hamburger {\n  display: block; }\n\n.togglable {\n  display: none; }\n\n@media only screen and (min-width: 768px) {\n  .hamburger {\n    display: none; }\n  .togglable {\n    display: block; } }\n", ""]);
+	exports.push([module.id, ".nav-bar {\n  -webkit-box-sizing: border-box;\n    -webkit-box-sizing--moz-box-sizing: border-box;\n      -webkit-box-sizing--moz-box-sizing-box-sizing: border-box;\n  font: 22px \"Raleway\", monospace;\n  height: 48px;\n  margin: 35px 0 36px 0; }\n  .nav-bar-title {\n    color: black;\n    display: block;\n    font-size: 28px;\n    margin-top: 7px;\n    text-decoration: none; }\n  .nav-bar-link {\n    color: #646464;\n    display: block;\n    font-size: 16px;\n    padding: 12px 8px;\n    text-decoration: none; }\n  .nav-bar-inner-container {\n    height: 48px;\n    margin: auto;\n    max-width: 960px;\n    width: 86%; }\n    .nav-bar-inner-container ul {\n      height: 48px;\n      list-style-type: none;\n      margin: 0;\n      padding: 0;\n      width: 100%; }\n      .nav-bar-inner-container ul .float-left {\n        float: left; }\n      .nav-bar-inner-container ul .float-right {\n        float: right; }\n      .nav-bar-inner-container ul li {\n        height: 48px; }\n        .nav-bar-inner-container ul li .v-link-active {\n          color: black; }\n        .nav-bar-inner-container ul li .fa-bars {\n          margin-top: 13px; }\n\n.nav-panel {\n  -webkit-box-sizing: border-box;\n    -webkit-box-sizing--moz-box-sizing: border-box;\n      -webkit-box-sizing--moz-box-sizing-box-sizing: border-box;\n  background-color: white;\n  font: 28px \"Raleway\", monospace;\n  width: 100%;\n  position: absolute;\n  left: 0;\n  top: 119px;\n  right: 0;\n  bottom: 42px;\n  z-index: 1000; }\n  .nav-panel-link {\n    color: #191919;\n    display: block;\n    text-decoration: none; }\n  .nav-panel ul {\n    list-style-type: none;\n    margin: 7% 0;\n    padding: 0;\n    width: 100%; }\n    .nav-panel ul li {\n      float: none;\n      height: 48px;\n      padding: 0 7%;\n      width: 100%;\n      text-align: center;\n      -webkit-box-sizing: border-box;\n        -webkit-box-sizing--moz-box-sizing: border-box;\n          -webkit-box-sizing--moz-box-sizing-box-sizing: border-box; }\n\n.hamburger {\n  display: block; }\n\n.togglable {\n  display: none; }\n\n@media only screen and (min-width: 768px) {\n  .hamburger {\n    display: none; }\n  .togglable {\n    display: block; } }\n", ""]);
 
 	// exports
 
@@ -15239,19 +15237,32 @@
 	  value: true
 	});
 	// <style lang="sass?indentedSyntax">
-	// .nav-bar
-	//   -webkit-box-sizing: border-box
-	//   -moz-box-sizing: border-box
-	//   box-sizing: border-box
-	//   font: 22px 'Raleway', sans-serif
-	//   height: 48px
-	//   margin-top: 35px
-	//   margin-bottom: 36px
+	// @import definitions
 	//
-	//   .nav-inner-container
+	// .nav-bar
+	//   +box-sizing(border-box)
+	//   font: 22px $raleway
+	//   height: 48px
+	//   margin: 35px 0 36px 0
+	//
+	//   &-title
+	//     color: black
+	//     display: block
+	//     font-size: 28px
+	//     margin-top: 7px
+	//     text-decoration: none
+	//
+	//   &-link
+	//     color: rgb(100, 100, 100)
+	//     display: block
+	//     font-size: 16px
+	//     padding: 12px 8px
+	//     text-decoration: none
+	//
+	//   &-inner-container
 	//     height: 48px
 	//     margin: auto
-	//     max-width: 960px
+	//     max-width: $max_w
 	//     width: 86%
 	//
 	//     ul
@@ -15270,20 +15281,6 @@
 	//       li
 	//         height: 48px
 	//
-	//         .nav-bar-title
-	//           color: black
-	//           display: block
-	//           font-size: 28px
-	//           margin-top: 7px
-	//           text-decoration: none
-	//
-	//         .nav-bar-link
-	//           color: rgb(100, 100, 100)
-	//           display: block
-	//           font-size: 16px
-	//           padding: 12px 8px
-	//           text-decoration: none
-	//
 	//         .v-link-active
 	//           color: black
 	//
@@ -15291,11 +15288,9 @@
 	//           margin-top: 13px
 	//
 	// .nav-panel
-	//   -webkit-box-sizing: border-box
-	//   -moz-box-sizing: border-box
-	//   box-sizing: border-box
-	//   background-color: rgb(255, 255, 255)
-	//   font: 28px 'Raleway', monospace
+	//   +box-sizing(border-box)
+	//   background-color: white
+	//   font: 28px $raleway
 	//   width: 100%
 	//   position: absolute
 	//   left: 0
@@ -15303,6 +15298,11 @@
 	//   right: 0
 	//   bottom: 42px
 	//   z-index: 1000
+	//
+	//   &-link
+	//     color: rgb(25, 25, 25)
+	//     display: block
+	//     text-decoration: none
 	//
 	//   ul
 	//     list-style-type: none
@@ -15316,13 +15316,7 @@
 	//       padding: 0 7%
 	//       width: 100%
 	//       text-align: center
-	//       box-sizing: border-box
-	//
-	//       .nav-panel-link
-	//         color: rgb(25, 25, 25)
-	//         display: block
-	//         text-decoration: none
-	//
+	//       +box-sizing(border-box)
 	//
 	// .hamburger
 	//   display: block
@@ -15341,7 +15335,7 @@
 	//
 	// <template>
 	//   <div class="nav-bar">
-	//     <div class="nav-inner-container">
+	//     <div class="nav-bar-inner-container">
 	//       <ul>
 	//         <li class="float-left"><a class="nav-bar-title" href="/">JUSTIN HARRISON</a></li>
 	//         <li class="float-right togglable"><a class="nav-bar-link" v-link="{ name: 'Resume View' }">resume</a></li>
@@ -15391,7 +15385,7 @@
 /* 27 */
 /***/ function(module, exports) {
 
-	module.exports = "\n  <div class=\"nav-bar\">\n    <div class=\"nav-inner-container\">\n      <ul>\n        <li class=\"float-left\"><a class=\"nav-bar-title\" href=\"/\">JUSTIN HARRISON</a></li>\n        <li class=\"float-right togglable\"><a class=\"nav-bar-link\" v-link=\"{ name: 'Resume View' }\">resume</a></li>\n        <li class=\"float-right togglable\"><a class=\"nav-bar-link\" v-link=\"{ name: 'Blog List View' }\">blog</a></li>\n        <li class=\"float-right togglable\"><a class=\"nav-bar-link\" v-link=\"{ name: 'Portfolio View' }\">portfolio</a></li>\n        <li class=\"float-right togglable\"><a class=\"nav-bar-link\" v-link=\"{ name: 'Home View' }\">about</a></li>\n        <li class=\"float-right hamburger\"><i v-on:click=\"togglePanel\" class=\"fa fa-bars fa-lg\"></i></li>\n      </ul>\n    </div>\n    <div v-show=\"showPanel\" transition=\"nav-panel\" class=\"nav-panel\">\n     <ul>\n       <li><a class=\"nav-panel-link\" v-on:click=\"togglePanel\" v-link=\"{ name: 'Home View' }\">About</a></li>\n       <li><a class=\"nav-panel-link\" v-on:click=\"togglePanel\" v-link=\"{ name: 'Portfolio View' }\">Portfolio</a></li>\n       <li><a class=\"nav-panel-link\" v-on:click=\"togglePanel\" v-link=\"{ name: 'Blog List View' }\">Blog</a></li>\n       <li><a class=\"nav-panel-link\" v-on:click=\"togglePanel\" v-link=\"{ name: 'Resume View' }\">Resume</a></li>\n     </ul>\n    </div>\n  </div>\n";
+	module.exports = "\n  <div class=\"nav-bar\">\n    <div class=\"nav-bar-inner-container\">\n      <ul>\n        <li class=\"float-left\"><a class=\"nav-bar-title\" href=\"/\">JUSTIN HARRISON</a></li>\n        <li class=\"float-right togglable\"><a class=\"nav-bar-link\" v-link=\"{ name: 'Resume View' }\">resume</a></li>\n        <li class=\"float-right togglable\"><a class=\"nav-bar-link\" v-link=\"{ name: 'Blog List View' }\">blog</a></li>\n        <li class=\"float-right togglable\"><a class=\"nav-bar-link\" v-link=\"{ name: 'Portfolio View' }\">portfolio</a></li>\n        <li class=\"float-right togglable\"><a class=\"nav-bar-link\" v-link=\"{ name: 'Home View' }\">about</a></li>\n        <li class=\"float-right hamburger\"><i v-on:click=\"togglePanel\" class=\"fa fa-bars fa-lg\"></i></li>\n      </ul>\n    </div>\n    <div v-show=\"showPanel\" transition=\"nav-panel\" class=\"nav-panel\">\n     <ul>\n       <li><a class=\"nav-panel-link\" v-on:click=\"togglePanel\" v-link=\"{ name: 'Home View' }\">About</a></li>\n       <li><a class=\"nav-panel-link\" v-on:click=\"togglePanel\" v-link=\"{ name: 'Portfolio View' }\">Portfolio</a></li>\n       <li><a class=\"nav-panel-link\" v-on:click=\"togglePanel\" v-link=\"{ name: 'Blog List View' }\">Blog</a></li>\n       <li><a class=\"nav-panel-link\" v-on:click=\"togglePanel\" v-link=\"{ name: 'Resume View' }\">Resume</a></li>\n     </ul>\n    </div>\n  </div>\n";
 
 /***/ },
 /* 28 */
@@ -15450,7 +15444,7 @@
 
 
 	// module
-	exports.push([module.id, ".footer {\n  background-color: white;\n  border-top-style: double;\n  position: fixed;\n  bottom: 0px;\n  color: #777777;\n  font: 13px 'Ubuntu', sans-serif;\n  width: 100%; }\n  .footer .footer-container {\n    margin: 12px auto;\n    max-width: 960px;\n    width: 86%; }\n  .footer a {\n    color: #4874d4;\n    text-decoration: none; }\n  .footer .footer-links {\n    float: right; }\n", ""]);
+	exports.push([module.id, ".footer {\n  background-color: white;\n  border-top-style: double;\n  position: fixed;\n  bottom: 0px;\n  color: #777777;\n  font: 13px \"Open Sans\", sans-serif;\n  width: 100%; }\n  .footer-container {\n    margin: 12px auto;\n    max-width: 960px;\n    width: 86%; }\n  .footer a {\n    color: #4874d4;\n    text-decoration: none; }\n  .footer-links {\n    float: right; }\n", ""]);
 
 	// exports
 
@@ -15519,7 +15513,7 @@
 
 
 	// module
-	exports.push([module.id, ".about-me {\n  font-family: 'Raleway', sans-serif;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .about-me .emph-p {\n    color: #646464;\n    font-size: 25px;\n    letter-spacing: 1.7px; }\n  .about-me .small-p {\n    color: #969696;\n    font-size: 16px; }\n", ""]);
+	exports.push([module.id, ".about-me {\n  font-family: \"Raleway\", monospace;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .about-me .emph-p {\n    color: #646464;\n    font-size: 25px;\n    letter-spacing: 1.7px; }\n  .about-me .small-p {\n    color: #969696;\n    font-size: 16px; }\n", ""]);
 
 	// exports
 
@@ -15529,10 +15523,12 @@
 /***/ function(module, exports) {
 
 	// <style lang="sass?indentedSyntax">
+	// @import definitions
+	//
 	// .about-me
-	//   font-family: 'Raleway', sans-serif
+	//   font-family: $raleway
 	//   margin: auto
-	//   max-width: 960px
+	//   max-width: $max_w
 	//   width: 86% 
 	//
 	//   .emph-p
@@ -15637,7 +15633,7 @@
 
 
 	// module
-	exports.push([module.id, ".my-resume {\n  font-family: 'Raleway', sans-serif;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .my-resume .main-title {\n    font-size: 28px; }\n  .my-resume h3 {\n    color: #4874d4; }\n  .my-resume .title {\n    font-weight: bold; }\n  .my-resume .loc,\n  .my-resume .dates {\n    color: #676767;\n    font-size: 12px; }\n  .my-resume .blk-1,\n  .my-resume .blk-3 {\n    box-sizing: border-box;\n    display: inline-block;\n    float: left;\n    min-height: 57px;\n    padding-right: 40px;\n    width: 100%; }\n  .my-resume .blk-2,\n  .my-resume .blk-4 {\n    box-sizing: border-box;\n    display: inline-block;\n    float: right;\n    width: 100%; }\n  @media only screen and (min-width: 768px) {\n    .my-resume .blk-1,\n    .my-resume .blk-3 {\n      width: 62%; }\n    .my-resume .blk-2,\n    .my-resume .blk-4 {\n      width: 38%; }\n    .my-resume .blk-3,\n    .my-resume .blk-4 {\n      margin-bottom: 75px; } }\n", ""]);
+	exports.push([module.id, ".my-resume {\n  font-family: \"Raleway\", monospace;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .my-resume .main-title {\n    font-size: 28px; }\n  .my-resume h3 {\n    color: #4874d4; }\n  .my-resume .title {\n    font-weight: bold; }\n  .my-resume .loc,\n  .my-resume .dates {\n    color: #676767;\n    font-size: 12px; }\n  .my-resume .blk-1,\n  .my-resume .blk-3 {\n    -webkit-box-sizing: border-box;\n      -webkit-box-sizing--moz-box-sizing: border-box;\n        -webkit-box-sizing--moz-box-sizing-box-sizing: border-box;\n    display: inline-block;\n    float: left;\n    min-height: 57px;\n    padding-right: 40px;\n    width: 100%; }\n  .my-resume .blk-2,\n  .my-resume .blk-4 {\n    -webkit-box-sizing: border-box;\n      -webkit-box-sizing--moz-box-sizing: border-box;\n        -webkit-box-sizing--moz-box-sizing-box-sizing: border-box;\n    display: inline-block;\n    float: right;\n    width: 100%; }\n  @media only screen and (min-width: 768px) {\n    .my-resume .blk-1,\n    .my-resume .blk-3 {\n      width: 62%; }\n    .my-resume .blk-2,\n    .my-resume .blk-4 {\n      width: 38%; }\n    .my-resume .blk-3,\n    .my-resume .blk-4 {\n      margin-bottom: 75px; } }\n", ""]);
 
 	// exports
 
@@ -15646,7 +15642,7 @@
 /* 40 */
 /***/ function(module, exports) {
 
-	module.exports = "\n  <div class=\"my-resume\">\n    <div class=\"header\">\n      <div class=\"blk-1\">\n       <span class=\"main-title\">Front-End Developer</span>\n      </div>\n      <div class=\"blk-2\">\n        <span class=\"bold\">(206) 377-9027</span><br>\n        <span class=\"bold\">Skype: justin.a.harrison</span><br>\n        <a href=\"mailto:justinadenharrison@gmail.com\" target=\"_top\">justinadenharrison@gmail.com</a><br>\n      </div>\n    </div>\n    <div class=\"blk-3\">\n\n      <h3>Work Experience</h3>\n\n      <span class=\"title\">Web Engineer</span><br>\n      <span class=\"org\">Advercalls, Inc</span><br>\n      <span class=\"loc\">Los Angeles, CA</span><br>\n      <span class=\"dates\">Feb 2016 - Jul 2016</span>\n      <p>Developed a third-party JavaScript lead gen app. Wrote back-end integrations for marketing services like ActiveCampaign. Wrote scripts to clean redundancies and errors from a large database, built a web directory service to navigate the data, then incorporated user profiles, a membership service, and InfusionSoft for payment processing. Designed and developed APIs for our own services.</p>\n      \n      <span class=\"title\">Contract Software Developer</span><br>\n      <span class=\"org\">Not That This, LLC</span><br>\n      <span class=\"loc\">Burbank, CA</span><br>\n      <span class=\"dates\">Nov 2015 - Jan 2016</span>\n      <p>Converted PSD designs to pixel perfect UI with Enyo.js for an enterprise Cisco IoT project.</p>\n      \n      <span class=\"title\">Web Content Evaluator</span><br>\n      <span class=\"org\">FlexaSoft</span><br>\n      <span class=\"loc\">Redmond, WA</span><br>\n      <span class=\"dates\">Oct 2014 - Jun 2015</span><br>\n      <p>Evaluated the accuracy and relevancy of Microsoft Bing search results.</p>\n      \n      <span class=\"title\">Web Developer</span><br>\n      <span class=\"org\">University of California Institute for Research in the Arts</span><br>\n      <span class=\"loc\">Santa Barbara, CA</span><br>\n      <span class=\"dates\">Jul 2014 - Sep 2014</span><br>\n      <p>Worked on a new website for the UCIRA. Merged their main site and State of the Arts blog. Worked to create a platform for California art researchers to network and display their work. The project was cancelled after funding cuts.</p>\n\n      <span class=\"title\">IT Helpdesk Assistant</span><br>\n      <span class=\"org\">Davidson Library</span><br>\n      <span class=\"loc\">Santa Barbara, CA</span><br>\n      <span class=\"dates\">Mar 2013 - Jul 2014</span><br>\n      <p>Provided technical assistance and support related to computer networks, hardware, and software. Responded to calls and emails and tracked issues with JIRA to help diagnose, solve, and document problems. Managed hardware inventory.</p>\n\n\n    </div>\n\n    <div class=\"blk-4\">\n\n\n      <h3>Education and Awards</h3>\n\n      <span class=\"title\">BA in Art with High Honors</span><br>\n      <span class=\"org\">University of California</span><br>\n      <span class=\"loc\">Santa Barbara, CA</span><br>\n      <span class=\"dates\">Graduated 2014</span><br>\n      <p>Promising Artist Achievement Award, William Dole Award, Faculty Award of Distinction x2, Dean's Honors x5</p>\n\n      <h3 class=\"mono\">Professional Development</h3>\n\n      <span class=\"title\">MongoDB for Node.js Developers</span><br>\n      <span class=\"org\">MongoDB University</span><br>\n      <span class=\"dates\">Completed 2015</span><br><br>\n\n      <span class=\"title\">Front-End Web Developer Nanodegree</span><br>\n      <span class=\"org\">Udacity</span><br>\n      <span class=\"dates\">Completed 2015</span><br>\n\n      <h3>Skills</h3>\n\n      <p>HTML, CSS, JavaScript, PHP, MySQL, MongoDB, Unix, Bootstrap, jQuery, React, Knockout, Vue, Node, NPM, Express, SASS, LESS, Firebase, AWS, Webpack, Browserify, Gulp, WordPress, p5.js, Processing, Chrome Developer Tools, AJAX, and Google.</p>\n\n      <h3>Volunteering</h3>\n\n      <span class=\"title\">Shopify Administrator</span><br>\n      <span class=\"org\">Arroyo Food Co-op</span><br>\n      <span class=\"loc\">Pasadena, CA</span><br>\n      <span class=\"dates\">Feb 2016 - May 2016</span><br><br>\n\n      <span class=\"title\">Cook and Server</span><br>\n      <span class=\"org\">Food Not Bombs</span><br>\n      <span class=\"loc\">Goleta, CA</span><br>\n      <span class=\"dates\">Jan 2013 - Sep 2014</span>\n\n\n\n\n\n\n    </div>\n\n  </div>\n";
+	module.exports = "\n  <div class=\"my-resume\">\n    <div class=\"header\">\n      <div class=\"blk-1\">\n       <span class=\"main-title\">Front-End Developer</span>\n      </div>\n      <div class=\"blk-2\">\n        <span class=\"bold\">(206) 377-9027</span><br>\n        <span class=\"bold\">Skype: justin.a.harrison</span><br>\n        <a href=\"mailto:justinadenharrison@gmail.com\" target=\"_top\">justinadenharrison@gmail.com</a><br>\n      </div>\n    </div>\n    <div class=\"blk-3\">\n\n      <h3>Work Experience</h3>\n\n      <span class=\"title\">Principal Web Engineer</span><br>\n      <span class=\"org\">Advercalls, Inc</span><br>\n      <span class=\"loc\">Los Angeles, CA</span><br>\n      <span class=\"dates\">Feb 2016 - Jul 2016</span>\n      <p>Developed a third-party JavaScript lead gen app. Wrote back-end integrations for marketing services like ActiveCampaign. Wrote scripts to clean redundancies and errors from a large database, built a web directory service to navigate the data, then incorporated user profiles, a membership service, and InfusionSoft for payment processing.</p>\n      \n      <span class=\"title\">Contract Software Developer</span><br>\n      <span class=\"org\">Not That This, LLC</span><br>\n      <span class=\"loc\">Burbank, CA</span><br>\n      <span class=\"dates\">Nov 2015 - Jan 2016</span>\n      <p>Converted PSD designs to pixel perfect UI with Enyo.js for an enterprise Cisco IoT project.</p>\n      \n      <span class=\"title\">Web Content Evaluator</span><br>\n      <span class=\"org\">FlexaSoft</span><br>\n      <span class=\"loc\">Redmond, WA</span><br>\n      <span class=\"dates\">Oct 2014 - Jun 2015</span><br>\n      \n      <span class=\"title\">Web Developer</span><br>\n      <span class=\"org\">University of California Institute for Research in the Arts</span><br>\n      <span class=\"loc\">Santa Barbara, CA</span><br>\n      <span class=\"dates\">Jul 2014 - Sep 2014</span><br>\n      <p>Worked on a new website for the UCIRA. Merged their main site and State of the Arts blog. Worked to create a platform for California art researchers to network and display their work. The project was cancelled after funding cuts.</p>\n\n      <span class=\"title\">IT Helpdesk Assistant</span><br>\n      <span class=\"org\">Davidson Library</span><br>\n      <span class=\"loc\">Santa Barbara, CA</span><br>\n      <span class=\"dates\">Mar 2013 - Jul 2014</span><br>\n      <p>Provided technical assistance and support related to computer networks, hardware, and software. Responded to calls and emails and tracked issues with JIRA to help diagnose, solve, and document problems. Managed hardware inventory.</p>\n\n\n    </div>\n\n    <div class=\"blk-4\">\n\n\n      <h3>Education and Awards</h3>\n\n      <span class=\"title\">BA in Art with High Honors</span><br>\n      <span class=\"org\">University of California</span><br>\n      <span class=\"loc\">Santa Barbara, CA</span><br>\n      <span class=\"dates\">Graduated 2014</span><br>\n      <p>Promising Artist Achievement Award, William Dole Award, Faculty Award of Distinction x2, Dean's Honors x5</p>\n\n      <h3 class=\"mono\">Professional Development</h3>\n\n      <span class=\"title\">MongoDB for Node.js Developers</span><br>\n      <span class=\"org\">MongoDB University</span><br>\n      <span class=\"dates\">Completed 2015</span><br><br>\n\n      <span class=\"title\">Front-End Web Developer Nanodegree</span><br>\n      <span class=\"org\">Udacity</span><br>\n      <span class=\"dates\">Completed 2015</span><br>\n\n      <h3>Skills</h3>\n\n      <p>HTML, CSS, JavaScript, PHP, MySQL, MongoDB, Unix, Bootstrap, jQuery, React, Knockout, Vue, Node, NPM, Express, SASS, LESS, Firebase, AWS, Webpack, Browserify, Gulp, WordPress, p5.js, Processing, Chrome Developer Tools, AJAX, and Google.</p>\n\n      <h3>Volunteering</h3>\n\n      <span class=\"title\">Shopify Administrator</span><br>\n      <span class=\"org\">Arroyo Food Co-op</span><br>\n      <span class=\"loc\">Pasadena, CA</span><br>\n      <span class=\"dates\">Feb 2016 - May 2016</span><br><br>\n\n      <span class=\"title\">Cook and Server</span><br>\n      <span class=\"org\">Food Not Bombs</span><br>\n      <span class=\"loc\">Goleta, CA</span><br>\n      <span class=\"dates\">Jan 2013 - Sep 2014</span>\n\n\n\n\n\n\n    </div>\n\n  </div>\n";
 
 /***/ },
 /* 41 */
@@ -15706,7 +15702,7 @@
 
 
 	// module
-	exports.push([module.id, ".my-portfolio {\n  font-family: 'Raleway', sans-serif;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .my-portfolio .project-container {\n    margin: 10px auto 48px auto;\n    width: 100%;\n    position: relative;\n    padding-bottom: 77%; }\n    .my-portfolio .project-container .project-link {\n      display: block;\n      position: absolute;\n      top: 0;\n      bottom: 0;\n      left: 0;\n      right: 0;\n      text-decoration: none; }\n      .my-portfolio .project-container .project-link .project-image {\n        width: 100%;\n        height: 100%;\n        z-index: -1;\n        opacity: 1; }\n      .my-portfolio .project-container .project-link .text-container {\n        text-align: center; }\n        .my-portfolio .project-container .project-link .text-container .project-title {\n          color: black;\n          font-size: 17px;\n          font-weight: bold;\n          letter-spacing: 2px;\n          margin: 9px;\n          text-transform: uppercase; }\n  @media only screen and (min-width: 768px) {\n    .my-portfolio .project-container {\n      width: 45%;\n      margin: 2%;\n      margin-bottom: 48px;\n      float: left;\n      padding-bottom: 37%; } }\n  @media only screen and (min-width: 1024px) {\n    .my-portfolio .project-container {\n      width: 31%;\n      margin: 1%;\n      margin-bottom: 48px;\n      float: left;\n      padding-bottom: 24%; } }\n\n.my-portfolio::after {\n  content: \"\";\n  display: block;\n  height: 96px;\n  clear: both; }\n", ""]);
+	exports.push([module.id, ".my-portfolio {\n  font-family: \"Raleway\", monospace;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .my-portfolio .project-container {\n    margin: 10px auto 48px auto;\n    width: 100%;\n    position: relative;\n    padding-bottom: 77%; }\n    .my-portfolio .project-container .project-link {\n      display: block;\n      position: absolute;\n      top: 0;\n      bottom: 0;\n      left: 0;\n      right: 0;\n      text-decoration: none; }\n      .my-portfolio .project-container .project-link .project-image {\n        width: 100%;\n        height: 100%;\n        z-index: -1;\n        opacity: 1; }\n      .my-portfolio .project-container .project-link .text-container {\n        text-align: center; }\n        .my-portfolio .project-container .project-link .text-container .project-title {\n          color: black;\n          font-size: 17px;\n          font-weight: bold;\n          letter-spacing: 2px;\n          margin: 9px;\n          text-transform: uppercase; }\n  @media only screen and (min-width: 768px) {\n    .my-portfolio .project-container {\n      width: 45%;\n      margin: 2%;\n      margin-bottom: 48px;\n      float: left;\n      padding-bottom: 37%; } }\n  @media only screen and (min-width: 1024px) {\n    .my-portfolio .project-container {\n      width: 31%;\n      margin: 1%;\n      margin-bottom: 48px;\n      float: left;\n      padding-bottom: 24%; } }\n\n.my-portfolio::after {\n  content: \"\";\n  display: block;\n  height: 96px;\n  clear: both; }\n", ""]);
 
 	// exports
 
@@ -15724,10 +15720,12 @@
 	var _firebase = __webpack_require__(21);
 
 	var projsRef = _firebase.db.ref('portfolio/'); // <style lang="sass?indentedSyntax">
+	// @import definitions
+	//
 	// .my-portfolio
-	//   font-family: 'Raleway', sans-serif
+	//   font-family: $raleway
 	//   margin: auto
-	//   max-width: 960px
+	//   max-width: $max_w
 	//   width: 86%
 	//
 	//   .project-container
@@ -15871,7 +15869,7 @@
 
 
 	// module
-	exports.push([module.id, ".project-view {\n  margin: 0 auto 100px auto;\n  max-width: 960px;\n  width: 86%; }\n  .project-view .project-info {\n    color: #676767;\n    font: 12px 'Raleway', sans-serif; }\n  .project-view .italic {\n    font-style: italic; }\n  .project-view h2 {\n    font-family: 'Raleway', monospace;\n    text-transform: capitalize; }\n  .project-view ul {\n    list-style-type: none;\n    padding: 0; }\n  .project-view img {\n    max-width: 100%; }\n", ""]);
+	exports.push([module.id, ".project-view {\n  margin: 0 auto 100px auto;\n  max-width: 960px;\n  width: 86%; }\n  .project-view .project-info {\n    color: #676767;\n    font: 12px \"Raleway\", monospace; }\n  .project-view .italic {\n    font-style: italic; }\n  .project-view h2 {\n    font-family: \"Raleway\", monospace;\n    text-transform: capitalize; }\n  .project-view ul {\n    list-style-type: none;\n    padding: 0; }\n  .project-view img {\n    max-width: 100%; }\n", ""]);
 
 	// exports
 
@@ -15916,20 +15914,22 @@
 	// </script>
 	//
 	// <style lang="sass?indentedSyntax">
+	// @import definitions
+	//
 	// .project-view
 	//   margin: 0 auto 100px auto
-	//   max-width: 960px
+	//   max-width: $max_w
 	//   width: 86%
 	//
 	//   .project-info
-	//     color: #676767
-	//     font: 12px 'Raleway', sans-serif
+	//     color: $lightgrey
+	//     font: 12px $raleway
 	//
 	//   .italic
 	//     font-style: italic
 	//
 	//   h2
-	//     font-family: 'Raleway', monospace
+	//     font-family: $raleway
 	//     text-transform: capitalize
 	//
 	//   ul
@@ -16017,7 +16017,7 @@
 
 
 	// module
-	exports.push([module.id, ".blog-list-view {\n  font-family: 'Raleway', monospace;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .blog-list-view .italic {\n    font-style: italic; }\n  .blog-list-view .date {\n    color: #676767;\n    display: block;\n    font-size: 12px;\n    width: 100%; }\n  .blog-list-view h2 {\n    color: #4874d4;\n    font-size: 18px;\n    text-transform: capitalize; }\n  .blog-list-view ul {\n    list-style-type: none;\n    padding: 0; }\n    .blog-list-view ul .blog-list-link {\n      text-decoration: none;\n      width: 100%; }\n", ""]);
+	exports.push([module.id, ".blog-list-view {\n  font-family: \"Raleway\", monospace;\n  margin: auto;\n  max-width: 960px;\n  width: 86%; }\n  .blog-list-view-link {\n    text-decoration: none;\n    width: 100%; }\n  .blog-list-view .italic {\n    font-style: italic; }\n  .blog-list-view .date {\n    color: #676767;\n    display: block;\n    font-size: 12px;\n    width: 100%; }\n  .blog-list-view h2 {\n    color: #4874d4;\n    font-size: 18px;\n    text-transform: capitalize; }\n  .blog-list-view ul {\n    list-style-type: none;\n    padding: 0; }\n", ""]);
 
 	// exports
 
@@ -16035,11 +16035,17 @@
 	var _firebase = __webpack_require__(21);
 
 	var postsRef = _firebase.db.ref('blog/'); // <style lang="sass?indentedSyntax">
+	// @import definitions
+	//
 	// .blog-list-view
-	//   font-family: 'Raleway', monospace
+	//   font-family: $raleway
 	//   margin: auto
-	//   max-width: 960px
+	//   max-width: $max_w
 	//   width: 86%
+	//
+	//   &-link
+	//     text-decoration: none
+	//     width: 100%
 	//
 	//   .italic
 	//     font-style: italic
@@ -16051,17 +16057,13 @@
 	//     width: 100%
 	//
 	//   h2
-	//     color: #4874d4
+	//     color: $blue
 	//     font-size: 18px
 	//     text-transform: capitalize
 	//
 	//   ul
 	//     list-style-type: none
 	//     padding: 0
-	//
-	//     .blog-list-link
-	//       text-decoration: none
-	//       width: 100%
 	// </style>
 	//
 	// <template>
@@ -16151,7 +16153,7 @@
 
 
 	// module
-	exports.push([module.id, ".blog-single-view {\n  margin: 0 auto 100px auto;\n  max-width: 960px;\n  width: 86%; }\n  .blog-single-view .post-info {\n    color: #676767;\n    font: 12px 'Raleway', sans-serif; }\n  .blog-single-view .italic {\n    font-style: italic; }\n  .blog-single-view h2 {\n    font-family: 'Raleway', monospace;\n    text-transform: capitalize; }\n  .blog-single-view ul {\n    list-style-type: none;\n    padding: 0; }\n", ""]);
+	exports.push([module.id, ".blog-single-view {\n  margin: 0 auto 100px auto;\n  max-width: 960px;\n  width: 86%; }\n  .blog-single-view .post-info {\n    color: #676767;\n    font: 12px \"Raleway\", monospace; }\n  .blog-single-view .italic {\n    font-style: italic; }\n  .blog-single-view h2 {\n    font-family: \"Raleway\", monospace;\n    text-transform: capitalize; }\n  .blog-single-view ul {\n    list-style-type: none;\n    padding: 0; }\n", ""]);
 
 	// exports
 
@@ -16197,20 +16199,22 @@
 	//
 	//
 	// <style lang="sass?indentedSyntax">
+	// @import definitions
+	//
 	// .blog-single-view
 	//   margin: 0 auto 100px auto
-	//   max-width: 960px
+	//   max-width: $max_w
 	//   width: 86%
 	//
 	//   .post-info
-	//     color: #676767
-	//     font: 12px 'Raleway', sans-serif
+	//     color: $lightgrey
+	//     font: 12px $raleway
 	//
 	//   .italic
 	//     font-style: italic
 	//
 	//   h2
-	//     font-family: 'Raleway', monospace
+	//     font-family: $raleway
 	//     text-transform: capitalize
 	//
 	//   ul

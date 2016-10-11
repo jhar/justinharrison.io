@@ -1,8 +1,10 @@
 <style lang="sass?indentedSyntax">
+@import definitions
+
 .my-portfolio
-  font-family: 'Raleway', sans-serif
+  font-family: $raleway
   margin: auto
-  max-width: 960px
+  max-width: $max_w
   width: 86%
 
   .project-container

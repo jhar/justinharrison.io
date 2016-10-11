@@ -1,17 +1,30 @@
 <style lang="sass?indentedSyntax">
-.nav-bar
-  -webkit-box-sizing: border-box
-  -moz-box-sizing: border-box
-  box-sizing: border-box
-  font: 22px 'Raleway', sans-serif
-  height: 48px
-  margin-top: 35px
-  margin-bottom: 36px
+@import definitions
 
-  .nav-inner-container
+.nav-bar
+  +box-sizing(border-box)
+  font: 22px $raleway
+  height: 48px
+  margin: 35px 0 36px 0
+
+  &-title
+    color: black
+    display: block
+    font-size: 28px
+    margin-top: 7px
+    text-decoration: none
+
+  &-link
+    color: rgb(100, 100, 100)
+    display: block
+    font-size: 16px
+    padding: 12px 8px
+    text-decoration: none
+
+  &-inner-container
     height: 48px
     margin: auto
-    max-width: 960px
+    max-width: $max_w
     width: 86%
 
     ul
@@ -30,20 +43,6 @@
       li
         height: 48px
 
-        .nav-bar-title
-          color: black
-          display: block
-          font-size: 28px
-          margin-top: 7px
-          text-decoration: none
-
-        .nav-bar-link
-          color: rgb(100, 100, 100)
-          display: block
-          font-size: 16px
-          padding: 12px 8px
-          text-decoration: none
-
         .v-link-active
           color: black
 
@@ -51,11 +50,9 @@
           margin-top: 13px
 
 .nav-panel
-  -webkit-box-sizing: border-box
-  -moz-box-sizing: border-box
-  box-sizing: border-box
-  background-color: rgb(255, 255, 255)
-  font: 28px 'Raleway', monospace
+  +box-sizing(border-box)
+  background-color: white
+  font: 28px $raleway
   width: 100%
   position: absolute
   left: 0
@@ -63,6 +60,11 @@
   right: 0
   bottom: 42px
   z-index: 1000
+
+  &-link
+    color: rgb(25, 25, 25)
+    display: block
+    text-decoration: none
 
   ul
     list-style-type: none
@@ -76,13 +78,7 @@
       padding: 0 7%
       width: 100%
       text-align: center
-      box-sizing: border-box
-
-      .nav-panel-link
-        color: rgb(25, 25, 25)
-        display: block
-        text-decoration: none
-
+      +box-sizing(border-box)
 
 .hamburger
   display: block
@@ -101,7 +97,7 @@
 
 <template>
   <div class="nav-bar">
-    <div class="nav-inner-container">
+    <div class="nav-bar-inner-container">
       <ul>
         <li class="float-left"><a class="nav-bar-title" href="/">JUSTIN HARRISON</a></li>
         <li class="float-right togglable"><a class="nav-bar-link" v-link="{ name: 'Resume View' }">resume</a></li>

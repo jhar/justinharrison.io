@@ -1,23 +1,25 @@
 <style lang="sass?indentedSyntax">
+@import definitions
+
 .footer
-  background-color: rgb(255, 255, 255)
+  background-color: white
   border-top-style: double
   position: fixed
   bottom: 0px
   color: rgb(119, 119, 119)
-  font: 13px 'Ubuntu', sans-serif
+  font: 13px $opensans
   width: 100% 
 
-  .footer-container
+  &-container
     margin: 12px auto
-    max-width: 960px
+    max-width: $max_w
     width: 86%
 
   a
-    color: #4874d4
+    color: $blue
     text-decoration: none
 
-  .footer-links
+  &-links
     float: right
 </style>
 

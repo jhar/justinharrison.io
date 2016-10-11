@@ -1,9 +1,15 @@
 <style lang="sass?indentedSyntax">
+@import definitions
+
 .blog-list-view
-  font-family: 'Raleway', monospace
+  font-family: $raleway
   margin: auto
-  max-width: 960px
+  max-width: $max_w
   width: 86%
+
+  &-link
+    text-decoration: none
+    width: 100%
 
   .italic
     font-style: italic
@@ -15,17 +21,13 @@
     width: 100%
 
   h2
-    color: #4874d4
+    color: $blue
     font-size: 18px
     text-transform: capitalize
 
   ul
     list-style-type: none
     padding: 0
-
-    .blog-list-link
-      text-decoration: none
-      width: 100%
 </style>
 
 <template>

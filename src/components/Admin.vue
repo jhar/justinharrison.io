@@ -1,18 +1,20 @@
 <style lang="sass?indentedSyntax">
+@import definitions
+
 .admin-page,
 input,
 textarea,
 keygen,
 select,
 button
-  font-family: 'Raleway', sans-serif
+  font-family: $raleway
 
 button:focus
   outline: 0
 
 .admin-page
   margin: auto
-  max-width: 960px
+  max-width: $max_w
   width: 86%
 
   .not-authorized
@@ -21,7 +23,7 @@ button:focus
     width: 100%
 
     button
-      background-color: #4874d4
+      background-color: $blue
       border: none
       color: white
       font-size: 16px
@@ -38,7 +40,7 @@ button:focus
     margin-bottom: 12px
 
     .top-button
-      background-color: #4874d4
+      background-color: $blue
       border: 5px solid white
       border-radius: 40px
       color: white
@@ -46,9 +48,7 @@ button:focus
       font-size: 13px
 
   .admin-tree
-    -webkit-box-sizing: border-box
-    -moz-box-sizing: border-box
-    box-sizing: border-box
+    +box-sizing(border-box)
     display: inline-block
     float: left
     width: 32%
@@ -63,9 +63,7 @@ button:focus
         width: 100%
 
   .admin-editor
-    -webkit-box-sizing: border-box
-    -moz-box-sizing: border-box
-    box-sizing: border-box
+    +box-sizing(border-box)
     display: inline-block
     float: right
     width: 68%
@@ -89,7 +87,7 @@ button:focus
 
   .image-uploader
     progress
-      background-color: #4874d4
+      background-color: $blue
       border: 1px
       height: 24px
       margin-bottom: 12px

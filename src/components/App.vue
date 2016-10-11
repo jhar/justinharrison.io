@@ -1,10 +1,11 @@
 <style lang="sass?indentedSyntax">
 @import url(https://fonts.googleapis.com/css?family=Raleway)
 @import url(https://fonts.googleapis.com/css?family=Open+Sans)
+@import definitions
 
 p
-  font: 16px 'Open Sans', sans-serif
-  color: #676767
+  font: 16px $opensans
+  color: $lightgrey
 </style>
 
 <template>

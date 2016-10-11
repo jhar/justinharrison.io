@@ -1,18 +1,20 @@
 <style lang="sass?indentedSyntax">
+@import definitions
+
 .blog-single-view
   margin: 0 auto 100px auto
-  max-width: 960px
+  max-width: $max_w
   width: 86%
 
   .post-info
-    color: #676767
-    font: 12px 'Raleway', sans-serif
+    color: $lightgrey
+    font: 12px $raleway
 
   .italic
     font-style: italic
 
   h2
-    font-family: 'Raleway', monospace
+    font-family: $raleway
     text-transform: capitalize
 
   ul

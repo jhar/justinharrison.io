@@ -22,7 +22,7 @@
     padding: 0
 
   img
-    max-width: $max_w
+    max-width: 100%
 </style>
 
 <template>

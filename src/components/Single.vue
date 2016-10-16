@@ -17,6 +17,9 @@
     font-family: $raleway
     text-transform: capitalize
 
+  h3
+    font-family: $raleway
+
   ul
     list-style-type: none
     padding: 0

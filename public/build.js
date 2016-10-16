@@ -16157,7 +16157,7 @@
 
 
 	// module
-	exports.push([module.id, ".blog-single {\n  margin: 0 auto 100px auto;\n  max-width: 960px;\n  width: 86%; }\n  .blog-single .post-info {\n    color: #676767;\n    font: 12px \"Raleway\", monospace; }\n  .blog-single .italic {\n    font-style: italic; }\n  .blog-single h2 {\n    font-family: \"Raleway\", monospace;\n    text-transform: capitalize; }\n  .blog-single ul {\n    list-style-type: none;\n    padding: 0; }\n  .blog-single img {\n    max-width: 100%; }\n", ""]);
+	exports.push([module.id, ".blog-single {\n  margin: 0 auto 100px auto;\n  max-width: 960px;\n  width: 86%; }\n  .blog-single .post-info {\n    color: #676767;\n    font: 12px \"Raleway\", monospace; }\n  .blog-single .italic {\n    font-style: italic; }\n  .blog-single h2 {\n    font-family: \"Raleway\", monospace;\n    text-transform: capitalize; }\n  .blog-single h3 {\n    font-family: \"Raleway\", monospace; }\n  .blog-single ul {\n    list-style-type: none;\n    padding: 0; }\n  .blog-single img {\n    max-width: 100%; }\n", ""]);
 
 	// exports
 
@@ -16220,6 +16220,9 @@
 	//   h2
 	//     font-family: $raleway
 	//     text-transform: capitalize
+	//
+	//   h3
+	//     font-family: $raleway
 	//
 	//   ul
 	//     list-style-type: none

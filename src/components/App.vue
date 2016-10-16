@@ -1,6 +1,4 @@
 <style lang="sass?indentedSyntax">
-@import url(https://fonts.googleapis.com/css?family=Raleway)
-@import url(https://fonts.googleapis.com/css?family=Open+Sans)
 @import definitions
 
 p

@@ -13720,8 +13720,7 @@
 
 	exports = module.exports = __webpack_require__(9)();
 	// imports
-	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Raleway);", ""]);
-	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Open+Sans);", ""]);
+
 
 	// module
 	exports.push([module.id, "p {\n  font: 16px \"Open Sans\", sans-serif;\n  color: #676767; }\n", ""]);

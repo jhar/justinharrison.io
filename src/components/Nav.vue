@@ -42,12 +42,14 @@
 
       li
         height: 48px
+        min-width: 48px
 
         .v-link-active
           color: black
 
         .fa-bars
-          margin-top: 13px
+          margin-top: 8px
+          width: 28px
 
 .nav-panel
   +box-sizing(border-box)
@@ -104,7 +106,7 @@
         <li class="float-right togglable"><a class="nav-bar-link" v-link="{ name: 'Blog List View' }">blog</a></li>
         <li class="float-right togglable"><a class="nav-bar-link" v-link="{ name: 'Portfolio View' }">portfolio</a></li>
         <li class="float-right togglable"><a class="nav-bar-link" v-link="{ name: 'Home View' }">about</a></li>
-        <li class="float-right hamburger"><i v-on:click="togglePanel" class="fa fa-bars fa-lg"></i></li>
+        <li class="float-right hamburger"><img v-on:click="togglePanel" class="fa-bars" src="/images/bars.svg" /></li>
       </ul>
     </div>
     <div v-show="showPanel" transition="nav-panel" class="nav-panel">
